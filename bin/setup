@@ -1,0 +1,62 @@
+#!/usr/bin/env ruby
+require "fileutils"
+require "optparse"
+
+# path to your application root.
+APP_ROOT = File.expand_path("..", __dir__)
+
+# set default options
+options = {fixtures: false}
+
+OptionParser.new { |opts|
+  opts.banner = "Setup Edition's dependencies and database"
+  opts.separator ""
+  opts.separator "Usage: bin/ci [options]"
+
+  opts.on "-f", "--with-fixtures", "Load fixtures into database" do |f|
+    options[:fixtures] = f
+  end
+
+  opts.on "-h", "--help", "Prints this help message" do
+    puts opts
+    exit
+  end
+}.parse!
+
+def log(message)
+  puts "[ bin/setup ] #{message}"
+end
+
+def system!(*args)
+  return if system(*args)
+
+  log "#{args} failed"
+  abort
+end
+
+FileUtils.chdir APP_ROOT do
+  # This script is a way to set up or update your development environment automatically.
+  # This script is idempotent, so that you can run it at any time and get an expectable outcome.
+  # Add necessary setup steps to this file.
+
+  log "Removing old logs and tempfiles"
+  system! "bin/rails log:clear tmp:clear"
+
+  log "Installing dependencies"
+  system! "gem install bundler --conservative"
+  system("bundle check") || system!("bundle install")
+
+  # Install JavaScript dependencies
+  system("bin/yarn check --check-files") || system!("bin/yarn")
+
+  log "Restarting application server"
+  system! "bin/rails restart"
+
+  log "Preparing database"
+  system("bin/rails db:reset") || system!("bin/rails db:prepare")
+
+  if options[:fixtures]
+    log "Loading fixtures"
+    system("bin/rails db:fixtures:load")
+  end
+end
