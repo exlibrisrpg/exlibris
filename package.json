@@ -1,6 +1,9 @@
 {
   "name": "exlibris",
   "private": true,
+  "scripts": {
+    "lint:scss": "yarn run stylelint \"app/javascript/**/*.scss\""
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -12,6 +15,8 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "stylelint": "^13.12.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
     "webpack-dev-server": "^3.11.2"
   }
 }

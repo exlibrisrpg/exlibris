@@ -8,10 +8,15 @@ if Rails.env.development? || Rails.env.test?
   task default: :lint
 
   desc "Lint everything"
-  task lint: "lint:ruby"
+  task lint: ["lint:ruby", "lint:scss"]
 
   namespace :lint do
     desc "Lint the ruby files everywhere"
     task ruby: "standard"
+
+    desc "Lint the scss files"
+    task :scss do
+      system("yarn run lint:scss") || abort
+    end
   end
 end
