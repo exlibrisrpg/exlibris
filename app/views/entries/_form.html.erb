@@ -7,5 +7,13 @@
     <%= form.text_field :name %>
   </div>
 
+  <div>
+    <%= form.label :description %>
+    <% @entry.errors.full_messages_for(:description).each do |error| %>
+      <%= content_tag :span, error %>
+    <% end %>
+    <%= form.rich_text_area :description, value: @entry.description || Entry::DEFAULT_DESCRIPTION %>
+  </div>
+
   <%= form.submit %>
 <% end %>

@@ -12,5 +12,8 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+require("trix")
+require("@rails/actiontext")
+
 import "controllers"
 import "../scss/application.scss"

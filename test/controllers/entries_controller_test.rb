@@ -27,7 +27,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     should "redirect to created entry with valid params" do
-      valid_params = {entry: {name: "The Black Salt"}}
+      valid_params = {entry: {name: "The Black Salt", description: "A description"}}
 
       assert_changes -> { Entry.count } do
         post entries_path, params: valid_params

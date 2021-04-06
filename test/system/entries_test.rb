@@ -11,6 +11,15 @@ class EntriesTest < ApplicationSystemTestCase
     visit new_entry_path
 
     fill_in Entry.human_attribute_name(:name), with: "The Black Salt"
+    fill_in_rich_text_area Entry.human_attribute_name(:description), with: <<~HTML
+      <div>
+        <strong>Concept:</strong> “Springing from despair itself, the Black Winds echoed through Tombs, Palaces and places deep beneath the earth.”
+        <strong><br>Content:</strong> Potentially lethal weather event
+        <strong><br>Writing:</strong> Delivers necessary context and instructions
+        <strong><br>Art/design:</strong> Text heavy with subtle but effective graphics
+        <strong><br>Usability:</strong> Two tables filled with mortification
+      </div>
+    HTML
     click_on I18n.t("helpers.submit.entry.create")
 
     assert_text "The Black Salt"

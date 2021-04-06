@@ -1,4 +1,11 @@
 en:
+  activerecord:
+    errors:
+      models:
+        entry:
+          attributes:
+            description:
+              default: is the same value as the template
   helpers:
     submit:
       entry:

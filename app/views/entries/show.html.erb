@@ -6,3 +6,5 @@
     <%= button_to t(".delete_button"), entry_path(@entry), method: :delete, data: { confirm: t(".delete_button_confirmation") } %>
   </div>
 </div>
+
+<%= @entry.description %>
