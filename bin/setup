@@ -9,7 +9,7 @@ APP_ROOT = File.expand_path("..", __dir__)
 options = {fixtures: false}
 
 OptionParser.new { |opts|
-  opts.banner = "Setup Edition's dependencies and database"
+  opts.banner = "Setup Ex Libris' dependencies and database"
   opts.separator ""
   opts.separator "Usage: bin/ci [options]"
 

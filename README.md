@@ -1,24 +1,26 @@
-# README
+# Ex Libris
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A database of Mörk Borg content. For [Liber Ludorum].
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+To get this running locally run `bin/setup`. You can also use the `-f` flag to
+generate the test fixtures in the development database (helpful for local test
+content).
 
-* System dependencies
+```
+$ bin/setup -h
+Setup Ex Libris' dependencies and database
 
-* Configuration
+Usage: bin/ci [options]
+    -f, --with-fixtures              Load fixtures into database
+    -h, --help                       Prints this help message
+```
 
-* Database creation
+## Testing
 
-* Database initialization
+Unit tests, system tests, security checks and linting are all packaged into
+`bin/ci`. This is the set of tests and checks which are run by the CI pipeline
+on GitHub.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Liber Ludorum]: https://liberludorum.com/2020/09/28/ex-libris-mork-borg/
