@@ -6,11 +6,25 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="centre stack | sans-serif p-4 mw-8">
+    <header class="cluster | cluster-space">
+      <div>
+        <%= link_to t(".name"), root_path %>
+
+        <nav class="cluster">
+          <div>
+            <%= link_to t(".new_entry_link"), new_entry_path %>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

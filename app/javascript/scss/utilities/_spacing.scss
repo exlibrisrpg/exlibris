@@ -1,0 +1,20 @@
+$spacing-rules: (
+  m: margin,
+  mb: margin-bottom,
+  ml: margin-left,
+  mr: margin-right,
+  mt: margin-top,
+  p: padding,
+  pb: padding-bottom,
+  pl: padding-left,
+  pr: padding-right,
+  pt: padding-top
+);
+
+@each $class-name, $rule in $spacing-rules {
+  @each $spacing-name, $value in $spacing-map {
+    .#{$class-name}-#{$spacing-name} {
+      #{$rule}: $value;
+    }
+  }
+}

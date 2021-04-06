@@ -1,0 +1,11 @@
+<%= form_with model: @entry, class: "stack" do |form| %>
+  <div>
+    <%= form.label :name %>
+    <% @entry.errors.full_messages_for(:name).each do |error| %>
+      <%= content_tag :span, error %>
+    <% end %>
+    <%= form.text_field :name %>
+  </div>
+
+  <%= form.submit %>
+<% end %>

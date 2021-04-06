@@ -1,0 +1,5 @@
+@each $name, $family in $font-map {
+  .#{$name} {
+    font-family: $family;
+  }
+}

@@ -1,0 +1,23 @@
+.cluster {
+  --cluster-space: 1rem;
+  /* ↓ Suppress horizontal scrolling caused by
+  the negative margin in some circumstances */
+  overflow: hidden;
+}
+
+.cluster-space > * {
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  /* ↓ multiply by -1 to negate the halved value */
+  margin: calc(var(--cluster-space) / 2 * -1);
+}
+
+.cluster > * > * {
+  /* ↓ half the value, because of the 'doubling up' */
+  margin: calc(var(--cluster-space) / 2);
+}

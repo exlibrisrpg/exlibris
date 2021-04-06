@@ -1,0 +1,29 @@
+$font-sans-serif: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+
+$font-map: (
+  sans-serif: $font-sans-serif
+);
+
+$sizing-map: (
+  1: 1rem,
+  2: 2rem,
+  3: 4rem,
+  4: 8rem,
+  5: 16rem,
+  6: 32rem,
+  7: 48rem,
+  8: 64rem,
+  9: 96rem,
+  100: 100%
+);
+
+$spacing-map: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 2rem,
+  5: 4rem,
+  6: 8rem,
+  7: 16rem
+);

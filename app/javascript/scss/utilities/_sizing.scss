@@ -1,0 +1,14 @@
+$sizing-rules: (
+  h: height,
+  mh: max-height,
+  mw: max-width,
+  w: width
+);
+
+@each $class-name, $rule in $sizing-rules {
+  @each $sizing-name, $value in $sizing-map {
+    .#{$class-name}-#{$sizing-name} {
+      #{$rule}: $value;
+    }
+  }
+}
