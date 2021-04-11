@@ -46,6 +46,6 @@ class EntriesController < ApplicationController
   private
 
   def entry_params
-    params.require(:entry).permit(:name, :description)
+    params.require(:entry).permit(:name, :description, tag_ids: [])
   end
 end

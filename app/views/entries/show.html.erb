@@ -1,9 +1,21 @@
-<h1><%= @entry.name %></h1>
+<div class="cluster | cluster-space">
+  <div>
+    <h1><%= @entry.name %></h1>
+
+    <div class="cluster">
+      <div>
+        <%= link_to t(".edit_link"), edit_entry_path(@entry) %>
+        <%= button_to t(".delete_button"), entry_path(@entry), method: :delete, data: { confirm: t(".delete_button_confirmation") } %>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="cluster">
   <div>
-    <%= link_to t(".edit_link"), edit_entry_path(@entry) %>
-    <%= button_to t(".delete_button"), entry_path(@entry), method: :delete, data: { confirm: t(".delete_button_confirmation") } %>
+    <% @entry.tags.each do |tag| %>
+      <%= link_to tag.name, tag %>
+    <% end %>
   </div>
 </div>
 

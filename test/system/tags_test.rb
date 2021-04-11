@@ -31,6 +31,7 @@ class TagsTest < ApplicationSystemTestCase
     visit tag_path(tag)
 
     assert_text tag.name
+    assert_text entries(:eat_prey_kill).name
   end
 
   test "edit a tag" do

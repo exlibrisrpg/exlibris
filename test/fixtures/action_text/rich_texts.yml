@@ -2,3 +2,8 @@ eat_prey_kill_description:
   record: eat_prey_kill (Entry)
   name: description
   body: <div><strong>Concept:</strong> “When stomachs growl and there’s no inn in sight …”<strong><br>Content:</strong> Rules for hunting and whole ecosystems of prey<strong><br>Writing:</strong> Clear and evocative<strong><br>Art/design:</strong> Enough to supply character but not obstruct usability<strong><br>Usability:</strong> Well laid out and easy to navigate</div>
+
+unheroic_feats_description:
+  record: unheroic_feats (Entry)
+  name: description
+  body: <div><strong>Concept:</strong> “When getting better, if not using an optional class, you may instead gain a feat.”<strong><br>Content:</strong> Abilities that add versatility for classless characters (and more motivation to play them)<strong><br>Writing:</strong> Evocative and inspiring<strong><br>Art/design:</strong> <em>Mörk Borg</em> ambience in a more traditional style<strong><br>Usability:</strong> Clearly and linearly laid out</div>

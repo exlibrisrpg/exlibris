@@ -1,2 +1,7 @@
 eat_prey_kill:
   name: Eat, Prey, Kill
+  tags: rules, mork_borg_cult, johan_nohr
+
+unheroic_feats:
+  name: Unheroic Feats
+  tags: rules, mork_borg_cult, johan_nohr, johnny_carhat

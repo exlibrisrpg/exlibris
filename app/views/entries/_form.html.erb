@@ -12,7 +12,16 @@
     <% @entry.errors.full_messages_for(:description).each do |error| %>
       <%= content_tag :span, error %>
     <% end %>
-    <%= form.rich_text_area :description, value: @entry.description || Entry::DEFAULT_DESCRIPTION %>
+    <%= form.rich_text_area :description, value: @entry.description.presence || Entry::DEFAULT_DESCRIPTION %>
+  </div>
+
+  <div>
+    <%= form.collection_check_boxes :tag_ids, Tag.all, :id, :name do |b| %>
+      <%= b.label do %>
+        <%= b.check_box %>
+        <%= b.text %>
+      <% end %>
+    <% end %>
   </div>
 
   <%= form.submit %>

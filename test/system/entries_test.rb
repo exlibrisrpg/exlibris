@@ -20,9 +20,11 @@ class EntriesTest < ApplicationSystemTestCase
         <strong><br>Usability:</strong> Two tables filled with mortification
       </div>
     HTML
+    check tags(:mork_borg_cult).name
     click_on I18n.t("helpers.submit.entry.create")
 
     assert_text "The Black Salt"
+    assert_text tags(:mork_borg_cult).name
   end
 
   test "validate attempts to create" do

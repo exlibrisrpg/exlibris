@@ -1,2 +1,13 @@
+# Categories
+rules:
+  name: Rules
+
+# Officialness
 mork_borg_cult:
   name: Mörk Borg Cult
+
+# Authors
+johan_nohr:
+  name: Johan Nohr
+johnny_carhat:
+  name: Johnny Carhat

@@ -1,4 +1,4 @@
-input {
+input:not([type="checkbox"]) {
   display: block;
   width: 100%;
 }
