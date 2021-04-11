@@ -1,0 +1,8 @@
+<h1><%= @tag.name %></h1>
+
+<div class="cluster">
+  <div>
+    <%= link_to t(".edit_link"), edit_tag_path(@tag) %>
+    <%= button_to t(".delete_button"), tag_path(@tag), method: :delete, data: { confirm: t(".delete_button_confirmation") } %>
+  </div>
+</div>
