@@ -1,0 +1,6 @@
+<%= form_with model: search, url: search_path, method: :get do |form| %>
+    <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+
+    <%= form.submit name: "" %>
+<% end %>
+

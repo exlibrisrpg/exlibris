@@ -15,4 +15,29 @@ class EntryTest < ActiveSupport::TestCase
     should have_one_attached(:cover)
     should have_rich_text(:description)
   end
+
+  context ".containing" do
+    should "match on name and description" do
+      results = Entry.containing("eat")
+
+      assert_includes results, entries(:eat_prey_kill)
+      assert_includes results, entries(:unheroic_feats)
+    end
+  end
+
+  context ".content_containing" do
+    should "match growl to eat_prey_kill description" do
+      results = Entry.content_containing("growl")
+
+      assert_includes results, entries(:eat_prey_kill)
+    end
+  end
+
+  context ".name_containing" do
+    should "match prey to eat_prey_kill name" do
+      results = Entry.name_containing("prey")
+
+      assert_includes results, entries(:eat_prey_kill)
+    end
+  end
 end

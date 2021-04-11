@@ -11,6 +11,8 @@ en:
       entry:
         create: Create Entry
         update: Update Entry
+      search:
+        create: Search
       tag:
         create: Create Tag
         update: Update Tag
@@ -32,6 +34,10 @@ en:
       edit_link: Edit Entry
     edit:
       title: Edit Entry
+
+  searches:
+    show:
+      title: Search Ex Libris
 
   tags:
     index:

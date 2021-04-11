@@ -6,11 +6,11 @@
 }
 
 .cluster-space > * {
-  align-items: baseline;
   justify-content: space-between;
 }
 
 .cluster > * {
+  align-items: baseline;
   display: flex;
   flex-wrap: wrap;
   /* ↓ multiply by -1 to negate the halved value */

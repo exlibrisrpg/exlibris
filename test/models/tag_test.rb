@@ -8,4 +8,12 @@ class TagTest < ActiveSupport::TestCase
   context "validations" do
     should validate_presence_of :name
   end
+
+  context ".containing" do
+    should "match mork borg cult to cult name" do
+      results = Tag.containing("cult")
+
+      assert_includes results, tags(:mork_borg_cult)
+    end
+  end
 end

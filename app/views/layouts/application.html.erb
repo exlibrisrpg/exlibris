@@ -19,6 +19,9 @@
           <div>
             <%= link_to t(".new_entry_link"), new_entry_path %>
             <%= link_to t(".new_tag_link"), new_tag_path %>
+            <%= form_with model: Search.new, url: search_path, method: :get do |form| %>
+              <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+            <% end %>
           </div>
         </nav>
       </div>

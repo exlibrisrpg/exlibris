@@ -18,6 +18,10 @@ class Entry < ApplicationRecord
   has_one_attached :cover
   has_rich_text :description
 
+  scope :containing, ->(query) { content_containing(query).or(name_containing(query)) }
+  scope :content_containing, ->(query) { joins(:rich_text_description).merge(ActionText::RichText.with_body_containing(query)) }
+  scope :name_containing, ->(query) { where("LOWER(entries.name) LIKE LOWER(?)", "%#{query}%") }
+
   private
 
   def description_not_default

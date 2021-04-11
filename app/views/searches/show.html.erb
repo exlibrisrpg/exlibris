@@ -1,0 +1,22 @@
+<h1><%= t(".title") %></h1>
+
+<%= render partial: "form", locals: { search: @search } %>
+
+<% if @search.query %>
+  <h2><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
+
+  <% @search.tags.each do |tag| %>
+    <div>
+      <h3><%= link_to highlight(tag.name, @search.query), tag %></h3>
+    </div>
+  <% end %>
+
+  <h2><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
+
+  <% @search.entries.each do |entry| %>
+    <div>
+      <h3><%= link_to highlight(entry.name, @search.query), entry %></h3>
+      <p><%= highlight(entry.description.body.to_s, @search.query.split) %></p>
+    </div>
+  <% end %>
+<% end %>
