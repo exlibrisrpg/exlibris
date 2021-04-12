@@ -8,6 +8,14 @@
   </div>
 
   <div>
+    <%= form.label :cover %>
+    <% @entry.errors.full_messages_for(:cover).each do |error| %>
+      <%= content_tag :span, error %>
+    <% end %>
+    <%= form.file_field :cover %>
+  </div>
+
+  <div>
     <%= form.label :description %>
     <% @entry.errors.full_messages_for(:description).each do |error| %>
       <%= content_tag :span, error %>

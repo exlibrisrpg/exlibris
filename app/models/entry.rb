@@ -15,6 +15,7 @@ class Entry < ApplicationRecord
   validates :description, presence: true
   validate :description_not_default
 
+  has_one_attached :cover
   has_rich_text :description
 
   private

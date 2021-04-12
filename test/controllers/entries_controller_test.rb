@@ -27,10 +27,19 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     should "redirect to created entry with valid params" do
-      valid_params = {entry: {name: "The Black Salt", description: "A description", tag_ids: [tags(:rules).id]}}
+      valid_params = {entry: {
+        name: "The Black Salt",
+        description: "A description",
+        cover: fixture_file_upload("eatpreykill.png", "image/png"),
+        tag_ids: [tags(:rules).id]
+      }}
 
-      assert_changes -> { Entry.joins(:tags).where(tags: tags(:rules)).count } do
-        post entries_path, params: valid_params
+      assert_changes -> { Entry.count } do
+        assert_changes -> { tags(:rules).entries.count } do
+          assert_changes -> { ActiveStorage::Attachment.count } do
+            post entries_path, params: valid_params
+          end
+        end
       end
 
       assert_redirected_to entry_path(Entry.last)

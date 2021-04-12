@@ -11,6 +11,7 @@ class EntriesTest < ApplicationSystemTestCase
     visit new_entry_path
 
     fill_in Entry.human_attribute_name(:name), with: "The Black Salt"
+    attach_file Entry.human_attribute_name(:cover), file_fixture("eatpreykill.png")
     fill_in_rich_text_area Entry.human_attribute_name(:description), with: <<~HTML
       <div>
         <strong>Concept:</strong> “Springing from despair itself, the Black Winds echoed through Tombs, Palaces and places deep beneath the earth.”
@@ -25,6 +26,7 @@ class EntriesTest < ApplicationSystemTestCase
 
     assert_text "The Black Salt"
     assert_text tags(:mork_borg_cult).name
+    assert_selector "img[src$='eatpreykill.png']"
   end
 
   test "validate attempts to create" do

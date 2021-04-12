@@ -12,6 +12,7 @@ class EntryTest < ActiveSupport::TestCase
   end
 
   context "attributes" do
+    should have_one_attached(:cover)
     should have_rich_text(:description)
   end
 end
