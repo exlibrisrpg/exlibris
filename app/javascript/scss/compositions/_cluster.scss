@@ -9,8 +9,11 @@
   justify-content: space-between;
 }
 
-.cluster > * {
+.cluster-baseline > * {
   align-items: baseline;
+}
+
+.cluster > * {
   display: flex;
   flex-wrap: wrap;
   /* ↓ multiply by -1 to negate the halved value */

@@ -1,7 +1,5 @@
 <h1><%= t(".title") %></h1>
 
-<ul>
-  <% @entries.each do |entry| %>
-    <li><%= link_to entry.name, entry %></li>
-  <% end %>
-</ul>
+<div class="stack | stack-s5">
+  <%= render @entries %>
+</div>

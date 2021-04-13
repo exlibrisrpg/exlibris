@@ -1,4 +1,4 @@
-<div class="cluster | cluster-space">
+<div class="cluster | cluster-space cluster-baseline">
   <div>
     <h1><%= @tag.name %></h1>
 
@@ -12,10 +12,6 @@
   </div>
 </div>
 
-<div class="cluster">
-  <div>
-    <% @tag.entries.each do |entry| %>
-      <%= link_to entry.name, entry %>
-    <% end %>
-  </div>
+<div class="stack | stack-s5">
+  <%= render @tag.entries %>
 </div>

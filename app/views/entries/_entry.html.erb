@@ -1,0 +1,34 @@
+<div class="cluster">
+  <div>
+    <div class="w-4">
+      <% if entry.cover.attached? %>
+        <%= image_tag entry.cover %>
+      <% end %>
+    </div>
+
+    <div class="cluster-grow">
+      <div class="cluster | cluster-space cluster-baseline">
+        <div>
+          <h1><%= link_to_unless_current entry.name, entry %></h1>
+
+          <div class="cluster">
+            <div>
+              <%= link_to t(".edit_link"), edit_entry_path(entry) %>
+              <%= button_to t(".delete_button"), entry_path(entry), method: :delete, data: { confirm: t(".delete_button_confirmation") } %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cluster">
+        <div>
+          <% entry.tags.each do |tag| %>
+            <%= link_to tag.name, tag %>
+          <% end %>
+        </div>
+      </div>
+
+      <%= entry.description %>
+    </div>
+  </div>
+</div>

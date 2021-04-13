@@ -71,7 +71,7 @@ class EntriesTest < ApplicationSystemTestCase
 
     visit entry_path(entry)
     accept_confirm do
-      click_on I18n.t("entries.show.delete_button")
+      click_on I18n.t("entries.entry.delete_button")
     end
 
     assert_no_text entry.name

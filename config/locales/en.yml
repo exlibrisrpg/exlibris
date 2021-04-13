@@ -28,12 +28,12 @@ en:
       title: All Entries
     new:
       title: New Entry
-    show:
+    edit:
+      title: Edit Entry
+    entry:
       delete_button: Delete Entry
       delete_button_confirmation: Are you sure you want to delete this entry?
       edit_link: Edit Entry
-    edit:
-      title: Edit Entry
 
   searches:
     show:

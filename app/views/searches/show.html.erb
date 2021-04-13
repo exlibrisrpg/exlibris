@@ -5,18 +5,17 @@
 <% if @search.query %>
   <h2><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
 
-  <% @search.tags.each do |tag| %>
+  <div class="cluster">
     <div>
-      <h3><%= link_to highlight(tag.name, @search.query), tag %></h3>
+      <% @search.tags.each do |tag| %>
+        <%= link_to highlight(tag.name, @search.query), tag %>
+      <% end %>
     </div>
-  <% end %>
+  </div>
 
   <h2><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
 
   <% @search.entries.each do |entry| %>
-    <div>
-      <h3><%= link_to highlight(entry.name, @search.query), entry %></h3>
-      <p><%= highlight(entry.description.body.to_s, @search.query.split) %></p>
-    </div>
+    <%= highlight(render(entry), @search.query.split) %>
   <% end %>
 <% end %>

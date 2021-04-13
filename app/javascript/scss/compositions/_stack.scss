@@ -2,8 +2,10 @@
   --stack-space: #{map-get($spacing-map, 4)};
 }
 
-.stack-small > * {
-  --stack-space: #{map-get($spacing-map, 3)};
+@each $spacing-name, $value in $spacing-map {
+  .stack-s#{$spacing-name} > * {
+    --stack-space: #{$value};
+  }
 }
 
 .stack > * + * {
