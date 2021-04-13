@@ -3,5 +3,5 @@ class Tag < ApplicationRecord
 
   validates :name, presence: true
 
-  scope :containing, ->(query) { where("LOWER(tags.name) LIKE LOWER(?)", "%#{query}%") }
+  scope :containing, ->(query) { where("tags.name ILIKE ?", "%#{query}%") }
 end
