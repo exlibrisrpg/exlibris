@@ -21,7 +21,7 @@ class Entry < ApplicationRecord
   scope :containing, ->(query) { content_containing(query).or(name_containing(query)) }
   scope :content_containing, ->(query) { joins(:rich_text_description).merge(ActionText::RichText.with_body_containing(query)) }
   scope :name_containing, ->(query) { where("entries.name ILIKE ?", "%#{query}%") }
-  scope :with_includes, -> { includes(:tags, rich_text_description: :embeds_attachments, cover_attachment: :blob) }
+  scope :with_includes, -> { includes(:tags, :cover_blob, rich_text_description: :embeds_attachments, cover_attachment: :blob) }
 
   private
 

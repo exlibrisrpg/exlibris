@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.strict_loading.all.with_includes
+    @entries = Entry.all.with_includes
   end
 
   def new
