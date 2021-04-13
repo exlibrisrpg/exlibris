@@ -18,7 +18,7 @@ class TagsController < ApplicationController
   end
 
   def show
-    @tag = Tag.find(params[:id])
+    @tag = Tag.with_includes.find(params[:id])
   end
 
   def edit

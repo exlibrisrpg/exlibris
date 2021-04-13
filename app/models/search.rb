@@ -8,7 +8,7 @@ class Search
   def entries
     return [] unless valid?
 
-    Entry.containing(query)
+    Entry.with_includes.containing(query)
   end
 
   def tags

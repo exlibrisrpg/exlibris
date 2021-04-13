@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.all
+    @entries = Entry.strict_loading.all.with_includes
   end
 
   def new
@@ -18,15 +18,15 @@ class EntriesController < ApplicationController
   end
 
   def show
-    @entry = Entry.find(params[:id])
+    @entry = Entry.with_includes.find(params[:id])
   end
 
   def edit
-    @entry = Entry.find(params[:id])
+    @entry = Entry.with_includes.find(params[:id])
   end
 
   def update
-    @entry = Entry.find(params[:id])
+    @entry = Entry.with_includes.find(params[:id])
 
     if @entry.update(entry_params)
       redirect_to @entry
@@ -36,7 +36,7 @@ class EntriesController < ApplicationController
   end
 
   def destroy
-    @entry = Entry.find(params[:id])
+    @entry = Entry.with_includes.find(params[:id])
 
     @entry.destroy
 
