@@ -8,9 +8,14 @@
 
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= preload_pack_asset "media/fonts/UnifrakturCook-Bold.ttf" %>
+    <%= preload_pack_asset "media/fonts/IBMPlexMono-Regular.ttf" %>
+    <%= preload_pack_asset "media/fonts/IBMPlexMono-Italic.ttf" %>
+    <%= preload_pack_asset "media/fonts/IBMPlexMono-Bold.ttf" %>
+    <%= preload_pack_asset "media/fonts/IBMPlexMono-BoldItalic.ttf" %>
   </head>
 
-  <body class="centre stack | sans-serif p-4 mw-8">
+  <body class="centre stack | sans-serif p-4 mw-8" data-controller="annotation">
     <header class="cluster | cluster-space cluster-baseline">
       <div>
         <%= link_to t(".name"), root_path %>

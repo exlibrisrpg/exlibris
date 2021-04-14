@@ -20,6 +20,6 @@ class SearchTest < ApplicationSystemTestCase
       click_on I18n.t("helpers.submit.search.create")
     end
 
-    assert_text tags(:mork_borg_cult).name
+    assert_link tags(:mork_borg_cult).name
   end
 end

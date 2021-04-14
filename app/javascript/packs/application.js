@@ -15,5 +15,7 @@ ActiveStorage.start()
 require("trix")
 require("@rails/actiontext")
 
+require.context("../fonts", true)
+
 import "controllers"
 import "../scss/application.scss"

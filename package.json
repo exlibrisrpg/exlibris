@@ -2,6 +2,7 @@
   "name": "exlibris",
   "private": true,
   "scripts": {
+    "lint:js": "yarn run prettier --check \"app/javascript/**/*.js\"",
     "lint:scss": "yarn run stylelint \"app/javascript/**/*.scss\""
   },
   "dependencies": {
@@ -11,12 +12,14 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.2.1",
     "modern-css-reset": "^1.4.0",
+    "rough-notation": "^0.5.1",
     "stimulus": "^2.0.0",
     "trix": "^1.2.0",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "prettier": "^2.2.1",
     "stylelint": "^13.12.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "webpack-dev-server": "^3.11.2"

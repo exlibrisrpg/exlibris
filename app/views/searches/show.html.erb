@@ -16,6 +16,37 @@
   <h2><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
 
   <% @search.entries.each do |entry| %>
-    <%= highlight(render(entry), @search.query.split) %>
+    <div class="with-sidebar">
+      <div>
+        <div style="width: max(25%, 12rem)">
+          <div class="frame | frame-1-1">
+            <% if entry.cover.attached? %>
+              <%= image_tag entry.cover %>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="cluster | cluster-space cluster-baseline">
+            <div>
+              <h1 class="unifraktur"><%= link_to_unless_current highlight(entry.name, @search.query), entry %></h1>
+            </div>
+          </div>
+
+          <div class="cluster">
+            <div class="plex-mono">
+              <% entry.tags.each do |tag| %>
+                <%= link_to tag.name, tag %>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="plex-mono">
+            <%= highlight entry.description.to_s, @search.query %>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   <% end %>
 <% end %>

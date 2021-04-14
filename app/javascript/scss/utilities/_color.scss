@@ -1,0 +1,12 @@
+$color-rules: (
+  c: color,
+  bg: background-color
+);
+
+@each $class-name, $rule in $color-rules {
+  @each $color-name, $value in $color-map {
+    .#{$class-name}-#{$color-name} {
+      #{$rule}: $value;
+    }
+  }
+}

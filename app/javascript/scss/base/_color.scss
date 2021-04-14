@@ -1,0 +1,22 @@
+:root {
+  --color-background: #{$white};
+  --color-background-translucent: #{$white-translucent};
+  --color-foreground: #{$black};
+  --color-foreground-translucent: #{$black-translucent};
+  --color-action: #{$yellow};
+  --color-action-translucent: #{$yellow-translucent};
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+a {
+  color: inherit;
+}
+
+mark {
+  background-color: transparent !important;
+  color: var(--color-action) !important;
+}
