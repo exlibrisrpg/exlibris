@@ -1,4 +1,3 @@
-
 <div class="with-sidebar">
   <div>
     <div style="width: max(25%, 12rem)">
@@ -26,7 +25,7 @@
       <div class="cluster">
         <div class="plex-mono">
           <% entry.tags.each do |tag| %>
-            <%= link_to tag.name, tag %>
+            <%= link_to tag.name, [:admin, tag] %>
           <% end %>
         </div>
       </div>

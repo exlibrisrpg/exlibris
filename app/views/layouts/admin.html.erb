@@ -20,7 +20,7 @@
       <div>
         <div>
           <%= link_to t(".name"), admin_root_path %>
-          <%= link_to t(".back"), root_path %>
+          <%= link_to t(".back_link"), root_path %>
         </div>
 
         <nav class="cluster | cluster-baseline">
@@ -28,9 +28,9 @@
             <% if signed_in? %>
               <%= link_to t(".entries_link"), admin_entries_path %>
               <%= link_to t(".tags_link"), admin_tags_path %>
-              <%= button_to "Sign out", sign_out_path, method: :delete %>
+              <%= button_to t(".sign_out_button"), sign_out_path, method: :delete %>
             <% else %>
-              <%= link_to "Sign in", sign_in_path %>
+              <%= link_to t(".sign_in_link"), sign_in_path %>
             <% end %>
           </div>
         </nav>
