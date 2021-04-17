@@ -1,6 +1,10 @@
 require "application_system_test_case"
 
 class VisitorResetsPasswordTest < ApplicationSystemTestCase
+  setup do
+    ActionMailer::Base.deliveries.clear
+  end
+
   test "by navigating to the page" do
     visit sign_in_path
 
