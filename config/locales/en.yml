@@ -18,22 +18,30 @@ en:
         update: Update Tag
 
   layouts:
-    application:
-      name: Ex Libris
+    admin:
+      back: To Public Site
+      name: Ex Libris Admin
       new_entry_link: New Entry
       new_tag_link: New Tag
+    application:
+      name: Ex Libris
+
+  admin:
+    entries:
+      index:
+        title: All Entries
+      new:
+        title: New Entry
+      edit:
+        title: Edit Entry
+      entry:
+        delete_button: Delete Entry
+        delete_button_confirmation: Are you sure you want to delete this entry?
+        edit_link: Edit Entry
 
   entries:
     index:
       title: All Entries
-    new:
-      title: New Entry
-    edit:
-      title: Edit Entry
-    entry:
-      delete_button: Delete Entry
-      delete_button_confirmation: Are you sure you want to delete this entry?
-      edit_link: Edit Entry
 
   searches:
     show:

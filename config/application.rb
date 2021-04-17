@@ -31,5 +31,11 @@ module Exlibris
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.to_prepare do
+      Clearance::PasswordsController.layout "admin"
+      Clearance::SessionsController.layout "admin"
+      Clearance::UsersController.layout "admin"
+    end
   end
 end

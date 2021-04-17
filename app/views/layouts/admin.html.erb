@@ -18,12 +18,20 @@
   <body class="centre stack | sans-serif p-4 mw-8" data-controller="annotation">
     <header class="cluster | cluster-space cluster-baseline">
       <div>
-        <%= link_to t(".name"), root_path %>
+        <div>
+          <%= link_to t(".name"), admin_root_path %>
+          <%= link_to t(".back"), root_path %>
+        </div>
 
         <nav class="cluster | cluster-baseline">
           <div>
-            <%= form_with model: Search.new, url: search_path, method: :get do |form| %>
-              <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+            <% if signed_in? %>
+              <%= link_to t(".new_entry_link"), new_admin_entry_path %>
+              <%= link_to t(".new_tag_link"), new_tag_path %>
+              <%= current_user.email %>
+              <%= button_to "Sign out", sign_out_path, method: :delete %>
+            <% else %>
+              <%= link_to "Sign in", sign_in_path %>
             <% end %>
           </div>
         </nav>
@@ -31,6 +39,12 @@
     </header>
 
     <main class="stack">
+      <div id="flash">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+      </div>
+
       <%= yield %>
     </main>
   </body>

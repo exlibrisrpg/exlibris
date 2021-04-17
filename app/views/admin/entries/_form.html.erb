@@ -1,4 +1,4 @@
-<%= form_with model: @entry, class: "stack" do |form| %>
+<%= form_with model: [:admin, @entry], class: "stack" do |form| %>
   <div>
     <%= form.label :name %>
     <% @entry.errors.full_messages_for(:name).each do |error| %>

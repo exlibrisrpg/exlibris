@@ -1,3 +1,4 @@
+
 <div class="with-sidebar">
   <div>
     <div style="width: max(25%, 12rem)">
@@ -9,7 +10,18 @@
     </div>
 
     <div class="stack">
-      <h1 class="unifraktur"><%= link_to entry.name, entry %></h1>
+      <div class="cluster | cluster-space cluster-baseline">
+        <div>
+          <h1 class="unifraktur"><%= link_to entry.name, [:admin, entry] %></h1>
+
+          <div class="cluster">
+            <div>
+              <%= link_to t(".edit_link"), edit_admin_entry_path(entry) %>
+              <%= button_to t(".delete_button"), admin_entry_path(entry), method: :delete, data: { confirm: t(".delete_button_confirmation") } %>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="cluster">
         <div class="plex-mono">

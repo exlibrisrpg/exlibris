@@ -1,0 +1,4 @@
+john:
+  email: john@bannister.com
+  encrypted_password: <%= BCrypt::Password.create("password", cost: BCrypt::Engine.cost) %>
+  remember_token: <%= Clearance::Token.new %>
