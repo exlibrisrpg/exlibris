@@ -1,6 +1,4 @@
-class Admin::TagsController < ApplicationController
-  before_action :require_login
-
+class Admin::TagsController < Admin::AdminController
   def index
     @tags = Tag.all
   end

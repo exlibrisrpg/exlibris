@@ -26,9 +26,8 @@
         <nav class="cluster | cluster-baseline">
           <div>
             <% if signed_in? %>
-              <%= link_to t(".new_entry_link"), new_admin_entry_path %>
-              <%= link_to t(".new_tag_link"), new_admin_tag_path %>
-              <%= current_user.email %>
+              <%= link_to t(".entries_link"), admin_entries_path %>
+              <%= link_to t(".tags_link"), admin_tags_path %>
               <%= button_to "Sign out", sign_out_path, method: :delete %>
             <% else %>
               <%= link_to "Sign in", sign_in_path %>

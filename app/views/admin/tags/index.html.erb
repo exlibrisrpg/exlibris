@@ -1,4 +1,12 @@
-<h1><%= t(".title") %></h1>
+<div class="cluster | cluster-baseline cluster-space">
+  <div>
+    <h1><%= t(".title") %></h1>
+
+    <div>
+    <%= link_to t(".new_tag_link"), new_admin_tag_path %>
+    </div>
+  </div>
+</div>
 
 <ul>
   <% @tags.each do |tag| %>

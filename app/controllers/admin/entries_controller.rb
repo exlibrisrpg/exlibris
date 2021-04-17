@@ -1,8 +1,4 @@
-class Admin::EntriesController < ApplicationController
-  layout "admin"
-
-  before_action :require_login
-
+class Admin::EntriesController < Admin::AdminController
   def index
     @entries = Entry.all.with_includes
   end

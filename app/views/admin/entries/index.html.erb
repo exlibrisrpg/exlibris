@@ -1,4 +1,12 @@
-<h1><%= t(".title") %></h1>
+<div class="cluster | cluster-baseline cluster-space">
+  <div>
+    <h1><%= t(".title") %></h1>
+
+    <div>
+    <%= link_to t(".new_entry_link"), new_admin_entry_path %>
+    </div>
+  </div>
+</div>
 
 <div class="stack | stack-s5">
   <%= render @entries %>

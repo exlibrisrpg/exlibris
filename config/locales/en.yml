@@ -6,6 +6,7 @@ en:
           attributes:
             description:
               default: is the same value as the template
+
   helpers:
     submit:
       entry:
@@ -21,8 +22,8 @@ en:
     admin:
       back: To Public Site
       name: Ex Libris Admin
-      new_entry_link: New Entry
-      new_tag_link: New Tag
+      entries_link: Entries
+      tags_link: Tags
     application:
       name: Ex Libris
 
@@ -30,6 +31,7 @@ en:
     entries:
       index:
         title: All Entries
+        new_entry_link: New Entry
       new:
         title: New Entry
       edit:
@@ -41,6 +43,7 @@ en:
     tags:
       index:
         title: All Tags
+        new_tag_link: New Tag
       new:
         title: New Tag
       show:
