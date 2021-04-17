@@ -38,6 +38,17 @@ en:
         delete_button: Delete Entry
         delete_button_confirmation: Are you sure you want to delete this entry?
         edit_link: Edit Entry
+    tags:
+      index:
+        title: All Tags
+      new:
+        title: New Tag
+      show:
+        delete_button: Delete Tag
+        delete_button_confirmation: Are you sure you want to delete this tag?
+        edit_link: Edit Tag
+      edit:
+        title: Edit Tag
 
   entries:
     index:
@@ -50,11 +61,3 @@ en:
   tags:
     index:
       title: All Tags
-    new:
-      title: New Tag
-    show:
-      delete_button: Delete Tag
-      delete_button_confirmation: Are you sure you want to delete this tag?
-      edit_link: Edit Tag
-    edit:
-      title: Edit Tag
