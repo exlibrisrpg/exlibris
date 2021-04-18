@@ -22,8 +22,13 @@
 
         <nav class="cluster | cluster-baseline">
           <div>
-            <%= form_with model: Search.new, url: search_path, method: :get do |form| %>
-              <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+            <%= form_with model: @search || Search.new, url: search_path, method: :get do |form| %>
+              <div class="search">
+                <%= form.label :query do %>
+                  <%= icon_tag :search %>
+                <% end %>
+                <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+              </div>
             <% end %>
           </div>
         </nav>

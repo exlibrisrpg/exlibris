@@ -1,0 +1,30 @@
+.search {
+  align-items: center;
+  display: flex;
+}
+
+.search input {
+  background: none;
+  border: unset;
+  outline: none;
+  padding-bottom: 2px;
+
+  &:active,
+  &:focus {
+    border-bottom: 2px solid var(--color-foreground-translucent);
+    outline: none;
+    padding-bottom: 0;
+  }
+}
+
+.search .icon-search {
+  margin-right: 0.5rem;
+
+  .primary {
+    fill: none;
+  }
+
+  .secondary {
+    fill: var(--icon-color, var(--color-foreground));
+  }
+}

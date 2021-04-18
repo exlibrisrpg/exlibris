@@ -1,0 +1,19 @@
+.icon {
+  fill: var(--icon-color, var(--color-background));
+  height: var(--icon-size, 1rem);
+  width: var(--icon-size, 1rem);
+
+  .primary {
+    fill: var(--icon-color, var(--color-foreground));
+  }
+
+  .secondary {
+    fill: var(--icon-color, var(--color-foreground-translucent));
+  }
+}
+
+@each $sizing-name, $value in $sizing-map {
+  .icon-#{$sizing-name} {
+    --icon-size: $value;
+  }
+}
