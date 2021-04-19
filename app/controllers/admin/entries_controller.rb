@@ -5,6 +5,7 @@ class Admin::EntriesController < Admin::AdminController
 
   def new
     @entry = Entry.new
+    @entry.links.build
   end
 
   def create
@@ -46,6 +47,12 @@ class Admin::EntriesController < Admin::AdminController
   private
 
   def entry_params
-    params.require(:entry).permit(:name, :cover, :description, tag_ids: [])
+    params.require(:entry).permit(
+      :name,
+      :cover,
+      :description,
+      tag_ids: [],
+      links_attributes: [:id, :address, :type, :_destroy]
+    )
   end
 end

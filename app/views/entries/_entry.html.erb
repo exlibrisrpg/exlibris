@@ -22,6 +22,14 @@
       <div class="plex-mono">
         <%= entry.description %>
       </div>
+
+      <% if entry.links.any? %>
+        <ul>
+          <% entry.links.each do |link| %>
+            <%= content_tag :li, link_to(link.address, link.address) %>
+          <% end %>
+        </ul>
+      <% end %>
     </div>
   </div>
 </div>

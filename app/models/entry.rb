@@ -10,6 +10,7 @@ class Entry < ApplicationRecord
   HTML
 
   has_and_belongs_to_many :tags
+  has_many :links, dependent: :destroy
 
   validates :name, presence: true
   validates :description, presence: true
@@ -18,10 +19,12 @@ class Entry < ApplicationRecord
   has_one_attached :cover
   has_rich_text :description
 
+  accepts_nested_attributes_for :links, allow_destroy: true, reject_if: :all_blank
+
   scope :containing, ->(query) { content_containing(query).or(name_containing(query)) }
   scope :content_containing, ->(query) { joins(:rich_text_description).merge(ActionText::RichText.with_body_containing(query)) }
   scope :name_containing, ->(query) { where("entries.name ILIKE ?", "%#{query}%") }
-  scope :with_includes, -> { includes(:tags, :cover_blob, rich_text_description: :embeds_attachments, cover_attachment: :blob) }
+  scope :with_includes, -> { includes(:tags, :cover_blob, :links, rich_text_description: :embeds_attachments, cover_attachment: :blob) }
 
   private
 

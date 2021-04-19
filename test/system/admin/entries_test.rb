@@ -61,9 +61,12 @@ class Admin::EntriesTest < ApplicationSystemTestCase
 
     visit edit_admin_entry_path(entry)
     fill_in Entry.human_attribute_name(:name), with: "Eat, Prey, Kill!!!"
+    click_on I18n.t("admin.entries._form.add_link")
+    fill_in Link.human_attribute_name(:address), with: "https://makedatanotlore.itch.io/eat-prey-kill"
     click_on I18n.t("helpers.submit.entry.update")
 
     assert_text "Eat, Prey, Kill!!!"
+    assert_text "itch.io"
   end
 
   test "validate attempts to edit" do

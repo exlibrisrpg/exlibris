@@ -57,13 +57,16 @@ class Admin::EntriesControllerTest < ActionDispatch::IntegrationTest
         name: "The Black Salt",
         description: "A description",
         cover: fixture_file_upload("eatpreykill.png", "image/png"),
-        tag_ids: [tags(:rules).id]
+        tag_ids: [tags(:rules).id],
+        links_attributes: [{address: "https://liberludorum.com/ex-libris-mork-borg-optional-rules/"}]
       }}
 
       assert_changes -> { Entry.count } do
         assert_changes -> { tags(:rules).entries.count } do
           assert_changes -> { ActiveStorage::Attachment.count } do
-            post admin_entries_path, params: valid_params
+            assert_changes -> { Link.count } do
+              post admin_entries_path, params: valid_params
+            end
           end
         end
       end
@@ -135,6 +138,18 @@ class Admin::EntriesControllerTest < ActionDispatch::IntegrationTest
       end
 
       assert_redirected_to admin_entry_path(entry)
+    end
+
+    should "delete specified links" do
+      sign_in
+
+      entry = entries(:eat_prey_kill)
+      link = links(:eat_prey_kill_itch)
+      valid_params = {entry: {links_attributes: [{id: link.id, _destroy: "true"}]}}
+
+      assert_changes -> { entry.links.count } do
+        patch admin_entry_path(entry), params: valid_params
+      end
     end
   end
 

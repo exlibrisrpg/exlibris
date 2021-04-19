@@ -2,7 +2,8 @@ require "test_helper"
 
 class EntryTest < ActiveSupport::TestCase
   context "associations" do
-    should have_and_belong_to_many :tags
+    should have_and_belong_to_many(:tags)
+    should have_many(:links).dependent(:destroy)
   end
 
   context "validations" do
@@ -15,6 +16,8 @@ class EntryTest < ActiveSupport::TestCase
     should have_one_attached(:cover)
     should have_rich_text(:description)
   end
+
+  should accept_nested_attributes_for(:links).allow_destroy(true)
 
   context ".containing" do
     should "match on name and description" do
