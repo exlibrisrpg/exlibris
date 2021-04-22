@@ -28,10 +28,16 @@ export default class extends Controller {
     })
   }
 
+  annotateElement(element, options) {
+    element.parentNode.style = "position: relative;"
+    const annotation = annotate(element, options)
+    element.annotation = annotation
+    return annotation
+  }
+
   annotateElements(elements, options) {
     return [...elements].map((element) => {
-      element.parentNode.style = "position: relative;"
-      return annotate(element, options)
+      return this.annotateElement(element, options)
     })
   }
 
@@ -42,6 +48,19 @@ export default class extends Controller {
   }
 
   annotateElementsAsGroup(elements, options) {
-    annotationGroup(this.annotateElements(elements, options)).show()
+    const observer = new IntersectionObserver((entries) => {
+      const revealedEntries = entries.filter(
+        (entry) => entry.intersectionRatio > 0
+      )
+
+      annotationGroup(
+        revealedEntries.map((entry) => entry.target.annotation)
+      ).show()
+    })
+
+    ;[...elements].forEach((element) => {
+      const annotation = this.annotateElement(element, options)
+      observer.observe(element)
+    })
   }
 }
