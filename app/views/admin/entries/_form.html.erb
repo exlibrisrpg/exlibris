@@ -27,25 +27,14 @@
     <h2>Links</h2>
     <template data-nested-form-target="template">
       <%= form.fields_for :links, Link.new, child_index: "NEW_RECORD" do |link_form| %>
-        <%= content_tag :div, class: "nested-fields", data: { new_record: link_form.object.new_record? } do %>
-          <%= link_form.label :address %>
-          <%= link_form.text_field :address %>
-          <a data-action="click->nested-form#removeAssociation">Remove</a>
-        <%= link_form.hidden_field :_destroy %>
-        <% end %>
+        <%= render partial: "link_form", locals: { form: link_form } %>
       <% end %>
     </template>
 
     <div data-nested-form-target="form" class="stack | stack-s3">
       <%= form.fields_for :links do |link_form| %>
         <%= content_tag :div, class: "nested-fields", data: { new_record: link_form.object.new_record? } do %>
-          <%= link_form.label :address %>
-          <% link_form.object.errors.full_messages_for(:address).each do |error| %>
-            <%= content_tag :span, error %>
-          <% end %>
-          <%= link_form.text_field :address %>
-          <a data-action="click->nested-form#removeAssociation">Remove</a>
-          <%= link_form.hidden_field :_destroy %>
+          <%= render partial: "link_form", locals: { form: link_form } %>
         <% end %>
       <% end %>
     </div>

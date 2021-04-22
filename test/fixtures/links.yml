@@ -1,3 +1,11 @@
 eat_prey_kill_itch:
   entry: eat_prey_kill
   address: https://makedatanotlore.itch.io/eat-prey-kill
+
+eat_prey_kill_mork_borg:
+  entry: eat_prey_kill
+  address: https://morkborg.com/content/
+
+unheroic_feats_mork_borg:
+  entry: unheroic_feats
+  address: https://morkborg.com/content/
