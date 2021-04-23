@@ -8,7 +8,7 @@
   <div class="cluster">
     <div>
       <% @search.tags.each do |tag| %>
-        <%= link_to highlight(tag.name, @search.query), tag %>
+        <%= link_to highlight(tag.name, @search.query.split(" ")), tag %>
       <% end %>
     </div>
   </div>
@@ -29,7 +29,7 @@
         <div class="stack">
           <div class="cluster | cluster-space cluster-baseline">
             <div>
-              <h1 class="unifraktur"><%= link_to_unless_current highlight(entry.name, @search.query), entry %></h1>
+              <h1 class="unifraktur"><%= link_to_unless_current highlight(entry.name, @search.query.split(" ")), entry %></h1>
             </div>
           </div>
 
@@ -42,7 +42,7 @@
           </div>
 
           <div class="plex-mono">
-            <%= highlight entry.description.to_s, @search.query %>
+            <%= highlight entry.description.to_s, @search.query.split(" ") %>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ class EntryTest < ActiveSupport::TestCase
 
   context ".containing" do
     should "match on name and description" do
-      results = Entry.containing("eat")
+      results = Entry.containing("eat or feat")
 
       assert_includes results, entries(:eat_prey_kill)
       assert_includes results, entries(:unheroic_feats)
