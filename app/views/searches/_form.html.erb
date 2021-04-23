@@ -1,6 +1,16 @@
-<%= form_with model: search, url: search_path, method: :get do |form| %>
-    <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+<%= form_with model: search, url: search_path, method: :get, class: "search | cluster" do |form| %>
+  <div>
+    <div class="cluster-grow | highlight-white">
+      <div class="search--field">
+        <%= form.label :query do %>
+          <%= icon_tag :search %>
+        <% end %>
+        <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+      </div>
+    </div>
 
-    <%= form.submit name: "" %>
+    <div class="highlight-yellow hover-highlight-white" style="min-width: 15%;">
+      <%= form.submit name: "", class: "search--submit" %>
+    </div>
+  </div>
 <% end %>
-

@@ -1,5 +1,5 @@
 .with-sidebar {
-  --sidebar-space: #{map-get($spacing-map, 2)};
+  --sidebar-space: var(--space-xs);
   overflow: hidden;
 }
 

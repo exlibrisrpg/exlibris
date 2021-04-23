@@ -15,28 +15,33 @@
     <%= preload_pack_asset "media/fonts/IBMPlexMono-BoldItalic.ttf" %>
   </head>
 
-  <body class="centre stack | sans-serif p-4 mw-8" data-controller="annotation">
-    <header class="cluster | cluster-space cluster-baseline">
-      <div>
-        <%= link_to t(".name"), root_path %>
+  <body class="sans-serif" data-controller="annotation">
+    <div class="stack | p-s pl-l pr-l | bg-yellow-translucent highlight-none">
+      <%= yield :header %>
+    </div>
 
-        <nav class="cluster | cluster-baseline">
-          <div>
-            <%= form_with model: @search || Search.new, url: search_path, method: :get do |form| %>
-              <div class="search">
-                <%= form.label :query do %>
-                  <%= icon_tag :search %>
-                <% end %>
-                <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
-              </div>
-            <% end %>
+    <main>
+      <% if content_for?(:banner) %>
+        <div class="c-white bg-black">
+          <div class="container | centre stack | p-l">
+            <%= content_for :banner %>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+      <% end %>
 
-    <main class="stack">
-      <%= yield %>
+      <div class="container | centre stack | p-l">
+        <div class="stack">
+          <% if flash.any? %>
+            <div id="flash">
+              <% flash.each do |key, value| %>
+                <div class="flash <%= key %>"><%= value %></div>
+              <% end %>
+            </div>
+          <% end %>
+
+          <%= yield %>
+        </div>
+      </div>
     </main>
   </body>
 </html>

@@ -37,3 +37,13 @@
   font-weight: 700;
   src: url("../fonts/UnifrakturCook-Bold.ttf");
 }
+
+html {
+  font-size: var(--font-size);
+}
+
+@each $sizing-name, $value in $sizing-map {
+  .size-#{$sizing-name} {
+    font-size: $value;
+  }
+}

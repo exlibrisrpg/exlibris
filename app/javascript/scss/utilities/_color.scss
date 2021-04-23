@@ -1,11 +1,16 @@
 $color-rules: (
   c: color,
-  bg: background-color
+  bg: background-color,
+  highlight: --color-highlight,
 );
 
 @each $class-name, $rule in $color-rules {
   @each $color-name, $value in $color-map {
     .#{$class-name}-#{$color-name} {
+      #{$rule}: $value;
+    }
+
+    .hover-#{$class-name}-#{$color-name}:hover {
       #{$rule}: $value;
     }
   }

@@ -1,9 +1,9 @@
 .stack {
-  --stack-space: #{map-get($spacing-map, 4)};
+  --stack-space: var(--space-m);
 }
 
 @each $spacing-name, $value in $spacing-map {
-  .stack-s#{$spacing-name} > * {
+  .stack-#{$spacing-name} > * {
     --stack-space: #{$value};
   }
 }

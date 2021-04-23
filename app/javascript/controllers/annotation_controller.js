@@ -3,10 +3,12 @@ import { annotate, annotationGroup } from "rough-notation"
 
 export default class extends Controller {
   connect() {
-    const searches = document.querySelectorAll(".search")
+    const searches = document.querySelectorAll(
+      ".search--field, .search--submit"
+    )
     this.annotateElementsIndividually(searches, {
       type: "highlight",
-      color: "var(--color-action-translucent)",
+      color: "var(--color-highlight, var(--color-action-translucent))",
       iterations: 1,
       animationDuration: 400
     })
@@ -14,7 +16,7 @@ export default class extends Controller {
     const links = document.querySelectorAll("a")
     this.annotateElementsIndividually(links, {
       type: "highlight",
-      color: "var(--color-action-translucent)",
+      color: "var(--color-highlight, var(--color-action-translucent))",
       iterations: 1,
       animate: false
     })
@@ -29,7 +31,7 @@ export default class extends Controller {
   }
 
   annotateElement(element, options) {
-    element.parentNode.style = "position: relative;"
+    element.parentNode.style.position = "relative"
     const annotation = annotate(element, options)
     element.annotation = annotation
     return annotation

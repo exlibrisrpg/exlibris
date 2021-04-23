@@ -1,6 +1,8 @@
-<h1><%= t(".title") %></h1>
+<% content_for :banner do %>
+  <h1><%= t(".title") %></h1>
 
-<%= render partial: "form", locals: { search: @search } %>
+  <%= render partial: "form", locals: { search: @search } %>
+<% end %>
 
 <% if @search.query %>
   <h2><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
@@ -46,7 +48,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   <% end %>
 <% end %>

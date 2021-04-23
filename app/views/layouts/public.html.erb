@@ -1,0 +1,29 @@
+<% content_for :header do %>
+  <header class="container | centre cluster | cluster-space cluster-baseline">
+    <div>
+      <div class="cluster | cluster-baseline cluster-grow">
+        <div class="palatino size-2 highlight-none">
+          <%= link_to t(".name"), root_path %>
+          <small class="size--1"><%= t(".tagline") %></small>
+        </div>
+      </div>
+
+      <% if @search.blank? %>
+        <nav class="cluster | cluster-baseline cluster-grow" style="min-width: 30%;">
+          <div>
+            <%= form_with model: @search || Search.new, url: search_path, method: :get, class: "search | highlight-white" do |form| %>
+              <div class="search--field">
+                <%= form.label :query do %>
+                  <%= icon_tag :search %>
+                <% end %>
+                <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+              </div>
+            <% end %>
+          </div>
+        </nav>
+      <% end %>
+    </div>
+  </header>
+<% end %>
+
+<%= render template: "layouts/application" %>

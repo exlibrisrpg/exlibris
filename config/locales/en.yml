@@ -26,8 +26,9 @@ en:
       tags_link: Tags
       sign_out_button: Sign out
       sign_in_link: Sign in
-    application:
+    public:
       name: Ex Libris
+      tagline: A directory of content, tools, and resources for the Mörk Borg RPG
 
   admin:
     entries:

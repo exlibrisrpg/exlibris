@@ -11,37 +11,43 @@ $color-map: (
   white: $white,
   white-translucent: $white-translucent,
   yellow: $yellow,
-  yellow-translucent: $yellow-translucent
+  yellow-translucent: $yellow-translucent,
+  none: none
 );
 
 $font-sans-serif: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+$font-palatino: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Times, "Times New Roman", serif;
 
 $font-map: (
   sans-serif: $font-sans-serif,
+  palatino: $font-palatino,
   unifraktur: "UnifrakturCook",
   plex-mono: "IBM Plex Mono"
 );
 
 $sizing-map: (
-  1: 1rem,
-  2: 2rem,
-  3: 4rem,
-  4: 8rem,
-  5: 16rem,
-  6: 32rem,
-  7: 48rem,
-  8: 64rem,
-  9: 96rem,
-  100: 100%
+  -2: var(--step--2),
+  -1: var(--step--1),
+  0: var(--step-0),
+  1: var(--step-1),
+  2: var(--step-2),
+  3: var(--step-3),
+  4: var(--step-4),
+  5: var(--step-5)
 );
 
 $spacing-map: (
-  0: 0,
-  1: 0.25rem,
-  2: 0.5rem,
-  3: 1rem,
-  4: 2rem,
-  5: 4rem,
-  6: 8rem,
-  7: 16rem
+  3xs: var(--space-3xs),
+  2xs: var(--space-2xs),
+  xs: var(--space-xs),
+  s: var(--space-s),
+  m: var(--space-m),
+  l: var(--space-l),
+  xl: var(--spacae-xl),
+  2xl: var(--space-2xl),
+  3xl: var(--space-3xl)
 );
+
+:root {
+  --font-size: var(--step-0);
+}

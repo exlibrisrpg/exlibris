@@ -1,5 +1,5 @@
 .cluster {
-  --cluster-space: 1rem;
+  --cluster-space: var(--space-s);
   /* ↓ Suppress horizontal scrolling caused by
   the negative margin in some circumstances */
   // overflow: hidden;

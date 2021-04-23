@@ -1,50 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Exlibris</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= preload_pack_asset "media/fonts/UnifrakturCook-Bold.ttf" %>
-    <%= preload_pack_asset "media/fonts/IBMPlexMono-Regular.ttf" %>
-    <%= preload_pack_asset "media/fonts/IBMPlexMono-Italic.ttf" %>
-    <%= preload_pack_asset "media/fonts/IBMPlexMono-Bold.ttf" %>
-    <%= preload_pack_asset "media/fonts/IBMPlexMono-BoldItalic.ttf" %>
-  </head>
-
-  <body class="centre stack | sans-serif p-4 mw-8" data-controller="annotation">
-    <header class="cluster | cluster-space cluster-baseline">
-      <div>
-        <div>
+<% content_for :header do %>
+  <header class="container | centre cluster | cluster-space cluster-baseline">
+    <div>
+      <div class="cluster | cluster-baseline cluster-grow">
+        <div class="palatino size-2">
           <%= link_to t(".name"), admin_root_path %>
-          <%= link_to t(".back_link"), root_path %>
+          <small class="size--1"><%= link_to t(".back_link"), root_path %></small>
         </div>
-
-        <nav class="cluster | cluster-baseline">
-          <div>
-            <% if signed_in? %>
-              <%= link_to t(".entries_link"), admin_entries_path %>
-              <%= link_to t(".tags_link"), admin_tags_path %>
-              <%= button_to t(".sign_out_button"), sign_out_path, method: :delete %>
-            <% else %>
-              <%= link_to t(".sign_in_link"), sign_in_path %>
-            <% end %>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <main class="stack">
-      <div id="flash">
-        <% flash.each do |key, value| %>
-          <div class="flash <%= key %>"><%= value %></div>
-        <% end %>
       </div>
 
-      <%= yield %>
-    </main>
-  </body>
-</html>
+      <nav class="cluster | cluster-baseline">
+        <div>
+          <% if signed_in? %>
+            <%= link_to t(".entries_link"), admin_entries_path %>
+            <%= link_to t(".tags_link"), admin_tags_path %>
+            <%= button_to t(".sign_out_button"), sign_out_path, method: :delete %>
+          <% else %>
+            <%= link_to t(".sign_in_link"), sign_in_path %>
+          <% end %>
+        </div>
+      </nav>
+    </div>
+  </header>
+<% end %>
+
+<%= render template: "layouts/application" %>

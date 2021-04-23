@@ -23,7 +23,7 @@
     <%= form.rich_text_area :description, value: @entry.description.presence || Entry::DEFAULT_DESCRIPTION %>
   </div>
 
-  <div class="stack | stack-s3" data-controller="nested-form">
+  <div class="stack | stack-s" data-controller="nested-form">
     <h2>Links</h2>
     <template data-nested-form-target="template">
       <%= form.fields_for :links, Link.new, child_index: "NEW_RECORD" do |link_form| %>
@@ -31,7 +31,7 @@
       <% end %>
     </template>
 
-    <div data-nested-form-target="form" class="stack | stack-s3">
+    <div data-nested-form-target="form" class="stack | stack-s">
       <%= form.fields_for :links do |link_form| %>
         <%= content_tag :div, class: "nested-fields", data: { new_record: link_form.object.new_record? } do %>
           <%= render partial: "link_form", locals: { form: link_form } %>
@@ -44,7 +44,7 @@
     </div>
   </div>
 
-  <div class="stack | stack-s3">
+  <div class="stack | stack-s">
     <h2>Tags</h2>
 
     <div>
