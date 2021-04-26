@@ -21,3 +21,17 @@
     </div>
   </div>
 <% end %>
+
+<% if Tag.where.missing(:tag_category).any? %>
+  <h2><%= t(".uncategorised") %></h2>
+
+  <div class="cluster | palatino">
+    <div>
+      <% Tag.where.missing(:tag_category).each do |tag| %>
+        <div>
+          <%= link_to tag.name, [:admin, tag] %> <%= tag.entries.count %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

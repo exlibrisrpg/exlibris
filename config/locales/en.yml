@@ -49,6 +49,7 @@ en:
       index:
         title: All Tags
         new_tag_link: New Tag
+        uncategorised: Uncategorised
       new:
         title: New Tag
       show:
