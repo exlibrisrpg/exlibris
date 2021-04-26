@@ -22,7 +22,7 @@ class Admin::TagsController < Admin::AdminController
   end
 
   def edit
-    @tag = Tag.find(params[:id])
+    @tag = Tag.includes(:tag_category).find(params[:id])
   end
 
   def update
@@ -46,6 +46,6 @@ class Admin::TagsController < Admin::AdminController
   private
 
   def tag_params
-    params.require(:tag).permit(:name)
+    params.require(:tag).permit(:name, :tag_category_id)
   end
 end

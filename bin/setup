@@ -55,6 +55,8 @@ FileUtils.chdir APP_ROOT do
   log "Preparing database"
   system("bin/rails db:reset") || system!("bin/rails db:prepare")
 
+  system("bin/rails db:seed")
+
   if options[:fixtures]
     log "Loading fixtures"
     system("bin/rails db:fixtures:load")

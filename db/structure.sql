@@ -207,6 +207,18 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: tag_categories; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.tag_categories (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    name character varying,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
 -- Name: tags; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -214,7 +226,8 @@ CREATE TABLE public.tags (
     id uuid DEFAULT gen_random_uuid() NOT NULL,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    tag_category_id uuid
 );
 
 
@@ -324,6 +337,14 @@ ALTER TABLE ONLY public.schema_migrations
 
 
 --
+-- Name: tag_categories tag_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.tag_categories
+    ADD CONSTRAINT tag_categories_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: tags tags_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -403,6 +424,13 @@ CREATE INDEX index_links_on_entry_id ON public.links USING btree (entry_id);
 
 
 --
+-- Name: index_tags_on_tag_category_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_tags_on_tag_category_id ON public.tags USING btree (tag_category_id);
+
+
+--
 -- Name: index_tags_tsvector_name; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -428,6 +456,14 @@ CREATE INDEX index_users_on_remember_token ON public.users USING btree (remember
 --
 
 CREATE INDEX tsvector_plain_text_body_idx ON public.action_text_rich_texts USING gin (to_tsvector('public.en'::regconfig, plain_text_body));
+
+
+--
+-- Name: tags fk_rails_1c4ed8dfc0; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.tags
+    ADD CONSTRAINT fk_rails_1c4ed8dfc0 FOREIGN KEY (tag_category_id) REFERENCES public.tag_categories(id);
 
 
 --
@@ -470,6 +506,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210417113042'),
 ('20210418151932'),
 ('20210423083923'),
-('20210423085838');
+('20210423085838'),
+('20210425130715'),
+('20210425130739');
 
 

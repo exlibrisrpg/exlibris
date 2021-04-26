@@ -15,6 +15,7 @@ class Admin::TagsTest < ApplicationSystemTestCase
     visit new_admin_tag_path
 
     fill_in Tag.human_attribute_name(:name), with: "Karl Druid"
+    select tag_categories(:creators).name, from: Tag.human_attribute_name(:tag_category)
     click_on I18n.t("helpers.submit.tag.create")
 
     assert_text "Karl Druid"

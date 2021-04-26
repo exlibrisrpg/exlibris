@@ -7,5 +7,13 @@
     <%= form.text_field :name %>
   </div>
 
+  <div>
+    <%= form.label :tag_category_id %>
+    <% tag.errors.full_messages_for(:tag_category).each do |error| %>
+      <%= content_tag :span, error %>
+    <% end %>
+    <%= form.select :tag_category_id, options_from_collection_for_select(TagCategory.all, :id, :name) %>
+  </div>
+
   <%= form.submit %>
 <% end %>
