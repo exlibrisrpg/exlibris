@@ -1,6 +1,6 @@
 class Admin::TagsController < Admin::AdminController
   def index
-    @tags = Tag.all
+    @tag_categories = TagCategory.all.includes(:tags)
   end
 
   def new
