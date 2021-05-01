@@ -14,6 +14,8 @@
   </div>
 </div>
 
+<%= @tag.description %>
+
 <div class="stack | stack-l">
   <%= render partial: "entries/entry", collection: @tag.entries, locals: { namespace: :admin } %>
 </div>
