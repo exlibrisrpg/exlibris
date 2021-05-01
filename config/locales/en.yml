@@ -39,10 +39,6 @@ en:
         title: New Entry
       edit:
         title: Edit Entry
-      entry:
-        delete_button: Delete Entry
-        delete_button_confirmation: Are you sure you want to delete this entry?
-        edit_link: Edit Entry
       _form:
         add_link: Add Link
     tags:
@@ -62,6 +58,10 @@ en:
   entries:
     index:
       title: All Entries
+    entry:
+      delete_button: Delete Entry
+      delete_button_confirmation: Are you sure you want to delete this entry?
+      edit_link: Edit Entry
 
   searches:
     show:

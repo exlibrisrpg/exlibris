@@ -16,6 +16,7 @@ class Admin::TagsTest < ApplicationSystemTestCase
 
     fill_in Tag.human_attribute_name(:name), with: "Karl Druid"
     select tag_categories(:creators).name, from: Tag.human_attribute_name(:tag_category)
+    fill_in_rich_text_area Tag.human_attribute_name(:description), with: "AKA makedatanotlore"
     click_on I18n.t("helpers.submit.tag.create")
 
     assert_text "Karl Druid"

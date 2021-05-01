@@ -7,7 +7,7 @@
     <div>
       <% tag_category.tags.each do |tag| %>
         <div>
-          <%= link_to tag.name, tag %> <%= tag.entries.count %>
+          <%= render partial: "tags/tag", locals: { tag: tag } %> <%= tag.entries.count %>
         </div>
       <% end %>
     </div>

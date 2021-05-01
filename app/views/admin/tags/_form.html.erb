@@ -15,5 +15,13 @@
     <%= form.select :tag_category_id, options_from_collection_for_select(TagCategory.all, :id, :name) %>
   </div>
 
+  <div>
+    <%= form.label :description %>
+    <% tag.errors.full_messages_for(:description).each do |error| %>
+      <%= content_tag :span, error %>
+    <% end %>
+    <%= form.rich_text_area :description %>
+  </div>
+
   <%= form.submit %>
 <% end %>

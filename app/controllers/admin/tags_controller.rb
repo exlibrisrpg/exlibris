@@ -1,6 +1,6 @@
 class Admin::TagsController < Admin::AdminController
   def index
-    @tag_categories = TagCategory.all.includes(:tags)
+    @tag_categories = TagCategory.all.includes(tags: :rich_text_description)
   end
 
   def new
@@ -22,11 +22,11 @@ class Admin::TagsController < Admin::AdminController
   end
 
   def edit
-    @tag = Tag.includes(:tag_category).find(params[:id])
+    @tag = Tag.includes(:tag_category, :rich_text_description).find(params[:id])
   end
 
   def update
-    @tag = Tag.find(params[:id])
+    @tag = Tag.includes(:rich_text_description).find(params[:id])
 
     if @tag.update(tag_params)
       redirect_to [:admin, @tag]
@@ -36,7 +36,7 @@ class Admin::TagsController < Admin::AdminController
   end
 
   def destroy
-    @tag = Tag.find(params[:id])
+    @tag = Tag.includes(:rich_text_description).find(params[:id])
 
     @tag.destroy
 
@@ -46,6 +46,6 @@ class Admin::TagsController < Admin::AdminController
   private
 
   def tag_params
-    params.require(:tag).permit(:name, :tag_category_id)
+    params.require(:tag).permit(:name, :description, :tag_category_id)
   end
 end

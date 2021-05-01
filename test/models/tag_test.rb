@@ -11,6 +11,10 @@ class TagTest < ActiveSupport::TestCase
     should validate_presence_of :tag_category
   end
 
+  context "attributes" do
+    should have_rich_text(:description)
+  end
+
   context ".containing" do
     should "match mork borg cult to cult name" do
       results = Tag.containing("cult")

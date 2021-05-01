@@ -15,7 +15,7 @@
     <div>
       <% tag_category.tags.each do |tag| %>
         <div>
-          <%= link_to tag.name, [:admin, tag] %> <%= tag.entries.count %>
+          <%= render partial: "tags/tag", locals: { tag: tag, namespace: :admin } %> <%= tag.entries.count %>
         </div>
       <% end %>
     </div>

@@ -22,25 +22,31 @@
         </div>
       </div>
 
-      <div class="cluster">
-        <div class="plex-mono">
-          <% entry.tags.each do |tag| %>
-            <%= link_to tag.name, [:admin, tag] %>
-          <% end %>
+      <% if entry.links.any? %>
+        <div class="cluster">
+          <div class="plex-mono">
+            <strong><%= Link.model_name.human.pluralize %>:</strong>
+
+            <% entry.links.each do |link| %>
+              <%= link_to link_name(link), link.address %>
+            <% end %>
+          </div>
         </div>
-      </div>
+      <% end %>
+
+      <% if entry.tags.any? %>
+        <div class="cluster">
+          <div class="plex-mono">
+            <strong><%= Tag.model_name.human.pluralize %>:</strong>
+
+            <%= render partial: "tags/tag", collection: entry.tags, locals: { namespace: :admin } %>
+          </div>
+        </div>
+      <% end %>
 
       <div class="plex-mono">
         <%= entry.description %>
       </div>
-
-      <% if entry.links.any? %>
-        <ul>
-          <% entry.links.each do |link| %>
-            <%= content_tag :li, link_to(link.address, link.address) %>
-          <% end %>
-        </ul>
-      <% end %>
     </div>
   </div>
 </div>

@@ -1,3 +1,4 @@
+# Entries
 eat_prey_kill_description:
   record: eat_prey_kill (Entry)
   name: description
@@ -9,3 +10,9 @@ unheroic_feats_description:
   name: description
   body: <div><strong>Concept:</strong> “When getting better, if not using an optional class, you may instead gain a feat.”<strong><br>Content:</strong> Abilities that add versatility for classless characters (and more motivation to play them)<strong><br>Writing:</strong> Evocative and inspiring<strong><br>Art/design:</strong> <em>Mörk Borg</em> ambience in a more traditional style<strong><br>Usability:</strong> Clearly and linearly laid out</div>
   plain_text_body: "Concept: “When getting better, if not using an optional class, you may instead gain a feat.”\nContent: Abilities that add versatility for classless characters (and more motivation to play them)\nWriting: Evocative and inspiring\nArt/design: Mörk Borg ambience in a more traditional style\nUsability: Clearly and linearly laid out"
+
+# Tags
+rules_description:
+  record: rules (Tag)
+  name: description
+  body: <div>Optional and alternative rules.</div>

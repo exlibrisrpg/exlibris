@@ -53,7 +53,7 @@ class Admin::TagsControllerTest < ActionDispatch::IntegrationTest
     should "redirect to created tag with valid params" do
       sign_in
 
-      valid_params = {tag: {name: "Karl Druid", tag_category_id: tag_categories(:creators).id}}
+      valid_params = {tag: {name: "Karl Druid", tag_category_id: tag_categories(:creators).id, description: "AKA makedatanotlore"}}
 
       assert_changes -> { Tag.count } do
         post admin_tags_path, params: valid_params

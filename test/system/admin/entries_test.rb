@@ -88,7 +88,7 @@ class Admin::EntriesTest < ApplicationSystemTestCase
 
     visit admin_entry_path(entry)
     accept_confirm do
-      click_on I18n.t("admin.entries.entry.delete_button")
+      click_on I18n.t("entries.entry.delete_button")
     end
 
     assert_no_text entry.name
