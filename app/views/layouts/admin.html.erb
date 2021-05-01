@@ -1,3 +1,5 @@
+<% content_for :title do %><% if content_for? :title %><% yield(:title) %> | <% end %><%= t(".title") %><% end %>
+
 <% content_for :header do %>
   <header class="container | centre cluster | cluster-space cluster-baseline">
     <div>

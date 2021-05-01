@@ -1,4 +1,7 @@
 en:
+  application:
+    name: Ex Libris
+
   activerecord:
     errors:
       models:
@@ -26,6 +29,7 @@ en:
       tags_link: Tags
       sign_out_button: Sign out
       sign_in_link: Sign in
+      title: Admin Section
     public:
       name: Ex Libris
       tagline: A directory of content, tools, and resources for the Mörk Borg RPG
