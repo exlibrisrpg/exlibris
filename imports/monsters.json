@@ -1,0 +1,1822 @@
+[
+  {
+    "name": "Membrane of Sarkantha & Sarcopha-ghost",
+    "url": "https://morkborg.com/content/",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/09/dungeonduo.png?w=516",
+    "creators": [
+      "Pelle Nilsson",
+      "Johan Nohr"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTwo devilish hazards every death-defying dungeon delver must learn to avoid.\u201d<strong><br/>Content:</strong> A living(ish) doorway trap and a melancholic spirit<strong><br/>Writing:</strong> Adds dimension and depth to concepts<strong><br/>Art/design:</strong> Expresses the monsters\u2019 ephemerality nicely<strong><br/>Usability:</strong> It\u2019s hard to screw up a <em>M\u00f6rk Borg</em> stat block</p>"
+  },
+  {
+    "name": "Monsters Based on The Binding of Isaac",
+    "url": "https://morkborg.com/content/",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/09/boim.png?w=618",
+    "creators": [
+      "Edmund McMillan",
+      "Johan Nohr"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSix unholy monsters from the wonderful roguelike video game\u201d<strong><br/>Content:</strong> Fundamentally messed up and right at home in <em>M\u00f6rk Borg</em><strong><br/>Writing:</strong> Provides inspiring descriptions and dynamics<strong><br/>Art/design:</strong> The videogame\u2019s graphics adapted to <em>M\u00f6rk Borg</em>\u2019s aesthetic<strong><br/>Usability:</strong> Six clearly delineated stat blocks</p>"
+  },
+  {
+    "name": "Bone Bowyer",
+    "url": "https://morkborg.com/content/",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/09/bonebowyer-3.png?w=517",
+    "creators": [
+      "Matthew Bottiglieri",
+      "Johan Nohr"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA horrid, stealthy fey [\u2026] fashions bows from the bones of the children that it hunts.\u201d<strong><br/>Content:</strong> An unearthly foe or unsavory ally of circumstance<strong><br/>Writing:</strong> Provides multiple compelling hooks<strong><br/>Art/design:</strong> Appropriately creepy with gusto<strong><br/>Usability:</strong> Nohr in a more restrained but equally effective mode</p>"
+  },
+  {
+    "name": "The Merchant",
+    "url": "https://morkborg.com/content/",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/09/merchant-1.png?w=706",
+    "creators": [
+      "Johnny Carhat",
+      "Joakim Hanner",
+      "Johan Nohr"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cEternally he wanders the dying world, bearing a grudge that too will never die.\u201d<strong><br/>Content:</strong> A unique NPC hawking curios on the road to wherever<strong><br/>Writing:</strong> Descriptive and engaging<strong><br/>Art/design:</strong> Extremely characterful<strong><br/>Usability:</strong> Linear and efficient</p>"
+  },
+  {
+    "name": "Monster Generator",
+    "url": null,
+    "img_url": "https://liberludorum.files.wordpress.com/2020/09/mbcferetory-2.png?w=450",
+    "creators": [
+      "Pelle Nilsson",
+      "Johan Nohr"
+    ],
+    "description": "<p><strong>Concept:</strong> A random monster generator oozing <em>M\u00f6rk Borg</em>\u2019s style and flair<strong><br/>Content:</strong> Ingenious dice mechanics lead to bizarre creatures<strong><br/>Writing:</strong> \u201cSave the dice. [\u2026] Now burn the dice.\u201d<strong><br/>Art/design:</strong> <em>M\u00f6rk Borg</em> aesthetics in full effect<strong><br/>Usability:</strong> Streamlines a slightly complex mechanic; excellent flow</p>"
+  },
+  {
+    "name": "The Abominable Bone Pit of Alteraxx",
+    "url": "https://chalkdown.itch.io/the-abominable-bone-pit-of-alteraxx",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/abominable-bone-pit.png?w=1024",
+    "creators": [
+      "Chalkdown",
+      "Djunn"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Abominable Bone Pit \u2026 appears throughout the lands seemingly at random but with singular purpose \u2013 to swell the ever-growing pile of material needed to fuel its unending tide of cursed creations.\u201d<strong><br/>Content:</strong> A monster generator with tables for legs, heads, powers, attacks, and tactics<br/><strong>Writing:</strong> Adds style and personality to the mechanics<strong><br/>Art/design:</strong> Appropriately frames the text against a trippy red-and-black ground<strong><br/>Usability:</strong> Uses an assortment of dice, which you probably already have</p>"
+  },
+  {
+    "name": "Afanc",
+    "url": "https://impioussaint.itch.io/afanc",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/afanc.jpeg?w=724",
+    "creators": [
+      "Kevin Rahman",
+      "Studio D.A."
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA great beast, part beaver, crocodile, and demon\u201d<strong><br/>Content:</strong> A vengefpugotul amphibious behemoth<strong><br/>Writing:</strong> A straightforward stat block with artfully composed lore<strong><br/>Art/design:</strong> Well laid out with detailed art that leverages stark contrast and organic lines to strong effect<strong><br/>Usability:</strong> Straightforward</p>"
+  },
+  {
+    "name": "Aggrieved Village Guardian",
+    "url": "https://n4c0n.itch.io/aggrieved-village-guardian",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/aggrieved-village-guardian.png?w=726",
+    "creators": [
+      "Damien Villa"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThese totems were erected to protect the village from demons and evil spirits. After centuries of thankless service [\u2026] They became the very things they were meant to defend against.\u201d<strong><br/>Content:</strong> A supernatural guardian turned on its wards\u2014and everyone else<strong><br/>Writing:</strong> Some quick background and mechanics<strong><br/>Art/design:</strong> Text cant and illustrations convey a sense of how the monsters move in<strong><br/>Usability:</strong> Mechanics are split by descriptive text but still distinct and easy to reference</p>"
+  },
+  {
+    "name": "The Ash Peddler",
+    "url": "https://skelejam.itch.io/ash-peddler",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/ash-peddler.png?w=789",
+    "creators": [
+      "@skelejam"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA harbinger of fire & purveyor of potions\u201d<strong><br/>Content:</strong> An ostensibly benign NPC peddling 8 fire-themed concoctions<strong><br/>Writing:</strong> Brimming with conflagratory character<strong><br/>Art/design:</strong> An intuitive layout with M\u00f6rk Borg colors and typographical flourishes<strong><br/>Usability:</strong> Some more elaborate rules but nothing particularly cumbersome</p>"
+  },
+  {
+    "name": "Awful Pets",
+    "url": "https://fc85057.itch.io/awful-pets",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/awful-pets.png?w=776",
+    "creators": [
+      "Ceph"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTired of plain old pets? Well, step right up to this completely legitimate establishment.\u201d<strong><br/>Content:</strong> 8 basilisk friends for you to take home (or to a fun dungeon)<strong><br/>Writing:</strong> A veritable blender of sarcasm, irony, and overt humor\u2014a fun read<strong><br/>Art/design:</strong> Could easily be a full-page ad in The Dying Land Gazette<strong><br/>Usability:</strong> Generate your own basilisk in only 3 rolls</p>"
+  },
+  {
+    "name": "Babalon\u2019s Hangover",
+    "url": "https://stebro.itch.io/babalons-hangover",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/09/babalonshangover.png?w=638",
+    "creators": [
+      "Liva Jensen",
+      "Stein Hansen",
+      "dark spirits and intrusive thoughts"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe mother of abominations woke up expecting after a feast held in the pits of doom and gloom.\u201d<br/><strong>Content:</strong> 40 diverse monsters to add depth and flavor; many truly striking concepts<br/><strong>Writing:</strong> Some evocative prose and poetry; first- and second-person instructional text adds a personal tone but may break immersion for some readers<br/><strong>Art/design:</strong> Skillfully captures <em>M\u00f6rk Borg</em>\u2019s aesthetic<br/><strong>Usability:</strong> Streamlined stat blocks, clear tables, and instructional text for linked entries and creature categories</p>"
+  },
+  {
+    "name": "Ballad of Bergharuth",
+    "url": "https://bonvivant.itch.io/ballad-of-bergharuth",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/ballad.png?w=630",
+    "creators": [
+      "Martin Bonnevier Kronlid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTales of an ancient demon prince. Demonic tunes from his flute make the earth tremble and crack open, revealing terrors previously unseen.\u201d<strong><br/>Content:</strong> Copious lore, a table of guises Bergharuth takes, and stats for Suffocating Tentacles<strong><br/>Writing:</strong> A sinister tone and visceral, violent imagery; also includes some nascent adventure seeds<strong><br/>Art/design:</strong> Repetition of organic forms and lines help create a visual unity and graphically represent the concepts described in the text<strong><br/>Usability:</strong> Could be implemented as a background plot or counternarrative to the primary apocalyptic scenario</p>"
+  },
+  {
+    "name": "Basilisks Hate Grundel Fims",
+    "url": "https://makedatanotlore.itch.io/basilisks-hate-grundel-fims",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/grundel-fims.png?w=722",
+    "creators": [
+      "Karl Druid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe heretical bard spewing optimism in the inns of the Dying World\u201d<strong><br/>Content:</strong> The all-singing, all-dancing crap of the crappy world<strong><br/>Writing:</strong> Includes lore, a stat block, a little ditty, and stats for the patrons it inspires<strong><br/>Art/design:</strong> Typographically differentiates the various components, plus a whole lot of basilisks crawling all over everything<strong><br/>Usability:</strong> He\u2019ll hit you with his lute, apparently</p>"
+  },
+  {
+    "name": "The Beast of Bremen",
+    "url": "https://brianbinh.itch.io/bremen",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/beast-of-bremen.jpg?w=347",
+    "creators": [
+      "Brian Binh"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA tangled mass of darkness and flesh\u2014a cock on a cat on a cur on an ass\u2014united by stitches and witches.\u201d<strong><br/>Content:</strong> A strange, tenebrous monster based on a 12<sup>th</sup>-century German folktale<strong><br/>Writing:</strong> Descriptive text is playful and clever; mechanics are clear and concise<strong><br/>Art/design:</strong> Silhouette illustrates the concept while contrasting nicely with pink and yellow<strong><br/>Usability:</strong> Requires a few rolls each turn\u2014but what GM doesn\u2019t love playing with dice?</p>"
+  },
+  {
+    "name": "The Benevolent Ignoramus",
+    "url": "https://fantasticjean.itch.io/misery-24",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/benevolent-ignoramus.jpg?w=1024",
+    "creators": [
+      "Jean Verne"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA titan decided to steal a powerful artifact to try and save the Dying World. Sadly for the Dying World this titan was not particularly bright or agile.\u201d<strong><br/>Content:</strong> An ironic take on the mythic fire-bearing savior archetype; also includes stats for ancillary antagonists<strong><br/>Writing:</strong> Well written and filled to the brim with dry wit<strong><br/>Art/design:</strong> Intended for easy reading with color to add visual emphasis and focus<strong><br/>Usability:</strong> Designed for a longer-running plot arc rather than a one-shot encounter</p>"
+  },
+  {
+    "name": "BEstitchARY",
+    "url": "https://neonon.itch.io/bestitchary",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/bestitchary-1.png?w=1024",
+    "creators": [
+      "Michal Gotkowski"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe chimeric amalgams and abominable hybrids from origins unknown are wreaking havoc and terrorizing the area. No end in sight to their squalid reign.\u201d<strong><br/>Content:</strong> 30 creatures, 900 combinations to mix and match (including BASILISKS) with tables for hooks and additional features<strong><br/>Writing:</strong> Brutally entertaining<strong><br/>Art/design:</strong> Absolutely meticulous<strong><br/>Usability:</strong> Includes digital Stitcherer generator; product page includes instructions for printing as a zine or as cards, or you can just mutilate the book (and this is one of the few times that\u2019s okay)</p>"
+  },
+  {
+    "name": "Betty Blackteeth ",
+    "url": "https://gjfleming.itch.io/betty-blackteeth",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/betty-blackteeth.png?w=559",
+    "creators": [
+      "Harkenstone"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cHer decaying skin, stringy hair, nails and teeth are stained by the peat-blackened waters where she prowls.\u201d<strong><br/>Content:</strong> Jenny Greenteeth adapted to the swamps of the Greater Galgenbeck area<strong><br/>Writing:</strong> Descriptive text provides character and tactics; stat block includes a chain of nasty Specials<strong><br/>Art/design:</strong> Builds the isolated, suffocating atmosphere that defines the monster<strong><br/>Usability:</strong> Straightforward and clear</p>"
+  },
+  {
+    "name": "Big F\u2019n Rock",
+    "url": "https://gjfleming.itch.io/big-fn-rock",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/big-fn-rock-harkenstone.jpg?w=1024",
+    "creators": [
+      "Harkenstone"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cR\u00f6ck Borg\u201d<strong><br/>Content:</strong> It\u2019s a big f\u2019n rock<strong><br/>Writing:</strong> Infuses the mechanics with some grim humor<strong><br/>Art/design:</strong> Use of color keeps text visible against but coordinated with ground<strong><br/>Usability:</strong> Rock \u2019n roll</p>"
+  },
+  {
+    "name": "Bird of Ill Omen ",
+    "url": "https://jawabarat.itch.io/the-bird-of-ill-omen",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/bird-of-ill-omen.png?w=900",
+    "creators": [
+      "Dan Taylor"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201c\u2018They are often seen before Miseries befall the world, leading many to believe them to be agents of Verhu, Nechrubel, or some other malevolent entity.\u201d<strong><br/>Content: </strong>Relatively benign; may transfer Omens from players to the GM, and feathers allow PCs to re-roll low Omen rolls (at a cost)<strong><br/>Writing:</strong> Mostly mechanics with concise description of behavior<strong><br/>Art/design:</strong> Monochrome silhouette suits the monster concept<strong><br/>Usability:</strong> Additional in-game lore, inspiration, and hooks provided on the product page</p>"
+  },
+  {
+    "name": "The Birdmen of Mount King",
+    "url": "https://jegs.itch.io/the-birdmen-of-mount-king",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/birdmen-mt-king.jpg?w=559",
+    "creators": [
+      "Jegs"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTheir king obsessed with making his mountains touch the very skies, he invented a new species of creature, obsessed with construction and architecture.\u201d<strong><br/>Content:</strong> A race of labyrinth-building bird-people<strong><br/>Writing:</strong> Includes a description of their history and purpose alongside stats<strong><br/>Art/design:</strong> Appropriately creepy depictions of the subject and their lair<strong><br/>Usability:</strong> Easy to use, and its monster-summoning Special makes for difficult, escalating encounters</p>"
+  },
+  {
+    "name": "The Bishop",
+    "url": "https://rugose-kohn.itch.io/the-bishop",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/10/bishop.jpg?w=722",
+    "creators": [
+      "Rugose Kohn"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cDevotee of Yesu an de facto leader of the other inquisitors on the island.\u201d For use with The Island of the Dying Gods [30 Days of M\u00d6RK BORG]<strong><br/>Content:</strong> A crazed sectarian zealot of an NPC<strong><br/>Writing:</strong> A good balance of exposition and in-game mechanics<strong><br/>Art/design:</strong> Color and subject evoke an appropriately decaying, apocalyptic tone<strong><br/>Usability: </strong>Intuitive</p>"
+  },
+  {
+    "name": "Black Lady",
+    "url": "https://kurgoth.itch.io/black-lady",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/black-lady.jpg?w=561",
+    "creators": [
+      "Olivier Delattre"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cYou dreamed about a black lady silently screaming and pointing the finger at you\u2026\u201d<strong><br/>Content:</strong> A retributive, relentless night-haint<strong><br/>Writing:</strong> Lore and mechanics are both delivered clearly and efficiently<strong><br/>Art/design:</strong> Clearly delineate segments of text and uses color and typeface to add emphasis<strong><br/>Usability:</strong> Escapable but not in itself killable; has the potential to debilitate long-term guests</p>"
+  },
+  {
+    "name": "Black Poodle",
+    "url": "https://wuderpg.itch.io/black-poodle",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/black-poodle.png?w=1024",
+    "creators": [
+      "WuDeRPG"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cEyes like embers of hell that pierce deep inside you. The BLACK POODLE taunts its victims \u2013 attacking only when it is provoked.\u201d<strong><br/>Content:</strong> A cunning, monstrous hound that can induce fight, flight, or freeze responses in PCs<strong><br/>Writing:</strong> Describes sinister behavior alongside stat block and Specials<strong><br/>Art/design:</strong> Gets a lot of aesthetic mileage out of a relatively limited set of elements<strong><br/>Usability:</strong> Definitive proof that poodles are jerks</p>"
+  },
+  {
+    "name": "Black Shuck",
+    "url": "https://eyesforteeth.itch.io/black-shuck",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/black-shuck.png?w=1024",
+    "creators": [
+      "David Harvison",
+      "Mattias Thatch"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cProwling the shadows near gallows, battlefields, and other sites of violent death, Black Shuck is a foul omen.\u201d<strong><br/>Content:</strong> A supernatural portent of impending death (yours)<strong><br/>Writing:</strong> An even split between descriptive text and mechanics<strong><br/>Art/design:</strong> Text is also visually split by the central image of Black Shuck<strong><br/>Usability:</strong> Easy to use but difficult to kill, making him ideal to <em>hound</em> your players with</p>"
+  },
+  {
+    "name": "The Black Volga",
+    "url": "https://coorac.itch.io/the-black-volga",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/black-volga.png?w=1024",
+    "creators": [
+      "Jakub Skurzy\u0144ski"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cM\u00d6RK BORGified Polish urban legend about the fearsome vehicle driven by former regime\u2019s secret service, satanists or the Satan himself\u201d<strong><br/>Content:</strong> An ominous vehicle and a malicious occupant<strong><br/>Writing:</strong> Folds the mechanics into the lore<strong><br/>Art/design:</strong> More traditional text blocks superimposed over background images<strong><br/>Usability:</strong> GMs will benefit from taking a few minutes to familiarize themselves with this before using it at the table</p>"
+  },
+  {
+    "name": "Blaze Marches East",
+    "url": "https://hamildong.itch.io/blaze-marches-east",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/blaze-marches-east.jpg?w=725",
+    "creators": [
+      "@hamildong"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA fire-breathing, Colchis-complected horse homunculus; a flock of crows strung to it by a cacophony of clanging cables.\u201d<strong><br/>Content:</strong> This composite monster doesn\u2019t start fights but will most definitely end them<strong><br/>Writing:</strong> Some verse and a paragraph describing behavior; no stats other than damage<strong><br/>Art/design:</strong> An excellent illustration and color-coordinated text blocks<strong><br/>Usability:</strong> A strong motivator to resolve conflicts without violence</p>"
+  },
+  {
+    "name": "The Bleeding Knight",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/l8shce/the_bleeding_knight/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/bleeding-knight.jpg?w=791",
+    "creators": [
+      "skree_skree"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Bleeding Knight has lost his eyes to a cruel sword stroke in battle. He seeks replacements \u2026\u201d<strong><br/>Content:</strong> A heavily armed and armored opponent (but at least he doesn\u2019t have a zweih\u00e4nder)<strong><br/>Writing:</strong> Simple stat block with a dash of flavor<strong><br/>Art/design:</strong> Hits the high points of knighthood without being overwhelming<strong><br/>Usability:</strong> A simple way to give your players a big combat challenge</p>"
+  },
+  {
+    "name": "Bloody Cap",
+    "url": "https://mirbeau.itch.io/bloody-cap-mork-borg-folk-lore-jam",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/bloody-cap.png?w=1024",
+    "creators": [
+      "Robert Goulding"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA murderous goblin from the borders of Grift and Graven-Tosk, found where scenes of tyranny and vile deeds have befallen the lands.\u201d<strong><br/>Content:</strong> Stats and description of the monster along with a short dungeon lair<strong><br/>Writing:</strong> Does a good job conveying maliciousness and viciousness<strong><br/>Art/design:</strong> Use of color reinforces the creature\u2019s theme<strong><br/>Usability:</strong> Some text may be difficult to read, particularly when printed in black and white</p>"
+  },
+  {
+    "name": "B\u00f6b\u00f6 ",
+    "url": "https://andersbj.itch.io/utbrdingmyling",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/bobo.jpeg?w=725",
+    "creators": [
+      "Anders Bj\u00f6rkelid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSmall, miserable and desperate to fulfill its purpose, it sneaks around [\u2026] hoping at last to see fear in the face of the dying\u201d<strong><br/>Content:</strong> A minor bogeyman in a world far more terrifying than it is<strong><br/>Writing:</strong> Evokes a sense of pity alongside a simmering undercurrent of malice<strong><br/>Art/design:</strong> It\u2019d be cute if it wasn\u2019t so freakin\u2019 creepy<strong><br/>Usability:</strong> Not a significant adversary but an interesting opportunity for mischief</p>"
+  },
+  {
+    "name": "Boitat\u00e1 ",
+    "url": "https://leonalfr.itch.io/boitata-the-malignant-godsnake",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/boitata.png?w=1024",
+    "creators": [
+      "Leonardo Andrade"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA murdered godsnake reanimated by rotten souls at the moment of its ignition into blue-green corpse-fire.\u201d<strong><br/>Content: </strong>Giant, on-fire snake-guardian of the Yvy Forest <strong><br/>Writing:</strong> Detailed descriptions of context, setting, and creature, but no explicit mechanics<strong><br/>Art/design:</strong> Nice illustration and overall design<strong><br/>Usability:</strong> Requires some prep on the GM\u2019s part</p>"
+  },
+  {
+    "name": "B\u00f6ka",
+    "url": "https://www.facebook.com/Fajerbol/photos/a.1575580405862384/3957181974368870/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/skavenloft-boka.png?w=1024",
+    "creators": [
+      "Skavenloft"
+    ],
+    "description": "<p><strong>Concept:</strong> I think I\u2019m missing a key reference here<strong><br/>Content:</strong> A cold-weather-themed monster<strong><br/>Writing:</strong> Standard stat block<strong><br/>Art/design:</strong> One of the more terrifying visages to inhabit M\u00f6rk Borg<strong><br/>Usability:</strong> Some details to keep in mind, but manageable</p>"
+  },
+  {
+    "name": "The Boneless Hag",
+    "url": "https://almightygizzard.itch.io/boneless-hag",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/boneless-hag.png?w=630",
+    "creators": [
+      "Dom Cohen",
+      "Pablo Dapena"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWhen the horrid hag of the wood has no bones to pick with, do you need to run? YES. YES YOU DO.\u201d<strong><br/>Content:</strong> A pair of monsters and a clever mechanic for buying and banking rolls<strong><br/>Writing:</strong> A concise hook with mechanics that are expressive as they are functional<strong><br/>Art/design:</strong> \u201cArt+Layout done by Pablo Dapena- without which this piece wouldn\u2019t be nearly as metal.\u201d<strong><br/>Usability:</strong> Well organized; some elaborate Specials, but perfectly manageable</p>"
+  },
+  {
+    "name": "Boni, your bone companion",
+    "url": "https://owenmcg.itch.io/boni",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/boni.jpg?w=722",
+    "creators": [
+      "Owen McGauley"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA disembodied skull with a penchant for rambling stories of old exploits and griping about how things were better in the good old days.\u201d<strong><br/>Content:</strong> Some descriptive text, simple mechanic, and sample commentary<strong><br/>Writing:</strong> Straightforward with humor as dry as an old bone <strong><br/>Art/design:</strong> Text laid out intuitively around the central image<strong><br/>Usability:</strong> Somewhere between an NPC and a magic item; works well as both</p>"
+  },
+  {
+    "name": "Bon Terry",
+    "url": "https://kaylotura.itch.io/bon-terry",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/bon-terry.jpg?w=900",
+    "creators": [
+      "Hekate V. Nichols"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cUndying and cowardly, this legendary spirit seeks eternally for the \u2018sinless one\u2019, hoping to carve out their heart, and offer it up as a sacrifice before Nechrubel, to plead departure from this dying world.\u201d<strong><br/>Content:</strong> A sad, death-bereft NPC with a knack for retribution<strong><br/>Writing:</strong> Provides some folksy lore and a straightforward stat block<strong><br/>Art/design:</strong> Clear division between lore and stats with a deceptively innocuous illustration; brooding greens create a murky, pelagic feel<strong><br/>Usability:</strong> Despite modest stats, the ability to steal PCs\u2019 Omens and break PCs with no Omens may make Bon Terry a challenging adversary</p>"
+  },
+  {
+    "name": "Brazierisle Bestiary ",
+    "url": "https://tragos-games.itch.io/brazierisle-bestiary",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/brazierisle-bestiary.png?w=444",
+    "creators": [
+      "Tragos Games"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA new territory and six creatures inspired by the Brazilian folklore\u201d<strong><br/>Content:</strong> In addition to creatures, includes tables for weather, treasures, natural hazards, corpse plundering, events and hooks, and additional inhabitants<strong><br/>Writing:</strong> Provides plenty of descriptive text alongside stat blocks and some tables that add variability to encounters<strong><br/>Art/design:</strong> Backgrounds definitely create the sensation of exploring dense, tropical jungles<strong><br/>Usability:</strong> The only challenge is deciding which monster to kill your players with</p>"
+  },
+  {
+    "name": "Buback (Schmatzer, Aufhocker und wo man sie findet) ",
+    "url": "https://kitty1n54n3.itch.io/folk-lore-entry",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/bubak.png?w=630",
+    "creators": [
+      "Kitty B"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cMalevolent undead hell-bent on stealing wanderers\u2018 life energy.\u201d<strong><br/>Content:</strong> A deceitful, lethal ambush predator<strong><br/>Writing:</strong> Thorough description of tactics alongside stat block<strong><br/>Art/design:</strong> Well organized with an appropriate illustration<strong><br/>Usability:</strong> Lets the PCs do the heavy lifting</p>"
+  },
+  {
+    "name": "The Bunnyman",
+    "url": "https://samaritan-burden.itch.io/the-bunnyman",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/bunnyman.png?w=500",
+    "creators": [
+      "samaritan_burden"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cHave you fvckers got my eggs?\u201d<strong><br/>Content:</strong> A crazed, skin-suit wearing axe murderer<strong><br/>Writing:</strong> All mechanics, with a table of curses for whoever kills hem<strong><br/>Art/design:</strong> Putrid, visceral graphics in line with the concept<strong><br/>Usability:</strong> Escalating attack damage will require a bit more attention from GMs; small script may be challenging to read in print</p>"
+  },
+  {
+    "name": "Burning Vengeance",
+    "url": "https://stickstosnakes.itch.io/burning-vengence",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/burning-vengeance.png?w=722",
+    "creators": [
+      "SticksToSnakes"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe kingdom burns. A horde rises from the west to wipe away all. Your hated foes are vulnerable. Seize vengeance before the world is turned to ash!\u201d<strong><br/>Content:</strong> 8 targets of revenge and a table of encounters to use when stalking them<strong><br/>Writing:</strong> Extremely entertaining<strong><br/>Art/design:</strong> Clean, easy-to-use layouts with some expressive artwork<strong><br/>Usability:</strong> Straightforward and full of humor; everyone needs a good laugh in the midst of the apocalypse</p>"
+  },
+  {
+    "name": "Buster Bone-Gnawer, B\u00f6rker of Shadows",
+    "url": "https://www.drivethrurpg.com/product/342640/Buster-BoneGnawer-Borker-of-Shadows-An-Encounter-for-Mork-Borg",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/buster-bone-gnawer.jpg?w=721",
+    "creators": [
+      "Michael Mars",
+      "McKenzie Lee Sprague"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAn ageless hound protects the Dying World from succumbing to Psalm 6:1.\u201d<strong><br/>Content:</strong> Stats and abilities for, and boons granted by, scvm\u2019s best friend<strong><br/>Writing:</strong> Mostly mechanics but includes some descriptive text to add character<strong><br/>Art/design:</strong> Conventional M\u00f6rk Borg layout and design with some trippy artwork and an obligatory femur<strong><br/>Usability:</strong> This good boi is eager to please</p>"
+  },
+  {
+    "name": "Calo\u2019s Book of Monsters",
+    "url": "https://www.kickstarter.com/projects/philipreed/calos-book-of-monsters-a-third-party-mork-borg-book",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/calos-book-of-monsters.png?w=370",
+    "creators": [
+      "Philip Reed",
+      "kostiukart"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cMany a scholar, after spending a day with the book, finds that sleep escapes them that night as the haunting vision of the many monsters described in the book consume their imagination.\u201d<strong><br/>Content:</strong> 20 monsters as well as a region for them to inhabit and local rumors for PCs to overhear<strong><br/>Writing:</strong> Provides lots of exposition on each monster as well as multiple adventure hooks and detailed stat blocks<strong><br/>Art/design:</strong> Features detailed black-and-white illustrations against a stylized M\u00f6rk Borg-yellow ground<strong><br/>Usability:</strong> GMs would be well-advised to read each entry carefully and take note of the copious details</p>"
+  },
+  {
+    "name": "Candyman ",
+    "url": "https://mghoneybee.itch.io/candyman",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/candymanfinal.png?w=409",
+    "creators": [
+      "mghoneybee"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe mere doubt of his existence is enough to draw him forth.\u201d<strong><br/>Content:</strong> An undying patron with a malicious streak<strong><br/>Writing:</strong> Primarily devotes attention to interaction (rather than combat) mechanics<strong><br/>Art/design:</strong> Choices make the document easy to navigate<strong><br/>Usability:</strong> May be difficult to read at size or enlarged</p>"
+  },
+  {
+    "name": "Las caras de B\u00e9lmez",
+    "url": "https://ulvhamr.itch.io/las-caras-de-blmez",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/las-caras.jpg?w=630",
+    "creators": [
+      "Thomas Sanchez"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe faces of B\u00e9lmez function as a hostile encounter with random characteristics.\u201d<strong><br/>Content:</strong> d8 faces appear on walls and do d20 awful things to PCs<strong><br/>Writing:</strong> Includes descriptions of behavior and adapting the faces to different materials<strong><br/>Art/design:</strong> The background is staring at you<strong><br/>Usability:</strong> Has more special abilities than most encounters, but all are fairly simple and manageable</p>"
+  },
+  {
+    "name": "Checkm\u00f6rk",
+    "url": "https://siofragames.itch.io/checkmrk",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/checkmork.png?w=591",
+    "creators": [
+      "Jacob Marks"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cDeep in chambers beneath Galgenbeck, two armies fight eternally.\u201d<strong><br/>Content:</strong> Stats and context for chess-pieces-as-monsters<strong><br/>Writing:</strong> Bizarre descriptions, interesting abilities, and lots options for profit<strong><br/>Art/design:</strong> Marvelous illustrations; multiple versions, including print-and-fold zine format<strong><br/>Usability:</strong> Very good in both grid and paginated forms</p>"
+  },
+  {
+    "name": "Children of SHE",
+    "url": "https://siofragames.itch.io/children-of-she",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/children-of-she.png?w=1024",
+    "creators": [
+      "Jacob Marks"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA bitter army of basilisk children has formed and is marching from the Valley of the Unfortunate Undead.\u201d<strong><br/>Content:</strong> A pair of complementary monsters and a table of demands<strong><br/>Writing:</strong> Creative with a dark tone punctuated by random weird humor<strong><br/>Art/design:</strong> A solid adaptation of the M\u00f6rk Borg aesthetic and style<strong><br/>Usability:</strong> The Dying Land needs more basilisks</p>"
+  },
+  {
+    "name": "Chimera",
+    "url": "https://kurgoth.itch.io/chimera",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/05/chimera.jpg?w=470",
+    "creators": [
+      "Olivier Delattre"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA terrible monster you can use as a starting point for an adventure, or if you think your PCs are way too cool with their lives\u2026\u201d<strong><br/>Content:</strong> This amalgamated pile of monster parts got off its magical leash and now everyone\u2019s screwed<strong><br/>Writing:</strong> Some quick lore, a stat block with table for multiple attacks, and some vicious specials<strong><br/>Art/design:</strong> Repetition of hues and typefaces in different arrangements unifies the document while making each text segment distinct and easy to navigate<strong><br/>Usability:</strong> More complex than basic monsters, but the mechanics and rules are simple and intuitive</p>"
+  },
+  {
+    "name": "The Choir of the Dead Gods",
+    "url": "https://drive.google.com/file/d/1XW7AooNcQs1Q1TWfqxETsWI7vbakpp3Y/view",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/choir-of-dead-gods.png?w=453",
+    "creators": [
+      "Matthias Platzer"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe eyes were burned out. The ears and nose were cut off. Hands bound for eternal prayer. But singing, yes, they can still sing. Can you hear it?\u201d<strong><br/>Content:</strong> The Galgenbeck Boys Choir performs the New M\u00f6rk Borg Hymnal<strong><br/>Writing:</strong> Mostly stats and Special with some flavor text<strong><br/>Art/design:</strong> Original art with an on-brand design<strong><br/>Usability:</strong> Pretty straightforward and comprehensible</p>"
+  },
+  {
+    "name": "Chupacabra",
+    "url": "https://another-d20.itch.io/chupacabra",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/chupacabra.png?w=483",
+    "creators": [
+      "Theodore L. Rivera"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA goat-eating monster found in the Dying World.\u201d<strong><br/>Content:</strong> The legendary goat-sucker of Puerto Rico<strong><br/>Writing:</strong> Clean, clear, and concise<strong><br/>Art/design:</strong> One of the more interesting Chupacabra illustrations you\u2019ll find anywhere<strong><br/>Usability:</strong> Flavor text is in Spanish, but doesn\u2019t affect usability</p>"
+  },
+  {
+    "name": "Cultists of Dying Gods ",
+    "url": "https://greysonwhy.itch.io/cultists-of-dying-gods",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/cultists.png?w=1024",
+    "creators": [
+      "Greyson Yandt"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThese gods are dying\u2026or never truly lived\u2026or are perhaps pale ones in disguise\u2026but, either way, most need you to torture\u2026or be tortured!\u201d<strong><br/>Content:</strong> Includes stats for various cultists and rules for torture and trauma; some interesting rules interactions<br/><strong>Writing:</strong> Clear and concise with entertaining cultural and metagame references<strong><br/>Art/design:</strong> Nice public domain art (some color-enhanced) sets the tone for individual cults<strong><br/>Usability:</strong> Pstress rules are a bit complex but robust rather than complicated</p>"
+  },
+  {
+    "name": "Cultus Incendium",
+    "url": "https://ng76.itch.io/cultus-incendium",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/cultus-incendium.jpg?w=347",
+    "creators": [
+      "Norton Glover"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWe must destroy the world before it can be taken from us.\u201d<strong><br/>Content:</strong> An apocalyptic fire cult<strong><br/>Writing:</strong> Includes the heretical creed, stats for NPCs, and mechanics for gaining new adherents<strong><br/>Art/design:</strong> Color delineates descriptive from mechanical text and adds emphasis in the lore<strong><br/>Usability:</strong> A versatile, scalable supplement that can provide small encounters, recurring antagonists, and larger strife</p>"
+  },
+  {
+    "name": "C\u00fc-S\u00edth ",
+    "url": "https://derekmayne.itch.io/the-c-sth-a-monstorous-hound-for-mrk-borg",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/cu-sith.jpg?w=582",
+    "creators": [
+      "Derek Mayne"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA large spectral Fey hound\u201d<strong><br/>Content:</strong> A folkloric fairy dogs and some hooks for encountering them<strong><br/>Writing:</strong> Provides lots of background on behavior and intricate rules for its howl ability<strong><br/>Art/design:</strong> Relatively conservative layout and design with enough visual flair to be distinctively M\u00f6rky<strong><br/>Usability:</strong> Fairly simple mechanics, lots of lore for the GM to play with</p>"
+  },
+  {
+    "name": "Dancing Zweihander",
+    "url": "https://neonon.itch.io/mork-borg-dancing-zweihander",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/dancing-zweihander.png?w=724",
+    "creators": [
+      "Michal Gottkowski"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA massive blade, flying effortlessly, leaving behind a silent swoosh and a trail of dismembered corpses.\u201d<strong><br/>Content:</strong> A malicious, relentless take on the dancing sword<strong><br/>Writing:</strong> Some introductory color text with elaborate Special and table of random actions<strong><br/>Art/design:</strong> Vivid colors highlight an abstract vivisection<strong><br/>Usability:</strong> Some combat caveats for the DM to keep in mind, but nothing overly complex</p>"
+  },
+  {
+    "name": "Dark Emissary",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/lcjoo4/dark_emissary_by_skree_skree/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/dark-emissary-skree_skree.jpg?w=773",
+    "creators": [
+      "skree_skree"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAll tithes must be collected and all debts and oaths fulfilled. There will be no deferrals.\u201d<strong><br/>Content:</strong> A truly brutal bill collector<strong><br/>Writing:</strong> Nicely written, compelling flavor text and Special<strong><br/>Art/design:</strong> Atmospheric depiction of the monsters, good use of more subtle colors<strong><br/>Usability:</strong> Straightforward description and stat block</p>"
+  },
+  {
+    "name": "Deck of Scoundrels",
+    "url": null,
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/deck-of-scoundrels.png?w=318",
+    "creators": [
+      "Philip Reed"
+    ],
+    "description": "<p>Announced</p><p>Backer reward for Calo\u2019s Book of Monsters</p>"
+  },
+  {
+    "name": "The Deep",
+    "url": "https://ppcc.itch.io/the-deepmorkborgthirdpartylicensemonster",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/deep.png?w=1004",
+    "creators": [
+      "PPCC"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThey are numerous, they are hungry, and they want to take back their rightful kingdom.\u201d<strong><br/>Content:</strong> A marine monster that\u2019s also lethal on dry land<strong><br/>Writing: </strong>Straightforward stat block and a description that leaves room for GM interpretation; includes French version<strong><br/>Art/design:</strong> Efficient text layout and some colorful, psychedelic art that works well with the text<strong><br/>Usability:</strong> Good to go</p>"
+  },
+  {
+    "name": "The Devil-Bargained Canoe",
+    "url": "https://bansheegames.itch.io/devil-bargained-canoe",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/devil-bargained-canoe.png?w=481",
+    "creators": [
+      "Shawn McCarthy"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA party cruise gone awry.\u201d<strong><br/>Content:</strong> A literal boatload of cursed souls pursued by infernal spirits; the canoe itself is pretty nifty<strong><br/>Writing:</strong> Furnishes background and a setup to lure PCs into a chase/fight<strong><br/>Art/design:</strong> Colors create a haunted, supernatural feel; text conveniently splits backstory from in-game concerns<strong><br/>Usability:</strong> GM may have to use some subterfuge, but otherwise pretty straightforward</p>"
+  },
+  {
+    "name": "Devourer of Afflictions",
+    "url": "https://twitter.com/verdeamorim/status/1339253862809657344",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/tor-the-vic-devourer-of-afflictions.png?w=838",
+    "creators": [
+      "Torthevic"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cIts followers claim that any who is swallowed by the god shall be reborn, expelled from its lower body free of pain and disease.\u201d<strong><br/>Content:</strong> A heavyweight monster that <strong><br/>Writing:</strong> Compelling description of the devourer along with tables for ingestion effects<strong><br/>Art/design:</strong> Visually well organized; illustration frames the text and obscures the creature, which is a neat choice<strong><br/>Usability:</strong> Smooth, just like PCs through a giant maggot-god</p>"
+  },
+  {
+    "name": "D\u00f6\u2019Vinc",
+    "url": "https://sushiundmolch.itch.io/dvinc",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/dovinc.jpg?w=724",
+    "creators": [
+      "Philipp Teich"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cMad scientists, performing cruel experiments on strange creatures\u201d<strong><br/>Content:</strong> A mysterious humanoid that wants to give you a big ol\u2019 hug<strong><br/>Writing:</strong> Includes a stat block and some brief description<strong><br/>Art/design:</strong> Creepy gas masks are severely underused in M\u00f6rk Borg<strong><br/>Usability:</strong> Leaves plenty of room for GMs to play with motive and behavior</p>"
+  },
+  {
+    "name": "Draugen, the Drowned",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/j2o56g/introducing_the_drowned_a_cursed_creature_from/",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/10/drowned-1.png?w=301",
+    "creators": [
+      "Justyn Newman"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe drowned shamble aimlessly along shorelines seeking to steal the life-breath they so desperately desire.\u201d<strong><br/>Content:</strong> An undead denizen for coastal settings<strong><br/>Writing:</strong> Sets the tone for encounters<strong><br/>Art/design:</strong> Relatively subtle and intrusive<strong><br/>Usability:</strong> Well-demarcated sections and stats</p>"
+  },
+  {
+    "name": "Draugen (Vannvetter)",
+    "url": "https://ra-press.itch.io/vannvetter",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/vannvetter.png?w=630",
+    "creators": [
+      "Ra Press"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSome stories tell that it is spawned from fishermen that died out at sea. While other\u00a0 stories tell of a huge troll-like creature that preys on boats and ships.\u201d<strong><br/>Content:</strong> Includes features for its ephemeral humanoid and colossal troll forms<strong><br/>Writing:</strong> Provides lore to hook PCs into some unfortunate situations<strong><br/>Art/design:</strong> A straightforward, linear layout that accommodates the extremely appropriate illustration<strong><br/>Usability:</strong> High potential for PC fatality</p>"
+  },
+  {
+    "name": "Dream Stalker",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/mfsqni/dream_stalker_by_skree_skree/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/dream-stalker-skree_skree.jpg?w=773",
+    "creators": [
+      "skree_skree"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cShould a dreamer encounter the Dream Stalker [\u2026] it will try to bring them back to the realm of nightmares.\u201d<strong><br/>Content:</strong> A monster that licks you to sleep, permanently<strong><br/>Writing:</strong> Provides a brief synopsis and stat block<strong><br/>Art/design:</strong> The illustration will definitely haunt some nightmares<strong><br/>Usability:</strong> A clever way to mess with PCs when and where they least expect it</p>"
+  },
+  {
+    "name": "Drowned Kobieta ",
+    "url": "https://reighnty.itch.io/drowned-kobieta",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/drowned-kobieta.png?w=559",
+    "creators": [
+      "Reighnty"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSharp claws cuth through flesh and drag you down to the bottomless pit.\u201d<strong><br/>Content:</strong> A drowning-based monster derived from Slavic myth<strong><br/>Writing:</strong> Provides some inspiration for hooks and haunts<strong><br/>Art/design:</strong> Reinforces the theme with heavy chiaroscuro and cool spot colors<strong><br/>Usability:</strong> Initiative is influenced by PC class; otherwise, straightforward</p>"
+  },
+  {
+    "name": "The Dyer Lich",
+    "url": "https://gray-tide.itch.io/the-dyer-lich",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/dyer-lich.png?w=722",
+    "creators": [
+      "Ian Long"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cOne hand frozen to the rock face, the other raised in defiance of her own death, Moll Dyer was blessed by Nechrubel with the undying spark of anti-life.\u201d<strong><br/>Content:</strong> A persecuted witch bent on vengeance<strong><br/>Writing:</strong> Includes a prose-poetic description in addition to stats for lich and her rock<strong><br/>Art/design:</strong> Layout creates a strong visual flow, and the colors reinforce the integral sensatiosn of heat and cold<strong><br/>Usability: </strong>Not only very useable but also very compelling</p>"
+  },
+  {
+    "name": "The Ever-Burning Prophet",
+    "url": "https://eyesforteeth.itch.io/the-ever-burning-prophet",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/ever-burning-prophet.png?w=600",
+    "creators": [
+      "David Harvison"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTheir zeal for SHE is matched only by the raging inferno which engulfs them.\u201d<strong><br/>Content:</strong> An unusual enemy with no attacks, but dangerous in combat nonetheless<strong><br/>Writing:</strong> Largely devoted to description and lore<strong><br/>Art/design:</strong> A relatively conservative layout with Borgy colors and typographical choices<strong><br/>Usability:</strong> Includes a table of heretical ravings to add some verbal character to encounters</p>"
+  },
+  {
+    "name": "Every God Will Fall ",
+    "url": "https://theeldritchtomb.itch.io/every-god-will-fall",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/every-god-will-fall.png?w=791",
+    "creators": [
+      "Sasha De\u2019ath",
+      "Thomas Hanusek"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cd8 Supernatural Hirelings Fallen From Grace\u201d<strong><br/>Content:</strong> An varied assortment of divine (presumably) entities<strong><br/>Writing:</strong> Backstories and descriptions contribute genuine (often sympathetic) character<strong><br/>Art/design:</strong> Illustrations and other design elements equally contribute to characterization<strong><br/>Usability:</strong> Yes, please</p>"
+  },
+  {
+    "name": "Falb\u00e4rr (drop bear) ",
+    "url": "https://raptorshadow.itch.io/falbarr-morkborg",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/falbarr.png?w=722",
+    "creators": [
+      "RaptorShadow"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA widely held belief is that the \u2018bears\u2019 that live in the trees are harmless watchers, but in reality they are monsters that will murder hapless and unwary travelers.\u201d<strong><br/>Content:</strong> Murder koalas<strong><br/>Writing:</strong> Provides general context and specific mechanics for encounters<strong><br/>Art/design:</strong> Efficient use of color; clever text arrangement simultaneously reveals and obscures the monster portrait in keeping with the lore<strong><br/>Usability:</strong> Does the sneaking for you</p>"
+  },
+  {
+    "name": "False Stronghold",
+    "url": "https://newyearstudios.itch.io/false-stronghold",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/false-stronghold.jpg?w=547",
+    "creators": [
+      "Alex K. Barton"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cEvery 100 years under a blood moon the False Stronghold rises in the south. It feeds for three days.\u201d<strong><br/>Content:</strong> A titanic monster that will probably ruin your day (if not 3 of them)<strong><br/>Writing:</strong> Concise and extremely descriptive in both the flavor text and mechanics<strong><br/>Art/design:</strong> Solid typographical and color choices, intuitive layout, and a truly heinous illustration<strong><br/>Usability:</strong> Presents interesting options for murderhoboing on a colossal scale</p>"
+  },
+  {
+    "name": "A Fight with a Kelpied Knight",
+    "url": "https://makedatanotlore.itch.io/a-fight-with-a-kelpied-knight",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/kelpied-knight.png?w=1024",
+    "creators": [
+      "Karl Druid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAlong the road one night, you come across a dripping wight.\u201d<strong><br/>Content:</strong> He bids a hero to attack and knock him off his horse\u2019s back<strong><br/>Writing: </strong>This rider\u2019s writer had too good a time when crafting all his well-wrought rhyme<strong><br/>Art/design:</strong> And for portraiture, he shows a knack, in purple, yellow, green, and black<strong><br/>Usability:</strong> Upon defeat, he turns to brine; now beat this beast or fall supine</p>"
+  },
+  {
+    "name": "The Fire and the Horde",
+    "url": "https://lutov.itch.io/the-fire-and-the-horde",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/fire-horde.png",
+    "creators": [
+      "Lutov al\u2019Ksandaar"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cRules to grill a character and transform a monster into the horde.\u201d<strong><br/>Content:</strong> Catching and extinguishing fire; creating collective stat blocks for groups of various sizes led by exceptional specimens<strong><br/>Writing:</strong> Concise delivery of mechanics in both cases<strong><br/>Art/design:</strong> Laid out and designed for easy reference and use with a background that supports both halves of the concept<strong><br/>Usability:</strong> Fire rules are simple to use in the moment; creating a horde is best done in prep rather than at the table</p>"
+  },
+  {
+    "name": "Fire Bugs",
+    "url": "https://impioussaint.itch.io/fire-bugs",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/fire-bugs.jpg?w=1024",
+    "creators": [
+      "KRD Designs"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAnd Forth comes the fire on insectile wings.\u201d<strong><br/>Content:</strong> A ruinous swarm of fire-starting vermin<strong><br/>Writing:</strong> Some short, prophetic flavor text and a stat block with special attention to igniting characters and items<strong><br/>Art/design:</strong> An intuitive layout with appropriate graphic and typographical character<strong><br/>Usability:</strong> Easily scaled to the GM\u2019s desired level of challenge or catastrophe</p>"
+  },
+  {
+    "name": "The Fireman",
+    "url": "https://slushbubs.itch.io/the-fireman",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/fireman.jpg?w=719",
+    "creators": [
+      "Ryan Smith"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAs fires spread from the west,a figure is seen on the precipice of the flame. Nobody knows what he hides under his helmet.\u201d<strong><br/>Content:</strong> A straightforward but challenging foe<strong><br/>Writing:</strong> Concise description and equally concise stat block<strong><br/>Art/design:</strong> Design efficiently splits layout into lore and mechanics for easy use<strong><br/>Usability:</strong> Straightforward and simple</p>"
+  },
+  {
+    "name": "Firemicidae Horde",
+    "url": "https://moonforge.itch.io/firemicidae-horde",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/firemicidae-horde.png?w=506",
+    "creators": [
+      "Moonforge"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThese ants are the size of human feet, and swarm at their targets with razor sharp mandibles, and fiery acid spit.\u201d<strong><br/>Content:</strong> Delivers exactly what\u2019s promised<strong><br/>Writing:</strong> One stat block for the entire swarm<strong><br/>Art/design:</strong> Orients the textual components around the central image<strong><br/>Usability:</strong> Some small text may be challenging to read, especially when printed</p>"
+  },
+  {
+    "name": "Fistful of Creeps",
+    "url": "https://drive.google.com/drive/folders/1uLHzxus7K826HvtSZ5v6Vq5XsCEaewq0",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/fistful-of-creeps.png?w=800",
+    "creators": [
+      "vil"
+    ],
+    "description": "<p><strong>Concept:</strong> Five classic RPG monsters with M\u00f6rk Borg twists<strong><br/>Content:</strong> Stat blocks, descriptive text, and original art<strong><br/>Writing:</strong> Compelling and atmospheric<strong><br/>Art/design:</strong> Excellent monochrome portraits<strong><br/>Usability:</strong> Very well laid out</p>"
+  },
+  {
+    "name": "The Flaming Death",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/mpdtfl/the_flaming_death/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/flaming-death-1.png?w=720",
+    "creators": [
+      "Rodrigo Giesta Figueiredo"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cCorruption burns in the hearts of men like black fire, even after death.\u201d<strong><br/>Content:</strong> A fierce, flaming, heavily armed and armored skeleton<strong><br/>Writing:</strong> Primarily devoted to efficient delivery of stats and mechanics<strong><br/>Art/design:</strong> Text is laid out and stylized for easy readability and use; leverages pink, yellow, and black to an extremely M\u00f6rky effect<strong><br/>Usability:</strong> Challenging but probably not a TPK</p>"
+  },
+  {
+    "name": "Flayed Face Collector",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/m9fo17/flayed_face_collector_by_skree_skree/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/flayed-face-collector.jpg?w=773",
+    "creators": [
+      "skree_skree"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Holy Sect of the Flayed Visage sends its acolytes out into the doomed world to hear the confessions of the damned and collect their flayed faces.\u201d<strong><br/>Content:</strong> Mechanically simple with colorful lore<strong><br/>Writing:</strong> A study in the motifs of flaying faces and confessing sins<strong><br/>Art/design:</strong> Crazed scvm with a morning star and a face shield\u2014what more could you want?<strong><br/>Usability:</strong> Simple in itself; a potential kernel for GMs to build out from</p>"
+  },
+  {
+    "name": "Flerjordh\u00f6g Filip",
+    "url": "https://rugose-kohn.itch.io/flerjordhg-filip",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/flerjordhog-filip.jpg?w=722",
+    "creators": [
+      "Rugose Kohn"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cIf Filip rises from the loamy hillside and sees his shadow, the townsfolk believe they have averted the end.\u201d<strong><br/>Content:</strong> A blasphemous monster and rites that defy the Unnamed Scripture<strong><br/>Writing:</strong> Provides a broad hook and mechanics for a small rodent that averts and invokes Miseries<strong><br/>Art/design:</strong> Well organized and visually delineated; surprisingly sunny and fluffy for M\u00f6rk Borg<strong><br/>Usability:</strong> Heretical and should be punished. Burn the vermin.</p>"
+  },
+  {
+    "name": "Flesh Golem",
+    "url": "https://maper74.itch.io/flesh-golem",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/flesh-golem-3-1.png?w=1024",
+    "creators": [
+      "Maper74"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201c\u2018Flesh Golem? This is a pile of dead animal parts.\u2019\u201d<strong><br/>Content:</strong> A monster cobbled together from \u2026 other monsters<strong><br/>Writing:</strong> Standard stat block peppered with \u201cinspirational\u201d quotes (from a mad scientist)<strong><br/>Art/design:</strong> A bit crowded but conveys the narrative well<strong><br/>Usability:</strong> Color punctuates the stat block for easier navigation</p>"
+  },
+  {
+    "name": "Fossegrimen (Vannvetter)",
+    "url": "https://ra-press.itch.io/vannvetter",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/vannvetter.png",
+    "creators": [
+      "Ra Press"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cStories tell of a vette that lives inside waterfalls whose skill with a fiddle is believed to be out of this world.\u201d<strong><br/>Content:</strong> A musical adversary or mentor depending on how it\u2019s approached<strong><br/>Writing:</strong> Besides the creature itself, includes a summoning ritual and post-encounter adventure seeds for mentees<strong><br/>Art/design:</strong> Atmospheric colors and illustration; typographical choices help navigate stat blocks<strong><br/>Usability:</strong> Makes combat even less work with low-Presence PCs</p>"
+  },
+  {
+    "name": "Frostweans",
+    "url": "https://gjfleming.itch.io/frostweans",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/frostweans.png?w=554",
+    "creators": [
+      "Harkenstone"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe blued, frost bitten corpses appear when the winter winds howl and the snow falls heavily \u2026 seeking their revenge.\u201d<strong><br/>Content:</strong> An undead scourge that gains power by wreaking vengeance<strong><br/>Writing:</strong> Provides 4 stat blocks alongside plenty of background for inspiration<strong><br/>Art/design:</strong> Text heavy, but colors aid quick navigation<strong><br/>Usability:</strong> Gives GMs carte blanche to make it even meaner and nastier</p>"
+  },
+  {
+    "name": "Gashadokuro, the Starving Skeleton",
+    "url": "https://greysonwhy.itch.io/gashadokuro-the-starving-skeleton",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/gashadokuro.png?w=722",
+    "creators": [
+      "Greyson Yandt"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA fifteen-soldier-tall indestructible spirit, the gashadokuro should provide decent challenge for scvm that have survived a bit too long.\u201d<strong><br/>Content:</strong> An enraged murder machine that uses a Morale pool for attacks and damage<strong><br/>Writing:</strong> Clear explanations of special abilities<strong><br/>Art/design:</strong> Simply but skillfully adapts layout to the source image <strong><br/>Usability:</strong> A bit more complex than most monsters, but in a fun and tactical way</p>"
+  },
+  {
+    "name": "Ghost Lights",
+    "url": "https://kurgoth.itch.io/ghost-lights",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/ghost-lights.jpg?w=731",
+    "creators": [
+      "Olivier Delattre"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cLights burning over cemeteries, old mass graves and dead corpses.\u201d<strong><br/>Content:</strong> An adaptation of the will-o\u2019-the-wisp that lures PCs toward hazards<strong><br/>Writing:</strong> Efficiently conveys mechanics and lore<strong><br/>Art/design:</strong> Cool colors and establish an appropriately haunted character<strong><br/>Usability:</strong> \u00a0May be frustrating for PCs but entertaining for GMs</p>"
+  },
+  {
+    "name": "Giant Moth Demon",
+    "url": "https://aragornzdark.itch.io/giant-moth",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/giant-moth-demon.png?w=457",
+    "creators": [
+      "Hillbilly Games"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cIt is rarely seen until it is too late, after it has grabbed livestock or a hapless human.\u201d<strong><br/>Content:</strong> It\u2019s a giant moth.<strong><br/>Writing:</strong> Sketches behavior and provides a concise stat block<strong><br/>Art/design:</strong> Embraces M\u00f6rk Borg\u2019s penchant for public domain art and violent pinkness<strong><br/>Usability:</strong> Simple and easy to use</p>"
+  },
+  {
+    "name": "Glimpses of a Dying World",
+    "url": "https://www.drivethrurpg.com/product/347225/Glimpses-of-a-Dying-World--A-zine-for-Mork-Borg",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/glimpses-of-a-dying-world.png?w=722",
+    "creators": [
+      "Feral Wizard"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSavage creatures lurk in the depths of forgotten crypts, incomprehensible relics lie waiting in the shadows of crumbling tombs, mystics argue incessantly trying to find a escape to the impending doom, and the powerful occupy themselves with vengeance.\u201d<strong><br/>Content:</strong> A sprawling offering of all things M\u00f6rk Borg<strong><br/>Writing:</strong> Captures the tone and atmosphere of the Dying World through the descriptive text as well as the character of the mechanics<strong><br/>Art/design:</strong> Adapts the aesthetics and tactics of the core book with extensive use of modified public domain art<strong><br/>Usability:</strong> There\u2019s something here for everyone</p>"
+  },
+  {
+    "name": "Gr\u00e5 H\u00e4st",
+    "url": "https://davewinter85.itch.io/gr-hst",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/gra-hast-dave-winter.jpg?w=726",
+    "creators": [
+      "Dave Winter"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTo hear the cursed utterences from it\u2019s skeletal frame is said to be a claim for your very life.\u201d<strong><br/>Content:</strong> An undead horse spirit with a penchant for making friends<strong><br/>Writing:</strong> Provides a description for roleplaying the encounter and mechanics for rolling it as well<strong><br/>Art/design:</strong> Compelling illustrations; typographic design creates a visual hierarchy of information<strong><br/>Usability:</strong> Some of the nonessential flavor text is small and difficult to read but worth the extra effort</p>"
+  },
+  {
+    "name": "Granny",
+    "url": "https://theeldritchtomb.itch.io/granny",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/granny.png?w=703",
+    "creators": [
+      "Sasha De\u2019ath",
+      "Alex Obernigg",
+      "Johan Nohr"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThis dread creature is sure to haunt your players right where they\u2019re safest: In their own homes. During the holidays. Sneering with judgment.\u201d<strong><br/>Content:</strong> A bitter, cheer-killing wight; includes description, stats, special mechanics, and scathing remarks<strong><br/>Writing:</strong> Captures the spirit (maybe literally) of an overly-critical matriarch<strong><br/>Art/design:</strong> Overall, horribly festive with progressively creepy grandmas<strong><br/>Usability:</strong> Plenty of flavor to really help the GM get into character</p>"
+  },
+  {
+    "name": "Grave Matters",
+    "url": "https://www.drivethrurpg.com/product/352282/Grave-Matters--a-new-skeletal-expansion-for-Mork-Borg",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/grave-matters.png?w=533",
+    "creators": [
+      "Rinaldo Agostini"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cNew uses for dry corpses\u201d<strong><br/>Content:</strong> Undeath-themed classes, gear/weapons/scrolls, optional rules, monsters/NPCs, encounters, and an adventure site<strong><br/>Writing:</strong> Loads of creative concepts presented through expressive, inspiring, and witty prose<strong><br/>Art/design:</strong> Modified public domain images and original art support the theme along with layouts, typography, and colors that make this undeniably Borgy<strong><br/>Usability:</strong> References amongst entries create a sense of cohesion and interconnection; an excellent resource for a game or arc themed around skeletons, zombies, and corpses</p>"
+  },
+  {
+    "name": "The Green Knight",
+    "url": "https://hauntingofthewicked.itch.io/the-green-knight",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/green-knight.jpg?w=722",
+    "creators": [
+      "Sam/HauntingOfTheWicked"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe titular knight of Sir Gawain and the Green Knight in the dying world\u201d<strong><br/>Content:</strong> A suitable grimdark adaptation that retains the legend\u2019s dynamic and spirit<strong><br/>Writing:</strong> Concise and clear without sacrificing character<strong><br/>Art/design:</strong> Primarily textual with conventional typography; medieval graphics against a Borgy background on the cover is an appropriate visual representation of the concept<strong><br/>Usability:</strong> Straightforward and provides a compelling long-term, impending threat</p>"
+  },
+  {
+    "name": "Grootslang",
+    "url": "https://maper74.itch.io/grootslang",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/grootslang.png?w=1024",
+    "creators": [
+      "Maper74"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cGood news, it does not constrict. Bad news, everything else.\u201d<br/><strong>Content:</strong> A legendary beast ripped from South African myth<br/><strong>Writing:</strong> Standard stat block with some extra Special attributes to keep combat interesting<br/><strong>Art/design:</strong> Text is (literally) blocked out for easing reading and use<br/><strong>Usability:</strong> Probably lethal, but the PCs don\u2019t need to know that</p>"
+  },
+  {
+    "name": "Grylla ",
+    "url": "https://andersbj.itch.io/utbrdingmyling",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/grylla.jpeg?w=724",
+    "creators": [
+      "Anders Bj\u00f6rkelid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cGrown from putrefaction in stagnant lakes, hungry for living creatures\u2019 last breath\u201d<strong><br/>Content:</strong> A drowning-based spirit that\u2019s as deadly after defeat as it is un-alive<strong><br/>Writing:</strong> Mechanics and description are succinct but effective<strong><br/>Art/design:</strong> Cool colors and sinuous lines reinforce the monster concept<strong><br/>Usability:</strong> Simple but still potentially lethal</p>"
+  },
+  {
+    "name": "Guenna ",
+    "url": "https://andersbj.itch.io/utbrdingmyling",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/guenna.jpeg?w=728",
+    "creators": [
+      "Anders Bj\u00f6rkelid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cOnce a beautiful seductive spirit of the forest. Now a festering, empty husk.\u201d<strong><br/>Content:</strong> A notably tenacious parasitic forest spirit<strong><br/>Writing:</strong> Mechanics and flavor are concise and evocative<strong><br/>Art/design:</strong> Conveys desolation and hollowness in a visually interesting way<strong><br/>Usability:</strong> Good for a recurring, hazardous adversary</p>"
+  },
+  {
+    "name": "Hagtesse",
+    "url": "https://marksquests.itch.io/hagtesse",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/hagtesse.jpg?w=654",
+    "creators": [
+      "MarksQuests"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWithin the woods is something cruel and mischievous. Sometimes it\u2019s a witch, sometimes it\u2019s a spider.\u201d<strong><br/>Content:</strong> A spider-witch whose attacks cause thematic mutations<strong><br/>Writing:</strong> Poetic flourish in the description, witty one-liners in the stat block<strong><br/>Art/design:</strong> Nice spatial arrangement of visual and verbal components<strong><br/>Usability:</strong> Remember to roll for mutations</p>"
+  },
+  {
+    "name": "Hellequin",
+    "url": "https://gheedon.itch.io/hellequin",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/hellequin.jpeg?w=768",
+    "creators": [
+      "Ghee Dodlinger"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAn emissary from hell, sent by the devil to hunt humans and take them back to hell\u201d<strong><br/>Content:</strong> Includes the title character and its infernal entourage<strong><br/>Writing:</strong> Provides a general overview of the concept and covers stats for 4 types of demons<strong><br/>Art/design:</strong> Colors and typographical choices convey that fire-and-brimstone character<strong><br/>Usability:</strong> Some more complex morale rules require a bit of extra arithmetic</p>"
+  },
+  {
+    "name": "Hellmouth Nemertean ",
+    "url": "https://andrew-lanier.itch.io/hellmouth-nemertean",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/hellmouth-nemertean.jpg?w=722",
+    "creators": [
+      "Andrew Lanier"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cFrom the craters crawl forth gigantic beasts of blazing, crackling stone forms.\u201d<strong><br/>Content:</strong> The ribbon worm from hell (literally)<strong><br/>Writing:</strong> Blends descriptive and mechanical text in focused segments to facilitate usability<strong><br/>Art/design:</strong> Text is laid out to maximize readability against the hellscape background<strong><br/>Usability:</strong> As a game component, elaborate without being unnecessarily complex</p>"
+  },
+  {
+    "name": "Herald of Incineration",
+    "url": "https://tabletopanthologies.itch.io/herald-of-incineration",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/herald-of-incineration.png?w=644",
+    "creators": [
+      "Tabletop Anthologies"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSurrounded by a haze of steam and heat wearing gleaming armor, the towering figure trudges forward, dragging a charred zweihander which cleaves the ground in twain.\u201d<strong><br/>Content:</strong> The titular nemesis, ancillary fireflies, and a cursed sword<strong><br/>Writing:</strong> An even split between lore and stats blocks<strong><br/>Art/design:</strong> Graphic and typographic elements reinforce a knightly demeanor <strong><br/>Usability:</strong> More complex than average but fully manageable</p>"
+  },
+  {
+    "name": "Hollow Saint",
+    "url": "https://roll4tarrasque.itch.io/hollow-saint",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/hollow-saint.jpg?w=724",
+    "creators": [
+      "Giuliano Roverato",
+      "Bruno Sabino"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe wooden cocoon of the saint burst open to reveal a horrible half human, half moth creature of godly compusure.\u201d<strong><br/>Content:</strong> Includes all three phases of the monster\u2019s lifecycle<strong><br/>Writing:</strong> Descriptive text serves as a legend and hook; mechanical text is simple and easy to use<strong><br/>Art/design:</strong> Some very cool, inspiring artwork<strong><br/>Usability:</strong> A big \u201cyes\u201d both mechanically and conceptually</p>"
+  },
+  {
+    "name": "The Holocaust Baby",
+    "url": "https://arnaudlmbrt.itch.io/the-holocaust-baby",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/holocaust-baby.jpg?w=722",
+    "creators": [
+      "Arnaud F. Lambert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBorn in the center of the worst conflagrations in the West, its touch incinerates the righteous and the innocent.\u201d<strong><br/>Content:</strong> What appears to be a sentient, enraged explosion<strong><br/>Writing:</strong> A quick sketch of lore and a standard stat block<strong><br/>Art/design:</strong> The collage definitely communicates the concept<strong><br/>Usability:</strong> Straightforward to use, and can provide a recurring enemy for bomb-inclined parties</p>"
+  },
+  {
+    "name": "Horrendous and Corrupted Growth",
+    "url": "https://feral-wizard.itch.io/corrupted-growth",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/horrendous-corrupted-growth.png?w=721",
+    "creators": [
+      "Feral Wizard"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBorn out of an Arcane Catastrophe, this creature grows large by feeding on the flesh of its prey.\u201d<strong><br/>Content:</strong> Includes an encounter table and randomized attacks<strong><br/>Writing:</strong> Descriptive enough to convey the concept but still leave room for creative interpretation<strong><br/>Art/design:</strong> Great balance of old woodcut aesthetic and M\u00f6rk Borg color and sensibility<strong><br/>Usability:</strong> Mechanics add variability without upping the complexity</p>"
+  },
+  {
+    "name": "House",
+    "url": "https://thomasnovosel.itch.io/house",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/house.jpg?w=663",
+    "creators": [
+      "Thomas Novosel"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cHaunted possessed manor\u201d<strong><br/>Content:</strong> Is it a monster? Is it a location? Either way, it wants to exploit or extinguish some PCs.<strong><br/>Writing:</strong> Folds the house\u2019s characterization and behavior into the Special<strong><br/>Art/design:</strong> Stylized, atmospheric depiction of a m\u00f6rkt hus<strong><br/>Usability:</strong> As written, very straightforward, but leaves lots of options for the GM to play with</p>"
+  },
+  {
+    "name": "The Hull House Devil Baby",
+    "url": "https://jimgies.itch.io/the-hull-house-devil-baby",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/hull-house-devil-baby.jpg?w=722",
+    "creators": [
+      "Jim Gies"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cYou\u2019ve heard that everyone abandoned the house except for the baby. Or was it because of the baby?\u201d<strong><br/>Content:</strong> A floating, telekinetic devil baby replete with horns and hooves<strong><br/>Writing:</strong> Provides concrete mechanics but leaves the lore and details ambiguous<strong><br/>Art/design:</strong> Easy-to-navigate layout, colors add emphasis and facilitate quick reference, and damn if that isn\u2019t one seriously evil devil-baby head<strong><br/>Usability:</strong> Lots of room for GMs to adapt situation to their needs</p>"
+  },
+  {
+    "name": "Humbaba",
+    "url": "https://irish-mercury.itch.io/humbaba",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/humbaba.jpg?w=800",
+    "creators": [
+      "Irish_Mercury"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201c\u2018Humbaba, whose shout is the flood weapon, whose utterance is Fire and whose breath is Death\u2019\u201d<strong><br/>Content:</strong> An ancient Mesopotamian monster adapted to M\u00f6rk Borg<strong><br/>Writing:</strong> Purely mechanics; some flavor text on the product page<strong><br/>Art/design:</strong> Layout is a bit top-heavy but not detrimentally so<strong><br/>Usability:</strong> Some specific death conditions could make this a recurring antagonist</p>"
+  },
+  {
+    "name": "The Ignited",
+    "url": "https://caelinaraven.itch.io/the-ignited",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/ignited.png?w=645",
+    "creators": [
+      "Caelin Araven"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Ignited are a secret society of nobles, clerics of secret knowledge and mad wizards who [\u2026] want to reach godhood by infusing their bodies with magical energy.\u201d<strong><br/>Content:</strong> Profiles, means, motives, and magics of an apocalypse cult<strong><br/>Writing:</strong> Straightforward descriptions and mechanics<strong><br/>Art/design:</strong> M\u00f6rk Borg defies standard design conventions, and this defies M\u00f6rk Borg design conventions. Meta-punk.<strong><br/>Usability:</strong> Straightforward lists and descriptions</p>"
+  },
+  {
+    "name": "Inhabitant of the Nameless City",
+    "url": "https://www.instagram.com/p/CNMTBIIBi6H/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/05/inhabitant.png?w=598",
+    "creators": [
+      "Rodrigo Giesta Figueirido",
+      "Angela Sprecher"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cMonstrosities with protuberant foreheads, horns and reptile-like jaws\u201d<strong><br/>Content:</strong> A Lovecraft-inspired middleweight monster<strong><br/>Writing:</strong> A standard stat block with an HPL quotation for flavor<strong><br/>Art/design:</strong> Alternating pink and yellow splits text sections alongside an appropriately tenebrous illustration<strong><br/>Usability:</strong> Forthright and readable</p>"
+  },
+  {
+    "name": "Inte R\u00e5djur",
+    "url": "https://undeadrook.itch.io/interadjur",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/inte-radjur.png?w=420",
+    "creators": [
+      "B Halliday"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cClearly not a deer; it is not from here.\u201d<br/><strong>Content:</strong> An anti-magic anti-deer<strong><br/>Writing:</strong> Descriptive and mechanical text both serve to establish a compelling character<strong><br/>Art/design:</strong> Likewise, depiction in silhouette establishes a form but allows the GM to customize the details<strong><br/>Usability:</strong> Straightforward and relatively simple</p>"
+  },
+  {
+    "name": "In the Remnants of the Maggot Horde ",
+    "url": "https://bonvivant.itch.io/in-the-remnants-of-the-maggot-horde",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/in-the-remnants-of-the-maggot-horde.png?w=1024",
+    "creators": [
+      "Martin Bonnevier Kronlid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBeleaguering the remnants, lingering in the reeking hallucinogenic fumes, are beasts risen from the trails of the maggot-like horde.\u201d<strong><br/>Content:</strong> Elaborates on the setup, provides stats for the beasts and mechanics for the fumes<strong><br/>Writing:</strong> Heavily suffused with esoteric and unsavory imagery<strong><br/>Art/design:</strong> Adds some visual character without obstructing comprehension or use<strong><br/>Usability:</strong> Fairly straightforward, but the beasts and fumes together are a double threat</p>"
+  },
+  {
+    "name": "Invisible Inflammable Gas-Folk from Beyond Bergen Chrypt",
+    "url": "https://makedatanotlore.itch.io/invisible-inflammable-gas-folk-from-beyond-bergen-chrypt",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/invisible-inflammable-gas-folk.png?w=1024",
+    "creators": [
+      "Karl Druid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWhenever a fire is lite in the Dying World, there is a 1 in 6 chance that Gas-Folk is standing around nearby. This causes explosions.\u201d<strong><br/>Content:</strong> An ambient entity that can mess up your day without doing anything<strong><br/>Writing:</strong> Concise and mainly focused on the explosions bit<strong><br/>Art/design:</strong> A variety of graphic choices and touches add lots of personality to a fairly linear layout<strong><br/>Usability:</strong> Includes a list of tell-tale signs that may alert canny PCs of the impending danger</p>"
+  },
+  {
+    "name": "Jack in the Green ",
+    "url": "https://wilcornish.itch.io/jack-in-the-green",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/jack-in-the-green.png?w=1024",
+    "creators": [
+      "Wil Cornish"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBefore, Jack would joyfully die at the hands of the mob, to release summer\u2019s warmth. Now the procession happens day after day, pulling some poor wretch from their rest, dressing them in the ragged, threadbare finery of Jack in the Green.\u201d<strong><br/>Content:</strong> A ritual replete with a set of monsters/characters <strong><br/>Writing:</strong> Describes the futile rites and provides 4 stat blocks for participants<strong><br/>Art/design:</strong> Stark but effective<strong><br/>Usability:</strong> A toolkit for GMs to play with and customize</p>"
+  },
+  {
+    "name": "Jack in Irons ",
+    "url": "https://christopher-annandale.itch.io/jack-in-irons",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/jack-in-irons.jpg?w=722",
+    "creators": [
+      "Christopher Annandale"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cCovered in chains from which his victim\u2019s heads dangle\u201d<strong><br/>Content:</strong> A powerful, elusive enemy<strong><br/>Writing:</strong> Descriptive text definitely paints a picture, and the mechanics back it up with strength and maneuverability<strong><br/>Art/design:</strong> Metonymic; let your imagination run wild<strong><br/>Usability:</strong> Pretty much point-and-shoot</p>"
+  },
+  {
+    "name": "Jagande D\u00f6d",
+    "url": "https://degustaf.itch.io/jagande-dod",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/05/jagande-dod.png?w=791",
+    "creators": [
+      "Derek Gustafson"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cJagande D\u00f6d, the creeping death, is relentless in stalking those who are fated to die.\u201d<strong><br/>Content:</strong> A reaper whose attacks do worse things than simply cause damage<strong><br/>Writing:</strong> One-sentence summary and one stat block; sharp and concise<strong><br/>Art/design:</strong> Judicious use of color adds variety and emphasis to the illustration and to the text<strong><br/>Usability:</strong> A creative catalyst for a nasty fight (in tandem with other monsters) or for upping any adventure\u2019s difficulty</p>"
+  },
+  {
+    "name": "J\u00f3lak\u00f6tturinn / Yule Cat",
+    "url": "https://anadversary.itch.io/yule-cat",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/neil-hunter-yule-cat.jpg?w=725",
+    "creators": [
+      "Bracken MacLeod"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe J\u00f3lak\u00f6tturinn stalks the Dying World devouring anyone caught wearing old and tattered clothes at J\u00f3l.\u201d<strong><br/>Content:</strong> A seriously beastly monster<strong><br/>Writing:</strong> Straightforward but with plenty of character<strong><br/>Art/design:</strong> Nice adaptation of Le Chat Noir design<strong><br/>Usability:</strong> This cat hates your holiday sweater\u2014it\u2019s as simple as that</p>"
+  },
+  {
+    "name": "Kh\u2019akh\u2019Awin",
+    "url": "https://skol-jansson.itch.io/khakhawin",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/khakhawin.jpg?w=722",
+    "creators": [
+      "Pask\u00e5l Jansson"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBad tempered wisdom seeker bipolar Sea-wolf of Lake Onda\u201d<strong><br/>Content:</strong> Includes lore, narrative for Reaction temperament, and a random loot table<strong><br/>Writing:</strong> Delivers the lore in an engaging second-person narrative<strong><br/>Art/design:</strong> Designs capture the petroglyphic inspiration highlighted with plenty of Borgy colors<strong><br/>Usability:</strong> Simple to use as a monster but has lots of narrative potential</p>"
+  },
+  {
+    "name": "The King Under the Mountain",
+    "url": "https://pngmafioso.itch.io/the-king-under-the-mountain",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/king-under-the-mountain.jpg?w=722",
+    "creators": [
+      "Ricardo \u2018Akuma\u2019 Outis"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA one way descent into facing the divine destruction that sleeps deep in the planet.\u201d<strong><br/>Content:</strong> A massive subterranean monster that can kill PCs directly or indirectly after it is defeated<strong><br/>Writing:</strong> Conveys the sense of eldritch, ineffable horror that surrounds this being<strong><br/>Art/design:</strong> The semi-obscured subject of the illustration supports the concept\u2019s nature, and use of color helps to add emphasis and visually organize information <strong><br/>Usability:</strong> GMs will need to track dead things encountered prior to the battle</p>"
+  },
+  {
+    "name": "Knomes",
+    "url": "https://imcclung.itch.io/knomes",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/knomes.png?w=630",
+    "creators": [
+      "I. McClung"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cKNOMES are a beloved feature of any nobles\u2019 garden. They feed on the blood of would-be thieves and vagabonds.\u201d<strong><br/>Content:</strong> ; additional lore and options on product page<strong><br/>Writing:</strong> Covers behavior, preferred haunts, and mechanics<strong><br/>Art/design:</strong> Layout and design work to guide and direct the reader\u2019s attention<strong><br/>Usability:</strong> Requires only slightly more effort than a regular garden gnome</p>"
+  },
+  {
+    "name": "Krampus",
+    "url": "https://www.dropbox.com/s/awl8c8wx1ftguqo/holiday.pdf?dl=0",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/krampus2.jpg?w=791",
+    "creators": [
+      "Philip Reed",
+      "Jef Thompson",
+      "pashabo"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Christmas rumors are true. The Krampus does exist.\u201d<strong><br/>Content: </strong>Stats and a hook for the race of kidnapping, meat-hungry krampi <strong><br/>Writing:</strong> A balance of mechanics and descriptive text<strong><br/>Art/design:</strong> Fits lots of text onto the page alongside some nice art<strong><br/>Usability:</strong> Straightforward but certain aspects may be off-putting to some players</p>"
+  },
+  {
+    "name": "Lambert W\u00f6rm",
+    "url": "https://f-killian.itch.io/lambert-wrm",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/lambert-worm.png?w=1024",
+    "creators": [
+      "F. Killian"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA devious and completely unfair beast to feast on greedy (or merely unlucky) characters.\u201d<strong><br/>Content:</strong> A resilient, implacable monster that will almost certainly incur at least one fatality<strong><br/>Writing:</strong> Well composed and dryly witty<strong><br/>Art/design:</strong> Also well composed with effective design and layout choices<strong><br/>Usability:</strong> Highly lethal</p>"
+  },
+  {
+    "name": "Lavandeiras",
+    "url": "https://pablodap.itch.io/lavandeiras-and-biosbardos",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/lavandeiras-biosbardos.png?w=630",
+    "creators": [
+      "Pablo Dapena"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAn encounter with the ghostly midnight washerwomen\u201d<strong><br/>Content:</strong> Nocturnal spirits who entice you to do your own laundry, for weal or woe<strong><br/>Writing:</strong> Includes descriptive text sets the scene and mechanics to determine the outcome<strong><br/>Art/design:</strong> Efficient design choices delineate segments and make for easy use and reference<strong><br/>Usability: </strong>Simple and straightforward</p>"
+  },
+  {
+    "name": "Leprechaun",
+    "url": "https://tartlegames.itch.io/mork-borg-leprechaun",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/leprechaun.jpeg?w=724",
+    "creators": [
+      "Latt Vines (AKA Tartle Wizard)"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe fool that steals from the leprechaun is cursed to be haunted by immortal wrath.\u201d<strong><br/>Content:</strong> An undying, unrelenting adaptation<strong><br/>Writing:</strong> A straightforward stat block with matching descriptive text<strong><br/>Art/design:</strong> An especially M\u00f6rk Borgy illustration with effective use of color<strong><br/>Usability:</strong> Ability to return from death make this a good recurring antagonist</p>"
+  },
+  {
+    "name": "The Living Flame",
+    "url": "https://bannerlessgames.itch.io/living-flame",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/living-flame.png?w=722",
+    "creators": [
+      "Bannerless Games"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSome incinerated by it see their skin, organs and bones fall away \u2013 all except for the skull.\u201d<strong><br/>Content:</strong> Tables for generating ignis fatuus NPCs<strong><br/>Writing:</strong> No stats, but lore and tables for defining characters<strong><br/>Art/design:</strong> Intuitively laid out for easy use<strong><br/>Usability:</strong> Much more creatively oriented rather than formal</p>"
+  },
+  {
+    "name": "The Mad Haberdasher",
+    "url": "https://candid-zombie.itch.io/the-mad-haberdasher",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/mad-haberdasher.jpg?w=722",
+    "creators": [
+      "Fred David"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cHe will excitedly attach himself to the group, providing spiritual guidance and herbal expertise as a pretence to spread his heretical, pacifistic gospel.\u201d<strong><br/>Content:</strong> A supporting NPC who will probably do more harm than good in the long run<strong><br/>Writing:</strong> Tone and diction establish a character at odds with the off-kilter images associated with the haberdasher<strong><br/>Art/design:</strong> Jaunty hats contrast with the dead-eyed depiction of the haberdasher, visually emphasizing his cheery but deranged character<strong><br/>Usability:</strong> Mechanically straightforward and a fun way for GMs to mess with their parties</p>"
+  },
+  {
+    "name": "The Magic Table, the Golden Donkey, and the Club in the Sack",
+    "url": "https://hamildong.itch.io/table-ass-stick",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/magic-table-golden-donkey-club-in-sack.jpeg?w=710",
+    "creators": [
+      "hamildong"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA loose sequel to \u2018The Magic Table, the Golden Donkey, and the Club in the Sack\u2019\u201d<strong><br/>Content:</strong> A versatile encounter carrying potential benefit or detriment to PCs<strong><br/>Writing:</strong> Includes some poetic lore, stats, and table for random outcomes<strong><br/>Art/design:</strong> Appropriately M\u00f6rky art and layout<strong><br/>Usability:</strong> Easy to insert and deploy in an ongoing adventure or campaign</p>"
+  },
+  {
+    "name": "Mandagor",
+    "url": "https://andrew-lanier.itch.io/mandagor",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/mandagor.jpg?w=722",
+    "creators": [
+      "Andrew Lanier"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBlack or nebulous forms, they gaze upon mortals with piercing red eyes filled with mischief and wickedness.\u201d<strong><br/>Content:</strong> An multiform creature and potential companion to generous scvm<strong><br/>Writing:</strong> Provides copious lore pertaining to behavior and ecology alongside stat blocks for various forms<strong><br/>Art/design:</strong> Predominantly textual, leveraging color to differentiate certain blocks; includes some cleverly placed depictions<strong><br/>Usability:</strong> Contains a fair number of behavioral details for GMs to keep track of</p>"
+  },
+  {
+    "name": "The Mangalok",
+    "url": "https://arnaudlmbrt.itch.io/the-mangalok",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/mangalok.jpg?w=1024",
+    "creators": [
+      "Arnaud F. Lambert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA close Filipino cousin to the penanggalan viscera-sucker of Indonesia\u201d<strong><br/>Content:</strong> A covert vampiric monstrosity that goes heavy on the body horror<strong><br/>Writing:</strong> Provides fairly detailed descriptions of general, hunting, and combat behavior<strong><br/>Art/design:</strong> An efficient layout with some atmospheric images<strong><br/>Usability:</strong> Killing it will likely present a challenge to players unfamiliar with the folklore</p>"
+  },
+  {
+    "name": "March of the Lord of Fire",
+    "url": "https://gaffy.itch.io/the-march-of-the-lord-of-fire",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/marchof-the-lord-of-fire.png?w=168",
+    "creators": [
+      "Luis Bishop Lopez"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Lord of Fire marches from the Valley of the Unfortunate Undead\u201d<strong><br/>Content:</strong> A fire-themed conqueror who raises and commands an undead army against the kingdoms of the Dying Land<strong><br/>Writing:</strong> Primarily mechanical, but the mechanics themselves provide tons of character and inspiration<strong><br/>Art/design:</strong> The background image reinforces the overall theme and tone without interfering with readability<strong><br/>Usability:</strong> Highly suitable for a grueling martial challenge</p>"
+  },
+  {
+    "name": "Marrow Bees & Osteapiarists",
+    "url": "https://anadversary.itch.io/the-marrow-bees",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/marrow-bees.jpg?w=1024",
+    "creators": [
+      "Bracken MacLeod"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Marrow Bees\u2019 honey is tasty and valuable\u2026. if you can get to it. If they don\u2019t bore into your bones and you escape the\u00a0Osteopiarists.\u201d<strong><br/>Content:</strong> Parasitic bees, their (in)toxic(ating) honey, and their keepers<strong><br/>Writing:</strong> A fair split of flavor and mechanics, both well conceived and written<strong><br/>Art/design:</strong> Subtle but effective representations of colonized humans<strong><br/>Usability:</strong> Honey mechanics are split, but not detrimental on a 1-page document</p>"
+  },
+  {
+    "name": "Martolea, Tuesday\u2019s Demon ",
+    "url": "https://azathothwakesup.itch.io/martolea-the-tuesday-demon",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/martolea.png?w=1024",
+    "creators": [
+      "Nell Azathoth Tull"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTuesday\u2019s Demon rambles into desolate villages from its den high in the mountains only after a grisly tragedy has occurred on a Tuesday.\u201d<strong><br/>Content:</strong> A bizarre, subversive, and brutal beast<strong><br/>Writing:</strong> Includes a standard stat block as well as additional attributes and an overview of the monster\u2019s MO<strong><br/>Art/design:</strong> This illustration will haunt your nightmares; a good complement to the descriptive text<strong><br/>Usability:</strong> Ideal for a quest or scenario (like the one included with the monster)</p>"
+  },
+  {
+    "name": "Maust",
+    "url": "https://neonon.itch.io/mork-borg-maust",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/maust.png?w=724",
+    "creators": [
+      "Micha\u0142 Gotkowski"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201c\u2026 forever hiding in the dark, more rodent than a man.\u201d<strong><br/>Content:</strong> A demi-human hireling<strong><br/>Writing:</strong> Includes some flavor text as well as stats, traits, specialties, and values<strong><br/>Art/design:</strong> Nicely balanced layout with art suggestive of sentiment and violence<strong><br/>Usability:</strong> Straightforward</p>"
+  },
+  {
+    "name": "Mb\u00f3i Tu\u2019i ",
+    "url": "https://inkarmat.itch.io/mboi-tui",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/mboi-tui.png?w=735",
+    "creators": [
+      "Misha Panarin"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSecond son of Kerana and Tau. It patrols the swamps and wetlands, protecting amphibians and waterdwellers.\u201d<strong><br/>Content:</strong> A middleweight monster fit for amphibious adventures<strong><br/>Writing:</strong> Efficient stats and a dash of flavor text (with more on the product page)<strong><br/>Art/design:</strong> Color choices and arrangement make text easily readable without obscuring the gritty, Borgy illustration<strong><br/>Usability:</strong> Includes an ongoing fear effect; take note, GMs</p>"
+  },
+  {
+    "name": "Meat Puppeteer",
+    "url": "https://rynoch.itch.io/meat-puppeteer",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/meat-puppeteer.png?w=909",
+    "creators": [
+      "Rinaldo Agostini"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAll the world\u2019s a stage, and you\u2019re an unwilling actor.\u201d<strong><br/>Content:</strong> A master-monster with underlings and some lethal twists <strong><br/>Writing:</strong> Instructions for puppeteer, puppets, and PC targets<strong><br/>Art/design:</strong> Nice use of silhouettes and some effective typographical maneuvers<strong><br/>Usability:</strong> A little more complex than some adversaries, but not overwhelmingly so</p>"
+  },
+  {
+    "name": "Mljacko (Schmatzer, Aufhocker und wo man sie findet)",
+    "url": "https://kitty1n54n3.itch.io/folk-lore-entry",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/mljacko.jpg?w=725",
+    "creators": [
+      "Kitty B"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cHuge shambling mound of wet fur, emitting a truly blasphemous stench [\u2026] causing fishers to flee\u201d<br/><strong>Content:</strong> A monster that smells so bad it hurts<strong><br/>Writing:</strong> Provides context and a stat block<strong><br/>Art/design:</strong> Provides an appropriate, only-half-seen portrait<strong><br/>Usability:</strong> Hold your breath and light a match</p>"
+  },
+  {
+    "name": "M\u00f6rk Sugga ",
+    "url": "https://andersbj.itch.io/utbrdingmyling",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/mork-sugga.jpeg?w=1024",
+    "creators": [
+      "Anders Bj\u00f6rkelid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWhenever someone is frightened and in darkness, she is present.\u201d<strong><br/>Content:</strong> A fear-inducing death sow with a high bounty (if you can figure out a way to survive and collect)<strong><br/>Writing:</strong> Enough descriptive text to provide character to the stats<strong><br/>Art/design:</strong> Stylized without sacrificing readability, with an appropriately grim illustration<strong><br/>Usability:</strong> High damage, high armor, and a variety of Specials spell trouble for all but the hardest adventurers</p>"
+  },
+  {
+    "name": "M\u00f6rky Mycology",
+    "url": "https://imcclung.itch.io/morky-mycology",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/morky-mycology-2.png?w=482",
+    "creators": [
+      "I. McClung"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA world in decline is a veritable paradise for fungi of all kind.\u201d<br/><strong>Content:</strong> Fungi, environs filled with fungi, fungus-based class and items, and some mushroom monsters<strong><br/>Writing:</strong> Efficient but with enough detail to spur interest and imagination<strong><br/>Art/design:</strong> Relatively sparse but still under development<strong><br/>Usability:</strong> Very efficient layout for a lot of content</p>"
+  },
+  {
+    "name": "The Mothman ",
+    "url": "https://rpsigler.itch.io/the-moth-man",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/mothman.png?w=722",
+    "creators": [
+      "Ryan Sigler"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA nocturnal wanderer of the shattered\u00a0world, a vile thing,\u00a0seeking to snuff out any light that may be\u00a0remaining.\u201d<strong><br/>Content:</strong> A malicious take on the mothman of Point Pleasant<strong><br/>Writing:</strong> Clear stat block with concise bits of flavor text<strong><br/>Art/design:</strong> Layout & aesthetic capture the dynamic of moths flitting around a flame<strong><br/>Usability:</strong> The functional mechanics are split on the page and not well differentiated from the descriptive text, but it\u2019s a small concession to the overall excellence of the visual design</p>"
+  },
+  {
+    "name": "Mutant Drifter",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/n2uyqk/mutant_drifter_by_skree_skree/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/05/mutant-drifter-skree_skree.jpg?w=791",
+    "creators": [
+      "skree_skree"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWarped in body and mind by the attentions of dark gods\u201d<strong><br/>Content:</strong> Has tentacle-arm, will travel<strong><br/>Writing:</strong> A straightforward stat block and some background and motivation for the NP<strong><br/>Art/design:</strong> Clearly delineated text sections and some visceral line art<strong><br/>Usability:</strong> Simple mechanics with some options for GMs to play with</p>"
+  },
+  {
+    "name": "Mygga, Flying Head",
+    "url": "https://www.drivethrurpg.com/product/329712/Glos-Piwnicy-Pazdziernik-2020",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/10/glos_piwnicy.png?w=397",
+    "creators": [
+      "Maciej Sznurkowski"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBloodsuckers known for silently feeding on sleeping people\u201d<strong><br/>Content:</strong> A versatile monster/pet<strong><br/>Writing:</strong> Plenty of inspiration for GMs<strong><br/>Art/design:</strong> Practical but still expressive<strong><br/>Usability:</strong> Mechanics embedded in flavor text, but not difficult to locate quickly</p>"
+  },
+  {
+    "name": "Myling, shadow child",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/jbuu4v/shadow_child_a_spirit_ripped_from_this_cruel/",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/10/myling.png?w=640",
+    "creators": [
+      "Justyn Newman"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThese spirits hunger for a life lost, love stolen.\u201d<strong><br/>Content:</strong> A persistent undead pest<strong><br/>Writing:</strong> Efficiently conveys special mechanics and hooks<strong><br/>Art/design:</strong> Relatively lean but effective<strong><br/>Usability:</strong> Intuitive</p>"
+  },
+  {
+    "name": "Myling",
+    "url": "https://andersbj.itch.io/utbrdingmyling",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/myling.jpeg?w=733",
+    "creators": [
+      "Anders Bj\u00f6rkelid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cUndead vengeful infant\u201d<strong><br/>Content:</strong> A dead child seeking retribution from its murderous mother<strong><br/>Writing:</strong> Quick and concise with a touch of humor<strong><br/>Art/design:</strong> Color contrasts the cold descriptor but complements the monster\u2019s attitude<strong><br/>Usability:</strong> Mechanically straightforward</p>"
+  },
+  {
+    "name": "Necrotic Children of SHE",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/n2r9qy/necrotic_children_of_she/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/05/ncs1.png?w=720",
+    "creators": [
+      "Rodrigo Giesta Figueirido"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe necrotic children crawl out of the filthy uterus of SHE, wandering the dark places of the Bergen Chrypt.\u201d<strong><br/>Content:</strong> An undead creeper carrying a fairly high chance of infection<strong><br/>Writing:</strong> Word-light but concept-heavy lore<strong><br/>Art/design:</strong> Straightforward presentation of text with some M\u00f6rky flair and an illustration to match the lore<strong><br/>Usability:</strong> Straightforward and readable</p>"
+  },
+  {
+    "name": "Niklaus",
+    "url": "https://www.dropbox.com/s/awl8c8wx1ftguqo/holiday.pdf?dl=0",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/niklaus.jpg?w=791",
+    "creators": [
+      "Philip Reed",
+      "Alvaro Cabrera Jimenez"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAs snow falls on the city, the people whisper of a murderer who has recently taken to the streets.\u201d<strong><br/>Content:</strong> A murderous pseudo-Santa possessed by an alien entity known only as the Christmas Spirit<strong><br/>Writing:</strong> Twists St. Nick to fit right into the Dying World<strong><br/>Art/design:</strong> Exactly what you\u2019d expect of a M\u00f6rk Borg murderhobo Santa<strong><br/>Usability:</strong> \u00a0More elaborate than some monsters but not overly complex</p>"
+  },
+  {
+    "name": "N\u00f6kken, bog thing",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/jjzmxl/bog_thing_a_fetid_creature_of_stitched_flesh_this/",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/nokken.png?w=791",
+    "creators": [
+      "Justyn Newman"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe rotting flesh of the long-dead forms together into an obscene facsimiles of life.\u201d<strong><br/>Content:</strong> A patchwork bog-beast<strong><br/>Writing:</strong> A balance of mechanics and flavor<strong><br/>Art/design:</strong> Nice color and typographical choices<strong><br/>Usability: </strong>Clean and intuitive</p>"
+  },
+  {
+    "name": "N\u00f8kken (Vannvetter)",
+    "url": "https://ra-press.itch.io/vannvetter",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/vannvetter.png",
+    "creators": [
+      "Ra Press"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cLiving in any pond and lake, N\u00f8kken employs a plethora of tricks to enchant or lure unwitting people to their doom.\u201d<strong><br/>Content:</strong> An alluring aquatic shapeshifter<strong><br/>Writing:</strong> Provides plenty of background to serve as hooks along with multiple stat blocks<strong><br/>Art/design:</strong> Layouts effectively delineate sections without obscuring illustrations with text<strong><br/>Usability:</strong> Lots of possibilities to play with when pitting it against PCs</p>"
+  },
+  {
+    "name": "The Occult OssuaryThe Occult Ossuary",
+    "url": "https://imcclung.itch.io/the-occult-ossuary",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/occult-ossuary.png?w=452",
+    "creators": [
+      "I. McClung (ed.)",
+      "Pablo Dapena",
+      "et al"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201c27 pieces exhumed from the depths of lavish graves, themed around skeletons, bones and skulls.\u201d<strong><br/>Content: </strong>\u201cClasses, items, companions, monsters and encounters created by sacrilegious mind.\u201d<strong><br/>Writing:</strong> A variety of styles, all appropriate to their content<strong><br/>Art/design:</strong> Worth downloading just to check out the range of art and layouts<strong><br/>Usability:</strong> Complexity varies by entry but consistently easy to use</p>"
+  },
+  {
+    "name": "The Ogre ",
+    "url": "https://goatmansgoblet.itch.io/the-ogre-a-cruel-monster-for-mork-borg",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/ogre.jpg?w=791",
+    "creators": [
+      "Goatman\u2019s Goblet"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe fear made manifest of all the cruelty a man might do while society watches\u201d<strong><br/>Content:</strong> A M\u00f6rk-Borgy take (with a fatal twist) on a classic monster<strong><br/>Writing:</strong> Poetic and very evocative<strong><br/>Art/design:</strong> Illustration nicely conveys a sense of heaviness and oppressiveness<strong><br/>Usability:</strong> GMs should take care to remember the consequences of PCs\u2019 actions after the confrontation</p>"
+  },
+  {
+    "name": "Pair Of Skeletal Legs and A Thrashing Spine With A Skull That Makes Fun Of You When You Miss",
+    "url": "https://theeldritchtomb.itch.io/bastard-skeleton-man",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/09/leggyskull.jpg?w=791",
+    "creators": [
+      "Sasha De\u2019ath"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cPair Of Skeletal Legs and A Thrashing Spine With A Skull That Makes Fun Of You When You Miss\u201d<strong><br/>Content:</strong> A cheeky, comedic horror<strong><br/>Writing:</strong> Fits the material; subtly clever dialog table<strong><br/>Art/design:</strong> Digital primitivism economized<strong><br/>Usability:</strong> Larger text would improve stat and instructional text\u2019s readability</p>"
+  },
+  {
+    "name": "Pandafeche ",
+    "url": "https://rynoch.itch.io/pandafeche",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/pandafeche.png?w=722",
+    "creators": [
+      "Rinaldo Agostini"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cNever sleep like the dead do or you\u2019ll attract malevolent spirits.\u201d<strong><br/>Content:</strong> A malicious entity that targets characters at their most vulnerable<strong><br/>Writing:</strong> Split between descriptive and mechanical text<strong><br/>Art/design:</strong> Perfectly illustrated by Fuseli\u2019s <em>Nightmare</em><strong><br/>Usability:</strong> Complex enough to have depth without being complicated or difficult to use</p>"
+  },
+  {
+    "name": "Paralysis Demon",
+    "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Flookaside.fbsbx.com%2Ffile%2FMork-Borg-Paralysis-Demon.pdf%3Ftoken%3DAWxpcWddC75ePs0tWYln16HiuMxja44gh5In_I5ubH_QrXuT8h7cFlZkKRMl9GSwEjMVskqIL9gf9c-V2WKP6ktbpyyOwa_aSvG1zoh3LNKOxgyaHv1ZhEOaah--GM6uky39Q9-uPUxZ2F8jpNPiv6HraQ6hjuJ0DDvE3yZAgFIfkqPv4APf1AgcwRqgnu5oHpBNY_EObd_WcXlxRROKQ6l1C9CT0-1UvkuHGGvXRKvgjtx0LSlziVPlRy4ZNd85yAzcRPHj8BlW5ongSHUQ4PtMTk1TOop7LB-1TC_WUH6M0yWVZhWAqwJ8v65pdz6VFfZqnkNexVlTw0MFltu4VZjQCJGqCPorm-owVLospgGX28BSXOvPFyTnvFL6wcFCPH1jF6tzSkg83SWNBVbu0w7j2wusOSqxhPvIsY17eJ6iJ8ASww9wd29o-azKKMq7b_pkNScvvnChhGG76l7sjsUXoGb2ZlVRsdTb3TsCxn2qtI0EYgUFV9YLIq7ATf0AZW5TrBc-5jE-Pg2A7EfWs_ZuRVUlOtkYa__OKKUmLl7PhdXul2fqe18ZU_IzdO7k5cqr0HPCgwkF397LMizGsJnHFNPkZkVdnEQXF1De5MEgeA&h=AT1gi2s1BZif2__s1TFiietH_FaTH8uCgfstbaelEm87iQeb48_V1IjWqlkUYSsLxpHfT0QIUiWTMjxqy4yCd86obC6sZ8wuM3Hd55V3tPjOzJYXbX3uBBeT8zwyUHkvGnfynKtB0c1pIgzd&__tn__=H-R&c%5b0%5d=AT0kYDXgw9wcFV_yGZsbMh70iIPqtCsxNKdZquHFO-yA7l2_VuCm-2dZesWJARkQhFOEvxzBGReyVJgzMVtL_rOF-RD3wr6oGRdu_cTKRMw7rvA6yfubogegi3QxTecgF113MbI37yt9mxP6NiuKD-5Q_KwnFUm_0ff36SBXlGsh-K1asFlOtzcapQmg03EkB1MiGV4theLpoRVmzIQy1RuZyVbaWw",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/paralysis-demon.png?w=360",
+    "creators": [
+      "Mark Stanley"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAs it moves towards you out of the darkness, you turn to flee, only realizing you are glued to your position.\u201d<strong><br/>Content:</strong> A predatory, persistent night terror<strong><br/>Writing:</strong> Includes stat block and extended special plus a well written, evocative narrative<strong><br/>Art/design:</strong> Very expressive illustrations that capture the sensations of nighttime paralysis<strong><br/>Usability:</strong> References suicide; be mindful of your players</p>"
+  },
+  {
+    "name": "Perytion",
+    "url": "https://mariuswasright.itch.io/perytion",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/perytion.jpg?w=792",
+    "creators": [
+      "Andrew Cutler"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThese half-stag, half-eagle abominations fly above the fell trees of Graven-Tosk, swooping down to kill unwary travelers below.\u201d<strong><br/>Content:</strong> A Borged-derived monster with a strange, supernatural motive<strong><br/>Writing:</strong> Concise and to the point<strong><br/>Art/design:</strong> A sensible layout oriented around the illustration<strong><br/>Usability:</strong> Straightforward</p>"
+  },
+  {
+    "name": "The Phoenix King",
+    "url": "https://vikugnavikugna.itch.io/mb-phoenix-king",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/phoenix-king.png?w=724",
+    "creators": [
+      "Vikugna Vikugna"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAnd forth he comes from beyond the Endless Sea an usurper clad in fiery robes.\u201d<strong><br/>Content:</strong> A mighty foe leading an army of minions (with the ability to create more them and itself)<strong><br/>Writing:</strong> A good balance of stats and mechanics with stylized, inspiring descriptions<strong><br/>Art/design:</strong> An intentionally hectic and well laid-out mix of expressive illustrations and typography<strong><br/>Usability:</strong> A challenge for PCs but not for GMs</p>"
+  },
+  {
+    "name": "The Pope Lick Monster",
+    "url": "https://arnaudlmbrt.itch.io/pope-lick-monster",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/pope-lick-monster.jpg?w=722",
+    "creators": [
+      "Arnaud F. Lambert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTrolls in M\u00d6RK BORG are too big to live under bridges, opening a perfect habitat for the Pope Lick Monster.\u201d<strong><br/>Content:</strong> A unfortunate half-human half-goat<strong><br/>Writing:</strong> Includes a simple stat block and some backstory for the beast<strong><br/>Art/design:</strong> Use of color helps differentiate key bits of information from surrounding text<strong><br/>Usability:</strong> The lore open up some interesting options for GMs and players</p>"
+  },
+  {
+    "name": "The Procession of Saint Thr\u00fdla",
+    "url": "https://pablodap.itch.io/saint-thryla",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/procession-st-thyrla.png?w=1024",
+    "creators": [
+      "Pablo Dapena"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cShe points towards her closest missing piece and there the parade goes. Somber, slow but ceaseless.\u201d<strong><br/>Content:</strong> Backstory and stats for the Saint, her acolytes, and the relics they seek<strong><br/>Writing:</strong> Wonderfully macabre<strong><br/>Art/design:</strong> Excellent graphics and good use of monochrome punctuated by more subtle M\u00f6rk Borg colors<strong><br/>Usability:</strong> Straightforward and easy to read</p>"
+  },
+  {
+    "name": "Psyber Devangelist and other Psi-Sci-Fi",
+    "url": "https://greysonwhy.itch.io/the-psyber-devangelist-and-other-psi-sci-fi",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/10/psyberdev.jpg?w=722",
+    "creators": [
+      "Greyson Yandt"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cStrange monstrous beings like a shard of a psyktoplasmic god\u201d<strong><br/>Content:</strong> 6 cosmic creatures to accompany the titular character class<strong><br/>Writing:</strong> Combines sci-fi alienness with M\u00f6rk Borg grimness and humor<strong><br/>Art/design:</strong> Lots of color but not on the illustrations, which is extremely effective<strong><br/>Usability:</strong> A little crowded but well laid out</p>"
+  },
+  {
+    "name": "Pugot Mamu",
+    "url": "https://stickstosnakes.itch.io/pugot-mamu-the-decapitated-one",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/pugot-mamu.jpg?w=1024",
+    "creators": [
+      "Derrick Long"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cHas no head. Only razor sharp maw for eating children.\u201d<strong><br/>Content:</strong> Exactly what it promises<strong><br/>Writing:</strong> Concise and sharp<strong><br/>Art/design:</strong> Well executed but on the explicit side<strong><br/>Usability:</strong> Straightforward</p>"
+  },
+  {
+    "name": "Punishment Fist Dog of the Rotten Gods",
+    "url": "https://gm-lazarus.itch.io/punishment-fist-dog-of-the-rotten-gods",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/punishment-fist-dog.png?w=980",
+    "creators": [
+      "Lazarus"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cMore than anything, it wants to: Devour every living thing it seizes.\u201d<strong><br/>Content:</strong> An homicide hound with a fist for a face<strong><br/>Writing:</strong> Standard stat block with quick physical and behavioral descriptions<strong><br/>Art/design:</strong> Text at the top with a pretty M\u00f6rky dog at the bottom<strong><br/>Usability:</strong> Simple and readable</p>"
+  },
+  {
+    "name": "Ratstabber",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/l6855b/ratstabber_by_skree_skree/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/01/ratstabber.jpg?w=773",
+    "creators": [
+      "skree_skree"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cScurrying beneath the streets of crumbling cities. The Ratstabber\u2019s beady eyes blaze with hatred.\u201d<strong><br/>Content:</strong> One of the nastiest rats you\u2019ll find in M\u00f6rk Borg<strong><br/>Writing:</strong> Devoted to stats and Specials<strong><br/>Art/design:</strong> Distinctive collage work with some evocative original art<strong><br/>Usability:</strong> Infection rules depart somewhat from the standard</p>"
+  },
+  {
+    "name": "Riders of the Apocalypse",
+    "url": "https://imcclung.itch.io/riders-of-the-apocalypse",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/riders.png?w=483",
+    "creators": [
+      "I. McClung"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAs the death of the world approaches, harbingers ride out, embodying all of its woes.\u201d<strong><br/>Content:</strong> Stat blocks for avatars of misery and mechanics for introducing them into your game<strong><br/>Writing:</strong> Clear, concise, and characterful<strong><br/>Art/design:</strong> A mix of artists and styles embedded in M\u00f6rk Borg\u2019s aesthetic <strong><br/>Usability:</strong> Straightforward layout; tables add variety without being overwhelming</p>"
+  },
+  {
+    "name": "Roc of Ages",
+    "url": "https://arnaudlmbrt.itch.io/roc-of-ages",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/roc-of-ages.jpeg?w=721",
+    "creators": [
+      "Arnaud F. Lambert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Great Bird of Doom\u201d<strong><br/>Content:</strong> A rather large, rather tough, rather valuable bird-beast<strong><br/>Writing:</strong> Some brief background and stats with 3 attack options<strong><br/>Art/design:</strong> The faces hidden in the plumage are a neat, subtle, evocative touch<strong><br/>Usability:</strong> Beware of falling rocks</p>"
+  },
+  {
+    "name": "Scream, Bloody Boar",
+    "url": "https://arnaudlmbrt.itch.io/scream-bloody-boar",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/scream-bloody-boar.jpg?w=1024",
+    "creators": [
+      "Arnaud F. Lambert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cRecurring encounters with a malevolent spectral swine\u201d<br/><strong>Content: </strong>A pissed-off pig with an undying vendetta against your party<br/><strong>Writing:</strong> Some simple instructions and stats<br/><strong>Art/design:</strong> Colors and designs add character while preserving readability<br/><strong>Usability:</strong> A quick, easy way to add a minor recurring antagonist to games</p>"
+  },
+  {
+    "name": "The Servant Girl Annihilator",
+    "url": "https://mcglintlock.itch.io/the-servant-girl-annihilator",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/servant-girl-annihilator.jpg?w=700",
+    "creators": [
+      "mcglintlock"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cMurderous and conniving, the Servant Girl Annihilator preys upon the weak.\u201d<strong><br/>Content:</strong> A covert, nocturnal axe-wielding demi-monster<strong><br/>Writing:</strong> Deftly describes appearance and behavior with touches of humor<strong><br/>Art/design:</strong> Color serves to hierarchize and emphasize text segments while integrating them and the illustration into the gestalt<strong><br/>Usability:</strong> Straightforward mechanics that may prove challenging for unprepared (and even prepared) PCs</p>"
+  },
+  {
+    "name": "Seven Palms for Seven Pslams",
+    "url": "https://greysonwhy.itch.io/seven-palms-for-seven-psalms",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/7-palms.png?w=722",
+    "creators": [
+      "Greyson Yandt"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA strange Misery-stopping friend\u201d<strong><br/>Content:</strong> An esoteric NPC with fun metagame mechanics and flair<strong><br/>Writing:</strong> Well-crafted flavor text, stat block and abilities, and a pair of games<strong><br/>Art/design:</strong> Absurdly appropriate graphics and smart division of text blocks<strong><br/>Usability:</strong> Text-heavy but with few moving parts</p>"
+  },
+  {
+    "name": "Siege Goat-Demon",
+    "url": "https://www.facebook.com/photo.php?fbid=1991965767626614&set=p.1991965767626614&type=3",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/mateusz-hupert-siege-goat-demon.jpg?w=720",
+    "creators": [
+      "Mateusz Hupert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cUnspeakable is the malice that brought the siege goat-demon to life. Stranger still is the purpose of strapping a siege ballista to its forearm.\u201d<strong><br/>Content:</strong> An adaptation of DOOM\u2019s Cyberdemon<strong><br/>Writing:</strong> Predominantly deals with elaborating on attacks and Special<strong><br/>Art/design:</strong> Linear, easy-to-use layout with splashes of red to unify the image and text<strong><br/>Usability:</strong> Particularly lethal if you put it at the end of a narrow hallway beside a stack of ammunition</p>"
+  },
+  {
+    "name": "Sin-Broken Waif",
+    "url": "https://imgur.com/f3KaoR4",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/sin-broken-waif.png?w=480",
+    "creators": [
+      "James Pianka"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cRuins of innocence draining joy from the world\u201d<strong><br/>Content:</strong> A puny monster whose defeat carries large-scale repercussions<strong><br/>Writing:</strong> Simple and straightforward<strong><br/>Art/design:</strong> Conservative but effective<strong><br/>Usability:</strong> Straightforward</p>"
+  },
+  {
+    "name": "The Singing Tree",
+    "url": "https://antonmorbid.itch.io/the-singing-tree",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/singing-tree.jpg?w=1024",
+    "creators": [
+      "Anton.Morbid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe hypnotic singing will lure creatures in close so the tree can ensnare them with its roots and drag them under.\u201d<strong><br/>Content:</strong> A malicious tree grown from corpses; includes stats, effects of eating fruit, and a background narrative<strong><br/>Writing:</strong> Well written on all accounts, particularly the in-character anecdote<strong><br/>Art/design:</strong> Colors and images provide atmosphere and character<strong><br/>Usability:</strong> Don\u2019t forget the fruit\u2019s secret side-effect</p>"
+  },
+  {
+    "name": "Sir Shite",
+    "url": "https://gaffy.itch.io/sir-shite",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/sir-shite.jpg?w=630",
+    "creators": [
+      "Luis Bishop Lopez"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAny water Sir Shite and his mout rests to drink from become riddled with toxic bacteria.\u201d<strong><br/>Content:</strong> A basilisk-riding, infection-spreading Borgonaut<strong><br/>Writing:</strong> Concise and to the point; includes separate stats for rider and mount<strong><br/>Art/design:</strong> Color adds some variety to the document and the contrast between collage elements creates some visual humor<strong><br/>Usability:</strong> High-damage attacks and chance of infection make this a particularly challenging set of foes</p>"
+  },
+  {
+    "name": "Sisters of Hate",
+    "url": "https://dognutboy.itch.io/sisters-of-hate",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/sisters-of-hate.jpg?w=722",
+    "creators": [
+      "Stuart (DogNutBoy)"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cOnce their words were meant to spread the truth of SHE but now they brandish the power to turn brother against brother, self against self.\u201d<strong><br/>Content:</strong> Nihilistic nuns<strong><br/>Writing:</strong> Provides backstory and flavor alongside stats and a subversive Special ability<strong><br/>Art/design:</strong> A neat depiction of the character and overall design that conveys raggedness and despair<strong><br/>Usability:</strong> Usable? Sure. More importantly, entertaining for GMs.</p>"
+  },
+  {
+    "name": "Skaurkalln ",
+    "url": "https://andersbj.itch.io/utbrdingmyling",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/skaurkalln.jpeg?w=730",
+    "creators": [
+      "Anders Bj\u00f6rkelid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cRider of lightning\u201d<strong><br/>Content:</strong> A personification of a lightning storm. Also, he\u2019s drunk.<strong><br/>Writing:</strong> A simple stat block but a robust table of circumstances under which you meet him<strong><br/>Art/design:</strong> Fosters the figure\u2019s folkloric feel; includes a fun visual reference to a certain metal band<strong><br/>Usability:</strong> Don\u2019t forget: he\u2019s drunk. (There are plenty of reminders.)</p>"
+  },
+  {
+    "name": "Skeletal Hoodeners (Hoodening)",
+    "url": "https://zodiolestes.itch.io/hoodening",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/hoodening.png",
+    "creators": [
+      "ZIDIOLESTES"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cHoodening is a folk custom [\u2026] where a person imitates a horse by hunching their back and holding out a horses head.\u201d<strong><br/>Content:</strong> One-and-a-half skeletons with a lance and a \u201cclub\u201d<strong><br/>Writing:</strong> Concise description of mechanical functions<strong><br/>Art/design:</strong> Graphic devices synergize well with illustrations and create a sense of sharpness and motion<strong><br/>Usability:</strong> Item mechanics are simple in themselves but could cause complications for PCs</p>"
+  },
+  {
+    "name": "Slaughter Dog",
+    "url": "https://codyfaulk.itch.io/slaughter-dog",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/slaughter-dog.png?w=876",
+    "creators": [
+      "Cody Faulk"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cEqual parts hyena, wolf, and corpse-eating nightmare.\u201d<strong><br/>Content:</strong> Stats, flavor text, and more payouts than your average beast<strong><br/>Writing:</strong> Concise, inspiring, and darkly funny<strong><br/>Art/design:</strong> Color and layout make an easily navigable page; bottom-right text block is a personal favorite<strong><br/>Usability:</strong> Yes</p>"
+  },
+  {
+    "name": "Sleep Now in the Fire",
+    "url": "https://caberlitz.itch.io/sleep-now-in-the-fire",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/sleep-now-in-the-fire.jpg?w=722",
+    "creators": [
+      "C.A. Berlitz"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAlthough they went down, the fire of their spirits still raged on. And they came to burn it all and make you sleep in a fire.\u201d<strong><br/>Content:</strong> Contains stats and lore for fire-based undead and items<strong><br/>Writing:</strong> A balance of descriptive and technical text, with the two folded together for the items<strong><br/>Art/design:</strong> Relatively traditional layouts with illustrations that support the entries\u2019 concepts<strong><br/>Usability:</strong> Straightforward on all counts</p>"
+  },
+  {
+    "name": "Smoke, Steel & Sinew",
+    "url": "https://gravenimages.itch.io/smoke-steel-sinew",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/smoke-steel-sinew.png?w=1024",
+    "creators": [
+      "Graven Images"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Spawn of the Black Forge hath come. Their flesh weeps inside pyg iron cages, spurred forth by the infernal engines of their burning brimstone hearts.\u201d<strong><br/>Content:</strong> A trio of machine-themed enemies<strong><br/>Writing:</strong> Includes an overview, tables for origins and encounters, and individual descriptions and stat blocks<strong><br/>Art/design:</strong> Fits a lot of content onto a single spread without compromising comprehension or usability<strong><br/>Usability:</strong> A toolkit for small adventures or campaigns set amidst an all-out invasion</p>"
+  },
+  {
+    "name": "Snowman",
+    "url": "https://www.dropbox.com/s/awl8c8wx1ftguqo/holiday.pdf?dl=0",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/snowman.png?w=495",
+    "creators": [
+      "Philip Reed",
+      "Alvaro Cabrera Jimenez"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA snowman makes for a powerful guardian in frosty dungeons and snow-covered towers.\u201d<strong><br/>Content:</strong> Contains a stat block, descriptive text, and adventure hook<strong><br/>Writing:</strong> Puts a sadistic twist on a classic holiday icon<strong><br/>Art/design:</strong> Fits well with the creature concept<strong><br/>Usability:</strong> For optimal efficiency, set thermostat below 30\u00b0 Fahrenheit</p>"
+  },
+  {
+    "name": "Stone Assassins",
+    "url": "https://arnaudlmbrt.itch.io/stone-assassins",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/stone-assassins.jpg?w=722",
+    "creators": [
+      "Arnaud F. Lambert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cAnimated stone statues that make the perfect assassins.\u201d<strong><br/>Content:</strong> Covert constructs easily camouflaged in most dungeons<strong><br/>Writing:</strong> Includes some lore alongside a basic stat block<strong><br/>Art/design:</strong> Good use of color to designate mechanical text<strong><br/>Usability:</strong> Simple to use with potential for messing with PCs</p>"
+  },
+  {
+    "name": "Strange Citizens of the City",
+    "url": "https://www.drivethrurpg.com/product/336077/Strange-Citizens-of-the-City-A-ThirdParty-Mork-Borg-Zine",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/strange-citizens.png?w=663",
+    "creators": [
+      "Phillip Reed",
+      "Barandash Karandashich"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cRoll 2d6 and meet a stranger\u201d<strong><br/>Content:</strong> A throng of bizarre personalities, hirelings, bystanders (some with personal connections to each other); also includes some locales and rumors<strong><br/>Writing:</strong> Suitably dark and disturbing with plenty of rimshots<strong><br/>Art/design:</strong> Fairly straightforward layouts with art that brings a strong arcane-mechanical flavor to the table<strong><br/>Usability:</strong> Very useable, and motivates you to do so</p>"
+  },
+  {
+    "name": "Strange Visitors to the City",
+    "url": "https://www.drivethrurpg.com/product/336081/Strange-Visitors-to-the-City-A-ThirdParty-Mork-Borg-Zine",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/strange-visitors.png?w=663",
+    "creators": [
+      "Phillip Reed",
+      "Barandash Karandashich",
+      "Slava Gerj"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cLet us return to the city where we may meet visitors from other places \u2026 and kill a few of them.\u201d<strong><br/>Content:</strong> More NPCs, hirelings, rumors, and sites to populate the city<strong><br/>Writing:</strong> Descriptive text provides motivations and hooks, with many unique special abilities<strong><br/>Art/design:</strong> A mix of colorful weirdness for major NPCs and more subtle, baroque art for the rest<strong><br/>Usability:</strong> Will often refer you to <em>Strange Citizens</em>, so make sure you keep that volume handy</p>"
+  },
+  {
+    "name": "Strange Inhabitants of the Forest",
+    "url": "https://www.drivethrurpg.com/product/336078/Strange-Inhabitants-of-the-Forest-A-ThirdParty-Mork-Borg-Zine",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/12/strange-inhabitants.png?w=663",
+    "creators": [
+      "Phillip Reed",
+      "Warm_Tail"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThere is an infinite number of unusual, dangerous characters in the forests that surround the city. This book details a handful of them.\u201d<strong><br/>Content:</strong> A variety of adversaries, encounters, travelers, and items to loot from their corpses<strong><br/>Writing:</strong> Includes copious backstories and adventure hooks <strong><br/>Art/design:</strong> A wide, evocative variety<strong><br/>Usability:</strong> Straightforward and simple to navigate</p>"
+  },
+  {
+    "name": "Street Spider",
+    "url": "https://www.reddit.com/r/MorkBorg/comments/ld8ncf/street_spider_by_skree_skree/",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/street-spider-skree_skree.jpg?w=773",
+    "creators": [
+      "skree_skree"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cFat swollen spider the size of a dog.\u201d<strong><br/>Content:</strong> A fat swollen spider the size of a dog. Also poisonous.<strong><br/>Writing:</strong> Provides a paragraph-long scenario/hooks with stat block and infection conditions<strong><br/>Art/design:</strong> Psychedelic tarantula invasion<strong><br/>Usability:</strong> Unusual stat arrangement but not obstructive</p>"
+  },
+  {
+    "name": "Svensk K\u00f6ck",
+    "url": "https://liberludorum.files.wordpress.com/2021/03/svensk-kock.pdf",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/svensk-kock.jpg?w=1024",
+    "creators": [
+      "Harkenstone"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe Svensk K\u00f6ck is a murderous creature known to haunt the vilest kitchens of Graven-Tosk.\u201d<strong><br/>Content:</strong> A Borgified parody of the Swedish Chef<strong><br/>Writing:</strong> Standard stat block with a paragraph detailing this \u2026 thing \u2026 and its specialty dish, The Black Feast<strong><br/>Art/design:</strong> Visually conveys M\u00f6rk Borg\u2019s mix of humor and grimdark<strong><br/>Usability:</strong> Straightforward for GMs, potentially lethal for hungry PCs</p>"
+  },
+  {
+    "name": "Tantrabobus of the Southern Wells",
+    "url": "https://newyearstudios.itch.io/tantrabobus-of-the-southern-wells",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/tantrabobus.jpg?w=347",
+    "creators": [
+      "Alex K. Barton"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThese creatures take up residence in wells throughout the dying land.\u201d<strong><br/>Content:</strong> Includes stats, random well generator, real-world lore, and tactics for fighting one<strong><br/>Writing:</strong> Delivers the necessary information but stays scant to spotlight the art<strong><br/>Art/design:</strong> Features plenty of visceral, gritty depictions<strong><br/>Usability:</strong> Content is spread cross several pages but well organized for easy use</p>"
+  },
+  {
+    "name": "The Tarasque",
+    "url": "https://urizenic.itch.io/the-tarasque",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/the-tarasque_1.jpg?w=1024",
+    "creators": [
+      "Walton Wood"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThe scourge of Nerluc, devourer of man & beast\u201d<strong><br/>Content:</strong> A monster inspired by medieval Occitan tales<strong><br/>Writing:</strong> Predominantly devoted to mechanics with some extra flavor mixed in<strong><br/>Art/design:</strong> Not printer-friendly<strong><br/>Usability:</strong> Sideways text is dumb but sometimes necessary</p>"
+  },
+  {
+    "name": "Tenacious Helmets",
+    "url": "https://fantasticjean.itch.io/tenacious-helmets-haunted-armour-for-mrk-borg",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/tenacious-helmets.jpg?w=724",
+    "creators": [
+      "Jean Verne"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA monster based on unfinished business, misplaced trust and faulty armour\u201d<strong><br/>Content:</strong> A trap/monster/item targeting unwary and acquisitive adventurers<strong><br/>Writing:</strong> Includes background, behavior, effects, and a stat block (of course)<strong><br/>Art/design:</strong> The illustrations will make you want one despite the adverse effects<strong><br/>Usability:</strong> Multivalent but ergonomic in any capacity</p>"
+  },
+  {
+    "name": "The Tenacious Tupilaq",
+    "url": "https://vikugnavikugna.itch.io/tenacious-tupilaq",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/tenacious-tupilaq.png?w=722",
+    "creators": [
+      "Vikugna Vikugna"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cMismatched effigies made out of animal and human parts given life by shamans of Kerg\u00fcs, heretics, who seek revenge against the ones who wronged them.\u201d<strong><br/>Content:</strong> A highly variable monster type<strong><br/>Writing:</strong> Includes a general description of origin and motives along with 4 tables for generation head, legs, arms, and torso types<strong><br/>Art/design:</strong> Achieves expressive visual character without sacrificing efficiency<strong><br/>Usability:</strong> More rolling than your average monster, but not prohibitive</p>"
+  },
+  {
+    "name": "There Is One Goat",
+    "url": "https://brianbinh.itch.io/one-goat",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/goat.jpg?w=722",
+    "creators": [
+      "Brian Binh"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThis one-page M\u00d6RK BORG creature is an attempt to exorcise the demon goat from my mind. Now it\u2019s your problem.\u201d<strong><br/>Content:</strong> A goat best avoided\u2014but where\u2019s the fun in that?<strong><br/>Writing:</strong> Establishes a strange, surreal tone to match the image<strong><br/>Art/design:</strong> When you gaze too long into the goat, the goat gazes also into you<strong><br/>Usability:</strong> Simple and easy to use. It\u2019s just a goat, after all\u2026</p>"
+  },
+  {
+    "name": "There Was an Old Lady ",
+    "url": "https://1d105.itch.io/there-was-an-old-lady",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/there-was-an-old-lady.png?w=556",
+    "creators": [
+      "1d10+5"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cBilious beasts from a rotten maw!\u201d<strong><br/>Content:</strong> A fun inversion of the classic nursery rhyme<strong><br/>Writing:</strong> Contains stats for the title character and all the animals she\u2019s swallowed/vomits at PCs<strong><br/>Art/design:</strong> On-brand layout and graphics with some distinctive, noxious green for extra character<strong><br/>Usability:</strong> A potentially gross, absurd, and diverse challenge for players</p>"
+  },
+  {
+    "name": "The Thirteenth Damned Son",
+    "url": "https://overlordpub.itch.io/the-thirteenth-damned-son",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/13th-damned-son.png?w=948",
+    "creators": [
+      "Overlord Publishing"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cCursed by a mother that didn\u2019t want it [\u2026] a sickly, unpleasant horror that some say was fathered by HE.\u201d<strong><br/>Content:</strong> An abomination inspired by the Jersey Devil but skillfully adapted to the setting <strong><br/>Writing:</strong> Short but flavorful description and a healthy stat block<strong><br/>Art/design:</strong> Fits right into M\u00f6rk Borg on every count<strong><br/>Usability:</strong> Organized and readable</p>"
+  },
+  {
+    "name": "Toon Horde",
+    "url": "https://bannerlessgames.itch.io/toon-horde",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/toon-horde.png?w=722",
+    "creators": [
+      "Bannerless Games"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cFew things are more terrifying to a world of ash, metal and blood than plastic, laughter and assimilation.\u201d<strong><br/>Content:</strong> Proof that there is no God in the world of M\u00f6rk Borg<strong><br/>Writing:</strong> Outstanding. You have to read it for yourself.<strong><br/>Art/design:</strong> A perfect blend of M\u00f6rk Borg and cartoon aesthetics<strong><br/>Usability:</strong> Your game will never be the same after this. Fair warning.</p>"
+  },
+  {
+    "name": "The Travelling Cigar Cart of the Spurious Basilisk",
+    "url": "https://vikugnavikugna.itch.io/spurious-basilisk",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/travelling-cigar-cart.png?w=347",
+    "creators": [
+      "Vikugna Vikugna"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA relatively friendly cigar selling npc(s) and their cigars which may or may not have some secret magical effects\u201d<strong><br/>Content:</strong> A more lighthearted encounter with lots of potential for short- and long-term hijinks<strong><br/>Writing:</strong> Full of character and entertaining to read and interpret for play<strong><br/>Art/design:</strong> Diverse typography and patchwork layout creates a dynamic (but still readable) gestalt<strong><br/>Usability:</strong> This product contains nicotine.</p>"
+  },
+  {
+    "name": "The Triangular",
+    "url": "https://jnohr.itch.io/the-triangular",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/triangular.jpg?w=1024",
+    "creators": [
+      "Johan Nohr"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThree sides. Two dimensions. One daemon.\u201d<strong><br/>Content:</strong> A just-plain-weird entity that stupefies people and animates objects (before stealing them)<strong><br/>Writing:</strong> Emphasizes the concept\u2019s humor and existential absurdity and punctuates it with eternal horror<strong><br/>Art/design:</strong> Relatively conservative but no less strange and creepy<strong><br/>Usability:</strong> \u201c<s>This is a monster for use with M\u00d6RK BORG</s>\u201d</p>"
+  },
+  {
+    "name": "Tulivuori the Impulsive",
+    "url": "https://rivetheadgames.itch.io/tulivuori-the-impulsive",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/tulivuori.jpg?w=1024",
+    "creators": [
+      "Tyler Lindsey"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWhere once loomed Bergen Chrypt, now seeps the yellow-red rage of Tulivuori.\u201d<strong><br/>Content:</strong> A volcanic adversary, literally<strong><br/>Writing:</strong> Includes an anti-stat block with rules for converting followers and gifts bestowed<strong><br/>Art/design:</strong> Illustration and other graphic elements convey an eruptive, dynamic energy<strong><br/>Usability:</strong> Not your typical monster</p>"
+  },
+  {
+    "name": "Tuurngaq",
+    "url": "https://kurgoth.itch.io/tuurngaq",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/05/tuurngaq.jpg?w=630",
+    "creators": [
+      "Olivier Delattre"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cSo, you killed this creepy hermit, back in these frozen hills. Since then, something is hunting you.\u201d<strong><br/>Content:</strong> A malicious, body-stealing spirit from the frozen north<strong><br/>Writing:</strong> Offers up a potential hook, stats, behavior and ecology, and means of controlling one<strong><br/>Art/design:</strong> Well-delineated text blocks keep different types of information discrete and accessible; extensive use of cool colors supports the arctic character<strong><br/>Usability:</strong> Potential to serve multiple in-game purposes in different capacities</p>"
+  },
+  {
+    "name": "Utb\u00f6rding",
+    "url": "https://andersbj.itch.io/utbrdingmyling",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/utbording.jpeg?w=721",
+    "creators": [
+      "Anders Bj\u00f6rkelid"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cUndead vengeful placenta\u201d<strong><br/>Content:</strong> It wants to know if you\u2019re its mommy<strong><br/>Writing:</strong> Quick and concise with a touch of humor<strong><br/>Art/design:</strong> Some seriously monstrous afterbirth<strong><br/>Usability:</strong> Mechanically straightforward</p>"
+  },
+  {
+    "name": "The Vertebrachnid",
+    "url": "https://brocktopus.itch.io/vertebrachnid",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/11/vertebrachnid.png?w=1024",
+    "creators": [
+      "Kevin B."
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cA species of animated translucent slime makes its home from the skeletons of dead adventurers.\u201d<strong><br/>Content:</strong> A strange, slimy scavenger<strong><br/>Writing:</strong> Mostly descriptive with a simple stat block<strong><br/>Art/design:</strong> Includes a nice illustration<strong><br/>Usability: </strong>Good use of color and shape to delineate content sections</p>"
+  },
+  {
+    "name": "Vile Bile-Rider",
+    "url": "https://dognutboy.itch.io/the-vile-bile-rider",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/vile-bile-rider.jpg?w=722",
+    "creators": [
+      "DogNutBoy aka Stuart Holmes"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cGlorious FILTH~! Is there no greater feeling than to bathe in the aftermath of LIFE\u201d<strong><br/>Content:</strong> A filth-wallowing composite monster<strong><br/>Writing:</strong> Gets the point across without being overly graphic<strong><br/>Art/design:</strong> Colors are spot-on for the concept; a weirdly ingenious collage illustrates the concept described in the mechanics and paratext<strong><br/>Usability:</strong> An interesting tool for tactically minded GMs</p>"
+  },
+  {
+    "name": "Vidvittra",
+    "url": "https://morgis.itch.io/vildvittra",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/vildvittra.jpg?w=722",
+    "creators": [
+      "Nina Morgan Olsson"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThey are cruel and fierce, always in search of prey.\u201d<strong><br/>Content:</strong> A haryp-esque monster<strong><br/>Writing:</strong> Includes a brief description of behavior and ecology<strong><br/>Art/design:</strong> M\u00f6rk bird<strong><br/>Usability:</strong> Don\u2019t let your PCs get carried away. (That joke will make sense when you read the Special.)</p>"
+  },
+  {
+    "name": "Vulpignipagus",
+    "url": "https://spacejob.itch.io/vulpignipagus",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/vulpignipagus.png?w=630",
+    "creators": [
+      "Irene Zielinski"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cThese wretched foxes are conjoined in pairs, their tails fused, the center lit with an \u00a0inexorable fire.\u201d<strong><br/>Content:</strong> A rather innocuous, unfortunate monster<strong><br/>Writing:</strong> Furnishes lore and a stat block with a few Specials<strong><br/>Art/design:</strong> Illustration divides the page between descriptive and mechanical text<strong><br/>Usability:</strong> Probably easier to use than to pronounce, but don\u2019t hold that against it</p>"
+  },
+  {
+    "name": "Wandering Master",
+    "url": "https://www.facebook.com/photo/?fbid=1989894264500431&set=gm.736559826994112",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/wandering-master-mateusz-hupert.jpg?w=722",
+    "creators": [
+      "Good Rogue"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTired of pursuing enlightenment, instead waiting patiently for the challenge to come to him\u201d<strong><br/>Content:</strong> A samurai-inspired enemy warrior<strong><br/>Writing:</strong> Primarily devoted to mechanics but with details that establish character<strong><br/>Art/design:</strong> A split layout balancing text and image; illustration conveys cultural flavor in a Borgy fashion<strong><br/>Usability:</strong> Variable behavior and attacks based on the battle\u2019s progress; a little complex, but not overly so</p>"
+  },
+  {
+    "name": "A Weasel\u2019s Funeral ",
+    "url": "https://jawncee.itch.io/a-weasels-funeral",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/weasels-funeral.png?w=451",
+    "creators": [
+      "John Casey"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTravelling down the road, you come against a procession of weasels in mourning.\u201d<strong><br/>Content:</strong> A funerary procession of weasels. Best not to disrupt their mourning.<strong><br/>Writing:</strong> A short description of the scene and stats for the weasels<strong><br/>Art/design:</strong> Relatively minimalist but presented well for use at the table<strong><br/>Usability:</strong> Intuitive</p>"
+  },
+  {
+    "name": "The Wendigo",
+    "url": "https://urizenic.itch.io/the-wendigo",
+    "img_url": "https://liberludorum.files.wordpress.com/2020/10/wendigo-1.png?w=993",
+    "creators": [
+      "Walton Wood"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cIn the labyrinth of Sarkash\u2019s ever-shifting groves and trails, the wendigo hunts.\u201d<strong><br/>Content:</strong> Stats and behavior of a forest predator<strong><br/>Writing:</strong> Mostly devoted to ecology<strong><br/>Art/design:</strong> Very purple<strong><br/>Usability:</strong> Some dark and discontinuous text may be difficult to read</p>"
+  },
+  {
+    "name": "Wendigo (For Whom the Deer Haunts) ",
+    "url": "https://thewizardinoctarine.itch.io/for-whom-the-deer-haunts",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/for-whom-the-deer-haunts.png?w=1024",
+    "creators": [
+      "Thomas Rompr\u00e9"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cDeep in the woods of Kerg\u00fcs, you befall a small tribe of earthbound. Their Chieftain, Kr\u00fcll, warns you of an accursed\u00a0 kinsmen \u2013 a Wendigo \u2013 hiding among them, slaughtering a man every night.\u201d<strong><br/>Content:</strong> A malicious shapeshifter hiding in plain sight among its prey<br/><strong>Writing:</strong> Conveys the necessary information concisely but effectively<strong><br/>Art/design:</strong> A gritty graphic character with strategic shocks of color<strong><br/>Usability:</strong> Designed for use in a particular scenario but easily transplantable</p>"
+  },
+  {
+    "name": "Weregoat",
+    "url": "https://ravagingplague.itch.io/weregoat",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/weregoat.png?w=824",
+    "creators": [
+      "R and M"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cWeregoats gather in black woods and haunted wildernesses where they build crude idols to their petty gods.\u201d<strong><br/>Content:</strong> Hideous man-goat amalgamations to haunt your games and dreams<strong><br/>Writing:</strong> Includes an overview of the monster with some short tables for armor, weapons, and numbers</p>"
+  },
+  {
+    "name": "What Is Emerging from the Chrysalis?",
+    "url": "https://arnaudlmbrt.itch.io/what-is-emerging-from-the-chrysalis",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/chrysalis.jpg?w=722",
+    "creators": [
+      "Arnaud F. Lambert"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cYou encounter a giant pale cocoon.\u00a0And it has started to split open.\u201d<strong><br/>Content:</strong> 30 horrible things to blindside your players with<strong><br/>Writing:</strong> Includes basic stat blocks for all entries<strong><br/>Art/design:</strong> Textually dense but a distinct visual character<strong><br/>Usability:</strong> None of the monsters are particularly vicious; a good way to catch PCs off guard when they think they\u2019ve cleared a room</p>"
+  },
+  {
+    "name": "The Wicked Ensemble",
+    "url": "https://fantasticjean.itch.io/the-wicked-ensemble",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/02/wicked-ensemble.jpg?w=1024",
+    "creators": [
+      "Jean Verne"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cTake part in a dance battle orchestrated by merry skeletons and show off your infernal dance moves!\u201d<strong><br/>Content: </strong>A performance-based encounter including mechanics for variations and dance moves<strong><br/>Writing:</strong> Takes itself 100% seriously, and it\u2019s spectacular<strong><br/>Art/design:</strong> Uses signature yellow and pink to more festive effect; the ligature is also a nice touch<strong><br/>Usability:</strong> Easy for DMs, probably a confounding challenge to players</p>"
+  },
+  {
+    "name": "The Wicker God",
+    "url": "https://anadversary.itch.io/the-wicker-god",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/03/wicker-god.jpg?w=634",
+    "creators": [
+      "Bracken MacLeod"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cFrom the forest it emerges, taller than the trees, its body a writhing, shifting mass of woven roots and branches. [\u2026] Faintly, you hear screams from behind its prison of living branches.\u201d<strong><br/>Content:</strong> An enormous monster that eats characters and monsters alive before immolating itself<strong><br/>Writing:</strong> Concise but descriptive with well-placed humor<strong><br/>Art/design:</strong> Typography and purely graphic components all contribute to an overall woven, vegetable texture<strong><br/>Usability:</strong> Selective regeneration makes a bit more math for the GM; defeating it without killing consumed allies creates a tactical challenge for the PCs</p>"
+  },
+  {
+    "name": "Zephyr Wyrm",
+    "url": "https://knightowlpub.itch.io/zephyr-wyrm",
+    "img_url": "https://liberludorum.files.wordpress.com/2021/04/zephyr-wyrm.jpg?w=1024",
+    "creators": [
+      "Ahimsa Ker"
+    ],
+    "description": "<p><strong>Concept:</strong> \u201cFrom the West she came / Her fiery wings Soared / The land withered in flame / And with her rode the Horde\u201d<strong><br/>Content:</strong> Some poetic flavor, a beastly stat block, and a Horde-generation table<strong><br/>Writing:</strong> The picture of concision<strong><br/>Art/design:</strong> This one is a really bright, vibrant misery<strong><br/>Usability:</strong> Highly lethal but allergic to mulch squirrels</p>"
+  }
+]
