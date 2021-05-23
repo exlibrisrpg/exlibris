@@ -25,6 +25,7 @@ class Admin::EntriesTest < ApplicationSystemTestCase
         <strong><br>Usability:</strong> Two tables filled with mortification
       </div>
     HTML
+    find("summary", text: tag_categories(:officialness).name).click
     check tags(:mork_borg_cult).name
     click_on I18n.t("helpers.submit.entry.create")
 
