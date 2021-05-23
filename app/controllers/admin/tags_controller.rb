@@ -40,7 +40,7 @@ class Admin::TagsController < Admin::AdminController
 
     @tag.destroy
 
-    redirect_to tags_path
+    redirect_to admin_tags_path
   end
 
   private

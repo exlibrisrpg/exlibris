@@ -144,6 +144,7 @@ class Admin::TagsControllerTest < ActionDispatch::IntegrationTest
       delete admin_tag_path(tag)
 
       assert_nil Tag.find_by(id: tag.id)
+      assert_redirected_to admin_tags_path
     end
   end
 end
