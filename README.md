@@ -1,4 +1,4 @@
-# Ex Libris
+# Ex Libris Mörk Borg
 
 A database of Mörk Borg content. For [Liber Ludorum].
 

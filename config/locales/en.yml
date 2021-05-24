@@ -1,6 +1,6 @@
 en:
   application:
-    name: Ex Libris
+    name: Ex Libris Mörk Borg
 
   activerecord:
     errors:
@@ -23,7 +23,7 @@ en:
 
   layouts:
     admin:
-      name: Ex Libris Admin
+      name: Ex Libris Mörk Borg Admin
       back_link: To Public Site
       entries_link: Entries
       tags_link: Tags
@@ -31,7 +31,7 @@ en:
       sign_in_link: Sign in
       title: Admin Section
     public:
-      name: Ex Libris
+      name: Ex Libris Mörk Borg
       tagline: A directory of content, tools, and resources for the Mörk Borg RPG
 
   admin:
@@ -69,7 +69,7 @@ en:
 
   searches:
     show:
-      title: Search Ex Libris
+      title: Search Ex Libris Mörk Borg
 
   tags:
     index:
