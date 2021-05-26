@@ -30,7 +30,7 @@
             <strong><%= Link.model_name.human.pluralize %>:</strong>
 
             <% entry.links.each do |link| %>
-              <%= link_to link_name(link), link.address %>
+              <%= link_to image_tag(link_icon(link), :class => "link-icon") + link_name(link), link.address %>
             <% end %>
           </div>
         </div>
