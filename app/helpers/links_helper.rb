@@ -18,22 +18,22 @@ module LinksHelper
 
   def link_icon(link)
     name = link_name(link)
-    case name
-    when "drivethrurpg.com"
-      icon = "dtrpg.png"
-    when "dropbox.com"
-      icon = "dropbox.png"
-    when "facebook.com"
-      icon = "facebook.png"
-    when "google.com"
-      icon = "google.png"
-    when "itch.io"
-      icon = "itch.png"
-    when "morkborg.com"
-      icon = "morkborg.png"
-    else
-      icon = "link.png"
-    end
+    icon = case name
+           when "drivethrurpg.com"
+             "dtrpg.png"
+           when "dropbox.com"
+             "dropbox.png"
+           when "facebook.com"
+             "facebook.png"
+           when "google.com"
+             "google.png"
+           when "itch.io"
+             "itch.png"
+           when "morkborg.com"
+             "morkborg.png"
+           else
+             "link.png"
+           end
     LINK_ICON_PREFIX + icon
   end
 end
