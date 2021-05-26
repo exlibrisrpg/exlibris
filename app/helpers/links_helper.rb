@@ -17,7 +17,8 @@ module LinksHelper
   LINK_ICON_PREFIX = "/images/linkicons/"
 
   def link_icon(link)
-    case link_name(link)
+    name = link_name(link)
+    case name
     when "drivethrurpg.com"
       icon = "dtrpg.png"
     when "dropbox.com"
