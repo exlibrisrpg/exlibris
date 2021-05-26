@@ -14,26 +14,21 @@ module LinksHelper
     match.match(link.address)["name"]
   end
 
-  LINK_ICON_PREFIX = "/images/linkicons/"
-
   def link_icon(link)
     name = link_name(link)
-    icon = case name
-           when "drivethrurpg.com"
-             "dtrpg.png"
-           when "dropbox.com"
-             "dropbox.png"
-           when "facebook.com"
-             "facebook.png"
-           when "google.com"
-             "google.png"
-           when "itch.io"
-             "itch.png"
-           when "morkborg.com"
-             "morkborg.png"
-           else
-             "link.png"
+    case name
+    when "dropbox.com"
+      :dropbox
+    when "facebook.com"
+      :facebook
+    when "google.com"
+      :google
+    when "itch.io"
+      :itch
+    when "morkborg.com"
+      :morkborg
+    else
+      :link
     end
-    LINK_ICON_PREFIX + icon
   end
 end
