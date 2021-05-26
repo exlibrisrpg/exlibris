@@ -33,6 +33,6 @@ module LinksHelper
     else
       icon = "link.png"
     end
-    return LINK_ICON_PREFIX + icon
+    LINK_ICON_PREFIX + icon
   end
 end
