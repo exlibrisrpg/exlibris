@@ -33,7 +33,7 @@ module LinksHelper
              "morkborg.png"
            else
              "link.png"
-           end
+    end
     LINK_ICON_PREFIX + icon
   end
 end
