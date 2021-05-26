@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <use id="Background" xlink:href="#_Image1" x="2" y="0" width="12px" height="16px"/>
-    <defs>
-        <image id="_Image1" width="12px" height="16px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAlklEQVQokcXSMQoCQQwF0MeqaCUWgo2Nh/M8XmN7D6BWdhYiCIKeQPAACmszMMMyIysIfgh8En7mTxJ+gDWaENt2scoIegnvdxE0BV4UfMR/BM+Ev0rCJW444y6O9RFyV6yIY5tikWk0CQHz1FKXv1TEJY2C3z2GmIX8BTVO2OCQ65Sexi77TAuDAkfmVnDEOPCsha/wBp6NGypdRvuwAAAAAElFTkSuQmCC"/>
-    </defs>
+    <g id="Layer1">
+        <rect x="6.008" y="1.004" width="3.982" height="13.989"/>
+        <rect x="2.994" y="7.995" width="9.99" height="3.983"/>
+    </g>
 </svg>
