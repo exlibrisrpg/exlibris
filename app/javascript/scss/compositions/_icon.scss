@@ -1,22 +1,10 @@
 .icon {
   flex-shrink: 0;
-  height: 0.75em;
-  height: 1cap;
-  width: 0.75em;
-  width: 1cap;
 }
 
 .with-icon {
-  align-items: baseline;
-  display: inline-flex;
-}
-
-.with-icon .icon {
-  margin-inline-end: 1rem;
-}
-
-.with-icon.link {
   align-items: center;
+  display: inline-flex;
 }
 
 .with-icon .icon {
