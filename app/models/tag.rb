@@ -8,4 +8,6 @@ class Tag < ApplicationRecord
 
   scope :containing, ->(query) { where("to_tsvector('en', tags.name) @@ websearch_to_tsquery(unaccent(:query))", query: query) }
   scope :with_includes, -> { includes(:rich_text_description, entries: [:links, :rich_text_description, tags: :rich_text_description, cover_attachment: :blob]) }
+
+  default_scope { order(name: :asc) }
 end

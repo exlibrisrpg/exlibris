@@ -39,6 +39,9 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_link_to (1.0.5)
+      actionpack
+      addressable
     activejob (6.1.3.2)
       activesupport (= 6.1.3.2)
       globalid (>= 0.3.6)
@@ -66,6 +69,22 @@ GEM
       ffi (~> 1.14)
       ffi-compiler (~> 1.0)
     ast (2.4.2)
+    avo (1.7.2)
+      active_link_to
+      addressable
+      breadcrumbs_on_rails
+      countries
+      hotwire-rails
+      httparty
+      image_processing
+      manifester
+      meta-tags
+      pagy
+      pundit
+      rails (>= 6.0)
+      ransack
+      view_component
+      zeitwerk
     aws-eventstream (1.1.1)
     aws-partitions (1.462.0)
     aws-sdk-core (3.114.0)
@@ -87,6 +106,8 @@ GEM
     bootsnap (1.7.5)
       msgpack (~> 1.0)
     brakeman (5.0.1)
+    breadcrumbs_on_rails (4.1.0)
+      railties (>= 5.0)
     builder (3.2.4)
     byebug (11.1.3)
     capybara (3.35.3)
@@ -107,6 +128,10 @@ GEM
       email_validator (~> 2.0)
       railties (>= 5.0)
     concurrent-ruby (1.1.8)
+    countries (3.1.0)
+      i18n_data (~> 0.11.0)
+      sixarm_ruby_unaccent (~> 1.1)
+      unicode_utils (~> 1.4)
     crass (1.0.6)
     email_validator (2.2.3)
       activemodel
@@ -117,8 +142,19 @@ GEM
       rake
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hotwire-rails (0.1.3)
+      rails (>= 6.0.0)
+      stimulus-rails
+      turbo-rails
+    httparty (0.18.1)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    i18n_data (0.11.0)
+    image_processing (1.12.1)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     inline_svg (1.7.2)
       activesupport (>= 3.0)
       nokogiri (>= 1.6)
@@ -133,16 +169,27 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
+    manifester (0.1.8)
+      rails (>= 6.0)
+      zeitwerk
     marcel (1.0.1)
+    meta-tags (2.14.0)
+      actionpack (>= 3.2.0, < 6.2)
     method_source (1.0.0)
+    mime-types (3.3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2021.0225)
+    mini_magick (4.11.0)
     mini_mime (1.0.3)
     minitest (5.14.4)
     msgpack (1.4.2)
+    multi_xml (0.6.0)
     nio4r (2.5.7)
     nokogiri (1.11.5-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.11.5-x86_64-linux)
       racc (~> 1.4)
+    pagy (3.13.0)
     parallel (1.20.1)
     parser (3.0.1.1)
       ast (~> 2.4.1)
@@ -150,6 +197,8 @@ GEM
     public_suffix (4.0.6)
     puma (5.3.2)
       nio4r (~> 2.0)
+    pundit (2.1.0)
+      activesupport (>= 3.0.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-mini-profiler (2.3.2)
@@ -190,6 +239,10 @@ GEM
       thor (~> 1.0)
     rainbow (3.0.0)
     rake (13.0.3)
+    ransack (2.4.2)
+      activerecord (>= 5.2.4)
+      activesupport (>= 5.2.4)
+      i18n
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -210,6 +263,8 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.11.0)
+    ruby-vips (2.1.2)
+      ffi (~> 1.12)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -231,6 +286,7 @@ GEM
     shoulda-context (2.0.0)
     shoulda-matchers (4.5.1)
       activesupport (>= 4.2.0)
+    sixarm_ruby_unaccent (1.2.0)
     skylight (5.1.0)
       activesupport (>= 5.2.0)
     spring (2.1.1)
@@ -244,14 +300,21 @@ GEM
     standard (1.1.1)
       rubocop (= 1.14.0)
       rubocop-performance (= 1.11.2)
+    stimulus-rails (0.2.3)
+      rails (>= 6.0.0)
     thor (1.1.0)
     tilt (2.0.10)
+    turbo-rails (0.5.9)
+      rails (>= 6.0.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)
+    unicode_utils (1.4.0)
+    view_component (2.32.0)
+      activesupport (>= 5.0.0, < 7.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -278,6 +341,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  avo
   aws-sdk-s3
   bootsnap (>= 1.4.4)
   brakeman

@@ -5,7 +5,7 @@ class VisitorUpdatesPasswordTest < ApplicationSystemTestCase
     user = user_with_reset_password
     update_password user, "newpassword"
 
-    assert_user_signed_in
+    assert_user_signed_in user
   end
 
   test "signs in with new password" do
@@ -14,7 +14,7 @@ class VisitorUpdatesPasswordTest < ApplicationSystemTestCase
     sign_out
     sign_in_with user.email, "newpassword"
 
-    assert_user_signed_in
+    assert_user_signed_in user
   end
 
   test "tries with a blank password" do

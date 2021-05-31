@@ -4,13 +4,13 @@ class VisitorSignsInTest < ApplicationSystemTestCase
   test "with valid email and password" do
     sign_in_with users(:john).email, "password"
 
-    assert_user_signed_in
+    assert_user_signed_in users(:john)
   end
 
   test "with valid mixed-case email and password " do
     sign_in_with users(:john).email.upcase, "password"
 
-    assert_user_signed_in
+    assert_user_signed_in users(:john)
   end
 
   test "tries with invalid password" do

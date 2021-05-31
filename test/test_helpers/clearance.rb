@@ -32,7 +32,8 @@ module ClearanceHelpers
     end
 
     def sign_out
-      click_button I18n.t("layouts.application.sign_out")
+      click_link users(:john).email
+      click_button "Sign out"
     end
 
     def sign_up_with(email, password)
@@ -42,9 +43,9 @@ module ClearanceHelpers
       click_button I18n.t("helpers.submit.user.create")
     end
 
-    def assert_user_signed_in
-      visit admin_root_path
-      assert_button I18n.t("layouts.application.sign_out")
+    def assert_user_signed_in(user)
+      visit "/admin"
+      assert_link user.email
     end
 
     def assert_user_signed_out
