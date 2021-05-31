@@ -7,7 +7,7 @@ class EntryResource < Avo::BaseResource
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
   field :description, as: :trix, default: Entry::DEFAULT_DESCRIPTION, always_show: true, required: true, attachments_disabled: true
-  field :cover, as: :file, is_image: true, link_to_resource: true
+  field :cover, as: :file, is_image: true, link_to_resource: true, hide_on: [:index]
 
   field :created_at, as: :date_time, readonly: true, sortable: true, hide_on: [:new, :edit]
   field :updated_at, as: :date_time, readonly: true, sortable: true, hide_on: [:new, :edit]
