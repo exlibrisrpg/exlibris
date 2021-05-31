@@ -1,14 +1,9 @@
 .icon {
-  fill: var(--icon-color, var(--color-background));
   height: var(--icon-size, var(--font-size));
   width: var(--icon-size, var(--font-size));
 
-  .primary {
+  path {
     fill: var(--icon-color, var(--color-foreground));
-  }
-
-  .secondary {
-    fill: var(--icon-color, var(--color-foreground-translucent));
   }
 }
 

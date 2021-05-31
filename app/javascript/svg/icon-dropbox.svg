@@ -1,1 +1,7 @@
-<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><polygon class="primary" points="177,77 64,150.9 142.1,213.6 256,143.1  "/><polygon class="primary" points="64,276.3 177,350.2 256,284.1 142.1,213.6  "/><polygon class="primary" points="256,284.1 335,350.2 448,276.3 369.9,213.6  "/><polygon class="primary" points="448,150.9 335,77 256,143.1 369.9,213.6  "/><polygon class="primary" points="256.2,298.3 176.4,364.3 142,342.1 142,367 256,435 370,367 370,342.1 335.8,364.3  "/></g></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.47396 1.74479L1 5.97865L5.47448 9.57083L12 5.53177L7.47396 1.74479Z" fill="black"/>
+<path d="M1 13.163L7.47396 17.3969L12 13.6099L5.47448 9.57083L1 13.163Z" fill="black"/>
+<path d="M12 13.6099L16.526 17.3969L23 13.163L18.5255 9.57083L12 13.6099Z" fill="black"/>
+<path d="M23 5.97865L16.526 1.74479L12 5.53177L18.5255 9.57083L23 5.97865Z" fill="black"/>
+<path d="M12.0115 14.4234L7.43958 18.2047L5.46875 16.9328V18.3594L12 22.2552L18.5313 18.3594V16.9328L16.5719 18.2047L12.0115 14.4234Z" fill="black"/>
+</svg>
