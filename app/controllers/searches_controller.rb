@@ -5,6 +5,7 @@ class SearchesController < ApplicationController
     else
       Search.new
     end
+    set_page_and_extract_portion_from @search.entries
   end
 
   private

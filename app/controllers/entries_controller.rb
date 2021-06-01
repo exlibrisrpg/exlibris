@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.all.with_includes
+    set_page_and_extract_portion_from Entry.all.with_includes
   end
 
   def new

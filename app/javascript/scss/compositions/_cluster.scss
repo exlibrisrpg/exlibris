@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.cluster-center > * {
+  justify-content: center;
+}
+
 .cluster-baseline > * {
   align-items: baseline;
 }

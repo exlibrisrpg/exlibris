@@ -11,7 +11,7 @@
     <div class="stack">
       <div class="cluster | cluster-space cluster-baseline">
         <div>
-          <h1 class="unifraktur"><%= link_to entry.name, [local_assigns[:namespace], entry] %></h1>
+          <h1 class="unifraktur"><%= highlight_link_to entry.name, [local_assigns[:namespace], entry] %></h1>
 
           <% if local_assigns[:namespace] == :admin %>
             <div class="cluster">
@@ -30,7 +30,7 @@
             <strong><%= Link.model_name.human.pluralize %>:</strong>
 
             <% entry.links.each do |link| %>
-              <%= link_to link.address, class: "with-icon" do %>
+              <%= highlight_link_to link.address, class: "with-icon" do %>
                 <%= icon_tag link_icon(link) %>
                 <%= link_name(link) %>
               <% end %>

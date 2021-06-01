@@ -1,0 +1,32 @@
+<%= turbo_frame_tag "page_#{page.number}", target: "_top", style: "display: block;", class: local_assigns[:class] do %>
+  <%= yield %>
+
+  <% if !page.last? %>
+    <% next_page_path = path.call(page.next_param) %>
+    <%= turbo_frame_tag "page_#{page.number + 1}", src: next_page_path, loading: "lazy", class: local_assigns[:class], style: "display: block;" do %>
+      <div class="center">
+        <div class="cluster | cluster-center">
+          <div class="plex-mono">
+            <%= tag.span t(".loading") %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div class="center" data-controller="hide">
+    <div class="cluster | cluster-center">
+      <div class="plex-mono">
+        <% if !page.first? %>
+          <% previous_page_path = path.call(page.number - 1) %>
+          <%= highlight_link_to t(".previous_page"), previous_page_path %>
+        <% end %>
+        <%= tag.span t(".current_page", number: page.number, count: page.recordset.page_count) %>
+        <% if !page.last? %>
+          <% next_page_path = path.call(page.next_param) %>
+          <%= highlight_link_to t(".next_page"), next_page_path %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

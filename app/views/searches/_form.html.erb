@@ -5,12 +5,12 @@
         <%= form.label :query do %>
           <%= icon_tag :search %>
         <% end %>
-        <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
+        <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, data: { controller: "highlight" } %>
       </div>
     </div>
 
     <div class="highlight-yellow hover-highlight-white" style="min-width: 15%;">
-      <%= form.submit name: "", class: "search--submit" %>
+      <%= form.submit name: "", class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true } %>
     </div>
   </div>
 <% end %>

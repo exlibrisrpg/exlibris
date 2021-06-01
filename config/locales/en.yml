@@ -34,6 +34,13 @@ en:
       name: Ex Libris
       tagline: A directory of content, tools, and resources for the Mörk Borg RPG
 
+  shared:
+    paginate:
+      current_page: Page %{number} of %{count}
+      previous_page: Previous page
+      next_page: Next page
+      loading: Loading next page...
+
   admin:
     entries:
       index:

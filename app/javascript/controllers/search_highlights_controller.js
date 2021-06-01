@@ -3,25 +3,7 @@ import { annotate, annotationGroup } from "rough-notation"
 
 export default class extends Controller {
   initialize() {
-    const searches = document.querySelectorAll(
-      ".search--field, .search--submit"
-    )
-    this.searchAnnotations = this.annotateElements(searches, {
-      type: "highlight",
-      color: "var(--color-highlight, var(--color-action-translucent))",
-      iterations: 1,
-      animationDuration: 400
-    })
-
-    const links = document.querySelectorAll("a")
-    this.linkAnnotations = this.annotateElements(links, {
-      type: "highlight",
-      color: "var(--color-highlight, var(--color-action-translucent))",
-      iterations: 1,
-      animate: false
-    })
-
-    const marks = document.querySelectorAll("mark")
+    const marks = this.element.querySelectorAll("mark")
     this.markAnnotations = this.annotateElements(marks, {
       type: "highlight",
       color: "var(--color-foreground-translucent)",
@@ -31,17 +13,11 @@ export default class extends Controller {
   }
 
   connect() {
-    this.showAnnotations(this.searchAnnotations)
-    this.showAnnotations(this.linkAnnotations)
     this.showAnnotationsOnPageScroll(this.markAnnotations)
   }
 
   disconnect() {
-    this.hideAnnotations([
-      ...this.searchAnnotations,
-      ...this.linkAnnotations,
-      ...this.markAnnotations
-    ])
+    this.hideAnnotations([...this.markAnnotations])
   }
 
   annotateElement(element, options) {
@@ -59,10 +35,6 @@ export default class extends Controller {
     return [...elements].map((element) => {
       return this.annotateElement(element, options)
     })
-  }
-
-  showAnnotations(annotations) {
-    annotations.forEach((annotation) => annotation.show())
   }
 
   showAnnotationsOnPageScroll(elements) {

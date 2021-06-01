@@ -49,6 +49,7 @@ module ClearanceHelpers
     end
 
     def assert_user_signed_out
+      visit "/admin"
       assert_content I18n.t("layouts.application.sign_in")
     end
 

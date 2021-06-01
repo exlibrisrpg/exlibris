@@ -8,6 +8,6 @@
 
 <%= @tag.description %>
 
-<div class="stack | stack-l">
-  <%= render @tag.entries %>
-</div>
+<%= render "shared/paginate", page: @page, path: ->(next_page) {tag_path(@tag, page: next_page)}, class: "stack | stack-l" do %>
+  <%= render partial: "entries/entry", collection: @page.records  %>
+<% end %>

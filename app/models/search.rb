@@ -6,13 +6,13 @@ class Search
   validates :query, presence: true
 
   def entries
-    return [] unless valid?
+    return Entry.none unless valid?
 
     Entry.with_includes.containing(query)
   end
 
   def tags
-    return [] unless valid?
+    return Tag.none unless valid?
 
     Tag.containing(query)
   end

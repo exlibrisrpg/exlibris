@@ -3,7 +3,7 @@ require "test_helper"
 class SearchTest < ActiveSupport::TestCase
   context "#entries" do
     should "return empty array with no query" do
-      assert_equal Search.new(query: nil).entries, []
+      assert_equal Search.new(query: nil).entries, Entry.none
     end
 
     should "return entry query with a query" do
@@ -28,7 +28,7 @@ class SearchTest < ActiveSupport::TestCase
 
   context "#tags" do
     should "return empty array with no query" do
-      assert_equal Search.new(query: nil).tags, []
+      assert_equal Search.new(query: nil).tags, Tag.none
     end
 
     should "return tag query with a query" do
