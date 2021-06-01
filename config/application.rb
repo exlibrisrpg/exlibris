@@ -34,5 +34,8 @@ module Exlibris
 
     # Dump schema as sql so we get language configurations
     config.active_record.schema_format = :sql
+
+    # Opt out of Google's shitty FLoC tracking
+    config.action_dispatch.default_headers["Permissions-Policy"] = "interest-cohort=()"
   end
 end
