@@ -34,11 +34,5 @@ module Exlibris
 
     # Dump schema as sql so we get language configurations
     config.active_record.schema_format = :sql
-
-    config.to_prepare do
-      Clearance::PasswordsController.layout "admin"
-      Clearance::SessionsController.layout "admin"
-      Clearance::UsersController.layout "admin"
-    end
   end
 end

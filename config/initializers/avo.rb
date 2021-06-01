@@ -15,9 +15,20 @@ Avo.configure do |config|
   config.current_user_method do
     request.env[:clearance].current_user
   end
-  # config.authenticate_with do
-  #   warden.authenticate! scope: :user
-  # end
+  config.authenticate_with do
+    unless request.env[:clearance].signed_in?
+      respond_to do |format|
+        format.any(:js, :json, :xml) { head :unauthorized }
+        format.any do
+          if request.get?
+            session[:return_to] = request.original_fullpath
+          end
+
+          redirect_to "/sign_in"
+        end
+      end
+    end
+  end
 
   ## == Authorization ==
   # config.authorization_methods = {

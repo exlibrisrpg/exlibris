@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  constraints Clearance::Constraints::SignedIn.new do
-    mount Avo::Engine => Avo.configuration.root_path
-  end
+  mount Avo::Engine => Avo.configuration.root_path
 
   resource :search, only: :show
 
