@@ -4,5 +4,5 @@ class LinkResource < Avo::BaseResource
   self.visible_on_sidebar = false
 
   field :address, as: :text
-  field :entry, as: :has_one
+  field :entry, as: :belongs_to
 end
