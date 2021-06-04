@@ -214,7 +214,8 @@ CREATE TABLE public.tag_categories (
     id uuid DEFAULT gen_random_uuid() NOT NULL,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    icon integer
 );
 
 
@@ -508,6 +509,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210423083923'),
 ('20210423085838'),
 ('20210425130715'),
-('20210425130739');
+('20210425130739'),
+('20210604013522');
 
 

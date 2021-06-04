@@ -1,1 +1,6 @@
-<%= highlight_link_to tag.name, [local_assigns[:namespace], tag], title: tag.description.to_plain_text %>
+<%= highlight_link_to [local_assigns[:namespace], tag], title: tag.description.to_plain_text, class: "with-icon" do %>
+  <% if tag.tag_category.icon? %>
+    <%= icon_tag tag.tag_category.icon %>
+  <% end %>
+  <%= tag.name %>
+<% end %>
