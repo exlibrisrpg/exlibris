@@ -1,11 +1,11 @@
 categories:
   name: Categories
-  icon: :category
+  icon: 0
 
 officialness:
   name: Officialness
-  icon: officialness
+  icon: 4
 
 creators:
   name: Creators
-  icon: creator
+  icon: 2
