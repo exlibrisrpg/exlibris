@@ -22,4 +22,10 @@ class TagTest < ActiveSupport::TestCase
       assert_includes results, tags(:mork_borg_cult)
     end
   end
+
+  context "icon" do
+    should "have tag_category with icon" do
+      assert_equal tags(:mork_borg_cult).tag_category.icon, "officialness"
+    end
+  end
 end
