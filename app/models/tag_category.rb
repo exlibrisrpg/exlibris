@@ -5,5 +5,5 @@ class TagCategory < ApplicationRecord
 
   default_scope { order(name: :asc) }
 
-  enum icon: [ :category, :compendium, :creator, :gamejam, :officialness ]
+  enum icon: [:category, :compendium, :creator, :gamejam, :officialness]
 end
