@@ -8,7 +8,7 @@ class TagResource < Avo::BaseResource
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
   field :description, as: :trix, always_show: true, attachments_disabled: true
 
-  field :tag_category, as: :has_one
+  field :tag_category, as: :belongs_to
   field :entries, as: :has_many
 
   filter TagCategoryFilter
