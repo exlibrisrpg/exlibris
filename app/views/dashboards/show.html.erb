@@ -1,20 +1,29 @@
+<% content_for(:pre_header) do %>
+  <div class="dashboard-cover">
+    <div class="dashboard-cover--content | container | centre | palatino highlight-black c-white">
+      <h1><span data-controller="highlight">Ex Libris Mörk Borg</span></h1>
+      <p data-controller="highlight">A directory of content, tools, and resources for the Mörk Borg RPG</p>
+    </div>
+  </div>
+<% end %>
+
 <h2>Categories</h2>
 
 <ul>
-<% @dashboard.categories.each do |category| %>
-  <li>
-    <%= link_to category.name, category %>
-    <em>Some description...</em>
-  </li>
-<% end %>
+  <% @dashboard.categories.each do |category| %>
+    <li>
+      <%= link_to category.name, category %>
+      <em>Some description...</em>
+    </li>
+  <% end %>
 </ul>
 
 <h2>Latest Additions</h2>
 
 <ul>
-<% @dashboard.recently_created_entries.each do |entry| %>
-  <li>
-    <%= link_to entry.name, entry %>
-  </li>
-<% end %>
+  <% @dashboard.recently_created_entries.each do |entry| %>
+    <li>
+      <%= link_to entry.name, entry %>
+    </li>
+  <% end %>
 </ul>

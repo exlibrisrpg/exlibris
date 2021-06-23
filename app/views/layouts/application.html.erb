@@ -16,6 +16,10 @@
   </head>
 
   <body class="sans-serif" data-controller="annotation">
+    <% if content_for?(:pre_header) %>
+      <%= yield(:pre_header) %>
+    <% end %>
+
     <div class="stack | p-s pl-l pr-l | bg-yellow-translucent highlight-none">
       <%= yield :header %>
     </div>

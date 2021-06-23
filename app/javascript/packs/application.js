@@ -15,6 +15,7 @@ require("trix")
 require("@rails/actiontext")
 
 require.context("../fonts", true)
+require.context("../images", true)
 
 import "controllers"
 import "../scss/application.scss"
