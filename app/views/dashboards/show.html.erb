@@ -1,8 +1,10 @@
 <% content_for(:pre_header) do %>
-  <div class="dashboard-cover">
-    <div class="dashboard-cover--content | container | centre | palatino highlight-black c-white">
-      <h1><span data-controller="highlight">Ex Libris Mörk Borg</span></h1>
-      <p data-controller="highlight">A directory of content, tools, and resources for the Mörk Borg RPG</p>
+  <div class="dashboard-cover | p-l" data-controller="scroll-progress">
+    <div class="dashboard-cover--content | container stack centre | palatino highlight-black c-white">
+      <h1 class="size-4" data-controller="highlight"><span class="p-xs">Ex Libris Mörk Borg</span></h1>
+      <div class="size-2 leading-small" data-controller="highlight">
+        <p data-controller="highlight"><span class="inline-block p-xs">A directory of content, tools, and resources for the Mörk Borg RPG</span></p>
+      </div>
     </div>
   </div>
 <% end %>
