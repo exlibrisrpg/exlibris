@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   mount Avo::Engine => Avo.configuration.root_path
 
+  resource :dashboard, only: :show
   resource :search, only: :show
 
   resources :entries, only: [:index, :show]
