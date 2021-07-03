@@ -41,30 +41,13 @@ en:
       next_page: Next page
       loading: Loading next page...
 
-  admin:
-    entries:
-      index:
-        title: All Entries
-        new_entry_link: New Entry
-      new:
-        title: New Entry
-      edit:
-        title: Edit Entry
-      _form:
-        add_link: Add Link
-    tags:
-      index:
-        title: All Tags
-        new_tag_link: New Tag
-        uncategorised: Uncategorised
-      new:
-        title: New Tag
-      show:
-        delete_button: Delete Tag
-        delete_button_confirmation: Are you sure you want to delete this tag?
-        edit_link: Edit Tag
-      edit:
-        title: Edit Tag
+  dashboards:
+    show:
+      title: Ex Libris Mörk Borg
+      subtitle: A directory of content, tools, and resources for the Mörk Borg RPG
+      categories_heading: Categories
+      latest_entries_heading: Latest Additions
+      latest_entries_subheading_html: "<em>&ldquo;These people... they cannot be stopped...&rdquo;</em>"
 
   entries:
     index:

@@ -1,9 +1,9 @@
 <% content_for(:pre_header) do %>
   <div class="dashboard-cover | p-l" data-controller="scroll-progress">
     <div class="dashboard-cover--content | container stack centre | palatino highlight-black c-white">
-      <h1 class="size-4" data-controller="highlight"><span class="p-xs">Ex Libris Mörk Borg</span></h1>
+      <h1 class="size-4" data-controller="highlight"><span class="p-xs"><%= t ".title" %></span></h1>
       <div class="size-2 leading-small" data-controller="highlight">
-        <p data-controller="highlight"><span class="inline-block p-xs">A directory of content, tools, and resources for the Mörk Borg RPG</span></p>
+        <p data-controller="highlight"><span class="inline-block p-xs"><%= t ".subtitle" %></span></p>
       </div>
     </div>
   </div>
@@ -11,7 +11,7 @@
 
 <div class="stack | stack-3xl">
   <div class="stack | stack-m align-center">
-    <h2 class="unifraktur size-5">Categories</h2>
+    <h2 class="unifraktur size-5"><%= t ".categories_heading" %></h2>
 
     <dl class="switcher | plex-mono">
       <% @dashboard.categories.in_groups(2) do |category_group| %>
@@ -28,7 +28,8 @@
   </div>
 
   <div class="stack | stack-m align-center">
-    <h2 class="unifraktur size-5">Latest Additions</h2>
+    <h2 class="unifraktur size-5"><%= t ".latest_entries_heading" %></h2>
+    <p class="plex-mono"><%= t ".latest_entries_subheading_html" %></p>
 
     <div class="reel" data-controller="reel">
       <% @dashboard.recently_created_entries.each do |entry| %>
