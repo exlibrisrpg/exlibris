@@ -1,0 +1,40 @@
+.reel {
+  --spacing: var(--space-xs);
+
+  display: flex;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: var(--color-action) var(--color-foreground);
+}
+
+.reel::-webkit-scrollbar {
+  height: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+  background-color: var(--color-foreground);
+}
+
+.reel::-webkit-scrollbar-thumb {
+  background-color: var(--color-foreground);
+  background-image: linear-gradient(var(--color-foreground) 0, var(--color-foreground) 0.25rem, var(--color-action) 0.25rem, var(--color-action) 0.75rem, var(--color-foreground) 0.75rem);
+}
+
+.reel > * {
+  flex: 0 0 auto;
+}
+
+.reel > img {
+  flex-basis: auto;
+  height: 100%;
+  width: auto;
+}
+
+.reel > * + * {
+  margin-left: var(--spacing);
+}
+
+.reel.overflowing {
+  padding-bottom: var(--spacing);
+}

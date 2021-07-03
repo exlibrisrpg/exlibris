@@ -10,7 +10,7 @@ export default class extends Controller {
     this.annotation = this.annotateElement(this.element, {
       animate: this.animateValue,
       animationDuration: 400,
-      color: "var(--color-highlight, var(--color-action-translucent))",
+      color: "var(--color-highlight, var(--color-action))",
       iterations: 1,
       multiline: true,
       type: "highlight"

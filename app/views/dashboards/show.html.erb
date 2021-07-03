@@ -30,12 +30,26 @@
   <div class="stack | stack-m align-center">
     <h2 class="unifraktur size-5">Latest Additions</h2>
 
-    <ul class="align-start">
+    <div class="reel" data-controller="reel">
       <% @dashboard.recently_created_entries.each do |entry| %>
-        <li>
-          <%= link_to entry.name, entry %>
-        </li>
+        <%= link_to entry do %>
+          <div class="tile" style="--cover-image: url('<%= url_for entry.cover %>');">
+            <div class="tile--cover"></div>
+
+            <div class="tile--detail | imposter">
+              <div class="unifraktur highlight-white size-2">
+                <span data-controller="highlight"><%= entry.name %></span>
+              </div>
+
+              <div class="plex-mono">
+                <% entry.category_tags.each do |category| %>
+                  <span data-controller="highlight"><%= category.name %></span>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        <% end %>
       <% end %>
-    </ul>
+    </div>
   </div>
 </div>

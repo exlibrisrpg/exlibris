@@ -1,0 +1,25 @@
+.tile {
+  --size: 16rem;
+
+  background-color: var(--color-foreground);
+  height: var(--size);
+  padding: var(--space-xs);
+  position: relative;
+  width: var(--size);
+}
+
+.tile--cover {
+  background-image: var(--cover-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.tile--detail {
+  display: flex;
+  filter: drop-shadow(0 var(--space-2xs) var(--space-xs) var(--color-foreground));
+  flex-direction: column-reverse;
+  padding: var(--space-s);
+}

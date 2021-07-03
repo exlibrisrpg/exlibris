@@ -26,6 +26,10 @@ class Entry < ApplicationRecord
   scope :name_containing, ->(query) { where("to_tsvector('en', entries.name) @@ websearch_to_tsquery(unaccent(:query))", query: query) }
   scope :with_includes, -> { includes(:cover_blob, :links, rich_text_description: {embeds_attachments: :blob}, tags: :rich_text_description, cover_attachment: :blob) }
 
+  def category_tags
+    tags.where(tag_category: TagCategory.find_by(name: "Categories"))
+  end
+
   private
 
   def description_not_default
