@@ -229,7 +229,8 @@ CREATE TABLE public.tags (
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
     tag_category_id uuid,
-    short_description text
+    short_description text,
+    "order" integer
 );
 
 
@@ -512,6 +513,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210425130715'),
 ('20210425130739'),
 ('20210703110115'),
-('20210703110317');
+('20210703110317'),
+('20210703124748');
 
 

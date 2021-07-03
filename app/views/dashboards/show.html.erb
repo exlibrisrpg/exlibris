@@ -13,11 +13,15 @@
   <div class="stack | stack-m align-center">
     <h2 class="unifraktur size-5">Categories</h2>
 
-    <dl class="columns | plex-mono" style="--columns: 2; --items: <%= @dashboard.categories.count %>">
-      <% @dashboard.categories.each do |category| %>
-        <div>
-          <dt><%= link_to category.name, category, data: { controller: "highlight" } %></dt>
-          <dd><%= category.short_description %></dd>
+    <dl class="switcher | plex-mono">
+      <% @dashboard.categories.in_groups(2) do |category_group| %>
+        <div class="stack | stack-xs">
+          <% category_group.each do |category| %>
+            <div>
+              <dt><%= link_to category.name, category, data: { controller: "highlight" } %></dt>
+              <dd><%= category.short_description %></dd>
+            </div>
+          <% end %>
         </div>
       <% end %>
     </dl>

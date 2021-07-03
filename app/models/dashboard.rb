@@ -1,6 +1,6 @@
 class Dashboard
   def categories
-    Tag.includes(:tag_category).where(tag_categories: {name: "Categories"})
+    Tag.includes(:tag_category).where(tag_categories: {name: "Categories"}).reorder(:order)
   end
 
   def recently_created_entries
