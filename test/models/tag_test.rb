@@ -9,6 +9,12 @@ class TagTest < ActiveSupport::TestCase
   context "validations" do
     should validate_presence_of :name
     should validate_presence_of :tag_category
+
+    context "with tag categories that requires short description" do
+      subject { Tag.new(tag_category: tag_categories(:categories)) }
+
+      should validate_presence_of :short_description
+    end
   end
 
   context "attributes" do

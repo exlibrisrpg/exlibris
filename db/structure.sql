@@ -214,7 +214,8 @@ CREATE TABLE public.tag_categories (
     id uuid DEFAULT gen_random_uuid() NOT NULL,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    short_description_required boolean DEFAULT false
 );
 
 
@@ -227,7 +228,8 @@ CREATE TABLE public.tags (
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
-    tag_category_id uuid
+    tag_category_id uuid,
+    short_description text
 );
 
 
@@ -508,6 +510,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210423083923'),
 ('20210423085838'),
 ('20210425130715'),
-('20210425130739');
+('20210425130739'),
+('20210703110115'),
+('20210703110317');
 
 

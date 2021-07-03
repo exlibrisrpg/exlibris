@@ -9,23 +9,29 @@
   </div>
 <% end %>
 
-<h2>Categories</h2>
+<div class="stack | stack-3xl">
+  <div class="stack | stack-m align-center">
+    <h2 class="unifraktur size-5">Categories</h2>
 
-<ul>
-  <% @dashboard.categories.each do |category| %>
-    <li>
-      <%= link_to category.name, category %>
-      <em>Some description...</em>
-    </li>
-  <% end %>
-</ul>
+    <dl class="columns | plex-mono" style="--columns: 2; --items: <%= @dashboard.categories.count %>">
+      <% @dashboard.categories.each do |category| %>
+        <div>
+          <dt><%= link_to category.name, category, data: { controller: "highlight" } %></dt>
+          <dd><%= category.short_description %></dd>
+        </div>
+      <% end %>
+    </dl>
+  </div>
 
-<h2>Latest Additions</h2>
+  <div class="stack | stack-m align-center">
+    <h2 class="unifraktur size-5">Latest Additions</h2>
 
-<ul>
-  <% @dashboard.recently_created_entries.each do |entry| %>
-    <li>
-      <%= link_to entry.name, entry %>
-    </li>
-  <% end %>
-</ul>
+    <ul class="align-start">
+      <% @dashboard.recently_created_entries.each do |entry| %>
+        <li>
+          <%= link_to entry.name, entry %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

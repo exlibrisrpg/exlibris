@@ -1,6 +1,7 @@
 # Categories
 rules:
   name: Rules
+  short_description: Optional rules to die by.
   tag_category: categories
 
 # Officialness

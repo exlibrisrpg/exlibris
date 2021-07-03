@@ -3,6 +3,7 @@ class Tag < ApplicationRecord
   belongs_to :tag_category
 
   validates :name, :tag_category, presence: true
+  validates :short_description, presence: {if: -> { tag_category&.short_description_required }}
 
   has_rich_text :description
 

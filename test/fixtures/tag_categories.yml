@@ -1,8 +1,11 @@
 categories:
   name: Categories
+  short_description_required: true
 
 officialness:
   name: Officialness
+  short_description_required: false
 
 creators:
   name: Creators
+  short_description_required: false

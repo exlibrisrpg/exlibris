@@ -47,3 +47,14 @@ html {
     font-size: $value;
   }
 }
+
+$align-map: (
+  center: center,
+  start: start
+);
+
+@each $align-name, $value in $align-map {
+  .align-#{$align-name} {
+    text-align: $value;
+  }
+}
