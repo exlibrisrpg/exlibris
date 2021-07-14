@@ -30,6 +30,14 @@ class Entry < ApplicationRecord
     tags.where(tag_category: TagCategory.find_by(name: "Categories"))
   end
 
+  def creator_tags
+    tags.where(tag_category: TagCategory.find_by(name: "Creators"))
+  end
+
+  def non_creator_tags
+    tags.where.not(tag_category: TagCategory.find_by(name: "Creators"))
+  end
+
   private
 
   def description_not_default

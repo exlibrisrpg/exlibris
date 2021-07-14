@@ -1,6 +1,6 @@
-<div class="with-sidebar">
+<div class="with-sidebar | plex-mono">
   <div>
-    <div style="width: max(25%, 12rem)">
+    <div style="width: max(25%, 16rem)">
       <% if entry.cover.attached? %>
         <div class="tile | tile-fill" style="--cover-image: url('<%= url_for entry.cover %>');">
           <div class="tile--cover"></div>
@@ -9,17 +9,34 @@
     </div>
 
     <div class="stack">
-      <div class="cluster | cluster-space cluster-baseline">
-        <div>
-          <h1 class="unifraktur"><%= highlight_link_to entry.name, entry %></h1>
+      <h1><%= link_to entry.name, entry %></h1>
+
+      <% if entry.creator_tags.any? %>
+        <div class="cluster">
+          <div>
+            <%= render partial: "tags/tag", collection: entry.creator_tags %>
+          </div>
         </div>
+      <% end %>
+
+      <div>
+        <%= entry.description %>
       </div>
+
+      <% if entry.non_creator_tags.any? %>
+        <div class="cluster">
+          <div>
+            <% entry.non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
+              <% if index > 0 %><span>&mdash;</span><% end %>
+              <%= render partial: "tags/tag", collection: tags %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
 
       <% if entry.links.any? %>
         <div class="cluster">
-          <div class="plex-mono">
-            <strong><%= Link.model_name.human.pluralize %>:</strong>
-
+          <div>
             <% entry.links.each do |link| %>
               <%= highlight_link_to link.address, class: "with-icon" do %>
                 <%= icon_tag link_icon(link) %>
@@ -29,20 +46,6 @@
           </div>
         </div>
       <% end %>
-
-      <% if entry.tags.any? %>
-        <div class="cluster">
-          <div class="plex-mono">
-            <strong><%= Tag.model_name.human.pluralize %>:</strong>
-
-            <%= render partial: "tags/tag", collection: entry.tags %>
-          </div>
-        </div>
-      <% end %>
-
-      <div class="plex-mono">
-        <%= entry.description %>
-      </div>
     </div>
   </div>
 </div>

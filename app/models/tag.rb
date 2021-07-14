@@ -11,4 +11,8 @@ class Tag < ApplicationRecord
   scope :with_includes, -> { includes(:rich_text_description, entries: [:links, :rich_text_description, tags: :rich_text_description, cover_attachment: :blob]) }
 
   default_scope { order(name: :asc) }
+
+  def creator?
+    tag_category.name == "Creators"
+  end
 end
