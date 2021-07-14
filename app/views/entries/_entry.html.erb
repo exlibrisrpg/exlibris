@@ -11,16 +11,7 @@
     <div class="stack">
       <div class="cluster | cluster-space cluster-baseline">
         <div>
-          <h1 class="unifraktur"><%= highlight_link_to entry.name, [local_assigns[:namespace], entry] %></h1>
-
-          <% if local_assigns[:namespace] == :admin %>
-            <div class="cluster">
-              <div>
-                <%= link_to t(".edit_link"), edit_admin_entry_path(entry) %>
-                <%= button_to t(".delete_button"), admin_entry_path(entry), method: :delete, data: { confirm: t(".delete_button_confirmation") } %>
-              </div>
-            </div>
-          <% end %>
+          <h1 class="unifraktur"><%= highlight_link_to entry.name, entry %></h1>
         </div>
       </div>
 
@@ -44,7 +35,7 @@
           <div class="plex-mono">
             <strong><%= Tag.model_name.human.pluralize %>:</strong>
 
-            <%= render partial: "tags/tag", collection: entry.tags, locals: { namespace: local_assigns[:namespace] } %>
+            <%= render partial: "tags/tag", collection: entry.tags %>
           </div>
         </div>
       <% end %>

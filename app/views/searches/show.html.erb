@@ -56,7 +56,7 @@
                 <div class="plex-mono">
                   <strong><%= Tag.model_name.human.pluralize %>:</strong>
 
-                  <%= render partial: "tags/tag", collection: entry.tags, locals: { namespace: local_assigns[:namespace] } %>
+                  <%= render partial: "tags/tag", collection: entry.tags %>
                 </div>
               </div>
             <% end %>
