@@ -1,11 +1,11 @@
 <%= form_with model: search, url: search_path, method: :get, class: "search | cluster" do |form| %>
   <div>
     <div class="cluster-grow | highlight-white">
-      <div class="search--field">
+      <div class="search--field with-icon" data-controller="highlight">
         <%= form.label :query do %>
           <%= icon_tag :search %>
         <% end %>
-        <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, data: { controller: "highlight" } %>
+        <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
       </div>
     </div>
 

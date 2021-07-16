@@ -1,7 +1,11 @@
 <% content_for :banner do %>
-  <h1><%= t(".title") %></h1>
+  <div class="c-white bg-black">
+    <div class="container | centre stack | p-l">
+      <h1><%= t(".title") %></h1>
 
-  <%= render partial: "form", locals: { search: @search } %>
+      <%= render partial: "form", locals: { search: @search } %>
+    </div>
+  </div>
 <% end %>
 
 <% if @search.query %>

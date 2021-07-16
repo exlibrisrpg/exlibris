@@ -20,17 +20,13 @@
       <%= yield(:pre_header) %>
     <% end %>
 
-    <div id="content" class="stack | p-s pl-l pr-l | bg-yellow highlight-none">
+    <header id="content">
       <%= yield :header %>
-    </div>
+    </header>
 
     <main>
       <% if content_for?(:banner) %>
-        <div class="c-white bg-black">
-          <div class="container | centre stack | p-l">
-            <%= content_for :banner %>
-          </div>
-        </div>
+        <%= content_for :banner %>
       <% end %>
 
       <div class="container | centre stack | p-l">

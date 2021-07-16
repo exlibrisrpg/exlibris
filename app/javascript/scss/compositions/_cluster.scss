@@ -5,6 +5,12 @@
   // overflow: hidden;
 }
 
+@each $spacing-name, $value in $spacing-map {
+  .cluster-#{$spacing-name} {
+    --cluster-space: #{$value};
+  }
+}
+
 .cluster-space > * {
   justify-content: space-between;
 }
