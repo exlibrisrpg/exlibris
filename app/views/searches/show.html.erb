@@ -23,28 +23,45 @@
 
   <%= render "shared/paginate", page: @page, path: ->(next_page) {search_path(query: @search.query, page: @page.next_param)}, class: "stack | stack-l" do %>
     <% @page.records.each do |entry| %>
-      <div class="with-sidebar" data-controller="search-highlights">
+      <div class="with-sidebar | plex-mono" data-controller="search-highlights">
         <div>
-          <div style="width: max(25%, 12rem)">
-            <div class="frame | frame-1-1">
-              <% if entry.cover.attached? %>
-                <%= image_tag entry.cover %>
-              <% end %>
-            </div>
+          <div style="width: max(25%, 16rem)">
+            <% if entry.cover.attached? %>
+              <div class="tile" style="--cover-image: url('<%= url_for entry.cover %>');">
+                <div class="tile--cover"></div>
+              </div>
+            <% end %>
           </div>
 
-          <div class="stack">
-            <div class="cluster | cluster-space cluster-baseline">
-              <div>
-                <h1 class="unifraktur"><%= highlight_link_to search_highlight(entry.name, @search.query.split(" ")), entry %></h1>
+          <div class="stack | stack-xs">
+            <h1><%= highlight_link_to search_highlight(entry.name, @search.query.split(" ")), entry %></h1>
+
+            <% if entry.creator_tags.any? %>
+              <div class="cluster">
+                <div>
+                  <%= render partial: "tags/tag", collection: entry.creator_tags %>
+                </div>
               </div>
+            <% end %>
+
+            <div>
+              <%= search_highlight entry.description.to_s, @search.query.split(" ") %>
             </div>
+
+            <% if entry.non_creator_tags.any? %>
+              <div class="cluster">
+                <div>
+                  <% entry.non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
+                    <% if index > 0 %><span>&mdash;</span><% end %>
+                    <%= render partial: "tags/tag", collection: tags %>
+                  <% end %>
+                </div>
+              </div>
+            <% end %>
 
             <% if entry.links.any? %>
               <div class="cluster">
-                <div class="plex-mono">
-                  <strong><%= Link.model_name.human.pluralize %>:</strong>
-
+                <div>
                   <% entry.links.each do |link| %>
                     <%= highlight_link_to link.address, class: "with-icon" do %>
                       <%= icon_tag link_icon(link) %>
@@ -54,20 +71,6 @@
                 </div>
               </div>
             <% end %>
-
-            <% if entry.tags.any? %>
-              <div class="cluster">
-                <div class="plex-mono">
-                  <strong><%= Tag.model_name.human.pluralize %>:</strong>
-
-                  <%= render partial: "tags/tag", collection: entry.tags %>
-                </div>
-              </div>
-            <% end %>
-
-            <div class="plex-mono">
-              <%= search_highlight entry.description.to_s, @search.query.split(" ") %>
-            </div>
           </div>
         </div>
       </div>
