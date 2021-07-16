@@ -12,12 +12,6 @@
   width: var(--size);
 }
 
-.tile-fill {
-  --size: 100%;
-
-  min-height: 16rem;
-}
-
 .tile--cover {
   background-image: var(--cover-image);
   background-position: center;
