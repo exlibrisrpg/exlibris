@@ -18,5 +18,5 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 100vh;
-  rotate: calc(-0.06turn * var(--progress)); // Highlight is drawn after rotation applied causing a weird result
+  width: 100%;
 }

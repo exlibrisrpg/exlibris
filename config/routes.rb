@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   mount Avo::Engine => Avo.configuration.root_path
 
-  resource :dashboard, only: :show
   resource :search, only: :show
 
   resources :entries, only: [:index, :show]
@@ -10,5 +9,5 @@ Rails.application.routes.draw do
   # Avo requires a specific named path to show sign out link
   delete "/sign_out", to: "clearance/sessions#destroy", as: "destroy_user_session"
 
-  root to: "entries#index"
+  root to: "dashboards#show"
 end
