@@ -14,7 +14,7 @@
     <h2 class="unifraktur size-5"><%= t ".categories_heading" %></h2>
 
     <dl class="switcher | plex-mono">
-      <% @dashboard.categories.in_groups(2) do |category_group| %>
+      <% @dashboard.categories.in_groups(2, false) do |category_group| %>
         <div class="stack | stack-xs">
           <% category_group.each do |category| %>
             <div>
