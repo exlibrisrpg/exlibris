@@ -13,6 +13,11 @@
     <%= preload_pack_asset "media/fonts/IBMPlexMono-Italic.ttf" %>
     <%= preload_pack_asset "media/fonts/IBMPlexMono-Bold.ttf" %>
     <%= preload_pack_asset "media/fonts/IBMPlexMono-BoldItalic.ttf" %>
+
+
+    <% if ENV["COLLECT_ANALYTICS"].present? %>
+      <script defer data-domain="exlibrisrpg.com" src="https://plausible.io/js/plausible.js"></script>
+    <% end %>
   </head>
 
   <body class="sans-serif" data-controller="annotation">
