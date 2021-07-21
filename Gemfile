@@ -18,6 +18,11 @@ gem "skylight"
 gem "turbo-rails"
 gem "webpacker", "~> 5.4"
 
+group :production do
+  gem "sentry-ruby"
+  gem "sentry-rails"
+end
+
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
