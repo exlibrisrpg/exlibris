@@ -10,7 +10,7 @@
         </div>
 
         <% if @search.blank? %>
-          <nav id="nav-search" class="cluster | cluster-baseline cluster-grow" style="min-width: 30%;" data-turbo-permanent>
+          <nav id="nav-search" class="cluster | cluster-baseline cluster-grow plex-mono" style="min-width: 30%;" data-turbo-permanent>
             <div>
               <%= form_with model: @search || Search.new, url: search_path, method: :get, class: "search | highlight-white" do |form| %>
                 <div class="search--field with-icon" data-controller="highlight">

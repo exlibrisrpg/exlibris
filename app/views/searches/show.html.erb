@@ -1,7 +1,7 @@
 <% content_for :banner do %>
   <div class="c-white bg-black">
-    <div class="container | centre stack | p-l">
-      <h1><%= t(".title") %></h1>
+    <div class="container | centre stack | align-center p-l">
+      <h1 class="unifraktur size-5"><%= t(".title") %></h1>
 
       <%= render partial: "form", locals: { search: @search } %>
     </div>
@@ -9,9 +9,10 @@
 <% end %>
 
 <% if @search.query %>
-  <h2><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
+  <div class="stack | stack-l">
+  <h2 class="unifraktur size-5 align-center"><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
 
-  <div class="cluster">
+  <div class="cluster | cluster-center plex-mono" data-controller="search-highlights">
     <div>
       <% @search.tags.each do |tag| %>
         <%= link_to search_highlight(tag.name, @search.query.split(" ")), tag %>
@@ -19,7 +20,7 @@
     </div>
   </div>
 
-  <h2><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
+  <h2 class="unifraktur size-5 align-center"><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
 
   <%= render "shared/paginate", page: @page, path: ->(next_page) {search_path(query: @search.query, page: @page.next_param)}, class: "stack | stack-l" do %>
     <% @page.records.each do |entry| %>
@@ -76,4 +77,5 @@
       </div>
     <% end %>
   <% end %>
+  </div>
 <% end %>
