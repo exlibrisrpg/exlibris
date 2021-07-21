@@ -34,7 +34,7 @@
     <div class="reel" data-controller="reel">
       <% @dashboard.recently_created_entries.each do |entry| %>
         <%= link_to entry do %>
-          <div class="tile" style="--cover-image: url('<%= url_for entry.cover %>');">
+          <%= tag.div class: "tile", style: (entry.cover.attached? ? "--cover-image: url('#{url_for entry.cover}');" : "") do %>
             <div class="tile--cover"></div>
 
             <div class="tile--detail | imposter">
@@ -48,7 +48,7 @@
                 <% end %>
               </div>
             </div>
-          </div>
+          <% end %>
         <% end %>
       <% end %>
     </div>
