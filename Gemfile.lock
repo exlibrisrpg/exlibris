@@ -131,6 +131,7 @@ GEM
       i18n_data (~> 0.13.0)
       sixarm_ruby_unaccent (~> 1.1)
     crass (1.0.6)
+    dalli (2.7.11)
     email_validator (2.2.3)
       activemodel
     erubi (1.10.0)
@@ -377,6 +378,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   clearance
+  dalli
   geared_pagination
   inline_svg
   jbuilder (~> 2.7)

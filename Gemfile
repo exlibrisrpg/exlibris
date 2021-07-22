@@ -19,6 +19,7 @@ gem "turbo-rails"
 gem "webpacker", "~> 5.4"
 
 group :production do
+  gem "dalli"
   gem "sentry-ruby"
   gem "sentry-rails"
 end
