@@ -35,7 +35,7 @@
           </div>
 
           <div class="stack | stack-xs">
-            <h1><%= highlight_link_to search_highlight(entry.name, @search.query.split(" ")), entry %></h1>
+            <h1><%= link_to search_highlight(entry.name, @search.query.split(" ")), entry %></h1>
 
             <% if entry.creator_tags.any? %>
               <div class="cluster">

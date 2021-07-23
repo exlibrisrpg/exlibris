@@ -5,10 +5,11 @@ export default class extends Controller {
   initialize() {
     const marks = this.element.querySelectorAll("mark")
     this.markAnnotations = this.annotateElements(marks, {
-      type: "highlight",
-      color: "var(--color-foreground-translucent)",
       animationDuration: 800,
-      iterations: 3
+      color: "var(--color-foreground-translucent)",
+      iterations: 3,
+      multiline: true,
+      type: "highlight"
     })
   }
 
