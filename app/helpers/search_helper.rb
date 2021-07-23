@@ -26,7 +26,7 @@ module SearchHelper
         text[0, split.size] = ""
 
         previous_split_opens_html_tag =
-          index > 0 && split_text[index - 1].match?(/(?:.*<.*>)*.*</)
+          index > 0 && split_text[index - 1].match?(/<\/?$/)
 
         highlighted_split = if matches.include?(split) && !previous_split_opens_html_tag
           original_split.gsub(/(.+)/i, highlighter)
