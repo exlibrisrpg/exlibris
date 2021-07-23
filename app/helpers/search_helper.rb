@@ -6,6 +6,8 @@ module SearchHelper
       text || ""
     else
       match = Array(phrases).map do |p|
+        ActiveSupport::Inflector.transliterate(p).downcase
+      end.map do |p|
         Regexp === p ? p.to_s : Regexp.escape(p)
       end.join("|")
 
