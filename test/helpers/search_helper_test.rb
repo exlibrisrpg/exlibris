@@ -16,4 +16,8 @@ class SearchHelperTest < ActionView::TestCase
   test "should ignore presence of diacritics when highlighting" do
     assert_equal "My <mark>Mork</mark> Borg result", search_highlight("My Mork Borg result", ["mörk"])
   end
+
+  test "should ignore html tags when highlighting" do
+    assert_equal "A <strong>very</strong> <mark>strong</mark> concept", search_highlight("A <strong>very</strong> strong concept", ["strong"])
+  end
 end

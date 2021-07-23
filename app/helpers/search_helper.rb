@@ -20,12 +20,15 @@ module SearchHelper
 
       highlighted_text = ""
 
-      split_text.each do |split|
+      split_text.each_with_index do |split, index|
         original_split = text[0, split.size]
 
         text[0, split.size] = ""
 
-        highlighted_split = if matches.include?(split)
+        previous_split_opens_html_tag =
+          index > 0 && split_text[index - 1].match?(/(?:.*<.*>)*.*</)
+
+        highlighted_split = if matches.include?(split) && !previous_split_opens_html_tag
           original_split.gsub(/(.+)/i, highlighter)
         else
           original_split
