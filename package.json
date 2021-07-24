@@ -14,6 +14,7 @@
     "@rails/webpacker": "5.4.0",
     "modern-css-reset": "^1.4.0",
     "rough-notation": "^0.5.1",
+    "scrollama": "^2.2.2",
     "stimulus": "^2.0.0",
     "trix": "^1.2.0"
   },

@@ -6693,6 +6693,11 @@ schema-utils@^3.0.0:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
+scrollama@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-2.2.2.tgz#7a05382702e65884a7e584a0d88f7bb6fe300860"
+  integrity sha512-ZU5uuiHRhtomdgdSwwv0ThSPnjeO5WAmBrlNEc/DowdPN/wewro4zvpOpEFr0FakhvvujxA1IskJCn9rFbEz1g==
+
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"

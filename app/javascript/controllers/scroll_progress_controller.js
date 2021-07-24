@@ -1,27 +1,26 @@
 import { Controller } from "stimulus"
+import scrollama from "scrollama"
 
 export default class extends Controller {
   initialize() {
-    const resolution = 1000
-    this.options = {
-      rootMargin: "0px 0px 40% 0px",
-      threshold: [...Array(resolution).keys()].map((x) => x / resolution)
-    }
-    this.observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        entry.target.style.setProperty(
-          "--progress",
-          1 - entry.intersectionRatio
-        )
-      })
-    }, this.options)
+    this.scroller = scrollama()
+      .setup({ step: [this.element], progress: true })
+      .onStepProgress(({ progress }) => this.updateProgress(progress))
   }
 
   connect() {
-    this.observer.observe(this.element)
+    this.scroller.enable()
   }
 
   disconnect() {
-    this.observer.disconnect()
+    this.scroller.disable()
+  }
+
+  resize() {
+    this.scroller.resize()
+  }
+
+  updateProgress(progress) {
+    this.element.style.setProperty("--progress", progress)
   }
 }

@@ -21,11 +21,11 @@
   </head>
 
   <body class="fill | bg-black plex-mono" data-controller="annotation">
-    <div class="fill | fill-with | bg-white">
-      <% if content_for?(:pre_header) %>
-        <%= yield(:pre_header) %>
-      <% end %>
+    <% if content_for?(:pre_header) %>
+      <%= yield(:pre_header) %>
+    <% end %>
 
+    <div class="fill | fill-with | bg-white">
       <header id="content">
         <%= yield :header %>
       </header>

@@ -1,8 +1,11 @@
 <% content_for(:pre_header) do %>
-  <div class="dashboard-cover | p-l" data-controller="scroll-progress">
-    <div class="dashboard-cover--content | container stack centre | palatino highlight-black c-white">
+  <div class="dashboard-cover" data-controller="scroll-progress" data-action="resize@window->scroll-progress#resize">
+    <div class="dashboard-cover--image-container">
+      <%= image_pack_tag "media/images/exlibris_yellow.jpg", class: "dashboard-cover--image" %>
+    </div>
+    <div class="dashboard-cover--content | container stack centre | p-s palatino highlight-black c-white">
       <h1 class="size-4" data-controller="highlight"><span class="p-xs"><%= t ".title" %></span></h1>
-      <div class="size-2 mx-measure measure-small" data-controller="highlight">
+      <div class="size-2 mw-measure measure-small" data-controller="highlight">
         <p><span class="inline-block p-xs"><%= t ".subtitle" %></span></p>
       </div>
     </div>
