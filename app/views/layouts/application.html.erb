@@ -20,37 +20,39 @@
     <% end %>
   </head>
 
-  <body class="fill | plex-mono" data-controller="annotation">
-    <% if content_for?(:pre_header) %>
-      <%= yield(:pre_header) %>
-    <% end %>
-
-    <header id="content">
-      <%= yield :header %>
-    </header>
-
-    <main class="fill-with">
-      <% if content_for?(:banner) %>
-        <%= content_for :banner %>
+  <body class="fill | bg-black plex-mono" data-controller="annotation">
+    <div class="fill | fill-with | bg-white">
+      <% if content_for?(:pre_header) %>
+        <%= yield(:pre_header) %>
       <% end %>
 
-      <div class="container | centre stack | p-l">
-        <div class="stack">
-          <% if flash.any? %>
-            <div id="flash">
-              <% flash.each do |key, value| %>
-                <div class="flash <%= key %>"><%= value %></div>
-              <% end %>
-            </div>
-          <% end %>
+      <header id="content">
+        <%= yield :header %>
+      </header>
 
-          <%= yield %>
+      <main class="fill-with">
+        <% if content_for?(:banner) %>
+          <%= content_for :banner %>
+        <% end %>
+
+        <div class="container | centre stack | p-l">
+          <div class="stack">
+            <% if flash.any? %>
+              <div id="flash">
+                <% flash.each do |key, value| %>
+                  <div class="flash <%= key %>"><%= value %></div>
+                <% end %>
+              </div>
+            <% end %>
+
+            <%= yield %>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <footer>
-      <%= yield :footer %>
-    </footer>
+      <footer>
+        <%= yield :footer %>
+      </footer>
+    </div>
   </body>
 </html>
