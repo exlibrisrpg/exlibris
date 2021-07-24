@@ -4,8 +4,10 @@ class SearchTest < ApplicationSystemTestCase
   test "show entries results" do
     visit search_path
 
-    fill_in Search.model_name.human, with: "hunting"
-    click_on I18n.t("helpers.submit.search.create")
+    within "form" do
+      fill_in Search.model_name.human, with: "hunting"
+      click_on I18n.t("helpers.submit.search.create")
+    end
 
     assert_text entries(:eat_prey_kill).name
   end
@@ -13,8 +15,10 @@ class SearchTest < ApplicationSystemTestCase
   test "show tags results" do
     visit search_path
 
-    fill_in Search.model_name.human, with: "cult"
-    click_on I18n.t("helpers.submit.search.create")
+    within "form" do
+      fill_in Search.model_name.human, with: "cult"
+      click_on I18n.t("helpers.submit.search.create")
+    end
 
     assert_link tags(:mork_borg_cult).name
   end

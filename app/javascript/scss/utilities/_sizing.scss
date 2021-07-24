@@ -12,3 +12,11 @@ $sizing-rules: (
     }
   }
 }
+
+.mw-measure {
+  max-width: var(--measure);
+}
+
+.w-measure {
+  max-width: var(--measure);
+}

@@ -38,4 +38,23 @@
   </div>
 <% end %>
 
+<% content_for :footer do %>
+  <div class="c-white bg-black">
+    <div class="container | centre | p-s measure-wide plex-mono">
+      <div class="switcher size--2">
+          <ul role="menu" class="stack | stack-2xs">
+            <li class="palatino size-1"><%= link_to t("application.name"), root_path(anchor: "content") %></li>
+            <li><%= link_to t(".footer.tags_link"), tags_path %></li>
+            <li><%= link_to t(".footer.search_link"), search_path %></li>
+            <li><%= link_to t(".footer.about_link"), about_path %></li>
+          </ul>
+
+        <div class="stack | stack-xs">
+          <%= t(".footer.license_html") %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
 <%= render template: "layouts/application" %>

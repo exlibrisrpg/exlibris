@@ -22,17 +22,16 @@ en:
         update: Update Tag
 
   layouts:
-    admin:
-      name: Ex Libris Admin
-      back_link: To Public Site
-      entries_link: Entries
-      tags_link: Tags
-      sign_out_button: Sign out
-      sign_in_link: Sign in
-      title: Admin Section
     public:
       name: Ex Libris
       tagline: A directory of content, tools, and resources for the Mörk Borg RPG
+      footer:
+        about_link: About
+        tags_link: Tags
+        search_link: Search
+        license_html: |
+          <p>Unless otherwise noted, the products presented here are independent productions by their respective authors/publishers and are not affiliated with Ockult Örtmästare Games or Stockholm Kartell. They are published under the MÖRK BORG Third Party License.</p>
+          <p>MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.</p>
 
   shared:
     paginate:
