@@ -20,7 +20,7 @@
     <% end %>
   </head>
 
-  <body class="sans-serif" data-controller="annotation">
+  <body class="fill | plex-mono" data-controller="annotation">
     <% if content_for?(:pre_header) %>
       <%= yield(:pre_header) %>
     <% end %>
@@ -29,7 +29,7 @@
       <%= yield :header %>
     </header>
 
-    <main>
+    <main class="fill-with">
       <% if content_for?(:banner) %>
         <%= content_for :banner %>
       <% end %>
