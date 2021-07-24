@@ -38,11 +38,11 @@
             <div class="tile--cover"></div>
 
             <div class="tile--detail | imposter">
-              <div class="unifraktur highlight-white size-2">
+              <div class="highlight-white size-2">
                 <span data-controller="highlight"><%= entry.name %></span>
               </div>
 
-              <div class="plex-mono">
+              <div>
                 <% entry.category_tags.each do |category| %>
                   <span data-controller="highlight"><%= category.name %></span>
                 <% end %>

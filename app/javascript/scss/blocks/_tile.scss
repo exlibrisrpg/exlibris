@@ -23,7 +23,6 @@
 
 .tile--detail {
   display: flex;
-  filter: drop-shadow(0 var(--space-2xs) var(--space-xs) var(--color-foreground));
   flex-direction: column-reverse;
   padding: var(--space-s);
 }
