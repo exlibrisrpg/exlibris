@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   # Avo requires a specific named path to show sign out link
   delete "/sign_out", to: "clearance/sessions#destroy", as: "destroy_user_session"
 
+  get :about, to: "pages#about"
+
   root to: "dashboards#show"
 end

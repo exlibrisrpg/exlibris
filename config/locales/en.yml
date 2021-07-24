@@ -57,6 +57,26 @@ en:
       delete_button_confirmation: Are you sure you want to delete this entry?
       edit_link: Edit Entry
 
+  pages:
+    about:
+      page_html: |
+        <h1>About ELMB</h1>
+        <p>Ex Libris Mörk Borg is a directory of official, semi-official, and third-party content for the Mörk Borg RPG. This resource is meant to raise creators’ visibility in the community and help players & GMs discover new content to use in their games.</p>
+        <h2>About the Annotations</h2>
+        <p>Annotations consist of comments in five categories:</p>
+        <ul>
+          <li>the core <strong>concept</strong> in the creator’s own words</li>
+          <li>the <strong>content</strong>’s character and notable mechanics, tables, etc.</li>
+          <li>the <strong>writing</strong>’s character, composition, and/or accessibility</li>
+          <li>the <strong>visual</strong> character of the graphic design and/or layout</li>
+          <li>notes on <strong>usability</strong> as a game document and/or play component</li>
+        </ul>
+        <p>If you know of any missing content, please <a href="http://liberludorum.com/contact/">get in touch</a>. If you’re a creator with questions or concerns, I invite you to do the same.</p>
+        <p>Ex Libris Mörk Borg is supported by Liber Ludorum’s <a href="http://liberludorum.com/critical-thanks/">generous patrons</a>. If you find this resource valuable (and would like updates delivered weekly to your inbox), please consider also <a href="http://liberludorum.com/support/">lending your support</a>.</p>
+        <hr>
+        <p>Unless otherwise noted, the third-party products presented here are independent productions by their respective authors/publishers and are not affiliated with Ockult Örtmästare Games or Stockholm Kartell. They are published under the MÖRK BORG Third Party License.</p>
+        <p>MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.</p>
+
   searches:
     show:
       title: Search Ex Libris
