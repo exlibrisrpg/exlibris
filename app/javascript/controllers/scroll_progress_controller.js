@@ -4,7 +4,7 @@ import scrollama from "scrollama"
 export default class extends Controller {
   initialize() {
     this.scroller = scrollama()
-      .setup({ step: [this.element], progress: true })
+      .setup({ step: [this.element], progress: true, offset: 0 })
       .onStepProgress(({ progress }) => this.updateProgress(progress))
   }
 

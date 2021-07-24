@@ -1,7 +1,7 @@
 .dashboard-cover {
   --progress: 0;
   --start-size: 0.4;
-  --end-size: 1.4;
+  --end-size: 2.2;
 }
 
 .dashboard-cover--image-container {
@@ -27,4 +27,10 @@
   justify-content: flex-start;
   margin-top: 100vh;
   width: 100vw;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-cover--image {
+    scale: 1;
+  }
 }
