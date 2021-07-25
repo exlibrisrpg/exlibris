@@ -5,11 +5,13 @@
 <% @tag_categories.each do |tag_category| %>
   <h2><%= tag_category.name %></h2>
 
-  <div class="cluster | palatino">
+  <div class="cluster">
     <div>
       <% tag_category.tags.each do |tag| %>
         <div>
-          <%= render partial: "tags/tag", locals: { tag: tag } %> <%= tag.entries.count %>
+          <em>
+            <%= link_to tag.name, tag %><small>(<%= tag.entries.count %>)</small>
+          </em>
         </div>
       <% end %>
     </div>
