@@ -1,6 +1,6 @@
 en:
   application:
-    name: Ex Libris
+    name: Ex Libris Mörk Borg
 
   activerecord:
     errors:
@@ -23,8 +23,8 @@ en:
 
   layouts:
     public:
-      name: Ex Libris
-      tagline: A directory of content, tools, and resources for the Mörk Borg RPG
+      name: Ex Libris Mörk Borg
+      tagline: A directory of content, tools, and resources
       footer:
         about_link: About
         tags_link: Tags
@@ -58,6 +58,7 @@ en:
 
   pages:
     about:
+      title: About
       page_html: |
         <h1>About ELMB</h1>
         <p>Ex Libris Mörk Borg is a directory of official, semi-official, and third-party content for the Mörk Borg RPG. This resource is meant to raise creators’ visibility in the community and help players & GMs discover new content to use in their games.</p>
@@ -79,7 +80,7 @@ en:
 
   searches:
     show:
-      title: Search Ex Libris
+      title: Search
 
   tags:
     index:
