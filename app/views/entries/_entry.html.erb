@@ -12,11 +12,28 @@
       <h1><%= link_to entry.name, entry %></h1>
 
       <% if entry.creator_tags.any? %>
-        <div class="cluster">
-          <div>
-            <%= render partial: "tags/tag", collection: entry.creator_tags %>
+        <% if entry.creator_tags.count > 5 %>
+          <details class="stack">
+            <summary>
+              <div class="cluster">
+                <div>
+                  <em><%= t ".many_contributors", count: entry.creator_tags.count %></em>
+                </div>
+              </div>
+            </summary>
+            <div class="cluster">
+              <div>
+                <%= render partial: "tags/tag", collection: entry.creator_tags %>
+              </div>
+            </div>
+          </details>
+        <% else %>
+          <div class="cluster">
+            <div>
+              <%= render partial: "tags/tag", collection: entry.creator_tags %>
+            </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
 
       <div>
