@@ -3,7 +3,7 @@
 
   <% if !page.last? %>
     <% next_page_path = path.call(page.next_param) %>
-    <%= turbo_frame_tag "page_#{page.number + 1}", src: next_page_path, loading: "lazy", class: local_assigns[:class], style: "display: block;" do %>
+    <%= turbo_frame_tag "page_#{page.number + 1}", target: "_top", src: next_page_path, loading: "lazy", class: local_assigns[:class], style: "display: block;" do %>
       <div class="center">
         <div class="cluster | cluster-center">
           <div class="plex-mono">
