@@ -1,3 +1,4 @@
 <% content_for(:title) do %><%= @entry.name %><% end %>
+<% @social_focus = @entry %>
 
 <%= render EntryComponent.new(entry: @entry) %>

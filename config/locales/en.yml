@@ -1,6 +1,7 @@
 en:
   application:
     name: Ex Libris Mörk Borg
+    tagline: A directory of content, tools, and resources
 
   activerecord:
     errors:
@@ -23,8 +24,6 @@ en:
 
   layouts:
     public:
-      name: Ex Libris Mörk Borg
-      tagline: A directory of content, tools, and resources
       footer:
         about_link: About
         tags_link: Tags
