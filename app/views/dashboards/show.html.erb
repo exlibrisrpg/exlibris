@@ -2,9 +2,20 @@
   <div class="dashboard-cover" data-controller="scroll-progress" data-action="resize@window->scroll-progress#resize">
     <div class="dashboard-cover--image-container">
       <%= image_pack_tag "media/images/exlibris_yellow.jpg", class: "dashboard-cover--image" %>
+
+      <div class="dashboard-cover--please-scroll | cluster cluster-center m-s highlight-white">
+        <div>
+          <div>
+            <span data-controller="highlight"><%= t(".scroll_down") %></span>
+          </div>
+          <%= image_pack_tag "media/images/potato_borg.png" %>
+        </div>
+      </div>
     </div>
+
     <div class="dashboard-cover--content | container stack centre | p-s palatino highlight-black c-white">
       <h1 class="size-4" data-controller="highlight"><span class="p-xs"><%= t ".title" %></span></h1>
+
       <div class="size-2 mw-measure measure-small" data-controller="highlight">
         <p><span class="inline-block p-xs"><%= t ".subtitle" %></span></p>
       </div>

@@ -1,3 +1,23 @@
+@keyframes appear {
+  0% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes wobble {
+  from {
+    transform: rotate(-0.15turn);
+  }
+
+  to {
+    transform: rotate(0.15turn);
+  }
+}
+
 .dashboard-cover {
   --progress: 0;
   --start-size: 0.4;
@@ -17,6 +37,24 @@
 
 .dashboard-cover--image {
   scale: calc(var(--start-size) + ((var(--end-size) - var(--start-size)) * var(--progress)));
+  z-index: 0;
+}
+
+.dashboard-cover--please-scroll {
+  animation: appear 1s ease-in 3s both;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  > * {
+    align-items: center;
+  }
+
+  img {
+    animation: wobble 1s steps(4, jump-both) 0s infinite alternate both;
+    height: calc(var(--font-size) * 4);
+  }
 }
 
 .dashboard-cover--content {
@@ -32,5 +70,13 @@
 @media (prefers-reduced-motion: reduce) {
   .dashboard-cover--image {
     scale: 1;
+  }
+
+  .dashboard-cover--please-scroll {
+    animation: none;
+
+    img {
+      animation: none;
+    }
   }
 }
