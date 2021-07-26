@@ -14,6 +14,7 @@ ActiveStorage.start()
 require("trix")
 require("@rails/actiontext")
 
+require.context("../favicons", true)
 require.context("../fonts", true)
 require.context("../images", true)
 

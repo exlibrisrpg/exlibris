@@ -14,6 +14,12 @@
     <%= preload_pack_asset "media/fonts/IBMPlexMono-Bold.ttf" %>
     <%= preload_pack_asset "media/fonts/IBMPlexMono-BoldItalic.ttf" %>
 
+    <%= favicon_pack_tag "media/favicons/favicon.ico", rel: "apple-touch-icon", type: "image/png", sizes: "180x180" %>
+    <%= favicon_pack_tag "media/favicons/apple-touch-icon.png", rel: "apple-touch-icon", type: "image/png", sizes: "180x180" %>
+    <%= favicon_pack_tag "media/favicons/favicon-32x32.png", rel: "icon", type: "image/png", sizes: "32x32" %>
+    <%= favicon_pack_tag "media/favicons/favicon-16x16.png", rel: "icon", type: "image/png", sizes: "16x16" %>
+    <meta name="msapplication-TileColor" content="#ffec24">
+    <meta name="theme-color" content="#fced56">
 
     <% if ENV["COLLECT_ANALYTICS"].present? %>
       <script defer data-domain="exlibrisrpg.com" src="https://plausible.io/js/plausible.js"></script>
