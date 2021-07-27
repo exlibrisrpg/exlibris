@@ -1,7 +1,11 @@
 require "test_helper"
 
 class DashboardsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  context "GET show" do
+    should "respond ok" do
+      get root_path
+
+      assert_response :ok
+    end
+  end
 end

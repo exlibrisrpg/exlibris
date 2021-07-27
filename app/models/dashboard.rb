@@ -4,6 +4,6 @@ class Dashboard
   end
 
   def recently_created_entries
-    Entry.order(created_at: :desc).limit(10)
+    Entry.order(created_at: :desc).with_includes.limit(10)
   end
 end
