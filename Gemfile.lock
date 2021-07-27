@@ -102,7 +102,7 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bootsnap (1.7.5)
+    bootsnap (1.7.6)
       msgpack (~> 1.0)
     brakeman (5.1.1)
     breadcrumbs_on_rails (4.1.0)
