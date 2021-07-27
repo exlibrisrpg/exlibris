@@ -5,6 +5,6 @@ class TagsController < ApplicationController
 
   def show
     @tag = Tag.with_includes.find(params[:id])
-    set_page_and_extract_portion_from @tag.entries
+    set_page_and_extract_portion_from @tag.entries.with_includes
   end
 end
