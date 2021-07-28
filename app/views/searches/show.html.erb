@@ -39,10 +39,11 @@
           <div class="stack | stack-xs">
             <h1><%= link_to search_highlight(entry.name, @search.query.split(" ")), entry %></h1>
 
-            <% if entry.creator_tags.any? %>
+            <% creator_tags = entry.tags.select(&:creator?) %>
+            <% if creator_tags.any? %>
               <div class="cluster">
                 <div>
-                  <%= render partial: "tags/tag", collection: entry.creator_tags %>
+                  <%= render partial: "tags/tag", collection: creator_tags %>
                 </div>
               </div>
             <% end %>
@@ -51,10 +52,11 @@
               <%= search_highlight entry.description.to_s, @search.query.split(" ") %>
             </div>
 
-            <% if entry.non_creator_tags.any? %>
+            <% non_creator_tags = entry.tags.reject(&:creator?) %>
+            <% if non_creator_tags.any? %>
               <div class="cluster">
                 <div>
-                  <% entry.non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
+                  <% non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
                     <% if index > 0 %><span>&mdash;</span><% end %>
                     <%= render partial: "tags/tag", collection: tags %>
                   <% end %>

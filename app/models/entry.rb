@@ -24,18 +24,10 @@ class Entry < ApplicationRecord
   scope :containing, ->(query) { content_containing(query).or(name_containing(query)) }
   scope :content_containing, ->(query) { joins(:rich_text_description).merge(ActionText::RichText.with_body_containing(query)) }
   scope :name_containing, ->(query) { where("to_tsvector('en', entries.name) @@ websearch_to_tsquery(unaccent(:query))", query: query) }
-  scope :with_includes, -> { includes(:cover_blob, :links, rich_text_description: {embeds_attachments: :blob}, tags: :rich_text_description, cover_attachment: :blob) }
+  scope :with_includes, -> { includes(:cover_blob, :links, rich_text_description: {embeds_attachments: :blob}, tags: [:rich_text_description, :tag_category], cover_attachment: :blob) }
 
   def category_tags
-    tags.where(tag_category: TagCategory.find_by(name: "Categories"))
-  end
-
-  def creator_tags
-    tags.where(tag_category: TagCategory.find_by(name: "Creators"))
-  end
-
-  def non_creator_tags
-    tags.where.not(tag_category: TagCategory.find_by(name: "Creators"))
+    tags.with_includes.where(tag_category: TagCategory.find_by(name: "Categories"))
   end
 
   private

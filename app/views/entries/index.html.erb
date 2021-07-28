@@ -1,5 +1,5 @@
 <h1><%= t(".title") %></h1>
 
 <%= render "shared/paginate", page: @page, path: ->(next_page) {entries_path(page: next_page)}, class: "stack | stack-l" do %>
-  <%= render partial: "entries/entry", collection: @page.records  %>
+  <%= render EntryComponent.with_collection(@page.records) %>
 <% end %>

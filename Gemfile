@@ -16,6 +16,7 @@ gem "rails", "~> 6.1.4"
 gem "sass-rails", ">= 6"
 gem "skylight"
 gem "turbo-rails"
+gem "view_component", require: "view_component/engine"
 gem "webpacker", "~> 5.4"
 
 group :production do

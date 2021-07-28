@@ -50,14 +50,12 @@ en:
       latest_entries_subheading_html: "<em>&ldquo;These people... they cannot be stopped...&rdquo;</em>"
       scroll_down: sCrOlL dOwN! jOiN uS!!!
 
+  entry_component:
+    many_contributors: "%{count} contributors"
+
   entries:
     index:
       title: All Entries
-    entry:
-      many_contributors: "%{count} contributors"
-      delete_button: Delete Entry
-      delete_button_confirmation: Are you sure you want to delete this entry?
-      edit_link: Edit Entry
 
   pages:
     about:

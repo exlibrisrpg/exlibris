@@ -9,5 +9,5 @@
 <%= @tag.description %>
 
 <%= render "shared/paginate", page: @page, path: ->(next_page) {tag_path(@tag, page: next_page)}, class: "stack | stack-l" do %>
-  <%= render partial: "entries/entry", collection: @page.records  %>
+  <%= render EntryComponent.with_collection(@page.records) %>
 <% end %>

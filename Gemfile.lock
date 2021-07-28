@@ -399,6 +399,7 @@ DEPENDENCIES
   standard
   turbo-rails
   tzinfo-data
+  view_component
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.4)
