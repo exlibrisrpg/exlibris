@@ -18,7 +18,13 @@ export default class extends Controller {
   }
 
   connect() {
-    this.annotation.show()
+    if (document.fonts != undefined) {
+      document.fonts.ready.then(() => {
+        this.annotation.show()
+      })
+    } else {
+      this.annotation.show()
+    }
   }
 
   disconnect() {

@@ -14,7 +14,13 @@ export default class extends Controller {
   }
 
   connect() {
-    this.showAnnotationsOnPageScroll(this.markAnnotations)
+    if (document.fonts != undefined) {
+      document.fonts.ready.then(() => {
+        this.showAnnotationsOnPageScroll(this.markAnnotations)
+      })
+    } else {
+      this.showAnnotationsOnPageScroll(this.markAnnotations)
+    }
   }
 
   disconnect() {
