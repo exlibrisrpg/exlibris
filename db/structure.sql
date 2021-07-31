@@ -399,6 +399,13 @@ CREATE UNIQUE INDEX index_active_storage_variant_records_uniqueness ON public.ac
 
 
 --
+-- Name: index_entries_on_LOWER_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "index_entries_on_LOWER_name" ON public.entries USING btree (lower((name)::text));
+
+
+--
 -- Name: index_entries_tags_on_entry_id_and_tag_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -424,6 +431,13 @@ CREATE INDEX index_entries_tsvector_name ON public.entries USING gin (to_tsvecto
 --
 
 CREATE INDEX index_links_on_entry_id ON public.links USING btree (entry_id);
+
+
+--
+-- Name: index_tags_on_LOWER_name; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "index_tags_on_LOWER_name" ON public.tags USING btree (lower((name)::text));
 
 
 --
@@ -514,6 +528,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210425130739'),
 ('20210703110115'),
 ('20210703110317'),
-('20210703124748');
+('20210703124748'),
+('20210731123745'),
+('20210731124257');
 
 
