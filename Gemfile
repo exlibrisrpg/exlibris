@@ -7,6 +7,7 @@ gem "avo"
 gem "aws-sdk-s3", require: false
 gem "bootsnap", ">= 1.4.4", require: false
 gem "clearance"
+gem "friendly_id"
 gem "geared_pagination"
 gem "inline_svg"
 gem "jbuilder", "~> 2.7"

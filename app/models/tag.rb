@@ -1,10 +1,13 @@
 class Tag < ApplicationRecord
+  extend FriendlyId
+
   has_and_belongs_to_many :entries, proc { by_name }
   belongs_to :tag_category
 
   validates :name, :tag_category, presence: true
   validates :short_description, presence: {if: -> { tag_category&.short_description_required }}
 
+  friendly_id :name, use: :slugged
   has_rich_text :description
 
   scope :by_name, proc { order('LOWER("tags"."name") asc') }
@@ -15,5 +18,11 @@ class Tag < ApplicationRecord
 
   def creator?
     tag_category.name == "Creators"
+  end
+
+  private
+
+  def should_generate_new_friendly_id?
+    super || name_changed?
   end
 end

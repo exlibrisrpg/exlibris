@@ -159,6 +159,8 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
+    friendly_id (5.4.2)
+      activerecord (>= 4.0.0)
     geared_pagination (1.1.0)
       activesupport (>= 5.0)
       addressable (>= 2.5.0)
@@ -382,6 +384,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   clearance
   dalli
+  friendly_id
   geared_pagination
   inline_svg
   jbuilder (~> 2.7)

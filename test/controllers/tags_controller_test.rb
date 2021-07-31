@@ -15,5 +15,15 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
 
       assert_response :ok
     end
+
+    should "redirect if slug has changed" do
+      tag = tags(:mork_borg_cult).tap(&:save)
+      original_slug = tag.slug
+      tag.update(name: "new name for new slug")
+
+      get tag_path(id: original_slug)
+
+      assert_redirected_to tag_path(id: tag.slug)
+    end
   end
 end

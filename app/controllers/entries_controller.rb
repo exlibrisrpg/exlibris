@@ -5,5 +5,9 @@ class EntriesController < ApplicationController
 
   def show
     @entry = Entry.with_includes.find(params[:id])
+
+    if request.path != entry_path(@entry)
+      redirect_to @entry, status: :moved_permanently
+    end
   end
 end

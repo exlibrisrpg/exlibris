@@ -170,7 +170,8 @@ CREATE TABLE public.entries (
     id uuid DEFAULT gen_random_uuid() NOT NULL,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    slug character varying
 );
 
 
@@ -181,6 +182,20 @@ CREATE TABLE public.entries (
 CREATE TABLE public.entries_tags (
     tag_id uuid NOT NULL,
     entry_id uuid NOT NULL
+);
+
+
+--
+-- Name: friendly_id_slugs; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.friendly_id_slugs (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    slug character varying NOT NULL,
+    sluggable_id uuid NOT NULL,
+    sluggable_type character varying(50),
+    scope character varying,
+    created_at timestamp without time zone
 );
 
 
@@ -230,7 +245,8 @@ CREATE TABLE public.tags (
     updated_at timestamp(6) without time zone NOT NULL,
     tag_category_id uuid,
     short_description text,
-    "order" integer
+    "order" integer,
+    slug character varying
 );
 
 
@@ -324,6 +340,14 @@ ALTER TABLE ONLY public.entries
 
 
 --
+-- Name: friendly_id_slugs friendly_id_slugs_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.friendly_id_slugs
+    ADD CONSTRAINT friendly_id_slugs_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: links links_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -406,6 +430,13 @@ CREATE INDEX "index_entries_on_LOWER_name" ON public.entries USING btree (lower(
 
 
 --
+-- Name: index_entries_on_slug; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_entries_on_slug ON public.entries USING btree (slug);
+
+
+--
 -- Name: index_entries_tags_on_entry_id_and_tag_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -427,6 +458,27 @@ CREATE INDEX index_entries_tsvector_name ON public.entries USING gin (to_tsvecto
 
 
 --
+-- Name: index_friendly_id_slugs_on_slug_and_sluggable_type; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_friendly_id_slugs_on_slug_and_sluggable_type ON public.friendly_id_slugs USING btree (slug, sluggable_type);
+
+
+--
+-- Name: index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope ON public.friendly_id_slugs USING btree (slug, sluggable_type, scope);
+
+
+--
+-- Name: index_friendly_id_slugs_on_sluggable_type_and_sluggable_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_friendly_id_slugs_on_sluggable_type_and_sluggable_id ON public.friendly_id_slugs USING btree (sluggable_type, sluggable_id);
+
+
+--
 -- Name: index_links_on_entry_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -438,6 +490,13 @@ CREATE INDEX index_links_on_entry_id ON public.links USING btree (entry_id);
 --
 
 CREATE INDEX "index_tags_on_LOWER_name" ON public.tags USING btree (lower((name)::text));
+
+
+--
+-- Name: index_tags_on_slug; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_tags_on_slug ON public.tags USING btree (slug);
 
 
 --
@@ -530,6 +589,9 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210703110317'),
 ('20210703124748'),
 ('20210731123745'),
-('20210731124257');
+('20210731124257'),
+('20210731133902'),
+('20210731133919'),
+('20210731141311');
 
 

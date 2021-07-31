@@ -49,7 +49,7 @@ class SocialMetaComponentTest < ViewComponent::TestCase
         <meta property="og:site_name" content="Ex Libris Mörk Borg">
         <meta property="og:description" content="A vile and evil thought.">
         <meta property="og:image" content="http://test.host/packs-test/media/images/potato_borg-b382c541d9a1044451f37d00d25b043a.png">
-        <meta property="og:url" content="http://test.host/entries/#{entry.id}">
+        <meta property="og:url" content="http://test.host/entries/#{entry.to_param}">
         <meta name="twitter:card" content="summary_large_image">
       HTML
 
@@ -74,7 +74,7 @@ class SocialMetaComponentTest < ViewComponent::TestCase
           <meta property="og:site_name" content="Ex Libris Mörk Borg">
           <meta property="og:description" content="A vile and evil thought.">
           <meta property="og:image" content="#{entry.cover.url}">
-          <meta property="og:url" content="http://test.host/entries/#{entry.id}">
+          <meta property="og:url" content="http://test.host/entries/#{entry.to_param}">
           <meta name="twitter:card" content="summary_large_image">
         HTML
 
@@ -100,7 +100,7 @@ class SocialMetaComponentTest < ViewComponent::TestCase
         <meta property="og:site_name" content="Ex Libris Mörk Borg">
         <meta property="og:description" content="All the awful ways you could die.">
         <meta property="og:image" content="http://test.host/packs-test/media/images/potato_borg-b382c541d9a1044451f37d00d25b043a.png">
-        <meta property="og:url" content="http://test.host/tags/#{tag.id}">
+        <meta property="og:url" content="http://test.host/tags/#{tag.to_param}">
         <meta name="twitter:card" content="summary_large_image">
       HTML
 

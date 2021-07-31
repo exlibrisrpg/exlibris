@@ -1,4 +1,6 @@
 class Entry < ApplicationRecord
+  extend FriendlyId
+
   DEFAULT_DESCRIPTION = <<~HTML
     <div>
       <strong>Concept:</strong> <br>
@@ -16,6 +18,7 @@ class Entry < ApplicationRecord
   validates :description, presence: true
   validate :description_not_default
 
+  friendly_id :name, use: :slugged
   has_one_attached :cover
   has_rich_text :description
 
@@ -39,5 +42,9 @@ class Entry < ApplicationRecord
       ActionText::Content.new(DEFAULT_DESCRIPTION).to_plain_text.squish
 
     errors.add(:description, :default)
+  end
+
+  def should_generate_new_friendly_id?
+    super || name_changed?
   end
 end

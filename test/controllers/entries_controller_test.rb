@@ -15,5 +15,15 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
 
       assert_response :ok
     end
+
+    should "redirect if slug has changed" do
+      entry = entries(:eat_prey_kill).tap(&:save)
+      original_slug = entry.slug
+      entry.update(name: "new name for new slug")
+
+      get entry_path(id: original_slug)
+
+      assert_redirected_to entry_path(id: entry.slug)
+    end
   end
 end
