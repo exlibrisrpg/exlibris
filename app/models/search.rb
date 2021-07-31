@@ -8,12 +8,12 @@ class Search
   def entries
     return Entry.none unless valid?
 
-    Entry.with_includes.containing(query)
+    Entry.by_name.with_includes.containing(query)
   end
 
   def tags
     return Tag.none unless valid?
 
-    Tag.containing(query)
+    Tag.by_name.containing(query)
   end
 end

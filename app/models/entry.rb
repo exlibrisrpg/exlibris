@@ -21,6 +21,7 @@ class Entry < ApplicationRecord
 
   accepts_nested_attributes_for :links, allow_destroy: true, reject_if: :all_blank
 
+  scope :by_name, proc { order('LOWER("entries"."name") asc') }
   scope :containing, ->(query) { content_containing(query).or(name_containing(query)) }
   scope :content_containing, ->(query) { joins(:rich_text_description).merge(ActionText::RichText.with_body_containing(query)) }
   scope :name_containing, ->(query) { where("to_tsvector('en', entries.name) @@ websearch_to_tsquery(unaccent(:query))", query: query) }

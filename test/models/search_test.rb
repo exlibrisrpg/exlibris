@@ -7,7 +7,7 @@ class SearchTest < ActiveSupport::TestCase
     end
 
     should "return entry query with a query" do
-      assert_equal Search.new(query: "cult").entries, Entry.containing("cult")
+      assert_equal Search.new(query: "cult").entries, Entry.by_name.containing("cult")
     end
 
     should "ignore punctuation when matching" do
@@ -32,7 +32,7 @@ class SearchTest < ActiveSupport::TestCase
     end
 
     should "return tag query with a query" do
-      assert_equal Search.new(query: "cult").tags, Tag.containing("cult")
+      assert_equal Search.new(query: "cult").tags, Tag.by_name.containing("cult")
     end
 
     should "unaccent special characters in tag name when matching" do

@@ -1,5 +1,5 @@
 class TagCategory < ApplicationRecord
-  has_many :tags
+  has_many :tags, proc { by_name }
 
   validates :name, presence: true
 

@@ -43,7 +43,8 @@ group :test do
   gem "capybara", ">= 3.26"
   gem "rails-controller-testing"
   gem "selenium-webdriver"
-  gem "shoulda"
+  gem "shoulda-context"
+  gem "shoulda-matchers"
   gem "webdrivers"
 end
 
