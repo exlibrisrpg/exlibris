@@ -1,11 +1,13 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
+  static classes = ["hidden"]
+
   connect() {
-    this.element.style.visibility = "hidden"
+    this.element.classList.add(this.hiddenClass)
   }
 
   disconnect() {
-    this.element.style.visibility = "visible"
+    this.element.classList.remove(this.hiddenClass)
   }
 }

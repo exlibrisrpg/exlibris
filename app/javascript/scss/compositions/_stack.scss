@@ -12,6 +12,7 @@
   margin-top: var(--stack-space);
 }
 
+.stack > .hidden,
 /* Rails adds a hidden input to the top of each form */
 /* We do not want a margin for this */
 .stack > [type="hidden"] + * {
