@@ -6,11 +6,11 @@ $color-rules: (
 
 @each $class-name, $rule in $color-rules {
   @each $color-name, $value in $color-map {
-    .#{$class-name}-#{$color-name} {
+    .#{$class-name}-#{"" +$color-name} {
       #{$rule}: $value;
     }
 
-    .hover-#{$class-name}-#{$color-name}:hover {
+    .hover-#{$class-name}-#{"" + $color-name}:hover {
       #{$rule}: $value;
     }
   }
