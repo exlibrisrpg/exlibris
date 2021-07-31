@@ -20,6 +20,7 @@ gem "view_component", require: "view_component/engine"
 gem "webpacker", "~> 5.4"
 
 group :production do
+  gem "barnes"
   gem "dalli"
   gem "sentry-ruby"
   gem "sentry-rails"
