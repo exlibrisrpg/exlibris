@@ -22,7 +22,9 @@
     <% end %>
   </head>
 
-  <body class="fill | bg-black plex-mono" data-controller="annotation">
+  <body class="fill | bg-black plex-mono">
+    <%= render partial: "announcement" %>
+
     <% if content_for?(:pre_header) %>
       <%= yield(:pre_header) %>
     <% end %>
