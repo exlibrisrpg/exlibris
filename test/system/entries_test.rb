@@ -7,6 +7,21 @@ class EntriesTest < ApplicationSystemTestCase
     assert_text entries(:eat_prey_kill).name
   end
 
+  test "infinite scroll all entries" do
+    Entry.create(
+      20.times.map do |i|
+        {
+          name: "Example Entry #{i}",
+          description: "Placeholder description"
+        }
+      end
+    )
+
+    visit entries_path
+
+    assert_scrolling_loads_more_entries
+  end
+
   test "view an entry" do
     entry = entries(:eat_prey_kill)
 

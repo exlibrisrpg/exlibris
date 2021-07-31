@@ -22,4 +22,19 @@ class SearchTest < ApplicationSystemTestCase
 
     assert_link tags(:mork_borg_cult).name
   end
+
+  test "infinite scroll tag entries" do
+    Entry.create(
+      20.times.map do |i|
+        {
+          name: "Example Entry #{i}",
+          description: "Placeholder description"
+        }
+      end
+    )
+
+    visit search_path(query: "placeholder")
+
+    assert_scrolling_loads_more_entries
+  end
 end

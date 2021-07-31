@@ -26,7 +26,7 @@
 
   <%= render "shared/paginate", page: @page, path: ->(next_page) {search_path(query: @search.query, page: @page.next_param)}, class: "stack | stack-l" do %>
     <% @page.records.each do |entry| %>
-      <div class="with-sidebar | plex-mono" data-controller="search-highlights">
+      <div id="<%= dom_id entry %>" class="with-sidebar | plex-mono" data-controller="search-highlights">
         <div>
           <div style="width: max(25%, 16rem)">
             <% if entry.cover.attached? %>

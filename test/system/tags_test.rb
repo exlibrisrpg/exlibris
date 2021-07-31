@@ -15,4 +15,21 @@ class TagsTest < ApplicationSystemTestCase
     assert_text tag.name
     assert_text entries(:eat_prey_kill).name
   end
+
+  test "infinite scroll tag entries" do
+    tag = tags(:mork_borg_cult)
+
+    tag.entries.create(
+      20.times.map do |i|
+        {
+          name: "Example Entry #{i}",
+          description: "Placeholder description"
+        }
+      end
+    )
+
+    visit tag_path(tag)
+
+    assert_scrolling_loads_more_entries
+  end
 end
