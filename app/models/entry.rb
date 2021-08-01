@@ -34,6 +34,15 @@ class Entry < ApplicationRecord
     tags.with_includes.where(tag_category: TagCategory.find_by(name: "Categories"))
   end
 
+  def to_meta_tags
+    {
+      title: name,
+      description: description.to_plain_text
+    }.tap do |meta_tags|
+      meta_tags[:image_src] = cover.url if cover.attached?
+    end
+  end
+
   private
 
   def description_not_default

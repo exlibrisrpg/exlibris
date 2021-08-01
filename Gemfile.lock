@@ -389,6 +389,7 @@ DEPENDENCIES
   inline_svg
   jbuilder (~> 2.7)
   listen (~> 3.6)
+  meta-tags
   pg (~> 1.1)
   puma (~> 5.4)
   rack-mini-profiler (~> 2.3)

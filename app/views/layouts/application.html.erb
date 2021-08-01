@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><% if content_for?(:title) %><%= yield(:title) %> | <% end %><%= t("application.name") %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -15,7 +14,7 @@
     <%= preload_pack_asset "media/fonts/IBMPlexMono-BoldItalic.ttf" %>
 
     <%= render partial: "layouts/favicon" %>
-    <%= render SocialMetaComponent.new(target: @social_focus, title: content_for(:title), url: request.original_url) %>
+    <%= render MetaTagsComponent.new(target: @social_focus, title: content_for(:title), url: request.original_url) %>
 
     <% if ENV["COLLECT_ANALYTICS"].present? %>
       <script defer data-domain="exlibrisrpg.com" src="https://plausible.io/js/plausible.js"></script>

@@ -24,6 +24,13 @@ class Tag < ApplicationRecord
     tag_category.name == "Categories"
   end
 
+  def to_meta_tags
+    {
+      title: name,
+      description: description.to_plain_text
+    }
+  end
+
   private
 
   def should_generate_new_friendly_id?
