@@ -46,25 +46,7 @@
     <p class="plex-mono"><%= t ".latest_entries_subheading_html" %></p>
 
     <div class="reel" data-controller="reel">
-      <% @dashboard.recently_created_entries.each do |entry| %>
-        <%= link_to entry do %>
-          <%= tag.div class: "tile", style: (entry.cover.attached? ? "--cover-image: url('#{url_for entry.cover}');" : "") do %>
-            <div class="tile--cover"></div>
-
-            <div class="tile--detail | imposter">
-              <div class="highlight-white size-2">
-                <span data-controller="highlight"><%= entry.name %></span>
-              </div>
-
-              <div>
-                <% entry.category_tags.each do |category| %>
-                  <span data-controller="highlight"><%= category.name %></span>
-                <% end %>
-              </div>
-            </div>
-          <% end %>
-        <% end %>
-      <% end %>
+      <%= render EntryTileComponent.with_collection(@dashboard.recently_created_entries) %>
     </div>
   </div>
 </div>

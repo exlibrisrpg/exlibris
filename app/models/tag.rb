@@ -20,6 +20,10 @@ class Tag < ApplicationRecord
     tag_category.name == "Creators"
   end
 
+  def category?
+    tag_category.name == "Categories"
+  end
+
   private
 
   def should_generate_new_friendly_id?

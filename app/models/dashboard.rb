@@ -1,9 +1,9 @@
 class Dashboard
   def categories
-    Tag.categories
+    Tag.categories.includes(:rich_text_description)
   end
 
   def recently_created_entries
-    Entry.order(created_at: :desc).with_includes.limit(10)
+    Entry.includes(cover_attachment: :blob, tags: :tag_category).order(created_at: :desc).limit(10)
   end
 end

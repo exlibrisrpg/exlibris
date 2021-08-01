@@ -1,0 +1,17 @@
+<%= link_to entry do %>
+  <%= tag.div class: "tile", style: (entry.cover.attached? ? "--cover-image: url('#{url_for entry.cover}');" : "") do %>
+    <div class="tile--cover"></div>
+
+    <div class="tile--detail | imposter">
+      <div class="highlight-white size-2">
+        <span data-controller="highlight"><%= entry.name %></span>
+      </div>
+
+      <div>
+        <% category_tags.each do |category| %>
+          <span data-controller="highlight"><%= category.name %></span>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
