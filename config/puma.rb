@@ -39,5 +39,11 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 #
 # preload_app!
 
+# Enable HTTP/2 early hints. This sends early indications to browsers supporting
+# HTTP/2 of CSS and JS assets which can be loaded concurrently with the main
+# request.
+#
+early_hints true
+
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
