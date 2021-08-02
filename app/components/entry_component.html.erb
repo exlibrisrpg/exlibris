@@ -2,7 +2,7 @@
   <div>
     <div style="width: max(25%, 16rem)">
       <% if entry.cover.attached? %>
-        <div class="tile" style="--cover-image: url('<%= url_for entry.cover %>');">
+        <div class="tile" style="--cover-image: url('<%= cover_url %>');">
           <div class="tile--cover"></div>
         </div>
       <% end %>

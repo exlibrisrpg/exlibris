@@ -16,4 +16,8 @@ class EntryComponent < ViewComponent::Base
   def non_creator_tags
     @non_creator_tags ||= entry.tags.reject(&:creator?)
   end
+
+  def cover_url
+    url_for entry.cover.variant(resize_to_limit: [450, 450])
+  end
 end

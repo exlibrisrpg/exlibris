@@ -10,4 +10,8 @@ class EntryTileComponent < ViewComponent::Base
   def category_tags
     @category_tags ||= entry.tags.select(&:category?)
   end
+
+  def cover_url
+    url_for entry.cover.variant(resize_to_limit: [450, 450])
+  end
 end

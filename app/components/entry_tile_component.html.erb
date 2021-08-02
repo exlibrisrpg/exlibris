@@ -1,5 +1,5 @@
 <%= link_to entry do %>
-  <%= tag.div class: "tile", style: (entry.cover.attached? ? "--cover-image: url('#{url_for entry.cover}');" : "") do %>
+  <%= tag.div class: "tile", style: (entry.cover.attached? ? "--cover-image: url('#{cover_url}');" : "") do %>
     <div class="tile--cover"></div>
 
     <div class="tile--detail | imposter">
