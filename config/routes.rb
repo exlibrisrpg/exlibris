@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  mount Avo::Engine => Avo.configuration.root_path
+  scope path: Avo.configuration.root_path, module: "avo" do
+    get "dashboard", to: "tools#dashboard"
+    mount Avo::Engine => "/"
+  end
 
   resource :search, only: :show
 

@@ -3,8 +3,12 @@ Avo.configure do |config|
   config.root_path = "/admin"
 
   ## == Licensing ==
-  config.license = "community"
-  # config.license_key = ENV['AVO_LICENSE_KEY']
+  if Rails.application.credentials.dig(:avo, :license_key).present?
+    config.license = "pro"
+    config.license_key = Rails.application.credentials.dig(:avo, :license_key)
+  else
+    config.license = "community"
+  end
 
   ## == Set the context ==
   config.set_context do
@@ -59,11 +63,11 @@ Avo.configure do |config|
   # config.search_debounce = 300
 
   # Where should the user be redirected when he hits the `/avo` url
-  # config.home_path = nil
+  config.home_path = "/admin/dashboard"
 
   ## == Breadcrumbs ==
-  # config.display_breadcrumbs = true
-  # config.set_initial_breadcrumbs do
-  #   add_breadcrumb "Home", '/avo'
-  # end
+  config.display_breadcrumbs = true
+  config.set_initial_breadcrumbs do
+    add_breadcrumb "Admin", "/admin/dashboard"
+  end
 end
