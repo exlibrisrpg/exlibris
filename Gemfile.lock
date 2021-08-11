@@ -69,7 +69,7 @@ GEM
       ffi (~> 1.14)
       ffi-compiler (~> 1.0)
     ast (2.4.2)
-    avo (1.12.2)
+    avo (1.12.3)
       active_link_to
       addressable
       breadcrumbs_on_rails
@@ -336,7 +336,7 @@ GEM
       rubocop (= 1.18.4)
       rubocop-performance (= 1.11.4)
     statsd-ruby (1.5.0)
-    stimulus-rails (0.2.4)
+    stimulus-rails (0.3.0)
       rails (>= 6.0.0)
     thor (1.1.0)
     tilt (2.0.10)
