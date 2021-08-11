@@ -1,3 +1,8 @@
+[![View performance data on
+Skylight](https://badges.skylight.io/typical/8iNkI05QE0Bv.svg)](https://oss.skylight.io/app/applications/8iNkI05QE0Bv)
+[![View performance data on
+Skylight](https://badges.skylight.io/problem/8iNkI05QE0Bv.svg)](https://oss.skylight.io/app/applications/8iNkI05QE0Bv)
+
 # Ex Libris
 
 A database of Mörk Borg content. For [Liber Ludorum].
