@@ -34,7 +34,7 @@ end
 
 group :development do
   gem "brakeman"
-  gem "listen", "~> 3.6"
+  gem "listen", "~> 3.7"
   gem "rack-mini-profiler", "~> 2.3"
   gem "stackprof"
   gem "spring"

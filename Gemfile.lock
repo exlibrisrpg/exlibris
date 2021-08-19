@@ -187,7 +187,7 @@ GEM
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
-    listen (3.6.0)
+    listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.12.0)
@@ -390,7 +390,7 @@ DEPENDENCIES
   geared_pagination
   inline_svg
   jbuilder (~> 2.7)
-  listen (~> 3.6)
+  listen (~> 3.7)
   meta-tags
   pg (~> 1.1)
   puma (~> 5.4)
