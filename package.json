@@ -11,7 +11,7 @@
     "@rails/actiontext": "^6.1.4",
     "@rails/activestorage": "^6.1.4",
     "@rails/ujs": "^6.1.4",
-    "@rails/webpacker": "5.4.0",
+    "@rails/webpacker": "5.4.2",
     "modern-css-reset": "^1.4.0",
     "rough-notation": "^0.5.1",
     "scrollama": "^2.2.2",
