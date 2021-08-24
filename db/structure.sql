@@ -10,6 +10,13 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
+-- Name: pgcrypto; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS "pgcrypto" WITH SCHEMA public;
+
+
+--
 -- Name: unaccent; Type: EXTENSION; Schema: -; Owner: -
 --
 
@@ -21,13 +28,6 @@ CREATE EXTENSION IF NOT EXISTS unaccent WITH SCHEMA public;
 --
 
 COMMENT ON EXTENSION unaccent IS 'text search dictionary that removes accents';
-
-
---
--- Name: pgcrypto; Type: EXTENSION; Schema: -; Owner: -
---
-
-CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
 
 
 --
@@ -104,7 +104,7 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public.action_text_rich_texts (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     name character varying NOT NULL,
     body text,
     record_type character varying NOT NULL,
@@ -120,7 +120,7 @@ CREATE TABLE public.action_text_rich_texts (
 --
 
 CREATE TABLE public.active_storage_attachments (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     name character varying NOT NULL,
     record_type character varying NOT NULL,
     record_id uuid NOT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE public.active_storage_attachments (
 --
 
 CREATE TABLE public.active_storage_blobs (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     key character varying NOT NULL,
     filename character varying NOT NULL,
     content_type character varying,
@@ -151,7 +151,7 @@ CREATE TABLE public.active_storage_blobs (
 --
 
 CREATE TABLE public.active_storage_variant_records (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     blob_id uuid NOT NULL,
     variation_digest character varying NOT NULL
 );
@@ -174,7 +174,7 @@ CREATE TABLE public.ar_internal_metadata (
 --
 
 CREATE TABLE public.entries (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
@@ -197,7 +197,7 @@ CREATE TABLE public.entries_tags (
 --
 
 CREATE TABLE public.friendly_id_slugs (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     slug character varying NOT NULL,
     sluggable_id uuid NOT NULL,
     sluggable_type character varying(50),
@@ -211,7 +211,7 @@ CREATE TABLE public.friendly_id_slugs (
 --
 
 CREATE TABLE public.links (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     entry_id uuid NOT NULL,
     address character varying,
     created_at timestamp(6) without time zone NOT NULL,
@@ -233,7 +233,7 @@ CREATE TABLE public.schema_migrations (
 --
 
 CREATE TABLE public.tag_categories (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
@@ -246,7 +246,7 @@ CREATE TABLE public.tag_categories (
 --
 
 CREATE TABLE public.tags (
-    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
