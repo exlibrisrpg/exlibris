@@ -24,6 +24,13 @@ COMMENT ON EXTENSION unaccent IS 'text search dictionary that removes accents';
 
 
 --
+-- Name: pgcrypto; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
+
+
+--
 -- Name: en; Type: TEXT SEARCH CONFIGURATION; Schema: public; Owner: -
 --
 
