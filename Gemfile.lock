@@ -105,7 +105,7 @@ GEM
       statsd-ruby (~> 1.1)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bootsnap (1.7.7)
+    bootsnap (1.8.0)
       msgpack (~> 1.0)
     brakeman (5.1.1)
     breadcrumbs_on_rails (4.1.0)
