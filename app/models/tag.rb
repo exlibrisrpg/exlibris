@@ -10,6 +10,8 @@ class Tag < ApplicationRecord
   friendly_id :name, use: :slugged
   has_rich_text :description
 
+  default_scope { by_name }
+
   scope :by_name, proc { order('LOWER("tags"."name") asc') }
   scope :containing, ->(query) { where("to_tsvector('en', tags.name) @@ websearch_to_tsquery(unaccent(:query))", query: query) }
   scope :with_includes, -> { includes(:rich_text_description, :tag_category, entries: [:links, :rich_text_description, tags: :rich_text_description, cover_attachment: :blob]) }
