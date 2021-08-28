@@ -15,7 +15,7 @@ class EntryResource < Avo::BaseResource
   field :links, as: :has_many
   field :tags, as: :has_and_belongs_to_many
 
-  field :category, as: :text do |model|
+  field :category, as: :text, hide_on: :show do |model|
     model.tags.where(tag_category: TagCategory.find_by(name: "Categories"))&.first&.name
   end
 
