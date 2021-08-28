@@ -7,6 +7,16 @@ Skylight](https://badges.skylight.io/problem/8iNkI05QE0Bv.svg)](https://oss.skyl
 
 A database of Mörk Borg content. For [Liber Ludorum].
 
+## Dependencies
+
+- Ruby 2.7.2
+- Yarn
+- Postgres 13
+- Redis
+
+For advice on setting up these dependencies, please see the
+[wiki](https://github.com/exlibrisrpg/exlibris/wiki#setting-up-dependencies).
+
 ## Setup
 
 To get this running locally run `bin/setup`. You can also use the `-f` flag to
@@ -21,6 +31,10 @@ Usage: bin/ci [options]
     -f, --with-fixtures              Load fixtures into database
     -h, --help                       Prints this help message
 ```
+
+## Running locally
+
+Start up the server with `bin/rails server`.
 
 ## Testing
 
