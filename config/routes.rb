@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resource :search, only: :show
 
+  get '/entries/random', action: :random, controller: 'entries'
   resources :entries, only: [:index, :show]
   resources :tags, only: [:index, :show]
 

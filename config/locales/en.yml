@@ -24,6 +24,7 @@ en:
 
   layouts:
     public:
+      random: Random Entry
       footer:
         about_link: About
         tags_link: Tags

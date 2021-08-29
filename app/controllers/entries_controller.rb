@@ -10,4 +10,9 @@ class EntriesController < ApplicationController
       redirect_to @entry, status: :moved_permanently
     end
   end
+
+  def random
+    @entry = Entry.limit(1).order("RANDOM()").first
+    redirect_to @entry
+  end
 end
