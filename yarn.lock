@@ -6776,10 +6776,10 @@ schema-utils@^3.0.0, schema-utils@^3.1.0:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
-scrollama@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-2.2.2.tgz#7a05382702e65884a7e584a0d88f7bb6fe300860"
-  integrity sha512-ZU5uuiHRhtomdgdSwwv0ThSPnjeO5WAmBrlNEc/DowdPN/wewro4zvpOpEFr0FakhvvujxA1IskJCn9rFbEz1g==
+scrollama@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-2.2.3.tgz#c5e41ee56bf76b14162708d6421c1cd42585fb14"
+  integrity sha512-fKuGfBaIycyk0TdninJKNgxctSnzjVMAVm0G1fDhZN1KjbDvxVse3K8OElqnvrCAWVup5YN/8K6aOKgj7dmYWA==
 
 select-hose@^2.0.0:
   version "2.0.0"
