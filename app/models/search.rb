@@ -1,14 +1,21 @@
 class Search
   include ActiveModel::Model
 
-  attr_accessor :query
+  attr_accessor :query, :filter_tag_slugs
 
-  validates :query, presence: true
+  validates :query, presence: true, if: -> { filter_tag_slugs.blank? }
 
   def entries
     return Entry.none unless valid?
 
-    Entry.by_name.with_includes.containing(query)
+    entries_scope = Entry.by_name.with_includes
+    entries_scope = entries_scope.containing(query) unless query.blank?
+    entries_scope = entries_scope.joins(:tags).merge(filter_tags) unless filter_tag_slugs.blank?
+    entries_scope
+  end
+
+  def filter_tags
+    Tag.where(slug: filter_tag_slugs)
   end
 
   def random_entries

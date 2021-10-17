@@ -105,22 +105,22 @@ class MetaTagsComponentTest < ViewComponent::TestCase
   context "with a tag" do
     should "render correct meta tags" do
       tag = Tag.create(
-        name: "Rules",
+        name: "Alternative Rules",
         short_description: "Play by them, you fool",
         description: "All the <strong>awful</strong> ways you could die.",
         tag_category: tag_categories(:categories)
       )
 
       expected_html = <<~HTML
-        <title>Rules | Ex Libris Mörk Borg</title>
+        <title>Alternative Rules | Ex Libris Mörk Borg</title>
         <meta name="description" content="All the awful ways you could die.">
-        <link rel="canonical" href="http://test.host/tags/rules">
+        <link rel="canonical" href="http://test.host/tags/alternative-rules">
         <link rel="image_src" href="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
-        <meta property="og:title" content="Rules">
+        <meta property="og:title" content="Alternative Rules">
         <meta property="og:description" content="All the awful ways you could die.">
         <meta property="og:site_name" content="Ex Libris Mörk Borg">
         <meta property="og:image" content="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
-        <meta property="og:url" content="http://test.host/tags/rules">
+        <meta property="og:url" content="http://test.host/tags/alternative-rules">
         <meta name="twitter:card" content="summary_large_image">
       HTML
 

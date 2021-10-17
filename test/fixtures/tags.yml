@@ -3,16 +3,20 @@ rules:
   name: Rules
   short_description: Optional rules to die by.
   tag_category: categories
+  slug: rules
 
 # Officialness
 mork_borg_cult:
   name: Mörk Borg Cult
   tag_category: officialness
+  slug: mork-borg-cult
 
 # Authors
 johan_nohr:
   name: Johan Nohr
   tag_category: creators
+  slug: johan-nohr
 johnny_carhat:
   name: Johnny Carhat
   tag_category: creators
+  slug: johnny-carhat

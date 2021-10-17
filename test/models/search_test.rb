@@ -3,26 +3,35 @@ require "test_helper"
 class SearchTest < ActiveSupport::TestCase
   context "#entries" do
     should "return empty array with no query" do
-      assert_equal Search.new(query: nil).entries, Entry.none
+      assert_equal Search.new.entries, Entry.none
     end
 
-    should "return entry query with a query" do
-      assert_equal Search.new(query: "cult").entries, Entry.by_name.containing("cult")
+    context "with a query" do
+      should "return entry query" do
+        assert_equal Search.new(query: "cult").entries, Entry.by_name.containing("cult")
+      end
+
+      should "ignore punctuation when matching" do
+        entry = Entry.create(name: "Example", description: "Match: a colon")
+        assert_includes Search.new(query: "matching a colon").entries, entry
+      end
+
+      should "unaccent special characters in entry description when matching" do
+        entry = Entry.create(name: "Example", description: "A Mörk Borg entry")
+        assert_includes Search.new(query: "mörk borg").entries, entry
+      end
+
+      should "unaccent special characters in entry name when matching" do
+        entry = Entry.create(name: "Mörk Borg Entry", description: "An entry")
+        assert_includes Search.new(query: "mörk borg").entries, entry
+      end
     end
 
-    should "ignore punctuation when matching" do
-      entry = Entry.create(name: "Example", description: "Match: a colon")
-      assert_includes Search.new(query: "matching a colon").entries, entry
-    end
-
-    should "unaccent special characters in entry description when matching" do
-      entry = Entry.create(name: "Example", description: "A Mörk Borg entry")
-      assert_includes Search.new(query: "mörk borg").entries, entry
-    end
-
-    should "unaccent special characters in entry name when matching" do
-      entry = Entry.create(name: "Mörk Borg Entry", description: "An entry")
-      assert_includes Search.new(query: "mörk borg").entries, entry
+    context "with filter_tag_slugs" do
+      should "return entry query" do
+        rules_tag = tags(:rules)
+        assert_equal Search.new(filter_tag_slugs: [rules_tag.slug]).entries, Entry.by_name.joins(:tags).merge(Tag.where(slug: [rules_tag.slug]))
+      end
     end
   end
 
