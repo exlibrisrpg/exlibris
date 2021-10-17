@@ -5,7 +5,12 @@ class SearchesController < ApplicationController
     else
       Search.new
     end
-    set_page_and_extract_portion_from @search.entries
+
+    if params.has_key?(:random)
+      redirect_to @search.random_entry
+    else
+      set_page_and_extract_portion_from @search.entries
+    end
   end
 
   private

@@ -13,5 +13,13 @@ class SearchesControllerTest < ActionDispatch::IntegrationTest
 
       assert_equal assigns[:search].query, "cult"
     end
+
+    context "with random param" do
+      should "redirect to entry" do
+        get search_path, params: {query: "eat", random: true}
+
+        assert_redirected_to entries(:eat_prey_kill)
+      end
+    end
   end
 end

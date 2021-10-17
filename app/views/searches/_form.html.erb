@@ -9,8 +9,16 @@
       </div>
     </div>
 
-    <div class="highlight-yellow hover-highlight-white" style="min-width: 15%;">
-      <%= form.submit name: "", class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true } %>
+    <div class="cluster" style="min-width: 25%;">
+      <div>
+        <div class="cluster-grow | highlight-yellow hover-highlight-white">
+          <%= form.submit name: "search", class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true } %>
+        </div>
+
+        <div class="cluster-grow | highlight-yellow hover-highlight-white">
+          <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
+        </div>
+      </div>
     </div>
   </div>
 <% end %>

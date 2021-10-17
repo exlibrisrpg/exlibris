@@ -18,6 +18,7 @@ en:
         update: Update Entry
       search:
         create: Search
+        random: Random
       tag:
         create: Create Tag
         update: Update Tag

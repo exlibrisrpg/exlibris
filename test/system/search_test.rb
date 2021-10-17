@@ -37,4 +37,16 @@ class SearchTest < ApplicationSystemTestCase
 
     assert_scrolling_loads_more_entries
   end
+
+  test "show random results" do
+    visit search_path
+
+    within "form" do
+      fill_in Search.model_name.human, with: "hunting"
+      click_on I18n.t("helpers.submit.search.random")
+    end
+
+    refute_selector "h1", text: I18n.t("searches.show.title")
+    assert_text entries(:eat_prey_kill).name
+  end
 end
