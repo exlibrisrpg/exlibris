@@ -26,6 +26,12 @@ class SearchTest < ActiveSupport::TestCase
     end
   end
 
+  context "#random_entries" do
+    should "order entries in a random order with SQL" do
+      assert_includes Search.new(query: "query").random_entries.to_sql, "ORDER BY RANDOM()"
+    end
+  end
+
   context "#tags" do
     should "return empty array with no query" do
       assert_equal Search.new(query: nil).tags, Tag.none
