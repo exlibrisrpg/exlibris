@@ -15,7 +15,7 @@
     "modern-css-reset": "^1.4.0",
     "rough-notation": "^0.5.1",
     "scrollama": "^2.2.3",
-    "stimulus": "^2.0.0",
+    "stimulus": "^3.0.1",
     "trix": "^1.2.0"
   },
   "version": "0.1.0",
