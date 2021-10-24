@@ -1,22 +1,46 @@
-<%= form_with model: search, url: search_path, method: :get, class: "search | cluster" do |form| %>
-  <div class="plex-mono">
-    <div class="cluster-grow | highlight-white">
-      <div class="search--field with-icon" data-controller="highlight">
-        <%= form.label :query do %>
-          <%= icon_tag :search %>
-        <% end %>
-        <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
-      </div>
-    </div>
+<%= form_with model: search, url: search_path, method: :get, class: "search", data: { controller: "form", "form-target": "form", "form-submit-frame-value": "searchTagResults" } do |form| %>
+  <div class="cluster">
+    <div class="plex-mono">
+      <div class="cluster cluster-grow | highlight-white" style="flex: 1 0;">
+        <div class="search--field with-icon" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+          <%= form.label :query do %>
+            <%= icon_tag :search %>
+          <% end %>
 
-    <div class="cluster" style="min-width: 25%;">
-      <div>
-        <div class="cluster-grow | highlight-yellow hover-highlight-white">
-          <%= form.submit name: "search", class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true } %>
+          <div class="cluster-grow relative">
+            <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
+
+            <turbo-frame id="searchTagResults">
+              <div style="z-index: 1">
+                <ul role="listbox" data-combobox-target="list" class="highlight-none selected-highlight-yellow c-black p-none m-none hidden search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+                  <% @search.tags.each do |tag| %>
+                    <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
+                  <% end %>
+                </ul>
+              </div>
+            </turbo-frame>
+          </div>
+
+          <div class="cluster">
+            <ul role="list" data-combobox-target="collection" class="search--filter-tags p-none c-black highlight-yellow">
+              <li class="hidden-if-only-child">Tags:</li>
+              <% search.filter_tags.each do |tag| %>
+                <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
+              <% end %>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="cluster-grow | highlight-yellow hover-highlight-white">
-          <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
+      <div class="cluster" style="min-width: 25%;">
+        <div>
+          <div class="cluster-grow | highlight-yellow hover-highlight-white">
+            <%= form.submit name: "search", class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
+          </div>
+
+          <div class="cluster-grow | highlight-yellow hover-highlight-white">
+            <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
+          </div>
         </div>
       </div>
     </div>

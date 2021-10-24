@@ -36,3 +36,12 @@
     fill: var(--icon-color, var(--color-foreground));
   }
 }
+
+.search--tag-list {
+  left: 0;
+  list-style: none;
+  position: absolute;
+  text-align: initial;
+  width: max-content;
+  z-index: 2;
+}

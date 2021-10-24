@@ -1,4 +1,4 @@
-import { Controller } from "stimulus"
+import { Controller } from "@hotwired/stimulus"
 import { annotate, annotationGroup } from "rough-notation"
 
 export default class extends Controller {
@@ -29,6 +29,10 @@ export default class extends Controller {
 
   disconnect() {
     this.annotation.hide()
+  }
+
+  redraw() {
+    this.annotation.show()
   }
 
   annotateElement(element, options) {

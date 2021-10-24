@@ -6,6 +6,7 @@
     "lint:scss": "yarn run stylelint \"app/javascript/**/*.scss\""
   },
   "dependencies": {
+    "@github/combobox-nav": "^2.0.2",
     "@hotwired/turbo-rails": "^7.1.0",
     "@rails/actioncable": "^7.0.1",
     "@rails/actiontext": "^7.0.1",

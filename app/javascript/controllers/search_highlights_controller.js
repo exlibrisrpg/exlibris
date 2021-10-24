@@ -1,4 +1,4 @@
-import { Controller } from "stimulus"
+import { Controller } from "@hotwired/stimulus"
 import { annotate, annotationGroup } from "rough-notation"
 
 export default class extends Controller {

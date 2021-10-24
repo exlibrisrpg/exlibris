@@ -27,8 +27,8 @@ class Search
   end
 
   def tags
-    return Tag.none unless valid?
+    return Tag.none if query.blank?
 
-    Tag.by_name.containing(query)
+    Tag.by_name.where("tags.name ILIKE ?", "%#{query}%").where.not(id: filter_tags.pluck(:id)).limit(10)
   end
 end

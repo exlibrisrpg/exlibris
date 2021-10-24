@@ -1,0 +1,8 @@
+<%= content_tag :li, id: dom_id(tag), role: "option" do %>
+  <span data-controller="highlight">
+    <span class="p-2xs">
+      <%= tag.name %>
+      <%= hidden_field_tag "tags[]", tag.slug %>
+    </span>
+  </span>
+<% end %>

@@ -51,7 +51,8 @@ $spacing-map: (
   l: var(--space-l),
   xl: var(--space-xl),
   2xl: var(--space-2xl),
-  3xl: var(--space-3xl)
+  3xl: var(--space-3xl),
+  none: 0
 );
 
 :root {

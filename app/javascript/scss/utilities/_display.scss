@@ -9,3 +9,11 @@
 .hidden {
   display: none;
 }
+
+.hidden-if-only-child:first-child:last-child {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
