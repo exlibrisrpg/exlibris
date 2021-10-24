@@ -10,7 +10,7 @@ class Search
 
     entries_scope = Entry.by_name.with_includes
     entries_scope = entries_scope.containing(query) unless query.blank?
-    entries_scope = entries_scope.joins(:tags).merge(filter_tags) unless filter_tag_slugs.blank?
+    entries_scope = entries_scope.with_tags(filter_tags.pluck(:id)) unless filter_tag_slugs.blank?
     entries_scope
   end
 

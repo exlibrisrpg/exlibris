@@ -29,6 +29,7 @@ class Entry < ApplicationRecord
   scope :content_containing, ->(query) { joins(:rich_text_description).merge(ActionText::RichText.with_body_containing(query)) }
   scope :name_containing, ->(query) { where("to_tsvector('en', entries.name) @@ websearch_to_tsquery(unaccent(:query))", query: query) }
   scope :with_includes, -> { includes(:cover_blob, :links, rich_text_description: {embeds_attachments: :blob}, tags: [:rich_text_description, :tag_category], cover_attachment: :blob) }
+  scope :with_tags, ->(filter_tag_ids) { where(id: Entry.joins(:entries_tags).where(entries_tags: {tag_id: filter_tag_ids}).group(:id).having("COUNT(entries.*) = ?", filter_tag_ids.size)) }
 
   def category_tags
     tags.with_includes.where(tag_category: TagCategory.find_by(name: "Categories"))
