@@ -1,7 +1,10 @@
 class SearchesController < ApplicationController
   def show
     @search = if search_params
-      Search.new(search_params)
+      Search.new(
+        query: search_params[:query],
+        filter_tag_slugs: search_params[:tags]
+      )
     else
       Search.new
     end
@@ -16,6 +19,10 @@ class SearchesController < ApplicationController
   private
 
   def search_params
-    params.permit(:query)
+    params.permit(:query, tags: []).tap do |permitted|
+      if params[:tags].present?
+        permitted[:tags] = params[:tags].split(",") if permitted[:tags].blank?
+      end
+    end
   end
 end
