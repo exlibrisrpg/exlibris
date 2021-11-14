@@ -27,6 +27,7 @@ en:
     public:
       footer:
         about_link: About
+        credits_link: Credits
         tags_link: Tags
         search_link: Search
         license_html: |
@@ -78,6 +79,8 @@ en:
         <hr>
         <p>Unless otherwise noted, the third-party products presented here are independent productions by their respective authors/publishers and are not affiliated with Ockult Örtmästare Games or Stockholm Kartell. They are published under the MÖRK BORG Third Party License.</p>
         <p>MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.</p>
+    credits:
+      title: Credits
 
   searches:
     show:

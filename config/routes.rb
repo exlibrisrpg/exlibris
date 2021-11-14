@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   delete "/sign_out", to: "clearance/sessions#destroy", as: "destroy_user_session"
 
   get :about, to: "pages#about"
+  get :credits, to: "pages#credits"
 
   root to: "dashboards#show"
 end

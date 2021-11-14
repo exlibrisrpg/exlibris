@@ -1,0 +1,9 @@
+.credits-list {
+  column-count: var(--columns, 1);
+  column-width: 25ch;
+  padding: 0;
+
+  li {
+    line-height: 3;
+  }
+}
