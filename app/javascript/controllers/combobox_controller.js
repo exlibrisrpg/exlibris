@@ -47,6 +47,11 @@ export default class extends Controller {
     this.inputTarget.focus()
   }
 
+  remove(event) {
+    // Remove option from collection
+    event.target.closest(`[role="option"]`).remove()
+  }
+
   listTargetConnected() {
     this.start()
   }

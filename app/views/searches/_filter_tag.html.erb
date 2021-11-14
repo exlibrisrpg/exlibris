@@ -3,6 +3,7 @@
     <span class="p-2xs">
       <%= tag.name %>
       <%= hidden_field_tag "tags[]", tag.slug %>
+      <button type="button" class="search--tag-remove hide-if-disabled" data-action="click->combobox#remove">x</button>
     </span>
   </span>
 <% end %>

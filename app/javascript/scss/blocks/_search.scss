@@ -44,4 +44,23 @@
   text-align: initial;
   width: max-content;
   z-index: 2;
+
+  [role="option"]:hover {
+    cursor: pointer;
+  }
+}
+
+.search--tag-remove {
+  background: none;
+  border: 0;
+  font-family: inherit;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    display: none;
+  }
 }

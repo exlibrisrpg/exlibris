@@ -63,4 +63,14 @@ class SearchTest < ApplicationSystemTestCase
 
     assert_selector "input[type=\"hidden\"][name=\"tags[]\"][value=\"#{tags(:johan_nohr).slug}\"]", visible: false
   end
+
+  test "remove existing filter tags" do
+    visit search_path(tags: tags(:johan_nohr).slug)
+
+    within "form" do
+      find("[role=\"list\"]", text: tags(:johan_nohr).name).find("[data-action=\"click->combobox#remove\"]").click
+    end
+
+    refute_selector "input[type=\"hidden\"][name=\"tags[]\"][value=\"#{tags(:johan_nohr).slug}\"]", visible: false
+  end
 end
