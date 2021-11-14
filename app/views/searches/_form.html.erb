@@ -11,15 +11,13 @@
             <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
 
             <turbo-frame id="searchTagResults">
-              <div style="z-index: 1">
-                <fieldset disabled>
-                  <ul role="listbox" data-combobox-target="list" class="highlight-none selected-highlight-yellow c-black p-none m-none hidden search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
-                    <% @search.tags.each do |tag| %>
-                      <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
-                    <% end %>
-                  </ul>
-                </fieldset>
-              </div>
+              <fieldset disabled style="z-index: 1;">
+                <ul role="listbox" data-combobox-target="list" class="highlight-none selected-highlight-yellow c-black p-none m-none hidden search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+                  <% @search.tags.each do |tag| %>
+                    <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
+                  <% end %>
+                </ul>
+              </fieldset>
             </turbo-frame>
           </div>
 
