@@ -54,7 +54,12 @@ class SearchTest < ActiveSupport::TestCase
     end
 
     should "return tag query with a query" do
-      assert_equal Search.new(query: "cult").tags, Tag.by_name.containing("cult")
+      assert_equal Search.new(query: "cult").tags, Tag.by_name.containing("cult").where.not(id: []).limit(10)
+    end
+
+    should "exclude filter tags from query" do
+      search = Search.new(query: "cult", filter_tag_slugs: [tags(:johan_nohr).slug])
+      assert_equal search.tags, Tag.by_name.containing("cult").where.not(id: [tags(:johan_nohr).id]).limit(10)
     end
 
     should "unaccent special characters in tag name when matching" do

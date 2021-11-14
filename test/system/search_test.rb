@@ -12,18 +12,7 @@ class SearchTest < ApplicationSystemTestCase
     assert_text entries(:eat_prey_kill).name
   end
 
-  test "show tags results" do
-    visit search_path
-
-    within "form" do
-      fill_in Search.model_name.human, with: "cult"
-      click_on I18n.t("helpers.submit.search.create")
-    end
-
-    assert_link tags(:mork_borg_cult).name
-  end
-
-  test "infinite scroll tag entries" do
+  test "infinite scroll search entries" do
     Entry.create(
       20.times.map do |i|
         {
@@ -48,5 +37,30 @@ class SearchTest < ApplicationSystemTestCase
 
     refute_selector "h1", text: I18n.t("searches.show.title")
     assert_text entries(:eat_prey_kill).name
+  end
+
+  test "use tag autocomplete with mouse" do
+    visit search_path
+
+    within "form" do
+      fill_in Search.model_name.human, with: "joh"
+      find("li", text: tags(:johan_nohr).name).click
+      click_on I18n.t("helpers.submit.search.create")
+    end
+
+    assert_selector "input[type=\"hidden\"][name=\"tags[]\"][value=\"#{tags(:johan_nohr).slug}\"]", visible: false
+  end
+
+  test "use tag autocomplete with keyboard" do
+    visit search_path
+
+    within "form" do
+      fill_in Search.model_name.human, with: "joh"
+      find(:fillable_field, Search.model_name.human).send_keys(:down)
+      find(:fillable_field, Search.model_name.human).send_keys(:enter)
+      click_on I18n.t("helpers.submit.search.create")
+    end
+
+    assert_selector "input[type=\"hidden\"][name=\"tags[]\"][value=\"#{tags(:johan_nohr).slug}\"]", visible: false
   end
 end
