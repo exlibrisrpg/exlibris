@@ -324,7 +324,7 @@ GEM
       concurrent-ruby
       faraday
     shoulda-context (2.0.0)
-    shoulda-matchers (5.0.0)
+    shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
     sixarm_ruby_unaccent (1.2.0)
     skylight (5.1.1)
