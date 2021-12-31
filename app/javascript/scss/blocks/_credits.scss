@@ -1,6 +1,5 @@
 .credits-list {
-  column-count: var(--columns, 1);
-  column-width: 25ch;
+  columns: var(--columns, 1) 25ch;
   padding: 0;
 
   li {

@@ -1,6 +1,7 @@
 .frame {
   --n: 9;
   --d: 16;
+
   padding-bottom: calc(var(--n) / var(--d) * 100%);
   position: relative;
 }
