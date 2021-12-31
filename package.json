@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@hotwired/turbo-rails": "^7.1.0",
-    "@rails/actioncable": "^6.1.4",
+    "@rails/actioncable": "^7.0.0",
     "@rails/actiontext": "^6.1.4",
     "@rails/activestorage": "^6.1.4",
     "@rails/ujs": "^7.0.0",
