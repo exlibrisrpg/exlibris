@@ -1,5 +1,6 @@
 .cluster {
   --cluster-space: var(--space-s);
+
   /* ↓ Suppress horizontal scrolling caused by
   the negative margin in some circumstances */
   // overflow: hidden;
@@ -26,6 +27,7 @@
 .cluster > * {
   display: flex;
   flex-wrap: wrap;
+
   /* ↓ multiply by -1 to negate the halved value */
   margin: calc(var(--cluster-space) / 2 * -1);
 }

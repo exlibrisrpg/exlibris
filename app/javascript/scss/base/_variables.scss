@@ -1,10 +1,9 @@
-$black: rgba(0, 0, 0, 1);
-$black-translucent: rgba(0, 0, 0, 0.65);
-$white: rgba(255, 255, 255, 1);
-$white-translucent: rgba(255, 255, 255, 0.65);
-$yellow: rgba(255, 232, 0, 1);
-$yellow-translucent: rgba(255, 232, 0, 0.65);
-
+$black: rgb(0 0 0 / 100%);
+$black-translucent: rgb(0 0 0 / 65%);
+$white: rgb(255 255 255 / 100%);
+$white-translucent: rgb(255 255 255 / 65%);
+$yellow: rgb(255 232 0 / 100%);
+$yellow-translucent: rgb(255 232 0 / 65%);
 $color-map: (
   black: $black,
   black-translucent: $black-translucent,
@@ -14,17 +13,25 @@ $color-map: (
   yellow-translucent: $yellow-translucent,
   none: none
 );
-
-$font-sans-serif: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
-$font-palatino: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Times, "Times New Roman", serif;
-
+$font-sans-serif: -apple-system,
+  blinkmacsystemfont,
+  "avenir next",
+  avenir,
+  "helvetica neue",
+  helvetica,
+  ubuntu,
+  roboto,
+  noto,
+  "segoe ui",
+  arial,
+  sans-serif;
+$font-palatino: palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", times, "Times New Roman", serif;
 $font-map: (
   sans-serif: $font-sans-serif,
   palatino: $font-palatino,
   unifraktur: "UnifrakturCook",
   plex-mono: "IBM Plex Mono"
 );
-
 $sizing-map: (
   -2: var(--step--2),
   -1: var(--step--1),
@@ -35,7 +42,6 @@ $sizing-map: (
   4: var(--step-4),
   5: var(--step-5)
 );
-
 $spacing-map: (
   3xs: var(--space-3xs),
   2xs: var(--space-2xs),

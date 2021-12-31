@@ -8,6 +8,7 @@
 
 .imposter.contain {
   --margin: 0;
+
   max-height: calc(100% - (var(--margin) * 2));
   max-width: calc(100% - (var(--margin) * 2));
   overflow: auto;

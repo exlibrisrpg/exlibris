@@ -18,7 +18,14 @@
 
 .reel::-webkit-scrollbar-thumb {
   background-color: var(--color-foreground);
-  background-image: linear-gradient(var(--color-foreground) 0, var(--color-foreground) 0.25rem, var(--color-action) 0.25rem, var(--color-action) 0.75rem, var(--color-foreground) 0.75rem);
+  background-image:
+    linear-gradient(
+      var(--color-foreground) 0,
+      var(--color-foreground) 0.25rem,
+      var(--color-action) 0.25rem,
+      var(--color-action) 0.75rem,
+      var(--color-foreground) 0.75rem
+    );
 }
 
 .reel > * {

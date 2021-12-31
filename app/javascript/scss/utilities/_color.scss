@@ -6,7 +6,7 @@ $color-rules: (
 
 @each $class-name, $rule in $color-rules {
   @each $color-name, $value in $color-map {
-    .#{$class-name}-#{"" +$color-name} {
+    .#{$class-name}-#{"" + $color-name} {
       #{$rule}: $value;
     }
 
