@@ -74,7 +74,7 @@ class MetaTagsComponentTest < ViewComponent::TestCase
 
   context "with an entry with a cover" do
     should "render correct meta tags" do
-      ActiveStorage::Current.set(host: "http://example.com") do
+      ActiveStorage::Current.set(url_options: {host: "http://example.com"}) do
         entry = Entry.create(
           name: "Eat, Prey, Kill",
           description: "A <strong>vile</strong> and <em>evil</em> thought."
