@@ -10,7 +10,7 @@
     "@rails/actioncable": "^7.0.1",
     "@rails/actiontext": "^7.0.0",
     "@rails/activestorage": "^7.0.0",
-    "@rails/ujs": "^7.0.0",
+    "@rails/ujs": "^7.0.1",
     "@rails/webpacker": "5.4.3",
     "modern-css-reset": "^1.4.0",
     "rough-notation": "^0.5.1",
