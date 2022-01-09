@@ -24,6 +24,8 @@ class SearchTest < ApplicationSystemTestCase
 
     visit search_path(query: "placeholder")
 
+    refute_selector "turbo-frame[busy]"
+
     assert_scrolling_loads_more_entries
   end
 
