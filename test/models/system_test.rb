@@ -1,6 +1,11 @@
 require "test_helper"
 
 class SystemTest < ActiveSupport::TestCase
+  context "associations" do
+    should have_many(:curation_roles).dependent(:destroy)
+    should have_many(:curators)
+  end
+
   context "validations" do
     should validate_presence_of(:name)
   end
