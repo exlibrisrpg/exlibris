@@ -24,6 +24,16 @@ CREATE EXTENSION IF NOT EXISTS unaccent WITH SCHEMA public;
 
 
 --
+-- Name: user_role; Type: TYPE; Schema: public; Owner: -
+--
+
+CREATE TYPE public.user_role AS ENUM (
+    'admin',
+    'curator'
+);
+
+
+--
 -- Name: en; Type: TEXT SEARCH CONFIGURATION; Schema: public; Owner: -
 --
 
@@ -274,7 +284,8 @@ CREATE TABLE public.users (
     email character varying NOT NULL,
     encrypted_password character varying(128) NOT NULL,
     confirmation_token character varying(128),
-    remember_token character varying(128) NOT NULL
+    remember_token character varying(128) NOT NULL,
+    role public.user_role DEFAULT 'curator'::public.user_role NOT NULL
 );
 
 
@@ -556,6 +567,13 @@ CREATE INDEX index_users_on_remember_token ON public.users USING btree (remember
 
 
 --
+-- Name: index_users_on_role; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_users_on_role ON public.users USING btree (role);
+
+
+--
 -- Name: tsvector_plain_text_body_idx; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -625,6 +643,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20211231165732'),
 ('20211231165733'),
 ('20211231165734'),
-('20220116094632');
+('20220116094632'),
+('20220116105721');
 
 
