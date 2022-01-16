@@ -2,6 +2,9 @@
 
 set -e
 
+echo "[ bin/ci ] Precompiling assets"
+bin/rails assets:precompile RAILS_ENV=test
+
 echo "[ bin/ci ] Running unit tests"
 bin/rails test
 
