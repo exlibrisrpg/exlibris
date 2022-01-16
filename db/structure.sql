@@ -173,6 +173,19 @@ CREATE TABLE public.ar_internal_metadata (
 
 
 --
+-- Name: curation_roles; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.curation_roles (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    user_id bigint NOT NULL,
+    system_id uuid NOT NULL,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
 -- Name: entries; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -356,6 +369,14 @@ ALTER TABLE ONLY public.ar_internal_metadata
 
 
 --
+-- Name: curation_roles curation_roles_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.curation_roles
+    ADD CONSTRAINT curation_roles_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: entries entries_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -452,6 +473,20 @@ CREATE UNIQUE INDEX index_active_storage_blobs_on_key ON public.active_storage_b
 --
 
 CREATE UNIQUE INDEX index_active_storage_variant_records_uniqueness ON public.active_storage_variant_records USING btree (blob_id, variation_digest);
+
+
+--
+-- Name: index_curation_roles_on_system_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_curation_roles_on_system_id ON public.curation_roles USING btree (system_id);
+
+
+--
+-- Name: index_curation_roles_on_user_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_curation_roles_on_user_id ON public.curation_roles USING btree (user_id);
 
 
 --
@@ -597,6 +632,14 @@ ALTER TABLE ONLY public.links
 
 
 --
+-- Name: curation_roles fk_rails_984e75cf2a; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.curation_roles
+    ADD CONSTRAINT fk_rails_984e75cf2a FOREIGN KEY (system_id) REFERENCES public.systems(id);
+
+
+--
 -- Name: active_storage_variant_records fk_rails_993965df05; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -610,6 +653,14 @@ ALTER TABLE ONLY public.active_storage_variant_records
 
 ALTER TABLE ONLY public.active_storage_attachments
     ADD CONSTRAINT fk_rails_c3b3935057 FOREIGN KEY (blob_id) REFERENCES public.active_storage_blobs(id);
+
+
+--
+-- Name: curation_roles fk_rails_d3f385d3dd; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.curation_roles
+    ADD CONSTRAINT fk_rails_d3f385d3dd FOREIGN KEY (user_id) REFERENCES public.users(id);
 
 
 --
@@ -644,6 +695,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20211231165733'),
 ('20211231165734'),
 ('20220116094632'),
-('20220116105721');
+('20220116105721'),
+('20220116114456');
 
 
