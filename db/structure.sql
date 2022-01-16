@@ -222,6 +222,19 @@ CREATE TABLE public.schema_migrations (
 
 
 --
+-- Name: systems; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.systems (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    name character varying,
+    slug character varying,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+--
 -- Name: tag_categories; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -364,6 +377,14 @@ ALTER TABLE ONLY public.schema_migrations
 
 
 --
+-- Name: systems systems_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.systems
+    ADD CONSTRAINT systems_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: tag_categories tag_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -486,6 +507,13 @@ CREATE INDEX index_links_on_entry_id ON public.links USING btree (entry_id);
 
 
 --
+-- Name: index_systems_on_slug; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX index_systems_on_slug ON public.systems USING btree (slug);
+
+
+--
 -- Name: index_tags_on_LOWER_name; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -596,6 +624,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20210731141311'),
 ('20211231165732'),
 ('20211231165733'),
-('20211231165734');
+('20211231165734'),
+('20220116094632');
 
 
