@@ -18,14 +18,17 @@
     "rough-notation": "^0.5.1",
     "scrollama": "^3.0.2",
     "stimulus": "^3.0.1",
-    "trix": "^1.2.0"
+    "trix": "^1.2.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@webpack-cli/serve": "^1.6.0",
     "postcss": "8",
     "prettier": "^2.5.1",
     "stylelint": "^14.2.0",
     "stylelint-config-standard-scss": "^3.0.0",
-    "webpack-dev-server": "^4.7.3"
+    "webpack-dev-server": "^3"
   }
 }
