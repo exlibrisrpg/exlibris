@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@github/combobox-nav": "^2.0.2",
-    "@hotwired/turbo-rails": "^7.1.0",
+    "@hotwired/turbo-rails": "^7.1.1",
     "@rails/actioncable": "^7.0.1",
     "@rails/actiontext": "^7.0.1",
     "@rails/activestorage": "^7.0.1",
