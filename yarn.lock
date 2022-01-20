@@ -6721,10 +6721,10 @@ schema-utils@^4.0.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.0.0"
 
-scrollama@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-3.0.2.tgz#e57ad34729a8686d340e971c01889ebbaeffbc5e"
-  integrity sha512-RntbNCGpGKMKAdPB0nQDHkw3DIKY3aeOwCE5YvPFQwax+mA107fhtUgQaW3sBokn3ea6bTFv4Ec6hWE4puMM3A==
+scrollama@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-3.0.3.tgz#d7b8ebe2a83771c0678a88303c62ffe4d03528e8"
+  integrity sha512-dWY/t9ORmA4WdCd3+MnagVQwQ20qQTLmHJPtdBEpTV3YmAlV0sIe/M6P73ih+1ifgQN+T9VmAsN1vCgtwJNrqA==
 
 select-hose@^2.0.0:
   version "2.0.0"
