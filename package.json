@@ -16,7 +16,7 @@
     "lodash.debounce": "^4.0.8",
     "modern-css-reset": "^1.4.0",
     "rough-notation": "^0.5.1",
-    "scrollama": "^3.0.2",
+    "scrollama": "^3.0.3",
     "stimulus": "^3.0.1",
     "trix": "^1.2.0",
     "webpack": "^4.46.0",
