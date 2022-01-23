@@ -194,7 +194,8 @@ CREATE TABLE public.entries (
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
-    slug character varying
+    slug character varying,
+    system_id uuid
 );
 
 
@@ -504,6 +505,13 @@ CREATE UNIQUE INDEX index_entries_on_slug ON public.entries USING btree (slug);
 
 
 --
+-- Name: index_entries_on_system_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_entries_on_system_id ON public.entries USING btree (system_id);
+
+
+--
 -- Name: index_entries_tags_on_entry_id_and_tag_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -696,6 +704,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20211231165734'),
 ('20220116094632'),
 ('20220116105721'),
-('20220116114456');
+('20220116114456'),
+('20220123121733');
 
 

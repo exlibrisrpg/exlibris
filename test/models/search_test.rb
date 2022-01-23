@@ -12,17 +12,17 @@ class SearchTest < ActiveSupport::TestCase
       end
 
       should "ignore punctuation when matching" do
-        entry = Entry.create(name: "Example", description: "Match: a colon")
+        entry = Entry.create(name: "Example", description: "Match: a colon", system: systems(:mork_borg))
         assert_includes Search.new(query: "matching a colon").entries, entry
       end
 
       should "unaccent special characters in entry description when matching" do
-        entry = Entry.create(name: "Example", description: "A Mörk Borg entry")
+        entry = Entry.create(name: "Example", description: "A Mörk Borg entry", system: systems(:mork_borg))
         assert_includes Search.new(query: "mörk borg").entries, entry
       end
 
       should "unaccent special characters in entry name when matching" do
-        entry = Entry.create(name: "Mörk Borg Entry", description: "An entry")
+        entry = Entry.create(name: "Mörk Borg Entry", description: "An entry", system: systems(:mork_borg))
         assert_includes Search.new(query: "mörk borg").entries, entry
       end
     end

@@ -49,7 +49,8 @@ class MetaTagsComponentTest < ViewComponent::TestCase
     should "render correct meta tags" do
       entry = Entry.create(
         name: "Eat, Prey, Kill",
-        description: "A <strong>vile</strong> and <em>evil</em> thought."
+        description: "A <strong>vile</strong> and <em>evil</em> thought.",
+        system: systems(:mork_borg)
       )
 
       expected_html = <<~HTML
@@ -77,7 +78,8 @@ class MetaTagsComponentTest < ViewComponent::TestCase
       ActiveStorage::Current.set(url_options: {host: "http://example.com"}) do
         entry = Entry.create(
           name: "Eat, Prey, Kill",
-          description: "A <strong>vile</strong> and <em>evil</em> thought."
+          description: "A <strong>vile</strong> and <em>evil</em> thought.",
+          system: systems(:mork_borg)
         )
         entry.cover.attach(io: File.open("test/fixtures/files/eatpreykill.png"), filename: "eatpreykill.png", content_type: "image/png")
 

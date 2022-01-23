@@ -17,7 +17,8 @@ class SearchTest < ApplicationSystemTestCase
       20.times.map do |i|
         {
           name: "Example Entry #{i}",
-          description: "Placeholder description"
+          description: "Placeholder description",
+          system: systems(:mork_borg)
         }
       end
     )

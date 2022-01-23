@@ -11,11 +11,13 @@ class Entry < ApplicationRecord
     </div>
   HTML
 
+  belongs_to :system, optional: false
   has_and_belongs_to_many :tags
   has_many :links, dependent: :destroy
 
   validates :name, presence: true
   validates :description, presence: true
+  validates :system, presence: true
   validate :description_not_default
 
   friendly_id :name, use: :slugged

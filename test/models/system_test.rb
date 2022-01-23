@@ -4,6 +4,7 @@ class SystemTest < ActiveSupport::TestCase
   context "associations" do
     should have_many(:curation_roles).dependent(:destroy)
     should have_many(:curators)
+    should have_many(:entries)
   end
 
   context "validations" do

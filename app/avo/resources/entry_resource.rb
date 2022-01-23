@@ -6,6 +6,7 @@ class EntryResource < Avo::BaseResource
   end
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
+  field :system, as: :belongs_to, required: true
   field :description, as: :trix, default: Entry::DEFAULT_DESCRIPTION, always_show: true, required: true, attachments_disabled: true
   field :cover, as: :file, is_image: true, link_to_resource: true
 

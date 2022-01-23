@@ -2,6 +2,7 @@ require "test_helper"
 
 class EntryTest < ActiveSupport::TestCase
   context "associations" do
+    should belong_to(:system).optional(false)
     should have_and_belong_to_many(:tags)
     should have_many(:links).dependent(:destroy)
   end
@@ -9,6 +10,7 @@ class EntryTest < ActiveSupport::TestCase
   context "validations" do
     should validate_presence_of(:name)
     should validate_presence_of(:description)
+    should validate_presence_of(:system)
     should_not allow_value(Entry::DEFAULT_DESCRIPTION).for(:description)
   end
 
