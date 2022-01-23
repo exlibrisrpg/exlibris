@@ -195,7 +195,7 @@ CREATE TABLE public.entries (
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
     slug character varying,
-    system_id uuid
+    system_id uuid NOT NULL
 );
 
 
@@ -705,6 +705,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220116094632'),
 ('20220116105721'),
 ('20220116114456'),
-('20220123121733');
+('20220123121733'),
+('20220123165234');
 
 
