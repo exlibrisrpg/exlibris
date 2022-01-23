@@ -27,10 +27,22 @@ class SearchesControllerTest < ActionDispatch::IntegrationTest
     end
 
     context "with random param" do
-      should "redirect to entry" do
+      should "redirect to entry from query" do
         get search_path, params: {query: "eat", random: true}
 
         assert_redirected_to entries(:eat_prey_kill)
+      end
+
+      should "redirect to entry from tag list" do
+        get search_path, params: {tags: "#{tags(:rules).slug},#{tags(:johnny_carhat).slug}", random: true}
+
+        assert_redirected_to entries(:unheroic_feats)
+      end
+
+      should "respond ok without a query" do
+        get search_path, params: {random: true}
+
+        assert_response :ok
       end
     end
   end

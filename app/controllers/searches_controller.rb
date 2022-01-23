@@ -9,7 +9,7 @@ class SearchesController < ApplicationController
       Search.new
     end
 
-    if params.has_key?(:random)
+    if params.has_key?(:random) && search_params.present?
       redirect_to @search.random_entry
     else
       set_page_and_extract_portion_from @search.entries
