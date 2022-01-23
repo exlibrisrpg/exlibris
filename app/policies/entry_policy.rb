@@ -15,6 +15,10 @@ class EntryPolicy < ApplicationPolicy
     user.admin? || entry_curated_by_user?
   end
 
+  def new?
+    user.admin? || user.curator?
+  end
+
   def create?
     user.admin? || entry_curated_by_user?
   end
