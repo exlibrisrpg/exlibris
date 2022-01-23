@@ -23,6 +23,6 @@ class SearchesController < ApplicationController
       if params[:tags].present?
         permitted[:tags] = params[:tags].split(",") if permitted[:tags].blank?
       end
-    end
+    end.compact_blank
   end
 end
