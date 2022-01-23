@@ -24,16 +24,4 @@ class UserPolicyTest < ActiveSupport::TestCase
 
     assert_scope users(:curator), User.all, User.none
   end
-
-  test "anonymous" do
-    refute_permit nil, :user, :index
-    refute_permit nil, User.new, :show
-    refute_permit nil, User.new, :create
-    refute_permit nil, User.new, :new
-    refute_permit nil, User.new, :update
-    refute_permit nil, User.new, :edit
-    refute_permit nil, User.new, :destroy
-
-    assert_scope nil, User.all, User.none
-  end
 end
