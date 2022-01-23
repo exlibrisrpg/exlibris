@@ -42,7 +42,7 @@ class SearchesControllerTest < ActionDispatch::IntegrationTest
       should "respond ok without a query" do
         get search_path, params: {query: "", tags: "", random: true}
 
-        assert_response :ok
+        assert_response :redirect
       end
     end
   end
