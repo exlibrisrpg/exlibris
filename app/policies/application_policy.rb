@@ -36,6 +36,18 @@ class ApplicationPolicy
     user&.admin?
   end
 
+  def upload_attachments?
+    create?
+  end
+
+  def download_attachments?
+    show?
+  end
+
+  def delete_attachments?
+    update?
+  end
+
   class Scope
     def initialize(user, scope)
       raise Pundit::NotAuthorizedError, "must be logged in" unless user

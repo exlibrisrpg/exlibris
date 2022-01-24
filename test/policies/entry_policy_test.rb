@@ -23,6 +23,9 @@ class EntryPolicyTest < ActiveSupport::TestCase
     assert_permit users(:curator), curated_entry, :update
     assert_permit users(:curator), curated_entry, :edit
     assert_permit users(:curator), curated_entry, :destroy
+    assert_permit users(:curator), curated_entry, :upload_attachments
+    assert_permit users(:curator), curated_entry, :download_attachments
+    assert_permit users(:curator), curated_entry, :delete_attachments
 
     other_entry = entries(:honey_in_the_rafters)
     refute_permit users(:curator), other_entry, :show
@@ -30,6 +33,9 @@ class EntryPolicyTest < ActiveSupport::TestCase
     refute_permit users(:curator), other_entry, :update
     refute_permit users(:curator), other_entry, :edit
     refute_permit users(:curator), other_entry, :destroy
+    refute_permit users(:curator), other_entry, :upload_attachments
+    refute_permit users(:curator), other_entry, :download_attachments
+    refute_permit users(:curator), other_entry, :delete_attachments
 
     assert_scope users(:curator), Entry.all, Entry.where(system: users(:curator).curated_systems)
   end
