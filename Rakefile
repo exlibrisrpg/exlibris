@@ -21,7 +21,7 @@ if Rails.env.development? || Rails.env.test?
 
     desc "Lint the js files"
     task :js do
-      puts `yarn run prettier --check "app/javascript/**/*.js"`
+      system("yarn run lint:scss") || abort
     end
   end
 end

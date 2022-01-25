@@ -7,11 +7,11 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <title>Ex Libris Mörk Borg</title>
         <meta name="description" content="A directory of content, tools, and resources">
         <link rel="canonical" href="http://test.host/">
-        <link rel="image_src" href="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <link rel="image_src" href="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:title" content="Ex Libris Mörk Borg">
         <meta property="og:description" content="A directory of content, tools, and resources">
         <meta property="og:site_name" content="Ex Libris Mörk Borg">
-        <meta property="og:image" content="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <meta property="og:image" content="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:url" content="http://test.host/">
         <meta name="twitter:card" content="summary_large_image">
       HTML
@@ -29,11 +29,11 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <title>About | Ex Libris Mörk Borg</title>
         <meta name="description" content="A directory of content, tools, and resources">
         <link rel="canonical" href="http://test.host/about">
-        <link rel="image_src" href="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <link rel="image_src" href="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:title" content="About">
         <meta property="og:description" content="A directory of content, tools, and resources">
         <meta property="og:site_name" content="Ex Libris Mörk Borg">
-        <meta property="og:image" content="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <meta property="og:image" content="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:url" content="http://test.host/about">
         <meta name="twitter:card" content="summary_large_image">
       HTML
@@ -57,11 +57,11 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <title>Eat, Prey, Kill | Ex Libris Mörk Borg</title>
         <meta name="description" content="A vile and evil thought.">
         <link rel="canonical" href="http://test.host/entries/eat-prey-kill">
-        <link rel="image_src" href="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <link rel="image_src" href="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:title" content="Eat, Prey, Kill">
         <meta property="og:description" content="A vile and evil thought.">
         <meta property="og:site_name" content="Ex Libris Mörk Borg">
-        <meta property="og:image" content="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <meta property="og:image" content="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:url" content="http://test.host/entries/#{entry.to_param}">
         <meta name="twitter:card" content="summary_large_image">
       HTML
@@ -117,11 +117,11 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <title>Alternative Rules | Ex Libris Mörk Borg</title>
         <meta name="description" content="All the awful ways you could die.">
         <link rel="canonical" href="http://test.host/tags/alternative-rules">
-        <link rel="image_src" href="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <link rel="image_src" href="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:title" content="Alternative Rules">
         <meta property="og:description" content="All the awful ways you could die.">
         <meta property="og:site_name" content="Ex Libris Mörk Borg">
-        <meta property="og:image" content="http://test.host/packs-test/media/images/exlibris_yellow_social-496a86051e3e3323d059e1a89cf6fde6.jpg">
+        <meta property="og:image" content="http://test.host/assets/exlibris_yellow_social-2938feefb998a76e38fd51927fd1fc5cc7631b4e9eeed6d5a045ba3b3f40b16d.jpg">
         <meta property="og:url" content="http://test.host/tags/alternative-rules">
         <meta name="twitter:card" content="summary_large_image">
       HTML

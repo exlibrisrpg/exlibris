@@ -181,6 +181,8 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     jmespath (1.5.0)
+    jsbundling-rails (1.0.0)
+      railties (>= 6.0.0)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -245,8 +247,6 @@ GEM
     rack (2.2.3)
     rack-mini-profiler (2.3.3)
       rack (>= 1.2.0)
-    rack-proxy (0.7.0)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.1)
@@ -304,21 +304,10 @@ GEM
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     rubyzip (2.3.2)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    semantic_range (3.0.0)
     sentry-rails (5.0.1)
       railties (>= 5.0)
       sentry-ruby-core (~> 5.0.1)
@@ -351,7 +340,6 @@ GEM
       railties (>= 6.0.0)
     strscan (3.0.1)
     thor (1.2.1)
-    tilt (2.0.10)
     timeout (0.2.0)
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
@@ -371,11 +359,6 @@ GEM
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
       selenium-webdriver (~> 4.0)
-    webpacker (5.4.3)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -403,6 +386,7 @@ DEPENDENCIES
   geared_pagination
   inline_svg
   jbuilder (~> 2.11)
+  jsbundling-rails
   listen (~> 3.7)
   meta-tags
   pg (~> 1.3)
@@ -410,7 +394,6 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.3)
   rails (~> 7.0.1)
   rails-controller-testing
-  sass-rails (>= 6)
   selenium-webdriver
   sentry-rails
   sentry-ruby
@@ -418,6 +401,7 @@ DEPENDENCIES
   shoulda-matchers
   skylight
   spring
+  sprockets-rails (~> 3.4)
   stackprof
   standard
   turbo-rails
@@ -425,7 +409,6 @@ DEPENDENCIES
   view_component
   web-console (>= 4.1.0)
   webdrivers
-  webpacker (~> 5.4)
 
 RUBY VERSION
    ruby 2.7.2p137
