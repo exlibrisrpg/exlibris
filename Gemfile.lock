@@ -141,6 +141,8 @@ GEM
       i18n_data (~> 0.15.0)
       sixarm_ruby_unaccent (~> 1.1)
     crass (1.0.6)
+    cssbundling-rails (1.0.0)
+      railties (>= 6.0.0)
     dalli (3.2.0)
     digest (3.1.0)
     email_validator (2.2.3)
@@ -395,6 +397,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   clearance
+  cssbundling-rails
   dalli
   friendly_id
   geared_pagination

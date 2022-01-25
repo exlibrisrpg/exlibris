@@ -6,6 +6,7 @@ ruby "2.7.2"
 gem "avo"
 gem "aws-sdk-s3", require: false
 gem "bootsnap", ">= 1.4.4", require: false
+gem "cssbundling-rails"
 gem "clearance"
 gem "friendly_id"
 gem "geared_pagination"

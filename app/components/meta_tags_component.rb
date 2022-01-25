@@ -21,7 +21,7 @@ class MetaTagsComponent < ViewComponent::Base
       title: title,
       description: t("application.tagline"),
       reverse: true,
-      image_src: asset_pack_url("media/images/exlibris_yellow_social.jpg"),
+      image_src: asset_url("exlibris_yellow_social.jpg"),
       canonical: canonical,
       og: {
         title: :title,

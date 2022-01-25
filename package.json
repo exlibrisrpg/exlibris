@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "lint:js": "yarn run prettier --check \"app/javascript/**/*.js\"",
-    "lint:scss": "yarn run stylelint \"app/javascript/**/*.scss\""
+    "lint:scss": "yarn run stylelint \"app/assets/stylesheets/**/*.scss\"",
+    "build:css": "sass ./app/assets/stylesheets/application.sass.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   },
   "dependencies": {
     "@github/combobox-nav": "^2.0.2",
@@ -16,6 +17,7 @@
     "lodash.debounce": "^4.0.8",
     "modern-css-reset": "^1.4.0",
     "rough-notation": "^0.5.1",
+    "sass": "^1.49.0",
     "scrollama": "^3.0.3",
     "stimulus": "^3.0.1",
     "trix": "^1.2.0",

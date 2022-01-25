@@ -1,14 +1,14 @@
 <% content_for(:pre_header) do %>
   <div class="dashboard-cover" data-controller="scroll-progress" data-action="resize@window->scroll-progress#resize">
     <div class="dashboard-cover--image-container">
-      <%= image_pack_tag "media/images/exlibris_yellow.jpg", class: "dashboard-cover--image" %>
+      <%= image_tag "exlibris_yellow.jpg", class: "dashboard-cover--image" %>
 
       <div class="dashboard-cover--please-scroll | cluster cluster-center m-s highlight-white">
         <div>
           <div>
             <span data-controller="highlight"><%= t(".scroll_down") %></span>
           </div>
-          <%= image_pack_tag "media/images/potato_borg.png" %>
+          <%= image_tag "potato_borg.png" %>
         </div>
       </div>
     </div>

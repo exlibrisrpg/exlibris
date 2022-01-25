@@ -1,2 +1,2 @@
-app/javascript/scss/base/_space_scale.scss
-app/javascript/scss/base/_type_scale.scss
+app/assets/stylesheets/base/_space_scale.scss
+app/assets/stylesheets/base/_type_scale.scss

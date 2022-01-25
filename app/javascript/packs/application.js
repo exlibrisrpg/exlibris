@@ -13,8 +13,7 @@ require("trix")
 require("@rails/actiontext")
 
 require.context("../favicons", true)
-require.context("../fonts", true)
-require.context("../images", true)
+// require.context("../fonts", true)
+// require.context("../images", true)
 
 import "controllers"
-import "../scss/application.scss"
