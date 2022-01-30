@@ -36,6 +36,17 @@ Usage: bin/ci [options]
 
 Start up the server with `bin/rails server`.
 
+### Subdomains on localhost
+
+Ex Libris RPG supports multiple systems on different subdomains. The simplest
+way to manage this locally is with [puma-dev](https://github.com/puma/puma-dev).
+This will run the application for you, and you can access it on `exlibris.test`
+or any subdomain like `mork-borg.exlibris.test`.
+
+```
+puma-dev link -n exlibris
+```
+
 ## Testing
 
 Unit tests, system tests, security checks and linting are all packaged into
