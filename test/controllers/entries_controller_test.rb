@@ -25,5 +25,29 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
 
       assert_redirected_to entry_path(id: entry.slug)
     end
+
+    context "with the correct subdomain" do
+      should "respond ok" do
+        get entry_url(entries(:eat_prey_kill), subdomain: "mork-borg")
+
+        assert_response :ok
+      end
+    end
+
+    context "with an incorrect subdomain" do
+      should "raise record not found" do
+        assert_raises ActiveRecord::RecordNotFound do
+          get entry_url(entries(:eat_prey_kill), subdomain: "mausritter")
+        end
+      end
+    end
+
+    context "with an unrecognised subdomain" do
+      should "raise record not found" do
+        assert_raises ActiveRecord::RecordNotFound do
+          get entry_url(entries(:eat_prey_kill), subdomain: "johns-horse-game")
+        end
+      end
+    end
   end
 end
