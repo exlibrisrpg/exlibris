@@ -21,10 +21,6 @@ gem "turbo-rails"
 gem "view_component", require: "view_component/engine"
 gem "webpacker", "~> 5.4"
 
-# Silence net protocol warnings
-# See https://github.com/rails/rails/pull/44175
-gem "net-http"
-
 group :production do
   gem "barnes"
   gem "dalli"
