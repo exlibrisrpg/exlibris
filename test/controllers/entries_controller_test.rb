@@ -7,6 +7,34 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
 
       assert_response :ok
     end
+
+    should "assign page with all entries" do
+      get entries_path
+
+      assert_equal Entry.all.by_name.with_includes, assigns[:page].recordset.records
+    end
+
+    context "with a recognised subdomain" do
+      should "respond ok" do
+        get entries_url(subdomain: "mork-borg")
+
+        assert_response :ok
+      end
+
+      should "assign page with entries for system" do
+        get entries_url(subdomain: "mork-borg")
+
+        assert_equal systems(:mork_borg).entries.by_name.with_includes, assigns[:page].recordset.records
+      end
+    end
+
+    context "with an unrecognised subdomain" do
+      should "raise record not found" do
+        assert_raises ActiveRecord::RecordNotFound do
+          get entries_url(subdomain: "johns-horse-game")
+        end
+      end
+    end
   end
 
   context "GET show" do
