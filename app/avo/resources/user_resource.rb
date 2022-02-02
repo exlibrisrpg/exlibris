@@ -6,6 +6,9 @@ class UserResource < Avo::BaseResource
 
   field :email, as: :text, required: true, sortable: true, link_to_resource: true
   field :role, as: :select, enum: ::User.roles, required: true, sortable: true
+  field :password, as: :hidden, default: -> { SecureRandom.base58(10) }
 
   field :curated_systems, as: :has_many, through: :curation_roles
+
+  action ResetPassword
 end
