@@ -34,6 +34,9 @@ class TagPolicy < ApplicationPolicy
   private
 
   def tag_curated_by_user?
+    # Permit blank systems - these will be enforced by validations
+    return true if record.system.blank?
+
     user.curated_systems.include? record.system
   end
 end

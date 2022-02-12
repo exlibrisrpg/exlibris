@@ -9,7 +9,7 @@ class TagResource < Avo::BaseResource
   end
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
-  field :system, as: :belongs_to, required: false, default: -> do
+  field :system, as: :belongs_to, required: true, default: -> do
     scope = authorization.apply_policy(System.all)
     if scope.one?
       scope.first.id

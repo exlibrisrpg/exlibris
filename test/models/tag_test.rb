@@ -8,12 +8,13 @@ class TagTest < ActiveSupport::TestCase
 
     should have_and_belong_to_many(:entries).conditions(system: system).order('LOWER("entries"."name") asc')
     should belong_to(:tag_category).conditions(system: system)
-    should belong_to(:system).optional(true)
+    should belong_to(:system)
   end
 
   context "validations" do
     should validate_presence_of :name
     should validate_presence_of :tag_category
+    should validate_presence_of :system
 
     context "with tag categories that requires short description" do
       subject { Tag.new(tag_category: tag_categories(:categories_mork_borg)) }

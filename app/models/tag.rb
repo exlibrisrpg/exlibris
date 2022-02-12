@@ -3,9 +3,9 @@ class Tag < ApplicationRecord
 
   has_and_belongs_to_many :entries, ->(tag) { by_name.where(system: tag.system) }
   belongs_to :tag_category, ->(tag) { where(system_id: tag.system_id) }
-  belongs_to :system, optional: true
+  belongs_to :system
 
-  validates :name, :tag_category, presence: true
+  validates :name, :tag_category, :system, presence: true
   validates :short_description, presence: {if: -> { tag_category&.short_description_required }}
 
   friendly_id :name, use: :slugged

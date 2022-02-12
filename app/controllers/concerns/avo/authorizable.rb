@@ -4,8 +4,10 @@ module Avo::Authorizable
   private
 
   def authorize_action
-    if [:show, :edit, :destroy, :update].include? action_name.to_sym
-      set_model
+    # Temporary fix whilst we resolve this conversation:
+    # https://github.com/avo-hq/avo/pull/612#issuecomment-1037199884
+    if [:create, :update].include? action_name.to_sym
+      fill_model
     end
 
     super
