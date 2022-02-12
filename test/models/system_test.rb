@@ -5,6 +5,8 @@ class SystemTest < ActiveSupport::TestCase
     should have_many(:curation_roles).dependent(:destroy)
     should have_many(:curators)
     should have_many(:entries)
+    should have_many(:tags)
+    should have_many(:tag_categories)
   end
 
   context "validations" do

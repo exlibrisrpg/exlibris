@@ -30,7 +30,7 @@
   <div class="c-white bg-black">
     <div class="container | cluster cluster-xs centre | bg-black pl-l pr-l">
       <div class="size--1 plex-mono">
-        <% Tag.categories.each do |category| %>
+        <% Tag.categories(Current.system).each do |category| %>
           <em><%= link_to category.name, category %></em>
         <% end %>
       </div>

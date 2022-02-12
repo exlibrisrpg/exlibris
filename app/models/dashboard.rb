@@ -1,6 +1,6 @@
 class Dashboard
   def categories
-    Tag.categories.includes(:rich_text_description)
+    Tag.categories(Current.system).includes(:rich_text_description)
   end
 
   def recently_created_entries

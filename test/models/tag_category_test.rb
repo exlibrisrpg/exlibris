@@ -1,8 +1,12 @@
 require "test_helper"
 
 class TagCategoryTest < ActiveSupport::TestCase
+  system = System.create(name: "Test")
+
   context "associations" do
-    should have_many(:tags).order('LOWER("tags"."name") asc')
+    subject { TagCategory.new(system: system) }
+
+    should have_many(:tags).conditions(system: system).order('LOWER("tags"."name") asc')
     should belong_to(:system).optional(true)
   end
 

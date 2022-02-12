@@ -7,7 +7,7 @@ class TagTest < ActiveSupport::TestCase
     subject { Tag.new(system: system) }
 
     should have_and_belong_to_many(:entries).conditions(system: system).order('LOWER("entries"."name") asc')
-    should belong_to :tag_category
+    should belong_to(:tag_category).conditions(system: system)
     should belong_to(:system).optional(true)
   end
 

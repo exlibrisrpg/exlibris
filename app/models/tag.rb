@@ -2,7 +2,7 @@ class Tag < ApplicationRecord
   extend FriendlyId
 
   has_and_belongs_to_many :entries, ->(tag) { by_name.where(system: tag.system) }
-  belongs_to :tag_category
+  belongs_to :tag_category, ->(tag) { where(system_id: tag.system_id) }
   belongs_to :system, optional: true
 
   validates :name, :tag_category, presence: true
@@ -17,7 +17,7 @@ class Tag < ApplicationRecord
   scope :containing, ->(query) { where("unaccent(tags.name) ILIKE unaccent(:query)", query: "%#{query}%") }
   scope :with_includes, -> { includes(:rich_text_description, :tag_category, entries: [:links, :rich_text_description, tags: :rich_text_description, cover_attachment: :blob]) }
 
-  scope :categories, -> { includes(:tag_category).where(tag_categories: {name: "Categories"}).reorder(:order) }
+  scope :categories, ->(system) { where(tag_categories: system.tag_categories.where(name: "Categories")).reorder(:order) }
 
   def creator?
     tag_category.name == "Creators"
