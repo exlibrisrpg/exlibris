@@ -10,7 +10,7 @@
   "dependencies": {
     "@github/combobox-nav": "^2.0.2",
     "@hotwired/turbo-rails": "^7.1.1",
-    "@rails/actiontext": "^7.0.1",
+    "@rails/actiontext": "^7.0.2",
     "@rails/activestorage": "^7.0.1",
     "esbuild": "^0.14.13",
     "lodash.debounce": "^4.0.8",
