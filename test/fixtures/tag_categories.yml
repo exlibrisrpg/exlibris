@@ -1,11 +1,14 @@
 categories:
   name: Categories
   short_description_required: true
+  system: mork_borg
 
 officialness:
   name: Officialness
   short_description_required: false
+  system: mork_borg
 
 creators:
   name: Creators
   short_description_required: false
+  system: mork_borg

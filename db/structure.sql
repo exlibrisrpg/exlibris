@@ -267,7 +267,8 @@ CREATE TABLE public.tag_categories (
     name character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
-    short_description_required boolean DEFAULT false
+    short_description_required boolean DEFAULT false,
+    system_id uuid
 );
 
 
@@ -569,6 +570,13 @@ CREATE UNIQUE INDEX index_systems_on_slug ON public.systems USING btree (slug);
 
 
 --
+-- Name: index_tag_categories_on_system_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_tag_categories_on_system_id ON public.tag_categories USING btree (system_id);
+
+
+--
 -- Name: index_tags_on_LOWER_name; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -715,6 +723,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220116114456'),
 ('20220123121733'),
 ('20220123165234'),
-('20220212101314');
+('20220212101314'),
+('20220212101814');
 
 
