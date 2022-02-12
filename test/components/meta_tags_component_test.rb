@@ -110,7 +110,7 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         name: "Alternative Rules",
         short_description: "Play by them, you fool",
         description: "All the <strong>awful</strong> ways you could die.",
-        tag_category: tag_categories(:categories)
+        tag_category: tag_categories(:categories_mork_borg)
       )
 
       expected_html = <<~HTML

@@ -1,7 +1,11 @@
-categories:
+categories_mork_borg:
   name: Categories
   short_description_required: true
   system: mork_borg
+categories_mausritter:
+  name: Categories
+  short_description_required: true
+  system: mausritter
 
 officialness:
   name: Officialness

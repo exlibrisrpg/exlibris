@@ -9,6 +9,12 @@ class TagResource < Avo::BaseResource
   end
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
+  field :system, as: :belongs_to, required: false, default: -> do
+    scope = authorization.apply_policy(System.all)
+    if scope.one?
+      scope.first.id
+    end
+  end
   field :short_description, as: :text, visible: ->(resource:) { resource.model.tag_category&.short_description_required }, required: ->(resource:) { resource.model.tag_category&.short_description_required }, hide_on: :index
   field :order, as: :number, sortable: true
 

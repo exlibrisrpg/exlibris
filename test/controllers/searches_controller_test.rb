@@ -15,15 +15,15 @@ class SearchesControllerTest < ActionDispatch::IntegrationTest
     end
 
     should "pass a search object if tags provided" do
-      get search_path, params: {tags: [tags(:rules).slug]}
+      get search_path, params: {tags: [tags(:rules_mork_borg).slug]}
 
-      assert_equal assigns[:search].filter_tags, [tags(:rules)]
+      assert_equal assigns[:search].filter_tags, [tags(:rules_mork_borg)]
     end
 
     should "pass a search object if comma separated tags provided" do
-      get search_path, params: {tags: "#{tags(:rules).slug},#{tags(:johan_nohr).slug}"}
+      get search_path, params: {tags: "#{tags(:rules_mork_borg).slug},#{tags(:johan_nohr).slug}"}
 
-      assert_empty assigns[:search].filter_tags.to_a.difference([tags(:rules), tags(:johan_nohr)])
+      assert_empty assigns[:search].filter_tags.to_a.difference([tags(:rules_mork_borg), tags(:johan_nohr)])
     end
 
     context "with random param" do
@@ -34,7 +34,7 @@ class SearchesControllerTest < ActionDispatch::IntegrationTest
       end
 
       should "redirect to entry from tag list" do
-        get search_path, params: {tags: "#{tags(:rules).slug},#{tags(:johnny_carhat).slug}", random: true}
+        get search_path, params: {tags: "#{tags(:rules_mork_borg).slug},#{tags(:johnny_carhat).slug}", random: true}
 
         assert_redirected_to entries(:unheroic_feats)
       end

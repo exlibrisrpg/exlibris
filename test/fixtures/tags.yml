@@ -1,10 +1,16 @@
 # Categories
-rules:
+rules_mork_borg:
   name: Rules
   short_description: Optional rules to die by.
-  tag_category: categories
+  tag_category: categories_mork_borg
   slug: rules
   system: mork_borg
+rules_mausritter:
+  name: Rules
+  short_description: Scurry lengths and whisker stats
+  tag_category: categories_mausritter
+  slug: rules-maus
+  system: mausritter
 
 # Officialness
 mork_borg_cult:
