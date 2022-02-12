@@ -3,7 +3,7 @@ class TagCategoryResource < Avo::BaseResource
   self.includes = []
 
   field :name, as: :text, required: true
-  field :system, as: :belongs_to, required: false, default: -> do
+  field :system, as: :belongs_to, required: true, default: -> do
     scope = authorization.apply_policy(System.all)
     if scope.one?
       scope.first.id

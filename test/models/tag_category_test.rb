@@ -7,7 +7,7 @@ class TagCategoryTest < ActiveSupport::TestCase
     subject { TagCategory.new(system: system) }
 
     should have_many(:tags).conditions(system: system).order('LOWER("tags"."name") asc')
-    should belong_to(:system).optional(true)
+    should belong_to(:system)
   end
 
   context "validations" do
