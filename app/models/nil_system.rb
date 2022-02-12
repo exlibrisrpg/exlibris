@@ -1,9 +1,9 @@
 class NilSystem
-  def entries
-    Entry.all
-  end
+  delegate :entries, :tag_categories, to: :default_system
 
-  def tag_categories
-    TagCategory.none
+  private
+
+  def default_system
+    @_default_system ||= System.find_by(name: "Mörk Borg")
   end
 end
