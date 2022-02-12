@@ -8,23 +8,23 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
       assert_response :ok
     end
 
-    should "assign page with all entries" do
+    should "assign page with all Mörk Borg entries" do
       get entries_path
 
-      assert_equal Entry.all.by_name.with_includes, assigns[:page].recordset.records
+      assert_equal systems(:mork_borg).entries.by_name.with_includes, assigns[:page].recordset.records
     end
 
     context "with a recognised subdomain" do
       should "respond ok" do
-        get entries_url(subdomain: "mork-borg")
+        get entries_url(subdomain: "mausritter")
 
         assert_response :ok
       end
 
       should "assign page with entries for system" do
-        get entries_url(subdomain: "mork-borg")
+        get entries_url(subdomain: "mausritter")
 
-        assert_equal systems(:mork_borg).entries.by_name.with_includes, assigns[:page].recordset.records
+        assert_equal systems(:mausritter).entries.by_name.with_includes, assigns[:page].recordset.records
       end
     end
 

@@ -13,7 +13,7 @@ module SetCurrentRequestDetails
     if request.subdomain.present? && request.subdomain != "www"
       System.find_by!(slug: request.subdomain)
     else
-      NilSystem.new
+      System.find_by!(name: "Mörk Borg")
     end
   end
 end
