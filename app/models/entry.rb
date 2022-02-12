@@ -12,7 +12,7 @@ class Entry < ApplicationRecord
   HTML
 
   belongs_to :system, optional: false
-  has_and_belongs_to_many :tags
+  has_and_belongs_to_many :tags, ->(entry) { where(system: entry.system) }
   has_many :links, dependent: :destroy
 
   validates :name, presence: true

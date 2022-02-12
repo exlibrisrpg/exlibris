@@ -1,9 +1,13 @@
 require "test_helper"
 
 class EntryTest < ActiveSupport::TestCase
+  system = System.create(name: "Test")
+
   context "associations" do
+    subject { Entry.new(system: system) }
+
     should belong_to(:system).optional(false)
-    should have_and_belong_to_many(:tags)
+    should have_and_belong_to_many(:tags).conditions(system: system)
     should have_many(:links).dependent(:destroy)
   end
 

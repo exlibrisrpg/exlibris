@@ -1,7 +1,7 @@
 class Tag < ApplicationRecord
   extend FriendlyId
 
-  has_and_belongs_to_many :entries, proc { by_name }
+  has_and_belongs_to_many :entries, ->(tag) { by_name.where(system: tag.system) }
   belongs_to :tag_category
   belongs_to :system, optional: true
 
