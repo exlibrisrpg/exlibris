@@ -4,6 +4,7 @@ class TagTest < ActiveSupport::TestCase
   context "associations" do
     should have_and_belong_to_many(:entries).order('LOWER("entries"."name") asc')
     should belong_to :tag_category
+    should belong_to(:system).optional(true)
   end
 
   context "validations" do

@@ -283,7 +283,8 @@ CREATE TABLE public.tags (
     tag_category_id uuid,
     short_description text,
     "order" integer,
-    slug character varying
+    slug character varying,
+    system_id uuid
 );
 
 
@@ -582,6 +583,13 @@ CREATE UNIQUE INDEX index_tags_on_slug ON public.tags USING btree (slug);
 
 
 --
+-- Name: index_tags_on_system_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_tags_on_system_id ON public.tags USING btree (system_id);
+
+
+--
 -- Name: index_tags_on_tag_category_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -706,6 +714,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220116105721'),
 ('20220116114456'),
 ('20220123121733'),
-('20220123165234');
+('20220123165234'),
+('20220212101314');
 
 

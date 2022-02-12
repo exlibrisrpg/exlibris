@@ -3,6 +3,7 @@ class Tag < ApplicationRecord
 
   has_and_belongs_to_many :entries, proc { by_name }
   belongs_to :tag_category
+  belongs_to :system, optional: true
 
   validates :name, :tag_category, presence: true
   validates :short_description, presence: {if: -> { tag_category&.short_description_required }}
