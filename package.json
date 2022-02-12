@@ -11,7 +11,7 @@
     "@github/combobox-nav": "^2.0.2",
     "@hotwired/turbo-rails": "^7.1.1",
     "@rails/actiontext": "^7.0.1",
-    "@rails/activestorage": "^7.0.1",
+    "@rails/activestorage": "^7.0.2",
     "esbuild": "^0.14.21",
     "lodash.debounce": "^4.0.8",
     "modern-css-reset": "^1.4.0",
