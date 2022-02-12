@@ -268,7 +268,7 @@ CREATE TABLE public.tag_categories (
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
     short_description_required boolean DEFAULT false,
-    system_id uuid
+    system_id uuid NOT NULL
 );
 
 
@@ -285,7 +285,7 @@ CREATE TABLE public.tags (
     short_description text,
     "order" integer,
     slug character varying,
-    system_id uuid
+    system_id uuid NOT NULL
 );
 
 
@@ -724,6 +724,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220123121733'),
 ('20220123165234'),
 ('20220212101314'),
-('20220212101814');
+('20220212101814'),
+('20220212165647'),
+('20220212165729');
 
 
