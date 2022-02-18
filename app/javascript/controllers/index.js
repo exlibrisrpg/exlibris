@@ -4,6 +4,7 @@
 import { Application } from "@hotwired/stimulus"
 
 import ComboboxController from "./combobox_controller"
+import FrameController from "./frame_controller"
 import FormController from "./form_controller"
 import HideController from "./hide_controller"
 import HighlightController from "./highlight_controller"
@@ -14,6 +15,7 @@ import SearchHighlightsController from "./search_highlights_controller"
 
 window.Stimulus = Application.start()
 Stimulus.register("combobox", ComboboxController)
+Stimulus.register("frame", FrameController)
 Stimulus.register("form", FormController)
 Stimulus.register("hide", HideController)
 Stimulus.register("highlight", HighlightController)

@@ -45,11 +45,10 @@ end
 
 group :test do
   gem "capybara", ">= 3.26"
+  gem "cuprite"
   gem "rails-controller-testing"
-  gem "selenium-webdriver"
   gem "shoulda-context"
   gem "shoulda-matchers"
-  gem "webdrivers"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

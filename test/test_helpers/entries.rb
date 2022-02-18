@@ -14,7 +14,7 @@ module EntriesHelpers
 
       # Make sure that the frame has finished loading before counting entries
       # again
-      find("turbo-frame#page_2:not([busy])")
+      find("turbo-frame#page_2[disabled]")
     end
   end
 end
