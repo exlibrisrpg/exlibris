@@ -190,7 +190,7 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     jmespath (1.5.0)
-    jsbundling-rails (1.0.0)
+    jsbundling-rails (1.0.2)
       railties (>= 6.0.0)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
