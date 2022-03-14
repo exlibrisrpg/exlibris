@@ -9,5 +9,7 @@ class System < ApplicationRecord
 
   validates :name, presence: true
 
+  scope :live, -> { where(live: true) }
+
   friendly_id :name, use: :slugged
 end

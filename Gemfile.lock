@@ -278,6 +278,8 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
+    rails_anonymous_controller_testing (0.0.5)
+      actionpack (>= 5.0.0)
     railties (7.0.2.3)
       actionpack (= 7.0.2.3)
       activesupport (= 7.0.2.3)
@@ -392,6 +394,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 3.0)
   rails (~> 7.0.2)
   rails-controller-testing
+  rails_anonymous_controller_testing
   sentry-rails
   sentry-ruby
   shoulda-context

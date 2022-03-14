@@ -1,7 +1,14 @@
+cy_borg:
+  name: CY_BORG
+  slug: cy-borg
+  live: false
+
 mausritter:
   name: Mausritter
   slug: mausritter
+  live: true
 
 mork_borg:
   name: Mörk Borg
   slug: mork-borg
+  live: true
