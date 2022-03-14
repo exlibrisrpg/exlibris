@@ -19,4 +19,10 @@ class SystemTest < ActiveSupport::TestCase
       assert_equal "john-s-cynical-osr-cash-in", system.slug
     end
   end
+
+  context ".live" do
+    should "scope to live systems" do
+      assert_equal System.all.where(live: true), System.live
+    end
+  end
 end

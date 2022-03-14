@@ -47,6 +47,7 @@ group :test do
   gem "capybara", ">= 3.26"
   gem "cuprite"
   gem "rails-controller-testing"
+  gem "rails_anonymous_controller_testing"
   gem "shoulda-context"
   gem "shoulda-matchers"
 end

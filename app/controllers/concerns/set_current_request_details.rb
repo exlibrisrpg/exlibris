@@ -11,9 +11,9 @@ module SetCurrentRequestDetails
 
   def requested_system
     if request.subdomain.present? && request.subdomain != "www"
-      System.find_by!(slug: request.subdomain)
+      System.live.find_by!(slug: request.subdomain)
     else
-      System.find_by!(name: "Mörk Borg")
+      System.live.find_by!(name: "Mörk Borg")
     end
   end
 end

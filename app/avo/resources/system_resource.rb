@@ -6,6 +6,7 @@ class SystemResource < Avo::BaseResource
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
   field :slug, as: :text
+  field :live, as: :boolean
 
   field :curators, as: :has_many, through: :curation_roles
 end
