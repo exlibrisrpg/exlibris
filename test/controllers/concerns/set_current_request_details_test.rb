@@ -34,9 +34,21 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
     end
 
     context "with inactive subdomain" do
-      should "raise ActiveRecord::RecordNotFound" do
-        assert_raises(ActiveRecord::RecordNotFound) do
+      context "as a logged in user" do
+        should "find system" do
+          sign_in
+
           get example_url(subdomain: "cy-borg")
+
+          assert_equal "CY_BORG", response.body
+        end
+      end
+
+      context "as an anonymous visitor" do
+        should "raise ActiveRecord::RecordNotFound" do
+          assert_raises(ActiveRecord::RecordNotFound) do
+            get example_url(subdomain: "cy-borg")
+          end
         end
       end
     end

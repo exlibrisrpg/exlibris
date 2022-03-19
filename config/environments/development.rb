@@ -79,5 +79,5 @@ Rails.application.configure do
   # Setup hosts for local testing of subdomains on sub.elrpg.local. Also need to
   # explicitly set each subdomain in the record on `/etc/hosts`:
   #   127.0.0.1 elrpg.local mork-borg.elrpg.local mausritter.elrpg.local
-  config.hosts << ".exlibris.test"
+  config.hosts << ".exlibrisrpg.test"
 end
