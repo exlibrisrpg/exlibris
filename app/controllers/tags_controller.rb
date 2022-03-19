@@ -1,6 +1,6 @@
 class TagsController < ApplicationController
   def index
-    @tag_categories = TagCategory.all.includes(tags: :rich_text_description)
+    @tag_categories = Current.system.tag_categories.includes(tags: :rich_text_description)
   end
 
   def show
