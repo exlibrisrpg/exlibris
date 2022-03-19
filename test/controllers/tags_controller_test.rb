@@ -31,5 +31,11 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
 
       assert_redirected_to tag_path(id: tag.slug)
     end
+
+    should "raise record not found if not in the specified system" do
+      assert_raises(ActiveRecord::RecordNotFound) do
+        get tag_url(tags(:mork_borg_cult), subdomain: systems(:mausritter).slug)
+      end
+    end
   end
 end
