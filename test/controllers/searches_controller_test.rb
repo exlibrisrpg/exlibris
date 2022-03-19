@@ -8,6 +8,12 @@ class SearchesControllerTest < ActionDispatch::IntegrationTest
       assert_response :ok
     end
 
+    should "pass current system to search object" do
+      get search_path, params: {query: "cult"}
+
+      assert_equal assigns[:search].system, systems(:mork_borg)
+    end
+
     should "pass a search object if query provided" do
       get search_path, params: {query: "cult"}
 

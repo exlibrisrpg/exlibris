@@ -2,11 +2,12 @@ class SearchesController < ApplicationController
   def show
     @search = if search_params
       Search.new(
+        system: Current.system,
         query: search_params[:query],
         filter_tag_slugs: search_params[:tags]
       )
     else
-      Search.new
+      Search.new(system: Current.system)
     end
 
     if params.has_key?(:random)
