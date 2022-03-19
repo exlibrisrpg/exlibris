@@ -4,7 +4,7 @@ class TagsController < ApplicationController
   end
 
   def show
-    @tag = Tag.includes(:rich_text_description).find(params[:id])
+    @tag = Current.system.tags.includes(:rich_text_description).find(params[:id])
     set_page_and_extract_portion_from @tag.entries
     @entries = @page.records.strict_loading.includes(
       :links,
