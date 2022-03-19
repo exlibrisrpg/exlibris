@@ -7,6 +7,12 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
 
       assert_response :ok
     end
+
+    should "filter tag categories by current system" do
+      get tags_url(subdomain: systems(:mausritter).slug)
+
+      assert_equal systems(:mausritter).tag_categories.includes(tags: :rich_text_description), assigns[:tag_categories]
+    end
   end
 
   context "GET show" do
