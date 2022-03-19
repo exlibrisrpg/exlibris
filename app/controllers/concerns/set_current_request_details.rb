@@ -10,10 +10,12 @@ module SetCurrentRequestDetails
   private
 
   def requested_system
+    scope = current_user.present? ? System.all : System.live
+
     if request.subdomain.present? && request.subdomain != "www"
-      System.live.find_by!(slug: request.subdomain)
+      scope.find_by!(slug: request.subdomain)
     else
-      System.live.find_by!(name: "Mörk Borg")
+      scope.find_by!(name: "Mörk Borg")
     end
   end
 end
