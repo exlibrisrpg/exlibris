@@ -36,9 +36,10 @@ end
 group :development do
   gem "brakeman"
   gem "listen", "~> 3.7"
+  gem "lookbook"
   gem "rack-mini-profiler", "~> 3.0"
-  gem "stackprof"
   gem "spring"
+  gem "stackprof"
   gem "standard"
   gem "web-console", ">= 4.1.0"
 end

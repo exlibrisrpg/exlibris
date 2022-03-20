@@ -7,6 +7,8 @@ Skylight](https://badges.skylight.io/problem/8iNkI05QE0Bv.svg)](https://oss.skyl
 
 A database of Mörk Borg content. For [Liber Ludorum].
 
+[Liber Ludorum]: https://liberludorum.com/2020/09/28/ex-libris-mork-borg/
+
 ## Dependencies
 
 - Ruby 2.7.2
@@ -53,4 +55,24 @@ Unit tests, system tests, security checks and linting are all packaged into
 `bin/ci`. This is the set of tests and checks which are run by the CI pipeline
 on GitHub.
 
-[Liber Ludorum]: https://liberludorum.com/2020/09/28/ex-libris-mork-borg/
+## Theming and components
+
+A fairly simple theming system is being introduced to allow presenting different
+systems with different designs and layouts. This will mostly be based on [CSS
+custom properties] and [Rails variants].
+
+To make the process easier, components are being extracted with [ViewComponent]
+so that they can be inspected in isolation with [Lookbook]. You can access
+Lookbook when running the application in development at `/lookbook`. When
+theming for each system is implemented, you will be able to use the appropriate
+subdomain to view the component library for that particular system:
+
+```
+mork-borg.exlibrisrpg.test/lookbook
+mausritter.exlibrisrpg.test/lookbook
+```
+
+[CSS custom properties]: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+[Rails variants]: https://guides.rubyonrails.org/layouts_and_rendering.html#the-variants-option
+[ViewComponent]: https://viewcomponent.org
+[Lookbook]: https://github.com/allmarkedup/lookbook
