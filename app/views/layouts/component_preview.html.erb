@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= preload_link_tag "UnifrakturCook-Bold.ttf" %>
+    <%= preload_link_tag "IBMPlexMono-Regular.ttf" %>
+    <%= preload_link_tag "IBMPlexMono-Italic.ttf" %>
+    <%= preload_link_tag "IBMPlexMono-Bold.ttf" %>
+    <%= preload_link_tag "IBMPlexMono-BoldItalic.ttf" %>
+  </head>
+
+  <body class="<%= params[:lookbook][:display][:body_class] %>">
+    <div class="<% if params[:lookbook][:display][:container] %>container | centre | p-l<% end %>">
+      <%= yield %>
+    </div>
+  </body>
+</html>

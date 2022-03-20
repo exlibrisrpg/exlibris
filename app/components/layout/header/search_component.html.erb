@@ -1,0 +1,10 @@
+<nav id="nav-search" class="cluster | cluster-baseline cluster-grow plex-mono" style="min-width: 30%;" data-turbo-permanent>
+  <div>
+    <%= form_with model: @search, url: search_path, method: :get, class: "search | highlight-white" do |form| %>
+      <div class="search--field with-icon" data-controller="highlight">
+        <%= form.label :query, search_icon %>
+        <%= form.text_field :query, name: :query, placeholder: placeholder %>
+      </div>
+    <% end %>
+  </div>
+</nav>
