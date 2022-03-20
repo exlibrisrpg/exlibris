@@ -1,17 +1,27 @@
 require "test_helper"
 
 class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
-  routes = -> { get "current_system", to: "set_current_request_details_test/anonymous#show", as: "example" }
+  routes = -> {
+    get "system", to: "set_current_request_details_test/anonymous#system", as: "system"
+    get "variant", to: "set_current_request_details_test/anonymous#variant"
+  }
   controller(ApplicationController, routes: routes) do
-    def show
+    def system
       render plain: Current.system&.name
     end
+
+    def variant
+      render layout: false
+    end
   end
+
+  views["variant.html.erb"] = "default"
+  views["variant.html+mork-borg.erb"] = "mork-borg"
 
   context "Current.system" do
     context "with no subdomain" do
       should "default to Mörk Borg" do
-        get example_url(subdomain: "")
+        get system_url(subdomain: "")
 
         assert_equal "Mörk Borg", response.body
       end
@@ -19,7 +29,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
 
     context "with www as subdomain" do
       should "default to Mörk Borg" do
-        get example_url(subdomain: "www")
+        get system_url(subdomain: "www")
 
         assert_equal "Mörk Borg", response.body
       end
@@ -27,7 +37,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
 
     context "with live subdomain" do
       should "find system" do
-        get example_url(subdomain: "mausritter")
+        get system_url(subdomain: "mausritter")
 
         assert_equal "Mausritter", response.body
       end
@@ -38,7 +48,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
         should "find system" do
           sign_in
 
-          get example_url(subdomain: "cy-borg")
+          get system_url(subdomain: "cy-borg")
 
           assert_equal "CY_BORG", response.body
         end
@@ -47,7 +57,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
       context "as an anonymous visitor" do
         should "raise ActiveRecord::RecordNotFound" do
           assert_raises(ActiveRecord::RecordNotFound) do
-            get example_url(subdomain: "cy-borg")
+            get system_url(subdomain: "cy-borg")
           end
         end
       end
@@ -56,9 +66,23 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
     context "with unknown subdomain" do
       should "raise ActiveRecord::RecordNotFound" do
         assert_raises(ActiveRecord::RecordNotFound) do
-          get example_url(subdomain: "horse-adventure")
+          get system_url(subdomain: "horse-adventure")
         end
       end
+    end
+  end
+
+  context "request.variant" do
+    should "choose a variant view when available" do
+      get variant_url(subdomain: "mork-borg")
+
+      assert_equal "mork-borg", response.body
+    end
+
+    should "choose the default view when variant not available" do
+      get variant_url(subdomain: "mausritter")
+
+      assert_equal "default", response.body
     end
   end
 end
