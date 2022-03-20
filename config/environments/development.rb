@@ -80,4 +80,14 @@ Rails.application.configure do
   # explicitly set each subdomain in the record on `/etc/hosts`:
   #   127.0.0.1 elrpg.local mork-borg.elrpg.local mausritter.elrpg.local
   config.hosts << ".exlibrisrpg.test"
+
+  # Setup ViewComponent:
+  # - Use `app/views/layouts/component_preview.html.erb` as the preview layout
+  config.view_component.default_preview_layout = "component_preview"
+
+  # Setup Lookbook:
+  # - Specify default params for the preview layout
+  config.lookbook.preview_display_params = {
+    container: true
+  }
 end

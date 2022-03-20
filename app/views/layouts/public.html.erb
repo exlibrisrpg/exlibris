@@ -10,18 +10,7 @@
         </div>
 
         <% if @search.blank? %>
-          <nav id="nav-search" class="cluster | cluster-baseline cluster-grow plex-mono" style="min-width: 30%;" data-turbo-permanent>
-            <div>
-              <%= form_with model: @search || Search.new, url: search_path, method: :get, class: "search | highlight-white" do |form| %>
-                <div class="search--field with-icon" data-controller="highlight">
-                  <%= form.label :query do %>
-                    <%= icon_tag :search %>
-                  <% end %>
-                  <%= form.text_field :query, name: :query, placeholder: Search.model_name.human %>
-                </div>
-              <% end %>
-            </div>
-          </nav>
+          <%= render Layout::Header::SearchComponent.new(search: @search) %>
         <% end %>
       </div>
     </div>
