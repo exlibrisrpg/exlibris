@@ -10,7 +10,7 @@ class SearchesController < ApplicationController
       Search.new(system: Current.system)
     end
 
-    if params.has_key?(:random)
+    if params.has_key?(:random) && random_entry.present?
       redirect_to random_entry
     else
       set_page_and_extract_portion_from @search.entries
@@ -28,10 +28,6 @@ class SearchesController < ApplicationController
   end
 
   def random_entry
-    if search_params.present?
-      @search.random_entry
-    else
-      Entry.all.reorder(Arel.sql("RANDOM()")).first
-    end
+    @random_entry ||= @search.random_entry
   end
 end

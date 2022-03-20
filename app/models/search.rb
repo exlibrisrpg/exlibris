@@ -22,7 +22,9 @@ class Search
   end
 
   def random_entries
-    entries.reorder(Arel.sql("RANDOM()"))
+    entries_scope = valid? ? entries : Entry.where(system: system)
+
+    entries_scope.reorder(Arel.sql("RANDOM()"))
   end
 
   def random_entry

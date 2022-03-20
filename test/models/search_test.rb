@@ -46,6 +46,12 @@ class SearchTest < ActiveSupport::TestCase
     should "order entries in a random order with SQL" do
       assert_includes Search.new(system: systems(:mork_borg), query: "query").random_entries.to_sql, "ORDER BY RANDOM()"
     end
+
+    context "without query or filter tags" do
+      should "randomly select from all entries" do
+        assert_equal Entry.where(system: systems(:mork_borg)).reorder(Arel.sql("RANDOM()")), Search.new(system: systems(:mork_borg)).random_entries
+      end
+    end
   end
 
   context "#tags" do
