@@ -16,4 +16,8 @@ Rails.application.routes.draw do
   get :credits, to: "pages#credits"
 
   root to: "dashboards#show"
+
+  if Rails.env.development?
+    mount Lookbook::Engine, at: "/lookbook"
+  end
 end
