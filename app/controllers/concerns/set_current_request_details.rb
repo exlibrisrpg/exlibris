@@ -4,6 +4,7 @@ module SetCurrentRequestDetails
   included do
     before_action do
       Current.system = requested_system
+      request.variant = Current.system.slug.to_sym
     end
   end
 
