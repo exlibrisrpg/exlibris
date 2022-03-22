@@ -13,11 +13,24 @@ A database of Mörk Borg content. For [Liber Ludorum].
 
 - Ruby 2.7.2
 - Yarn
-- Postgres 13
-- Redis
+- Postgres 14.2
 
-For advice on setting up these dependencies, please see the
-[wiki](https://github.com/exlibrisrpg/exlibris/wiki#setting-up-dependencies).
+### Run dependencies with Docker Compose
+
+A [`docker-compose.yml`](docker-compose.yml) file is included in the repo to run
+dependencies locally. At the moment, this is just Postgres 14.2.
+
+The connection details for the Docker Compose dependencies are defined in
+[`.env.sample`](.env.sample) so copy this file to `.env` and use a tool like
+[direnv](https://direnv.net) to setup the environment variables.
+
+```sh
+cp .env.sample .env # Make a local copy of the example environment variables
+direnv allow        # Tell direnv we trust this .env file
+docker compose up   # Start the dependencies
+bin/setup -f        # Setup script with test data
+rails server        # Run the project
+```
 
 ## Setup
 
