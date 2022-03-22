@@ -24,6 +24,9 @@
 
 .byebug_history
 
+# Ignore potentially sensitive local environment variables.
+.env
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
