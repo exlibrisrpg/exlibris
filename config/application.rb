@@ -31,7 +31,7 @@ module Exlibris
 
     config.session_store :cookie_store, key: "_exlibrisrpg_session", domain: {
       production: ".exlibrisrpg.com",
-      development: ".exlibrisrpg.test",
+      development: [".exlibrisrpg.test", "localhost"],
       test: [".example.com", "localhost"]
     }.fetch(Rails.env.to_sym, :all), tld_length: 2
   end
