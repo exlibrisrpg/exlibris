@@ -1,0 +1,26 @@
+:root {
+  --font-family--brand:
+    palatino,
+    "Palatino Linotype",
+    "Palatino LT STD",
+    "Book Antiqua",
+    times,
+    "Times New Roman",
+    serif;
+  --font-family--body:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    roboto,
+    "Helvetica Neue",
+    arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-family--display: var(--font-family--body);
+}

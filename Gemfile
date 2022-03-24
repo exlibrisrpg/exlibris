@@ -19,6 +19,7 @@ gem "puma", "~> 5.6"
 gem "rails", "~> 7.0.2"
 gem "skylight"
 gem "sprockets-rails", "~> 3.4"
+gem "tailwindcss-rails", "~> 2.0"
 gem "turbo-rails"
 gem "view_component", require: "view_component/engine"
 
