@@ -6,7 +6,7 @@
     <%= turbo_frame_tag "page_#{page.number + 1}", target: "_top", src: next_page_path, loading: "lazy", class: local_assigns[:class], style: "display: block;", data: { controller: "frame", action: "turbo:frame-load->frame#disable" } do %>
       <div class="center">
         <div class="cluster | cluster-center">
-          <div class="plex-mono">
+          <div class="tw-font-body">
             <%= tag.span t(".loading") %>
           </div>
         </div>
@@ -16,7 +16,7 @@
 
   <div class="center" data-controller="hide" data-hide-hidden-class="hidden">
     <div class="cluster | cluster-center">
-      <div class="plex-mono">
+      <div class="tw-font-body">
         <% if !page.first? %>
           <% previous_page_path = path.call(page.number - 1) %>
           <%= highlight_link_to t(".previous_page"), previous_page_path %>
