@@ -1,4 +1,58 @@
 :root {
+  /* colors */
+
+  --morkborg-yellow: 55deg 100% 50%;
+  --morkborg-black: 0deg 0% 0%;
+  --morkborg-white: 0deg 0% 100%;
+
+  /**
+   * The Mörk Borg theme uses a very simplified set of colors as it
+   * predominantly sticks to black, white and yellow.
+   */
+
+  /* colors.accent */
+  --color--accent-1: var(--morkborg-yellow);
+  --color--accent-2: var(--morkborg-yellow);
+  --color--accent-3: var(--morkborg-yellow);
+  --color--accent-4: var(--morkborg-yellow);
+  --color--accent-5: var(--morkborg-yellow);
+  --color--accent-6: var(--morkborg-yellow);
+  --color--accent-7: var(--morkborg-yellow);
+  --color--accent-8: var(--morkborg-yellow);
+  --color--accent-9: var(--morkborg-yellow);
+  --color--accent-10: var(--morkborg-yellow);
+  --color--accent-11: var(--morkborg-black);
+  --color--accent-12: var(--morkborg-black);
+
+  /* colors.primary */
+  --color--primary-1: var(--morkborg-white);
+  --color--primary-2: var(--morkborg-white);
+  --color--primary-3: var(--morkborg-white);
+  --color--primary-4: var(--morkborg-white);
+  --color--primary-5: var(--morkborg-white);
+  --color--primary-6: var(--morkborg-white);
+  --color--primary-7: var(--morkborg-white);
+  --color--primary-8: var(--morkborg-white);
+  --color--primary-9: var(--morkborg-white);
+  --color--primary-10: var(--morkborg-white);
+  --color--primary-11: var(--morkborg-black);
+  --color--primary-12: var(--morkborg-black);
+
+  /* colors.secondary */
+  --color--secondary-1: var(--morkborg-black);
+  --color--secondary-2: var(--morkborg-black);
+  --color--secondary-3: var(--morkborg-black);
+  --color--secondary-4: var(--morkborg-black);
+  --color--secondary-5: var(--morkborg-black);
+  --color--secondary-6: var(--morkborg-black);
+  --color--secondary-7: var(--morkborg-black);
+  --color--secondary-8: var(--morkborg-black);
+  --color--secondary-9: var(--morkborg-black);
+  --color--secondary-10: var(--morkborg-black);
+  --color--secondary-11: var(--morkborg-white);
+  --color--secondary-12: var(--morkborg-white);
+
+  /* fontFamily */
   --font-family--brand:
     palatino,
     "Palatino Linotype",

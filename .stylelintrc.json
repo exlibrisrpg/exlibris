@@ -3,6 +3,6 @@
   "rules": {
     "string-quotes": "double",
     "selector-class-pattern": "^[a-z][a-z0-9\\:\\-]*[a-z0-9]$",
-    "custom-property-pattern": "^[a-z-]+$"
+    "custom-property-pattern": "^[\\w-]+$"
   }
 }
