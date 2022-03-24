@@ -1,4 +1,56 @@
 :root {
+  /* colors */
+
+  /**
+   * Colors are defined as raw values for a hsl() function so that they can be
+   * merged with an opacity by tailwindcss. They are defined with a scale from 1
+   * to 12 based on Radix Colors:
+   * https://www.radix-ui.com/docs/colors/palette-composition/understanding-the-scale
+   */
+
+  /* colors.accent */
+  --color--accent-1: 116deg 50% 98.9%;
+  --color--accent-2: 120deg 60% 97.1%;
+  --color--accent-3: 120deg 53.6% 94.8%;
+  --color--accent-4: 121deg 47.5% 91.4%;
+  --color--accent-5: 122deg 42.6% 86.5%;
+  --color--accent-6: 124deg 39% 79.7%;
+  --color--accent-7: 126deg 37.1% 70.2%;
+  --color--accent-8: 131deg 38.1% 56.3%;
+  --color--accent-9: 131deg 41% 46.5%;
+  --color--accent-10: 132deg 43.1% 42.2%;
+  --color--accent-11: 133deg 50% 32.5%;
+  --color--accent-12: 130deg 30% 14.9%;
+
+  /* colors.primary */
+  --color--primary-1: 110deg 20% 99%;
+  --color--primary-2: 120deg 16.7% 97.6%;
+  --color--primary-3: 119deg 10.1% 95.2%;
+  --color--primary-4: 118deg 8.1% 93%;
+  --color--primary-5: 117deg 7.1% 90.8%;
+  --color--primary-6: 115deg 6.4% 88.5%;
+  --color--primary-7: 114deg 5.9% 85.4%;
+  --color--primary-8: 110deg 5.2% 77.3%;
+  --color--primary-9: 110deg 3.5% 55.5%;
+  --color--primary-10: 111deg 2.8% 51.7%;
+  --color--primary-11: 110deg 3% 43%;
+  --color--primary-12: 110deg 25% 9.5%;
+
+  /* colors.secondary */
+  --color--secondary-1: 116deg 50% 98.9%;
+  --color--secondary-2: 120deg 60% 97.1%;
+  --color--secondary-3: 120deg 53.6% 94.8%;
+  --color--secondary-4: 121deg 47.5% 91.4%;
+  --color--secondary-5: 122deg 42.6% 86.5%;
+  --color--secondary-6: 124deg 39% 79.7%;
+  --color--secondary-7: 126deg 37.1% 70.2%;
+  --color--secondary-8: 131deg 38.1% 56.3%;
+  --color--secondary-9: 131deg 41% 46.5%;
+  --color--secondary-10: 132deg 43.1% 42.2%;
+  --color--secondary-11: 133deg 50% 32.5%;
+  --color--secondary-12: 130deg 30% 14.9%;
+
+  /* fontFamily */
   --font-family--brand:
     palatino,
     "Palatino Linotype",
