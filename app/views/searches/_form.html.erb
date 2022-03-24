@@ -1,18 +1,18 @@
 <%= form_with model: search, url: search_path, method: :get, class: "search", data: { controller: "form", "form-target": "form", "form-submit-frame-value": "searchTagResults" } do |form| %>
   <div class="cluster">
-    <div class="plex-mono">
+    <div class="tw-font-body">
       <div class="cluster cluster-grow | highlight-white" style="flex: 1 0;">
         <div class="search--field with-icon" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
           <%= form.label :query do %>
             <%= icon_tag :search %>
           <% end %>
 
-          <div class="cluster-grow relative">
+          <div class="relative cluster-grow">
             <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
 
             <turbo-frame id="searchTagResults">
               <fieldset disabled style="z-index: 1;">
-                <ul role="listbox" data-combobox-target="list" class="highlight-none selected-highlight-yellow c-black p-none m-none hidden search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+                <ul role="listbox" data-combobox-target="list" class="hidden highlight-none selected-highlight-yellow c-black p-none m-none search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
                   <% @search.tags.each do |tag| %>
                     <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
                   <% end %>

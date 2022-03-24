@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="dashboard-cover--content | container stack centre | p-s palatino highlight-black c-white">
+    <div class="dashboard-cover--content | container stack centre | p-s tw-font-brand highlight-black c-white">
       <h1 class="size-4" data-controller="highlight"><span class="p-xs"><%= t ".title" %></span></h1>
 
       <div class="size-2 mw-measure measure-small" data-controller="highlight">
@@ -25,9 +25,9 @@
 
 <div class="stack | stack-3xl">
   <div class="stack | stack-m align-center">
-    <h2 class="unifraktur size-5"><%= t ".categories_heading" %></h2>
+    <h2 class="tw-font-display size-5"><%= t ".categories_heading" %></h2>
 
-    <dl class="switcher | plex-mono">
+    <dl class="switcher | tw-font-body">
       <% @dashboard.categories.in_groups(2, false) do |category_group| %>
         <div class="stack | stack-xs">
           <% category_group.each do |category| %>
@@ -42,8 +42,8 @@
   </div>
 
   <div class="stack | stack-m align-center">
-    <h2 class="unifraktur size-5"><%= t ".latest_entries_heading" %></h2>
-    <p class="plex-mono"><%= t ".latest_entries_subheading_html" %></p>
+    <h2 class="tw-font-display size-5"><%= t ".latest_entries_heading" %></h2>
+    <p class="tw-font-body"><%= t ".latest_entries_subheading_html" %></p>
 
     <div class="reel" data-controller="reel">
       <%= render EntryTileComponent.with_collection(@dashboard.recently_created_entries) %>

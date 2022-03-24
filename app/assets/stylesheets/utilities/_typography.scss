@@ -1,9 +1,3 @@
-@each $name, $family in $font-map {
-  .#{$name} {
-    font-family: $family;
-  }
-}
-
 .measure-small {
   --measure: 33ch;
 }

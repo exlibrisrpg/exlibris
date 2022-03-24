@@ -13,25 +13,6 @@ $color-map: (
   yellow-translucent: $yellow-translucent,
   none: none
 );
-$font-sans-serif: -apple-system,
-  blinkmacsystemfont,
-  "avenir next",
-  avenir,
-  "helvetica neue",
-  helvetica,
-  ubuntu,
-  roboto,
-  noto,
-  "segoe ui",
-  arial,
-  sans-serif;
-$font-palatino: palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", times, "Times New Roman", serif;
-$font-map: (
-  sans-serif: $font-sans-serif,
-  palatino: $font-palatino,
-  unifraktur: "UnifrakturCook",
-  plex-mono: "IBM Plex Mono"
-);
 $sizing-map: (
   -2: var(--step--2),
   -1: var(--step--1),

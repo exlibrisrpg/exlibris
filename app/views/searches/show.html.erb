@@ -1,9 +1,9 @@
 <% content_for(:title) do %><%= t(".title") %><% end %>
 
 <% content_for :banner do %>
-  <div class="c-white bg-black" data-controller="combobox" data-action="combobox-commit->combobox#add" data-combobox-hidden-class="hidden">
+  <div class="bg-black c-white" data-controller="combobox" data-action="combobox-commit->combobox#add" data-combobox-hidden-class="hidden">
     <div class="container | centre stack | align-center p-l">
-      <h1 class="unifraktur size-5"><%= t(".title") %></h1>
+      <h1 class="tw-font-display size-5"><%= t(".title") %></h1>
 
       <%= render partial: "form", locals: { search: @search } %>
     </div>
@@ -12,9 +12,9 @@
 
 <% if @search.valid? %>
   <div class="stack | stack-l">
-  <h2 class="unifraktur size-5 align-center"><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
+  <h2 class="tw-font-display size-5 align-center"><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
 
-  <div class="cluster | cluster-center plex-mono" data-controller="search-highlights">
+  <div class="cluster | cluster-center tw-font-body" data-controller="search-highlights">
     <div>
       <% @search.tags.each do |tag| %>
         <%= link_to search_highlight(tag.name, @search.query&.split(" ")), tag %>
@@ -22,11 +22,11 @@
     </div>
   </div>
 
-  <h2 class="unifraktur size-5 align-center"><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
+  <h2 class="tw-font-display size-5 align-center"><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
 
   <%= render "shared/paginate", page: @page, path: ->(next_page) {search_path(query: @search.query, page: @page.next_param)}, class: "stack | stack-l" do %>
     <% @page.records.each do |entry| %>
-      <div id="<%= dom_id entry %>" class="with-sidebar | plex-mono" data-controller="search-highlights">
+      <div id="<%= dom_id entry %>" class="with-sidebar | tw-font-body" data-controller="search-highlights">
         <div>
           <div style="width: max(25%, 16rem)">
             <% if entry.cover.attached? %>
