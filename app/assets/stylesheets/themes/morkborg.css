@@ -1,0 +1,13 @@
+:root {
+  --font-family--brand:
+    palatino,
+    "Palatino Linotype",
+    "Palatino LT STD",
+    "Book Antiqua",
+    times,
+    "Times New Roman",
+    serif;
+  --font-family--body: "IBM Plex Mono";
+  --font-family--display: "UnifrakturCook";
+  --tw-ring-offset-shadow: none;
+}
