@@ -1,5 +1,5 @@
 <% content_for :header do %>
-  <div class="stack | p-s pl-l pr-l | bg-yellow">
+  <div class="stack | p-s pl-l pr-l | tw-bg-accent-2 tw-text-accent-12">
     <div class="container | centre cluster | cluster-space cluster-baseline">
       <div>
         <div class="cluster | cluster-baseline cluster-grow">
@@ -16,8 +16,8 @@
     </div>
   </div>
 
-  <div class="bg-black c-white">
-    <div class="container | cluster cluster-xs centre | bg-black pl-l pr-l">
+  <div class="tw-bg-secondary-2 tw-text-secondary-11">
+    <div class="container | cluster cluster-xs centre | tw-bg-secondary-2 pl-l pr-l">
       <div class="size--1 tw-font-body">
         <% Tag.categories(Current.system).each do |category| %>
           <em><%= link_to category.name, category %></em>
@@ -28,7 +28,7 @@
 <% end %>
 
 <% content_for :footer do %>
-  <div class="bg-black c-white">
+  <div class="tw-bg-secondary-2 tw-text-secondary-11">
     <div class="container | centre | p-s measure-wide tw-font-body">
       <div class="switcher size--2">
           <ul role="menu" class="stack | stack-2xs">

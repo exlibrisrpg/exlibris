@@ -1,4 +1,4 @@
-# @display body_class "bg-yellow"
+# @display body_class "tw-bg-accent-2"
 class Layout::Header::SearchComponentPreview < ViewComponent::Preview
   # A search box which will expand to fill any available space. This search box
   # cannot currently show, add or remove filter tags - unlike the search box on
