@@ -86,6 +86,8 @@ Rails.application.configure do
   config.view_component.default_preview_layout = "component_preview"
 
   # Setup Lookbook:
+  # - Use local preview controller
+  config.lookbook.preview_controller = "ComponentPreviewsController"
   # - Specify default params for the preview layout
   config.lookbook.preview_display_params = {
     container: true
