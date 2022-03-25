@@ -19,14 +19,14 @@
     <% end %>
   </head>
 
-  <body class="fill | bg-black tw-font-body">
+  <body class="fill | tw-bg-primary-1 tw-text-primary-11 tw-font-body">
     <%= render partial: "announcement" %>
 
     <% if content_for?(:pre_header) %>
       <%= yield(:pre_header) %>
     <% end %>
 
-    <div class="fill | fill-with | bg-white">
+    <div class="fill | fill-with | tw-bg-primary-1">
       <header id="content">
         <%= yield :header %>
       </header>

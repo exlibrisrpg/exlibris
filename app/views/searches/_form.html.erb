@@ -12,7 +12,7 @@
 
             <turbo-frame id="searchTagResults">
               <fieldset disabled style="z-index: 1;">
-                <ul role="listbox" data-combobox-target="list" class="hidden highlight-none selected-highlight-yellow c-black p-none m-none search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+                <ul role="listbox" data-combobox-target="list" class="hidden highlight-none selected-highlight-yellow tw-text-primary-11 p-none m-none search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
                   <% @search.tags.each do |tag| %>
                     <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
                   <% end %>
@@ -22,7 +22,7 @@
           </div>
 
           <div class="cluster">
-            <ul role="list" data-combobox-target="collection" class="search--filter-tags p-none c-black highlight-yellow">
+            <ul role="list" data-combobox-target="collection" class="search--filter-tags p-none tw-text-primary-11 highlight-yellow">
               <li class="hidden-if-only-child">Tags:</li>
               <% search.filter_tags.each do |tag| %>
                 <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
