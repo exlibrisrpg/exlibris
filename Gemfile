@@ -23,6 +23,10 @@ gem "tailwindcss-rails", "~> 2.0"
 gem "turbo-rails"
 gem "view_component", require: "view_component/engine"
 
+# Explicitly require the net-http gem to silence 'already initialized constant'
+# warnings
+gem "net-http"
+
 group :production do
   gem "barnes"
   gem "dalli"
