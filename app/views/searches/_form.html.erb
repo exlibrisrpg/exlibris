@@ -8,7 +8,7 @@
           <% end %>
 
           <div class="relative cluster-grow">
-            <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
+            <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, class: "tw-text-primary-12", autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
 
             <turbo-frame id="searchTagResults">
               <fieldset disabled style="z-index: 1;">
@@ -35,11 +35,11 @@
       <div class="cluster" style="min-width: 25%;">
         <div>
           <div class="cluster-grow | highlight-yellow hover-highlight-white">
-            <%= form.submit name: "search", class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
+            <%= form.submit name: "search", class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
           </div>
 
           <div class="cluster-grow | highlight-yellow hover-highlight-white">
-            <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
+            <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
           </div>
         </div>
       </div>
