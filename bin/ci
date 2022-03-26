@@ -2,11 +2,8 @@
 
 set -e
 
-echo "[ bin/ci ] Running unit tests"
-bin/rails test
-
-echo "[ bin/ci ] Running system tests"
-bin/rails test:system
+echo "[ bin/ci ] Running tests"
+bin/rails test:prepare test test:system
 
 echo "[ bin/ci ] Analysing code for security vulnerabilities"
 bundle exec brakeman
