@@ -1,0 +1,20 @@
+name: Release
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Heroku remote
+      run: heroku git:remote --remote production -a exlibris-production
+      env:
+        HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
+
+    - name: Deploy to Heroku
+      run: git push production $GITHUB_REF:refs/heads/main
