@@ -16,7 +16,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
   end
 
   views["variant.html.erb"] = "default"
-  views["variant.html+mork-borg.erb"] = "mork-borg"
+  views["variant.html+morkborg.erb"] = "morkborg"
 
   context "Current.system" do
     context "with no subdomain" do
@@ -74,9 +74,9 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
 
   context "request.variant" do
     should "choose a variant view when available" do
-      get variant_url(subdomain: "mork-borg")
+      get variant_url(subdomain: "morkborg")
 
-      assert_equal "mork-borg", response.body
+      assert_equal "morkborg", response.body
     end
 
     should "choose the default view when variant not available" do

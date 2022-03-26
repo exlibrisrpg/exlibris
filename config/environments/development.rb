@@ -76,9 +76,7 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
-  # Setup hosts for local testing of subdomains on sub.elrpg.local. Also need to
-  # explicitly set each subdomain in the record on `/etc/hosts`:
-  #   127.0.0.1 elrpg.local mork-borg.elrpg.local mausritter.elrpg.local
+  # Setup hosts for local testing of subdomains on subdomain.elrpg.local.
   config.hosts << ".exlibrisrpg.test"
 
   # Setup ViewComponent:

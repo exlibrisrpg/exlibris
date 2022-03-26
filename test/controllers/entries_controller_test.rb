@@ -31,7 +31,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     context "with an unrecognised subdomain" do
       should "raise record not found" do
         assert_raises ActiveRecord::RecordNotFound do
-          get entries_url(subdomain: "johns-horse-game")
+          get entries_url(subdomain: "johnshorsegame")
         end
       end
     end
@@ -56,7 +56,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
 
     context "with the correct subdomain" do
       should "respond ok" do
-        get entry_url(entries(:eat_prey_kill), subdomain: "mork-borg")
+        get entry_url(entries(:eat_prey_kill), subdomain: "morkborg")
 
         assert_response :ok
       end
@@ -73,7 +73,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     context "with an unrecognised subdomain" do
       should "raise record not found" do
         assert_raises ActiveRecord::RecordNotFound do
-          get entry_url(entries(:eat_prey_kill), subdomain: "johns-horse-game")
+          get entry_url(entries(:eat_prey_kill), subdomain: "johnshorsegame")
         end
       end
     end
