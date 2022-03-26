@@ -5,8 +5,5 @@ set -e
 echo "[ bin/ci ] Running tests"
 bin/rails test:prepare test test:system
 
-echo "[ bin/ci ] Analysing code for security vulnerabilities"
-bundle exec brakeman
-
 echo "[ bin/ci ] Running linting checks"
 bin/rails lint

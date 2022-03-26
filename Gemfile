@@ -39,7 +39,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman"
   gem "listen", "~> 3.7"
   gem "lookbook"
   gem "rack-mini-profiler", "~> 3.0"
