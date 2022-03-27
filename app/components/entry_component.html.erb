@@ -8,30 +8,24 @@
       <% end %>
     </div>
 
-    <div class="stack | stack-xs">
+    <div class="tw-flex tw-flex-col tw-gap-3">
       <h1><%= link_to entry.name, entry %></h1>
 
       <% if creator_tags.any? %>
         <% if creator_tags.count > 5 %>
-          <details class="stack">
+          <details class="tw-flex tw-flex-col tw-gap-3">
             <summary>
-              <div class="cluster">
-                <div>
-                  <em><%= t ".many_contributors", count: creator_tags.count %></em>
-                </div>
+              <div class="tw-flex tw-gap-4">
+                <em><%= t ".many_contributors", count: creator_tags.count %></em>
               </div>
             </summary>
-            <div class="cluster">
-              <div>
-                <%= render partial: "tags/tag", collection: creator_tags %>
-              </div>
+            <div class="tw-flex tw-gap-4">
+              <%= render partial: "tags/tag", collection: creator_tags %>
             </div>
           </details>
         <% else %>
-          <div class="cluster">
-            <div>
-              <%= render partial: "tags/tag", collection: creator_tags %>
-            </div>
+          <div class="tw-flex tw-gap-4">
+            <%= render partial: "tags/tag", collection: creator_tags %>
           </div>
         <% end %>
       <% end %>
@@ -41,26 +35,22 @@
       </div>
 
       <% if non_creator_tags.any? %>
-        <div class="cluster">
-          <div>
-            <% non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
-              <% if index > 0 %><span>&mdash;</span><% end %>
-              <%= render partial: "tags/tag", collection: tags %>
-            <% end %>
-          </div>
+        <div class="tw-flex tw-gap-4">
+          <% non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
+            <% if index > 0 %><span>&mdash;</span><% end %>
+            <%= render partial: "tags/tag", collection: tags %>
+          <% end %>
         </div>
       <% end %>
 
       <% if entry.links.any? %>
-        <div class="cluster">
-          <div>
-            <% entry.links.each do |link| %>
-              <%= highlight_link_to link.address, class: "with-icon" do %>
-                <%= icon_tag link_icon(link) %>
-                <%= link_name(link) %>
-              <% end %>
+        <div class="tw-flex tw-gap-4">
+          <% entry.links.each do |link| %>
+            <%= highlight_link_to link.address, class: "with-icon" do %>
+              <%= icon_tag link_icon(link) %>
+              <%= link_name(link) %>
             <% end %>
-          </div>
+          <% end %>
         </div>
       <% end %>
     </div>

@@ -1,3 +1,4 @@
+# @display container false
 class Layout::Header::SecondaryNavComponentPreview < ViewComponent::Preview
   def default
     render(Layout::Header::SecondaryNavComponent.new(links: [

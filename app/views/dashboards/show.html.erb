@@ -1,10 +1,10 @@
-<div class="stack | stack-3xl">
-  <div class="stack | stack-m align-center">
+<div class="tw-flex tw-flex-col tw-gap-24">
+  <div class="tw-flex tw-flex-col tw-gap-6 align-center">
     <h2 class="tw-font-display tw-text-6xl"><%= t ".categories_heading" %></h2>
 
     <dl class="switcher | tw-font-body">
       <% @dashboard.categories.in_groups(2, false) do |category_group| %>
-        <div class="stack | stack-xs">
+        <div class="tw-flex tw-flex-col tw-gap-3">
           <% category_group.each do |category| %>
             <div>
               <dt><%= link_to category.name, category, data: { controller: "highlight" } %></dt>
@@ -16,7 +16,7 @@
     </dl>
   </div>
 
-  <div class="stack | stack-m align-center">
+  <div class="tw-flex tw-flex-col tw-gap-6 align-center">
     <h2 class="tw-font-display tw-text-6xl"><%= t ".latest_entries_heading" %></h2>
     <p class="tw-font-body"><%= t ".latest_entries_subheading_html" %></p>
 

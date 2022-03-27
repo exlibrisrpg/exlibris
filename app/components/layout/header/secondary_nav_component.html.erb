@@ -1,6 +1,6 @@
 <div class="tw-bg-secondary-3 tw-text-secondary-11">
-  <div class="container | centre | pl-l pr-l tw-py-2">
-    <div class="tw-text-sm tw-font-body tw-flex tw-gap-1">
+  <div class="container | centre | tw-py-2 tw-px-8">
+    <div class="tw-text-sm tw-font-body tw-flex tw-gap-1 tw-flex-wrap">
       <% @links.each do |link|%>
         <%= render ButtonComponent.new(label: link[:label], path: link[:path], type: :secondary) %>
       <% end %>

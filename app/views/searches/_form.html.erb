@@ -1,18 +1,16 @@
 <%= form_with model: search, url: search_path, method: :get, class: "search", data: { controller: "form", "form-target": "form", "form-submit-frame-value": "searchTagResults" } do |form| %>
-  <div class="cluster">
-    <div class="tw-font-body">
-      <div class="cluster cluster-grow | highlight-white" style="flex: 1 0;">
-        <div class="search--field with-icon" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
-          <%= form.label :query do %>
-            <%= icon_tag :search %>
-          <% end %>
+  <div class="tw-flex tw-gap-4 tw-flex-wrap tw-font-body">
+    <div class="highlight-white | tw-flex-grow tw-flex tw-gap-4">
+      <div class="tw-flex tw-flex-grow tw-items-center tw-flex-wrap" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+        <%= form.label :query, class: "tw-w-1/2 tw-flex tw-flex-grow tw-flex-shrink-0 tw-gap-2 tw-items-center" do %>
+          <%= icon_tag :search %>
 
-          <div class="relative cluster-grow">
+          <div class="relative tw-flex-grow">
             <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, class: "tw-text-primary-12", autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
 
             <turbo-frame id="searchTagResults">
               <fieldset disabled style="z-index: 1;">
-                <ul role="listbox" data-combobox-target="list" class="hidden highlight-none selected-highlight-yellow tw-text-primary-11 p-none m-none search--tag-list stack stack-2xs m-s" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+                <ul role="listbox" data-combobox-target="list" class="hidden highlight-none selected-highlight-yellow tw-text-primary-11 tw-p-0 search--tag-list tw-flex tw-flex-col tw-gap-2 tw-mt-4" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
                   <% @search.tags.each do |tag| %>
                     <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
                   <% end %>
@@ -20,28 +18,24 @@
               </fieldset>
             </turbo-frame>
           </div>
+        <% end %>
 
-          <div class="cluster">
-            <ul role="list" data-combobox-target="collection" class="search--filter-tags p-none tw-text-primary-11 highlight-yellow">
-              <li class="hidden-if-only-child">Tags:</li>
-              <% search.filter_tags.each do |tag| %>
-                <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
-              <% end %>
-            </ul>
-          </div>
-        </div>
+        <ul role="list" data-combobox-target="collection" class="search--filter-tags | tw-flex tw-gap-4 tw-p-0 tw-text-primary-11 highlight-yellow">
+          <li class="hidden-if-only-child">Tags:</li>
+          <% search.filter_tags.each do |tag| %>
+            <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tw-flex tw-gap-4 tw-w-60 tw-flex-grow">
+      <div class="highlight-yellow hover-highlight-white | tw-flex-grow">
+        <%= form.submit name: "search", class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
       </div>
 
-      <div class="cluster" style="min-width: 25%;">
-        <div>
-          <div class="cluster-grow | highlight-yellow hover-highlight-white">
-            <%= form.submit name: "search", class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
-          </div>
-
-          <div class="cluster-grow | highlight-yellow hover-highlight-white">
-            <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
-          </div>
-        </div>
+      <div class="highlight-yellow hover-highlight-white | tw-flex-grow">
+        <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 module IconHelper
   DEFAULT_ICON_OPTIONS = {
-    class: "icon"
+    class: "tw-flex-shrink-0 tw-w-5 tw-h-5"
   }
 
   def icon_tag(icon_type, options = {})
