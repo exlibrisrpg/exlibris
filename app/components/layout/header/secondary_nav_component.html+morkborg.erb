@@ -1,0 +1,9 @@
+<div class="tw-bg-secondary-2 tw-text-secondary-11">
+  <div class="container | cluster cluster-xs centre | tw-bg-secondary-2 pl-l pr-l">
+    <div class="size--1 tw-font-body">
+      <% @links.each do |link|%>
+        <em><%= link_to link[:label], link[:path] %></em>
+      <% end %>
+    </div>
+  </div>
+</div>

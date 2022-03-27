@@ -19,7 +19,7 @@ function colorDefinition(type) {
 
 module.exports = {
   content: [
-    "./app/components/**/*.erb",
+    "./app/components/**/*.{erb,rb}",
     "./app/helpers/**/*.rb",
     "./app/javascript/**/*.js",
     "./app/views/**/*.erb"
