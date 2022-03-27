@@ -1,6 +1,6 @@
 <div class="stack | stack-3xl">
   <div class="stack | stack-m align-center">
-    <h2 class="tw-font-display size-5"><%= t ".categories_heading" %></h2>
+    <h2 class="tw-font-display tw-text-6xl"><%= t ".categories_heading" %></h2>
 
     <dl class="switcher | tw-font-body">
       <% @dashboard.categories.in_groups(2, false) do |category_group| %>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="stack | stack-m align-center">
-    <h2 class="tw-font-display size-5"><%= t ".latest_entries_heading" %></h2>
+    <h2 class="tw-font-display tw-text-6xl"><%= t ".latest_entries_heading" %></h2>
     <p class="tw-font-body"><%= t ".latest_entries_subheading_html" %></p>
 
     <div class="reel" data-controller="reel">
