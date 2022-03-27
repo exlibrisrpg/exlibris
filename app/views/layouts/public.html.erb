@@ -3,9 +3,9 @@
     <div class="container | centre cluster | cluster-space cluster-baseline">
       <div>
         <div class="cluster | cluster-baseline cluster-grow">
-          <div class="tw-font-brand size-2 highlight-none">
+          <div class="tw-font-brand tw-text-3xl highlight-none">
             <%= link_to t("application.name"), root_path(anchor: "content") %>
-            <small class="size--1"><%= t("application.tagline") %></small>
+            <small class="tw-text-base"><%= t("application.tagline") %></small>
           </div>
         </div>
 
@@ -22,9 +22,9 @@
 <% content_for :footer do %>
   <div class="tw-bg-secondary-2 tw-text-secondary-11">
     <div class="container | centre | p-s measure-wide tw-font-body">
-      <div class="switcher size--2">
+      <div class="switcher tw-text-xs tw-leading-relaxed">
           <ul role="menu" class="stack | stack-2xs">
-            <li class="tw-font-brand size-1"><%= link_to t("application.name"), root_path(anchor: "content") %></li>
+            <li class="tw-font-brand tw-text-xl"><%= link_to t("application.name"), root_path(anchor: "content") %></li>
             <li><%= link_to t(".footer.tags_link"), tags_path %></li>
             <li><%= link_to t(".footer.search_link"), search_path %></li>
             <li><%= link_to t(".footer.credits_link"), credits_path %></li>

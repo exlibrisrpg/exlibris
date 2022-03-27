@@ -42,12 +42,6 @@ html {
   font-size: var(--font-size);
 }
 
-@each $sizing-name, $value in $sizing-map {
-  .size-#{$sizing-name} {
-    font-size: $value;
-  }
-}
-
 $align-map: (
   center: center,
   start: start
