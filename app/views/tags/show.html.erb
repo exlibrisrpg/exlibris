@@ -1,14 +1,10 @@
 <% content_for(:title) do %><%= @tag.name %><% end %>
 <% @social_focus = @tag %>
 
-<div class="cluster | cluster-space cluster-baseline">
-  <div>
-    <h1><%= @tag.name %></h1>
-  </div>
-</div>
+<h1><%= @tag.name %></h1>
 
 <%= @tag.description %>
 
-<%= render "shared/paginate", page: @page, path: ->(next_page) {tag_path(@tag, page: next_page)}, class: "stack | stack-l" do %>
+<%= render "shared/paginate", page: @page, path: ->(next_page) {tag_path(@tag, page: next_page)}, class: "tw-flex tw-flex-col tw-gap-8" do %>
   <%= render EntryComponent.with_collection(@entries) %>
 <% end %>

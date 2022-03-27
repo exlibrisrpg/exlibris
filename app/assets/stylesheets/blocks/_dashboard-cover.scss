@@ -47,13 +47,8 @@
   width: 100%;
   z-index: 2;
 
-  > * {
-    align-items: center;
-  }
-
   img {
     animation: wobble 1s steps(4, jump-both) 0s infinite alternate both;
-    height: calc(var(--font-size) * 4);
   }
 }
 

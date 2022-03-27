@@ -5,15 +5,11 @@
 <% @tag_categories.each do |tag_category| %>
   <h2><%= tag_category.name %></h2>
 
-  <div class="cluster">
-    <div>
-      <% tag_category.tags.each do |tag| %>
-        <div>
-          <em>
-            <%= link_to tag.name, tag %><small>(<%= tag.entries.count %>)</small>
-          </em>
-        </div>
-      <% end %>
-    </div>
+  <div class="tw-flex tw-gap-4">
+    <% tag_category.tags.each do |tag| %>
+      <em>
+        <%= link_to tag.name, tag %><small>(<%= tag.entries.count %>)</small>
+      </em>
+    <% end %>
   </div>
 <% end %>

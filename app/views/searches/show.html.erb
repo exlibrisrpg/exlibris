@@ -2,7 +2,7 @@
 
 <% content_for :banner do %>
   <div class="tw-bg-secondary-3 tw-text-secondary-12" data-controller="combobox" data-action="combobox-commit->combobox#add" data-combobox-hidden-class="hidden">
-    <div class="container | centre stack | align-center p-l">
+    <div class="container | centre tw-flex tw-flex-col tw-gap-8 | align-center tw-p-8">
       <h1 class="tw-font-display tw-text-6xl"><%= t(".title") %></h1>
 
       <%= render partial: "form", locals: { search: @search } %>
@@ -11,20 +11,18 @@
 <% end %>
 
 <% if @search.valid? %>
-  <div class="stack | stack-l">
+  <div class="tw-flex tw-flex-col tw-gap-8">
   <h2 class="tw-font-display tw-text-6xl align-center"><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
 
-  <div class="cluster | cluster-center tw-font-body" data-controller="search-highlights">
-    <div>
-      <% @search.tags.each do |tag| %>
-        <%= link_to search_highlight(tag.name, @search.query&.split(" ")), tag %>
-      <% end %>
-    </div>
+  <div class="tw-flex tw-gap-4 tw-justify-center tw-font-body" data-controller="search-highlights">
+    <% @search.tags.each do |tag| %>
+      <%= link_to search_highlight(tag.name, @search.query&.split(" ")), tag %>
+    <% end %>
   </div>
 
   <h2 class="tw-font-display tw-text-6xl align-center"><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
 
-  <%= render "shared/paginate", page: @page, path: ->(next_page) {search_path(query: @search.query, page: @page.next_param)}, class: "stack | stack-l" do %>
+  <%= render "shared/paginate", page: @page, path: ->(next_page) {search_path(query: @search.query, page: @page.next_param)}, class: "tw-flex tw-flex-col tw-gap-8" do %>
     <% @page.records.each do |entry| %>
       <div id="<%= dom_id entry %>" class="with-sidebar | tw-font-body" data-controller="search-highlights">
         <div>
@@ -36,15 +34,13 @@
             <% end %>
           </div>
 
-          <div class="stack | stack-xs">
+          <div class="tw-flex tw-flex-col tw-gap-3">
             <h1><%= link_to search_highlight(entry.name, @search.query&.split(" ")), entry %></h1>
 
             <% creator_tags = entry.tags.select(&:creator?) %>
             <% if creator_tags.any? %>
-              <div class="cluster">
-                <div>
-                  <%= render partial: "tags/tag", collection: creator_tags %>
-                </div>
+              <div class="tw-flex tw-gap-4">
+                <%= render partial: "tags/tag", collection: creator_tags %>
               </div>
             <% end %>
 
@@ -54,26 +50,22 @@
 
             <% non_creator_tags = entry.tags.reject(&:creator?) %>
             <% if non_creator_tags.any? %>
-              <div class="cluster">
-                <div>
-                  <% non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
-                    <% if index > 0 %><span>&mdash;</span><% end %>
-                    <%= render partial: "tags/tag", collection: tags %>
-                  <% end %>
-                </div>
+              <div class="tw-flex tw-gap-4">
+                <% non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
+                  <% if index > 0 %><span>&mdash;</span><% end %>
+                  <%= render partial: "tags/tag", collection: tags %>
+                <% end %>
               </div>
             <% end %>
 
             <% if entry.links.any? %>
-              <div class="cluster">
-                <div>
-                  <% entry.links.each do |link| %>
-                    <%= highlight_link_to link.address, class: "with-icon" do %>
-                      <%= icon_tag link_icon(link) %>
-                      <%= link_name(link) %>
-                    <% end %>
+              <div class="tw-flex tw-gap-4">
+                <% entry.links.each do |link| %>
+                  <%= highlight_link_to link.address, class: "with-icon" do %>
+                    <%= icon_tag link_icon(link) %>
+                    <%= link_name(link) %>
                   <% end %>
-                </div>
+                <% end %>
               </div>
             <% end %>
           </div>

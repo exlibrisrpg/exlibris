@@ -13,7 +13,7 @@
   </head>
 
   <body class="<%= params[:lookbook][:display][:body_class] %>">
-    <div class="<% if params[:lookbook][:display][:container] %>container | centre | p-l<% end %>">
+    <div class="<% if params[:lookbook][:display][:container] %>container | centre | tw-p-8<% end %>">
       <%= yield %>
     </div>
   </body>

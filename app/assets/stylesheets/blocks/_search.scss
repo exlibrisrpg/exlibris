@@ -6,11 +6,6 @@
   cursor: pointer;
 }
 
-.search--field {
-  align-items: center;
-  display: flex;
-}
-
 .search input {
   background: none;
   border: unset;
@@ -22,18 +17,6 @@
     border-bottom: 2px solid var(--color-foreground-translucent);
     outline: none;
     padding-bottom: 0;
-  }
-}
-
-.search .icon-search {
-  margin-right: var(--space-2xs);
-
-  .primary {
-    fill: none;
-  }
-
-  .secondary {
-    fill: var(--icon-color, var(--color-foreground));
   }
 }
 

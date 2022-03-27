@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: var(--size);
-  padding: var(--space-xs);
+  padding: 0.75rem;
   position: relative;
   width: var(--size);
 }
@@ -24,5 +24,5 @@
 .tile--detail {
   display: flex;
   flex-direction: column-reverse;
-  padding: var(--space-s);
+  padding: 1.25rem;
 }
