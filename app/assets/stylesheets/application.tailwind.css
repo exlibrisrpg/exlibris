@@ -21,3 +21,30 @@
     font-weight: revert;
   }
 }
+
+@layer components {
+  .tw-button,
+  .tw-button-primary {
+    @apply
+      tw-font-light
+      tw-px-2
+      tw-py-0.5
+      tw-rounded
+      tw-border
+      tw-transition
+      focus:tw-ring
+      tw-outline-none;
+    @apply
+      tw-bg-primary-3 hover:tw-bg-primary-4 active:tw-bg-primary-5 tw-border-primary-6 hover:tw-border-primary-7 active:tw-border-primary-7 tw-ring-primary-5 tw-text-primary-11;
+  }
+
+  .tw-button-secondary {
+    @apply
+      tw-bg-secondary-3 hover:tw-bg-secondary-4 active:tw-bg-secondary-5 tw-border-secondary-6 hover:tw-border-secondary-7 active:tw-border-secondary-7 tw-ring-secondary-5 tw-text-secondary-11;
+  }
+
+  .tw-button-accent {
+    @apply
+      tw-bg-accent-3 hover:tw-bg-accent-4 active:tw-bg-accent-5 tw-border-accent-6 hover:tw-border-accent-7 active:tw-border-accent-7 tw-ring-accent-5 tw-text-accent-11;
+  }
+}

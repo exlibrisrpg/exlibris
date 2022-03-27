@@ -6,8 +6,13 @@ class ComponentPreviewsController < ViewComponentsController
   def render_in_layout_to_string(template, locals, layout = nil)
     set_current_request_details
 
-    append_view_path Lookbook::Engine.root.join("app/views")
-    render_to_string template, locals: locals, **determine_layout(layout)
+    super(template, locals, layout)
+  end
+
+  def render_example_to_string(preview, example_name)
+    set_current_request_details
+
+    super(preview, example_name)
   end
 
   def current_user
