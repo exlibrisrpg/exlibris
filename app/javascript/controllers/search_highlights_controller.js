@@ -2,49 +2,35 @@ import { Controller } from "@hotwired/stimulus"
 import { annotate, annotationGroup } from "rough-notation"
 
 export default class extends Controller {
-  initialize() {
-    const marks = this.element.querySelectorAll("mark")
-    this.markAnnotations = this.annotateElements(marks, {
-      animationDuration: 800,
-      color: "var(--color-foreground-translucent)",
-      iterations: 3,
-      multiline: true,
-      type: "highlight"
-    })
+  static values = {
+    color: String
   }
 
-  connect() {
-    if (document.fonts != undefined) {
-      document.fonts.ready.then(() => {
-        this.showAnnotationsOnPageScroll(this.markAnnotations)
-      })
-    } else {
-      this.showAnnotationsOnPageScroll(this.markAnnotations)
+  initialize() {
+    if (this.colorValue == "") {
+      console.warn(
+        "Applying search highlights with --color-foreground-translucent is deprecated. Please set data-search-highlights-color-value.",
+        this.element
+      )
+      this.colorValue = "var(--color-foreground-translucent)"
     }
+  }
+
+  async connect() {
+    // Wait for fonts to load before drawing highlights if supported by browser.
+    // https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/ready
+    if (document.fonts != undefined) {
+      await document.fonts.ready
+    }
+
+    this.showAnnotationsOnPageScroll()
   }
 
   disconnect() {
-    this.hideAnnotations([...this.markAnnotations])
+    this.hideAnnotations()
   }
 
-  annotateElement(element, options) {
-    if (element.annotation != undefined) {
-      return element.annotation
-    }
-
-    element.parentNode.style.position = "relative"
-    const annotation = annotate(element, options)
-    element.annotation = annotation
-    return annotation
-  }
-
-  annotateElements(elements, options) {
-    return [...elements].map((element) => {
-      return this.annotateElement(element, options)
-    })
-  }
-
-  showAnnotationsOnPageScroll(elements) {
+  showAnnotationsOnPageScroll() {
     const observer = new IntersectionObserver((entries) => {
       const revealedEntries = entries.filter(
         (entry) => entry.intersectionRatio > 0
@@ -55,12 +41,43 @@ export default class extends Controller {
       ).show()
     })
 
-    ;[...elements].forEach((element) => {
+    this.markAnnotations.forEach((element) => {
       observer.observe(element._e)
     })
   }
 
-  hideAnnotations(annotations) {
-    annotations.forEach((annotation) => annotation.hide())
+  hideAnnotations() {
+    this.markAnnotations.forEach((annotation) => annotation.hide())
+  }
+
+  get marks() {
+    return this.element.querySelectorAll("mark")
+  }
+
+  get markAnnotations() {
+    if (this._markAnnotations == undefined) {
+      this._markAnnotations = [...this.marks].map((element) => {
+        if (element.annotation != undefined) {
+          return element.annotation
+        }
+
+        element.parentNode.style.position = "relative"
+        const annotation = annotate(element, this.annotationOptions)
+        element.annotation = annotation
+        return annotation
+      })
+    }
+
+    return this._markAnnotations
+  }
+
+  get annotationOptions() {
+    return {
+      animationDuration: 800,
+      color: this.colorValue,
+      iterations: 3,
+      multiline: true,
+      type: "highlight"
+    }
   }
 }
