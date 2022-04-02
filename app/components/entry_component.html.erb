@@ -46,7 +46,7 @@
       <% if entry.links.any? %>
         <div class="tw-flex tw-gap-4">
           <% entry.links.each do |link| %>
-            <%= highlight_link_to link.address, class: "with-icon" do %>
+            <%= highlight_link_to link.address, class: "with-icon tw-bg-accent-1" do %>
               <%= icon_tag link_icon(link) %>
               <%= link_name(link) %>
             <% end %>

@@ -3,18 +3,18 @@
     <div class="dashboard-cover--image-container tw-bg-secondary-1">
       <%= image_tag "exlibris_yellow.jpg", class: "dashboard-cover--image" %>
 
-      <div class="dashboard-cover--please-scroll | tw-flex tw-gap-4 tw-justify-center tw-items-center tw-m-4 highlight-white">
+      <div class="dashboard-cover--please-scroll | tw-flex tw-gap-4 tw-justify-center tw-items-center tw-m-4">
         <div>
-          <span data-controller="highlight"><%= t(".scroll_down") %></span>
+          <span class="tw-bg-primary-1" data-controller="highlight"><%= t(".scroll_down") %></span>
         </div>
         <%= image_tag "potato_borg.png", class: "tw-w-14" %>
       </div>
     </div>
 
-    <div class="dashboard-cover--content | container tw-flex tw-flex-col tw-gap-6 centre | tw-p-4 tw-font-brand highlight-black tw-text-secondary-12">
-      <h1 class="tw-text-5xl tw-leading-normal" data-controller="highlight"><span class="tw-p-3"><%= t ".title" %></span></h1>
+    <div class="dashboard-cover--content | container tw-flex tw-flex-col tw-gap-6 centre | tw-p-4 tw-font-brand tw-text-secondary-12">
+      <h1 class="tw-text-5xl tw-leading-normal tw-bg-secondary-1" data-controller="highlight"><span class="tw-p-3"><%= t ".title" %></span></h1>
 
-      <div class="tw-text-3xl tw-max-w-lg" data-controller="highlight">
+      <div class="tw-text-3xl tw-max-w-lg tw-bg-secondary-1" data-controller="highlight">
         <p><span class="inline-block tw-p-3"><%= t ".subtitle" %></span></p>
       </div>
     </div>

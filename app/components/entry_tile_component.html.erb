@@ -3,13 +3,13 @@
     <div class="tile--cover"></div>
 
     <div class="tile--detail | imposter">
-      <div class="highlight-white tw-text-3xl">
-        <span data-controller="highlight"><%= entry.name %></span>
+      <div class="tw-text-3xl">
+        <span class="tw-bg-primary-1" data-controller="highlight"><%= entry.name %></span>
       </div>
 
       <div>
         <% category_tags.each do |category| %>
-          <span data-controller="highlight"><%= category.name %></span>
+          <span class="tw-bg-accent-1" data-controller="highlight"><%= category.name %></span>
         <% end %>
       </div>
     </div>

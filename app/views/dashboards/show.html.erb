@@ -7,7 +7,7 @@
         <div class="tw-flex tw-flex-col tw-gap-3">
           <% category_group.each do |category| %>
             <div>
-              <dt><%= link_to category.name, category, data: { controller: "highlight" } %></dt>
+              <dt><%= link_to category.name, category, class: "tw-bg-accent-1", data: { controller: "highlight" } %></dt>
               <dd><%= category.short_description %></dd>
             </div>
           <% end %>
