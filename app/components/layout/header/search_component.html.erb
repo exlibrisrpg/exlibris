@@ -1,5 +1,5 @@
 <nav id="nav-search" class="highlight-white" data-turbo-permanent>
-  <%= form_with model: @search, url: search_path, method: :get, class: "tw-w-full", data: { controller: "highlight" } do |form| %>
+  <%= form_with model: @search, url: search_path, method: :get, class: "tw-w-full tw-bg-accent-3", data: { controller: "highlight" } do |form| %>
     <%= form.label :query, class: "tw-w-full tw-flex tw-gap-2 tw-items-center" do %>
       <%= search_icon %>
       <%= form.text_field :query, name: :query, placeholder: placeholder, class: "tw-bg-transparent" %>
