@@ -10,7 +10,6 @@ import HideController from "./hide_controller"
 import NestedFormController from "./nested_form_controller"
 import ReelController from "./reel_controller"
 import ScrollProgressController from "./scroll_progress_controller"
-import SearchHighlightsController from "./search_highlights_controller"
 
 window.Stimulus = Application.start()
 Stimulus.register("combobox", ComboboxController)
@@ -20,4 +19,3 @@ Stimulus.register("hide", HideController)
 Stimulus.register("nested-form", NestedFormController)
 Stimulus.register("reel", ReelController)
 Stimulus.register("scroll-progress", ScrollProgressController)
-Stimulus.register("search-highlights", SearchHighlightsController)

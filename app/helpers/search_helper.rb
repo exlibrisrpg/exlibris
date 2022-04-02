@@ -12,7 +12,7 @@ module SearchHelper
       end.join("|")
 
       matcher = /(#{match})/i
-      highlighter = options.fetch(:highlighter, '<mark>\1</mark>')
+      highlighter = options.fetch(:highlighter, '<mark class="tw-bg-secondary-9/[.65] tw-text-accent-9">\1</mark>')
 
       transliterated_text = ActiveSupport::Inflector.transliterate(text).downcase
       split_text = transliterated_text.split(matcher)
