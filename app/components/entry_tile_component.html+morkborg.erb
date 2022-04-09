@@ -1,0 +1,17 @@
+<%= link_to entry do %>
+  <%= tag.div class: "tile tw-font-body", style: (entry.cover.attached? ? "--cover-image: url('#{cover_url}');" : "") do %>
+    <div class="tile--cover"></div>
+
+    <div class="tile--detail | imposter">
+      <div class="highlight-white tw-text-3xl">
+        <span data-controller="highlight"><%= entry.name %></span>
+      </div>
+
+      <div>
+        <% category_tags.each do |category| %>
+          <span data-controller="highlight"><%= category.name %></span>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>

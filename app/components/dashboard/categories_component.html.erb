@@ -1,0 +1,12 @@
+<div class="tw-flex tw-flex-col tw-gap-6">
+  <h2 class="tw-font-display tw-text-6xl"><%= t ".heading" %></h2>
+
+  <dl class="tw-font-body tw-columns-4">
+    <% categories.each do |category| %>
+      <div>
+        <dt><%= link_to category.name, category %></dt>
+        <dd><%= category.short_description %></dd>
+      </div>
+    <% end %>
+  </dl>
+</div>

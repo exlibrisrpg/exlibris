@@ -42,13 +42,17 @@ en:
       next_page: Next page
       loading: Loading next page...
 
+  dashboard:
+    categories_component:
+      heading: Categories
+    latest_entries_component:
+      heading: Latest Additions
+      subheading_html: "<em>&ldquo;These people... they cannot be stopped...&rdquo;</em>"
+
   dashboards:
     show:
       title: Ex Libris Mörk Borg
       subtitle: A directory of content, tools, and resources for the Mörk Borg RPG
-      categories_heading: Categories
-      latest_entries_heading: Latest Additions
-      latest_entries_subheading_html: "<em>&ldquo;These people... they cannot be stopped...&rdquo;</em>"
       scroll_down: sCrOlL dOwN! jOiN uS!!!
 
   entry_component:

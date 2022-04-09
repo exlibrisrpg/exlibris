@@ -1,0 +1,8 @@
+<div class="tw-flex tw-flex-col tw-gap-6 tw-text-center">
+  <h2 class="tw-font-display tw-text-6xl"><%= t ".heading" %></h2>
+  <p class="tw-font-body"><%= t ".subheading_html" %></p>
+
+  <div class="reel" data-controller="reel">
+    <%= render EntryTileComponent.with_collection(entries) %>
+  </div>
+</div>

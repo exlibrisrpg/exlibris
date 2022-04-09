@@ -1,0 +1,11 @@
+<div class="tw-flex tw-flex-col tw-gap-6">
+  <h2 class="tw-font-display tw-text-6xl"><%= t ".heading" %></h2>
+
+  <div class="tw-flex tw-gap-3 tw-bg-accent-3 tw-p-3 tw-overflow-x-auto tw-overflow-y-hidden tw-scroll-pl-3 tw-scroll-pr-3 tw-snap-x tw-scroll-smooth">
+    <% @entries.each do |entry| %>
+      <div class="tw-snap-start last:tw-pr-3">
+        <%= render EntryTileComponent.new(entry: entry) %>
+      </div>
+    <% end %>
+  </div>
+</div>
