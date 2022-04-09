@@ -151,6 +151,8 @@ GEM
     email_validator (2.2.3)
       activemodel
     erubi (1.10.0)
+    faker (2.20.0)
+      i18n (>= 1.8.11, < 2)
     ferrum (0.11)
       addressable (~> 2.5)
       cliver (~> 0.3)
@@ -405,6 +407,7 @@ DEPENDENCIES
   cssbundling-rails
   cuprite
   dalli
+  faker (~> 2.20)
   friendly_id
   geared_pagination
   inline_svg

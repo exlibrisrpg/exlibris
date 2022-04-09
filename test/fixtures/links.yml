@@ -9,3 +9,11 @@ eat_prey_kill_mork_borg:
 unheroic_feats_mork_borg:
   entry: unheroic_feats
   address: https://morkborg.com/content/
+
+<% each_system_entry do |key, system, index| %>
+<% Faker::Number.between(from: 1, to: 3).times do |link_index| %>
+<%= key %>_<%= link_index %>:
+  entry: <%= key %>
+  address: <%= Faker::Internet.url %>
+<% end %>
+<% end %>

@@ -17,7 +17,7 @@ class TagTest < ActiveSupport::TestCase
     should validate_presence_of :system
 
     context "with tag categories that requires short description" do
-      subject { Tag.new(tag_category: tag_categories(:categories_mork_borg)) }
+      subject { Tag.new(tag_category: tag_categories(:mork_borg_categories)) }
 
       should validate_presence_of :short_description
     end

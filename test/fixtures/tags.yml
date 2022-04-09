@@ -1,32 +1,39 @@
 # Categories
-rules_mork_borg:
-  name: Rules
-  short_description: Optional rules to die by.
-  tag_category: categories_mork_borg
-  slug: rules
-  system: mork_borg
-rules_mausritter:
-  name: Rules
-  short_description: Scurry lengths and whisker stats
-  tag_category: categories_mausritter
-  slug: rules-maus
-  system: mausritter
+<% systems.each do |system| %>
+<% categories.each do |category| %>
+<%= system %>_<%= category.parameterize.underscore %>:
+  name: <%= category %>
+  tag_category: <%= system %>_categories
+  slug: <%= system.parameterize %>-<%= category.parameterize %>
+  system: <%= system %>
+<% end %>
+<% end %>
 
 # Officialness
 mork_borg_cult:
   name: Mörk Borg Cult
-  tag_category: officialness
+  tag_category: mork_borg_officialness
   slug: mork-borg-cult
   system: mork_borg
 
-# Authors
+# Creators
 johan_nohr:
   name: Johan Nohr
-  tag_category: creators
+  tag_category: mork_borg_creators
   slug: johan-nohr
   system: mork_borg
 johnny_carhat:
   name: Johnny Carhat
-  tag_category: creators
+  tag_category: mork_borg_creators
   slug: johnny-carhat
   system: mork_borg
+<% systems.each do |system| %>
+<% 20.times do |index| %>
+<% name = Faker::Name.name %>
+<%= system %>_tag_creator_<%= index %>:
+  name: <%= name %>
+  tag_category: <%= system %>_creators
+  slug: <%= system.parameterize %>-<%= name.parameterize %>
+  system: <%= system %>
+<% end %>
+<% end %>

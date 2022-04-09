@@ -17,7 +17,7 @@ class TagCategoryPolicyTest < ActiveSupport::TestCase
     assert_permit users(:curator), TagCategory, :index
     assert_permit users(:curator), TagCategory, :new
 
-    curated_tag = tag_categories(:categories_mork_borg)
+    curated_tag = tag_categories(:mork_borg_categories)
     assert_permit users(:curator), curated_tag, :show
     assert_permit users(:curator), curated_tag, :create
     assert_permit users(:curator), curated_tag, :update
@@ -27,7 +27,7 @@ class TagCategoryPolicyTest < ActiveSupport::TestCase
     assert_permit users(:curator), curated_tag, :download_attachments
     assert_permit users(:curator), curated_tag, :delete_attachments
 
-    other_tag = tag_categories(:categories_mausritter)
+    other_tag = tag_categories(:mausritter_categories)
     refute_permit users(:curator), other_tag, :show
     refute_permit users(:curator), other_tag, :create
     refute_permit users(:curator), other_tag, :update

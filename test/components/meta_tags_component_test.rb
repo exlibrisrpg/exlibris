@@ -106,7 +106,7 @@ class MetaTagsComponentTest < ViewComponent::TestCase
 
   context "with a tag" do
     should "render correct meta tags" do
-      tag_category = tag_categories(:categories_mork_borg)
+      tag_category = tag_categories(:mork_borg_categories)
       tag = Tag.create(
         name: "Alternative Rules",
         short_description: "Play by them, you fool",
