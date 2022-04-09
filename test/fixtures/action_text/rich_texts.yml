@@ -2,14 +2,23 @@
 eat_prey_kill_description:
   record: eat_prey_kill (Entry)
   name: description
-  body: <div><strong>Concept:</strong> “When stomachs growl and there’s no inn in sight …”<strong><br>Content:</strong> Rules for hunting and whole ecosystems of prey<strong><br>Writing:</strong> Clear and evocative<strong><br>Art/design:</strong> Enough to supply character but not obstruct usability<strong><br>Usability:</strong> Well laid out and easy to navigate</div>
+  body: "<div><strong>Concept:</strong> “When stomachs growl and there’s no inn in sight …”<strong><br>Content:</strong> Rules for hunting and whole ecosystems of prey<strong><br>Writing:</strong> Clear and evocative<strong><br>Art/design:</strong> Enough to supply character but not obstruct usability<strong><br>Usability:</strong> Well laid out and easy to navigate</div>"
   plain_text_body: "Concept: “When stomachs growl and there’s no inn in sight …”\nContent: Rules for hunting and whole ecosystems of prey\nWriting: Clear and evocative\nArt/design: Enough to supply character but not obstruct usability\nUsability: Well laid out and easy to navigate"
 
 unheroic_feats_description:
   record: unheroic_feats (Entry)
   name: description
-  body: <div><strong>Concept:</strong> “When getting better, if not using an optional class, you may instead gain a feat.”<strong><br>Content:</strong> Abilities that add versatility for classless characters (and more motivation to play them)<strong><br>Writing:</strong> Evocative and inspiring<strong><br>Art/design:</strong> <em>Mörk Borg</em> ambience in a more traditional style<strong><br>Usability:</strong> Clearly and linearly laid out</div>
+  body: "<div><strong>Concept:</strong> “When getting better, if not using an optional class, you may instead gain a feat.”<strong><br>Content:</strong> Abilities that add versatility for classless characters (and more motivation to play them)<strong><br>Writing:</strong> Evocative and inspiring<strong><br>Art/design:</strong> <em>Mörk Borg</em> ambience in a more traditional style<strong><br>Usability:</strong> Clearly and linearly laid out</div>"
   plain_text_body: "Concept: “When getting better, if not using an optional class, you may instead gain a feat.”\nContent: Abilities that add versatility for classless characters (and more motivation to play them)\nWriting: Evocative and inspiring\nArt/design: Mörk Borg ambience in a more traditional style\nUsability: Clearly and linearly laid out"
+
+<% each_system_entry do |key, system, index| %>
+<% body = Faker::Books::Lovecraft.paragraphs %>
+<%= key %>_description:
+  record: <%= key %> (Entry)
+  name: description
+  body: <%= body.map { |p| "<p>#{p}</p>" }.join %>
+  plain_text_body: "<%= body.join("\n") %>"
+<% end %>
 
 # Tags
 rules_description:

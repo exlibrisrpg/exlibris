@@ -1,18 +1,23 @@
-categories_mork_borg:
+mork_borg_categories:
   name: Categories
   short_description_required: true
   system: mork_borg
-categories_mausritter:
+mausritter_categories:
   name: Categories
   short_description_required: true
   system: mausritter
 
-officialness:
+mork_borg_officialness:
   name: Officialness
   short_description_required: false
   system: mork_borg
 
-creators:
+mork_borg_creators:
   name: Creators
   short_description_required: false
   system: mork_borg
+
+mausritter_creators:
+  name: Creators
+  short_description_required: false
+  system: mausritter

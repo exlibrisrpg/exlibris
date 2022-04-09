@@ -29,13 +29,13 @@ class SearchTest < ActiveSupport::TestCase
 
     context "with filter_tag_slugs" do
       should "return entry query" do
-        rules_tag = tags(:rules_mork_borg)
+        rules_tag = tags(:mork_borg_rules)
         results = Search.new(system: systems(:mork_borg), filter_tag_slugs: [rules_tag.slug]).entries
-        assert_empty results.to_a.difference(tags(:rules_mork_borg).entries)
+        assert_empty results.to_a.difference(tags(:mork_borg_rules).entries)
       end
 
       should "return entries with all tags" do
-        slugs = [tags(:rules_mork_borg), tags(:johnny_carhat)].map(&:slug)
+        slugs = [tags(:mork_borg_rules), tags(:johnny_carhat)].map(&:slug)
         results = Search.new(system: systems(:mork_borg), filter_tag_slugs: slugs).entries
         assert_empty results.to_a.difference([entries(:unheroic_feats)])
       end
