@@ -1,15 +1,13 @@
 <% content_for(:title) do %><%= t(".title") %><% end %>
 
-<h1><%= t(".title") %></h1>
+<h1 class="tw-text-4xl tw-font-semibold tw-text-body-12"><%= t(".title") %></h1>
 
 <% @tag_categories.each do |tag_category| %>
-  <h2><%= tag_category.name %></h2>
+  <h2 class="tw-text-2xl tw-font-medium tw-text-body-12"><%= tag_category.name %></h2>
 
-  <div class="tw-flex tw-gap-4">
+  <div class="tw-flex tw-gap-4 tw-flex-wrap">
     <% tag_category.tags.each do |tag| %>
-      <em>
-        <%= link_to tag.name, tag %><small>(<%= tag.entries.count %>)</small>
-      </em>
+      <%= render TagComponent.new(tag: tag, count: tag.entries.count) %>
     <% end %>
   </div>
 <% end %>
