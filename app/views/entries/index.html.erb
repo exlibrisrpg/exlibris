@@ -1,4 +1,4 @@
-<h1><%= t(".title") %></h1>
+<h1 class="tw-text-4xl tw-font-semibold tw-text-primary-12"><%= t(".title") %></h1>
 
 <%= render "shared/paginate", page: @page, path: ->(next_page) {entries_path(page: next_page)}, class: "tw-flex tw-flex-col tw-gap-8" do %>
   <%= render EntryComponent.with_collection(@page.records) %>
