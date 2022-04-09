@@ -1,4 +1,4 @@
-<%= turbo_frame_tag "page_#{page.number}", target: "_top", style: "display: block;", class: local_assigns[:class] do %>
+<%= turbo_frame_tag "page_#{page.number}", target: "_top", class: local_assigns[:class] do %>
   <%= yield %>
 
   <% if !page.last? %>

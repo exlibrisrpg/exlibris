@@ -5,7 +5,7 @@ module LinksHelper
     {name: "Facebook", icon: :facebook, regex: /^(?:https?:\/\/)?(?:www\.)?facebook.com\/?/},
     {name: "Google", icon: :google, regex: /^(?:https?:\/\/)?(?:www\.)?google.com\/?/},
     {name: "Mörk Borg", icon: :morkborg, regex: /^(?:https?:\/\/)?(?:www\.)?morkborg.com\/?/},
-    {name: :match, icon: :link, regex: /^(?:https?:\/\/)?(?:www\.)?(?<name>[\w\d.]+)\/?/}
+    {name: :match, icon: :link, regex: /^(?:https?:\/\/)?(?:www\.)?(?<name>[\w\d\-.]+)\/?/}
   ]
 
   def link_name(link)
