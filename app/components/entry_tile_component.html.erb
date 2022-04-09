@@ -1,17 +1,17 @@
-<%= link_to entry do %>
-  <%= tag.div class: "tile", style: (entry.cover.attached? ? "--cover-image: url('#{cover_url}');" : "") do %>
-    <div class="tile--cover"></div>
-
-    <div class="tile--detail | imposter">
-      <div class="highlight-white tw-text-3xl">
-        <span data-controller="highlight"><%= entry.name %></span>
-      </div>
-
-      <div>
-        <% category_tags.each do |category| %>
-          <span data-controller="highlight"><%= category.name %></span>
-        <% end %>
-      </div>
-    </div>
+<%= link_to entry, class: "tw-font-body tw-h-64 tw-w-64 tw-bg-accent-4 tw-p-4 tw-relative tw-block" do %>
+  <% if entry.cover.attached? %>
+    <%= image_tag entry.cover, class: "tw-object-contain tw-w-full tw-h-full" %>
   <% end %>
+
+  <div class="tw-bottom-0 tw-left-0 tw-absolute tw-bg-accent-4/50 tw-p-2 tw-backdrop-blur tw-right-0">
+    <div class="tw-text-xl tw-text-accent-11">
+      <span><%= entry.name %></span>
+    </div>
+
+    <div class="tw-text-accent-11 tw-font-light">
+      <% category_tags.each do |category| %>
+        <span><%= category.name %></span>
+      <% end %>
+    </div>
+  </div>
 <% end %>
