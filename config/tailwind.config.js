@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
+const plugin = require("tailwindcss/plugin")
 
 function withOpacityValue(variable) {
   return ({ opacityValue }) => {
@@ -52,6 +53,14 @@ module.exports = {
       strategy: "class"
     }),
     require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/typography")
+    require("@tailwindcss/typography"),
+    plugin(function ({ addVariant }) {
+      addVariant("busy", "&[busy]")
+      addVariant("group-busy", ":merge(.group)[busy] &")
+      addVariant("peer-busy", "[busy] ~ &")
+      addVariant("disabled", "&[disabled]")
+      addVariant("group-disabled", ":merge(.group)[disabled] &")
+      addVariant("peer-disabled", "[disabled] ~ &")
+    })
   ]
 }

@@ -86,6 +86,12 @@ en:
     credits:
       title: Credits
 
+  pagination_component:
+    current_page: Page %{number} of %{count}
+    previous_page: Previous page
+    next_page: Next page
+    loading: Loading next page...
+
   searches:
     show:
       title: Search

@@ -1,0 +1,27 @@
+<%= turbo_frame_tag current_page.id, target: "_top", class: "tw-group" do %>
+  <div class="tw-flex tw-flex-col tw-gap-8">
+    <%= body %>
+
+    <% if next_page %>
+      <%= turbo_frame_tag next_page.id, target: "_top", src: next_page.path, loading: "lazy", class: "tw-group tw-invisible busy:tw-visible disabled:tw-visible", data: { controller: "frame", action: "turbo:frame-load->frame#disable" } do %>
+        <div class="center tw-hidden group-busy:tw-block group-focus:tw-block">
+          <div class="tw-font-body tw-animate-pulse tw-bg-accent-2 tw-p-4 tw-rounded tw-border tw-border-accent-6 tw-text-accent-11 tw-font-light">
+            <%= tag.span t(".loading") %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+
+    <div class="peer-busy:tw-hidden peer-disabled:tw-hidden group-disabled:tw-hidden">
+      <div class="tw-flex tw-gap-4 tw-justify-center tw-font-body">
+        <% if previous_page %>
+          <%= link_to t(".previous_page"), previous_page.path %>
+        <% end %>
+        <%= tag.span t(".current_page", number: current_page.number, count: total_pages) %>
+        <% if next_page %>
+          <%= link_to t(".next_page"), next_page.path %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
