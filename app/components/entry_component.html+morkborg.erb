@@ -13,27 +13,25 @@
 
       <% if creator_tags.any? %>
         <% if creator_tags.count > 5 %>
-          <details class="tw-flex tw-flex-col tw-gap-3">
-            <summary>
-              <div class="tw-flex tw-gap-4">
-                <em><%= t ".many_contributors", count: creator_tags.count %></em>
-              </div>
+          <details class="tw-group">
+            <summary class="group-open:tw-mb-3">
+              <em><%= t ".many_contributors", count: creator_tags.count %></em>
             </summary>
-            <div class="tw-flex tw-gap-4">
+            <div class="tw-flex tw-gap-4 tw-flex-wrap">
               <%= render partial: "tags/tag", collection: creator_tags %>
             </div>
           </details>
         <% else %>
-          <div class="tw-flex tw-gap-4">
+          <div class="tw-flex tw-gap-4 tw-flex-wrap">
             <%= render partial: "tags/tag", collection: creator_tags %>
           </div>
         <% end %>
       <% end %>
 
-    <%= render RichTextComponent.new(rich_text: entry.description) %>
+      <%= render RichTextComponent.new(rich_text: entry.description) %>
 
       <% if non_creator_tags.any? %>
-        <div class="tw-flex tw-gap-4">
+        <div class="tw-flex tw-gap-4 tw-flex-wrap">
           <% non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
             <% if index > 0 %><span>&mdash;</span><% end %>
             <%= render partial: "tags/tag", collection: tags %>
@@ -42,13 +40,8 @@
       <% end %>
 
       <% if entry.links.any? %>
-        <div class="tw-flex tw-gap-4">
-          <% entry.links.each do |link| %>
-            <%= highlight_link_to link.address, class: "with-icon" do %>
-              <%= icon_tag link_icon(link) %>
-              <%= link_name(link) %>
-            <% end %>
-          <% end %>
+        <div class="tw-flex tw-gap-4 tw-flex-wrap">
+          <%= render Entry::LinkComponent.with_collection(entry.links.map(&:address)) %>
         </div>
       <% end %>
     </div>
