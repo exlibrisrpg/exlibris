@@ -1,1 +1,5 @@
-<%= link_to label, path, class: css_class %>
+<% if path %>
+  <%= link_to label, path, class: css_class %>
+<% else %>
+  <%= tag.span label, class: css_class %>
+<% end %>

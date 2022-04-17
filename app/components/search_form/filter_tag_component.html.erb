@@ -1,0 +1,7 @@
+<li id="<%= id %>" role="option" class="tw-py-0.5 tw-px-1.5 tw-text-sm tw-rounded aria-selected:tw-bg-accent-5 focus-within:tw-bg-accent-5 tw-text-accent-11 tw-transition tw-flex tw-gap-1 tw-justify-between tw-border-accent-7 tw-border tw-font-light" data-combobox-target="option" aria-selected="<%= selected %>">
+  <%= name %>
+  <%= hidden_field_tag "tags[]", slug %>
+  <button type="button" class="group-disabled:tw-hidden tw-outline-none tw-text-current" data-action="click->combobox#remove">
+    <%= render IconComponent.new(type: :cross) %>
+  </button>
+</li>

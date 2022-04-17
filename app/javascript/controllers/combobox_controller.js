@@ -3,10 +3,13 @@ import Combobox from "@github/combobox-nav"
 
 export default class extends Controller {
   static classes = ["hidden"]
-  static targets = ["collection", "input", "list"]
+  static targets = ["collection", "input", "list", "option"]
+  static values = { opened: Boolean }
 
   connect() {
-    this.stop()
+    if (!this.openedValue) {
+      this.stop()
+    }
   }
 
   disconnect() {
@@ -16,15 +19,23 @@ export default class extends Controller {
   start() {
     this.combobox?.destroy()
 
-    this.listTarget.classList.remove(this.hiddenClass)
-    this.combobox = new Combobox(this.inputTarget, this.listTarget)
-    this.combobox.start()
+    if (this.hasListTarget) {
+      this.listTarget.classList.remove(this.hiddenClass)
+      this.combobox = new Combobox(this.inputTarget, this.listTarget)
+      this.combobox.start()
+
+      if (this.hasOptionTarget) {
+        this.optionTarget.removeAttribute("aria-selected")
+      }
+    }
   }
 
   stop() {
-    this.listTarget.classList.add(this.hiddenClass)
-    this.combobox?.stop()
-    this.dispatch("stopped")
+    if (this.hasListTarget) {
+      this.listTarget.classList.add(this.hiddenClass)
+      this.combobox?.stop()
+      this.dispatch("stopped")
+    }
   }
 
   add(event) {
@@ -33,6 +44,7 @@ export default class extends Controller {
     option.querySelectorAll("svg.rough-annotation").forEach((annotation) => {
       annotation.remove()
     })
+    option.removeAttribute("aria-selected")
     this.collectionTarget.append(option)
 
     // Reset the combobox

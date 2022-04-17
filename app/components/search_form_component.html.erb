@@ -1,0 +1,34 @@
+<%= form_with model: search, url: search_path, method: :get, data: { controller: "combobox form", "form-target": "form", "form-submit-frame-value": "searchTagResults", action: "combobox-commit->combobox#add", "combobox-hidden-class": "tw-invisible", "combobox-opened-value": opened } do |form| %>
+  <div class="tw-flex tw-flex-wrap tw-gap-4">
+    <div class="tw-flex-grow-[9999] tw-min-w-fit">
+      <div class="tw-flex tw-bg-accent-1 tw-p-1 tw-rounded tw-text-accent-11 focus-within:tw-ring tw-ring-accent-5 tw-transition tw-duration-300 tw-flex-wrap tw-gap-2">
+        <%= form.label :query, class: "tw-flex-grow tw-flex tw-items-center tw-gap-2 tw-flex-shrink-0" do %>
+          <%= render IconComponent.new(type: :search) %>
+
+          <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, class: "tw-bg-transparent tw-text-accent-12 placeholder:tw-text-accent-11 tw-outline-none tw-font-light", autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start blur->combobox#stop input->form#submit" } %>
+        <% end %>
+
+        <ul role="list" data-combobox-target="collection" class="tw-flex tw-gap-2 tw-flex-shrink-0 tw-items-center">
+          <li class="only:tw-hidden tw-text-sm tw-select-none">Tags:</li>
+          <%= render SearchForm::FilterTagComponent.with_collection(search.filter_tags) %>
+        </ul>
+      </div>
+
+      <turbo-frame id="searchTagResults" class="tw-relative tw-block empty:tw-opacity-0 tw-transition-opacity">
+        <% if search.tags.any? %>
+          <fieldset disabled class="tw-group tw-absolute tw-w-full tw-top-1" style="z-index: 1;">
+            <ul role="listbox" data-combobox-target="list" class="tw-invisible tw-flex tw-flex-col tw-gap-1 tw-p-1 tw-bg-accent-4 tw-rounded tw-shadow-md tw-shadow-accent-3 empty:tw-hidden">
+              <%= render SearchForm::FilterTagComponent.with_collection(search.tags) %>
+            </ul>
+          </fieldset>
+        <% end %>
+      </turbo-frame>
+    </div>
+
+    <div class="tw-flex tw-flex-grow tw-gap-4">
+      <%= form.button t(".search"), name: "search", data: { "form-target": "submit" }, class: "tw-button tw-button-accent tw-flex-1" %>
+
+      <%= form.button t(".random"), name: "random", data: { turbo: false }, class: "tw-button tw-button-accent tw-flex-1" %>
+    </div>
+  </div>
+<% end %>

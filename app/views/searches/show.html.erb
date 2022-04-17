@@ -1,11 +1,11 @@
 <% content_for(:title) do %><%= t(".title") %><% end %>
 
 <% content_for :banner do %>
-  <div class="tw-bg-secondary-3 tw-text-secondary-12" data-controller="combobox" data-action="combobox-commit->combobox#add" data-combobox-hidden-class="hidden">
+  <div class="tw-bg-secondary-3 tw-text-secondary-12">
     <div class="container | centre tw-flex tw-flex-col tw-gap-8 | align-center tw-p-8">
       <h1 class="tw-font-display tw-text-6xl"><%= t(".title") %></h1>
 
-      <%= render partial: "form", locals: { search: @search } %>
+      <%= render SearchFormComponent.new(search: @search) %>
     </div>
   </div>
 <% end %>

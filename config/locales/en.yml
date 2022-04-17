@@ -16,9 +16,6 @@ en:
       entry:
         create: Create Entry
         update: Update Entry
-      search:
-        create: Search
-        random: Random
       tag:
         create: Create Tag
         update: Update Tag
@@ -99,3 +96,7 @@ en:
   tags:
     index:
       title: All Tags
+
+  search_form_component:
+    random: Random
+    search: Search

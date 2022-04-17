@@ -23,12 +23,12 @@ module.exports = {
     "./app/components/**/*.{erb,rb}",
     "./app/helpers/**/*.rb",
     "./app/javascript/**/*.js",
-    "./app/views/**/*.erb"
+    "./app/views/**/{*,_*}.erb"
   ],
   theme: {
     colors: {
       inherit: "inherit",
-      current: "current",
+      current: "currentColor",
       transparent: "transparent",
       black: "black",
       white: "white",
@@ -61,6 +61,7 @@ module.exports = {
       addVariant("disabled", "&[disabled]")
       addVariant("group-disabled", ":merge(.group)[disabled] &")
       addVariant("peer-disabled", "[disabled] ~ &")
+      addVariant("aria-selected", "&[aria-selected=true]")
     })
   ]
 }
