@@ -4,7 +4,7 @@ class EntriesTest < ApplicationSystemTestCase
   test "show all entries" do
     visit entries_path
 
-    assert_text entries(:eat_prey_kill).name
+    assert_text current_system.entries.last.name
   end
 
   test "infinite scroll all entries" do
@@ -24,7 +24,7 @@ class EntriesTest < ApplicationSystemTestCase
   end
 
   test "view an entry" do
-    entry = entries(:eat_prey_kill)
+    entry = current_system.entries.last
 
     visit entry_path(entry)
 
