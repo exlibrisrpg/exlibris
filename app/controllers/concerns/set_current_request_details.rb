@@ -15,10 +15,16 @@ module SetCurrentRequestDetails
   def requested_system
     scope = current_user.present? ? System.all : System.live
 
-    if request.subdomain.present? && request.subdomain != "www"
-      scope.find_by!(slug: request.subdomain)
+    scope.find_by!(slug: current_subdomain)
+  end
+
+  def current_subdomain
+    if Rails.env.test? && ENV["RAILS_SYSTEM_TEST_SUBDOMAIN"].present?
+      ENV["RAILS_SYSTEM_TEST_SUBDOMAIN"]
+    elsif request.subdomain.present? && request.subdomain != "www"
+      request.subdomain
     else
-      scope.find_by!(name: "Mörk Borg")
+      "morkborg"
     end
   end
 end

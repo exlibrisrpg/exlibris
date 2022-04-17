@@ -12,6 +12,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        system-slug:
+          - morkborg
+          - mausritter
+
     services:
       postgres:
         image: postgres
@@ -60,11 +66,30 @@ jobs:
       run: |
         bin/setup
 
-    - name: Run CI
+    - name: Prepare test environment
       env:
         PGHOST: localhost
         PGUSER: postgres
         PGPASSWORD: postgres
         RAILS_ENV: test
       run: |
-        bin/ci
+        bin/rails test:prepare
+
+    - name: Run unit tests
+      env:
+        PGHOST: localhost
+        PGUSER: postgres
+        PGPASSWORD: postgres
+        RAILS_ENV: test
+      run: |
+        bin/rails test
+
+    - name: Run system tests
+      env:
+        PGHOST: localhost
+        PGUSER: postgres
+        PGPASSWORD: postgres
+        RAILS_ENV: test
+        RAILS_SYSTEM_TEST_SUBDOMAIN: ${{ matrix.system-slug }}
+      run: |
+        bin/rails test:system

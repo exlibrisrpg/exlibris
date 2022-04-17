@@ -12,21 +12,21 @@
 # Officialness
 mork_borg_cult:
   name: Mörk Borg Cult
-  tag_category: mork_borg_officialness
+  tag_category: morkborg_officialness
   slug: mork-borg-cult
-  system: mork_borg
+  system: morkborg
 
 # Creators
 johan_nohr:
   name: Johan Nohr
-  tag_category: mork_borg_creators
+  tag_category: morkborg_creators
   slug: johan-nohr
-  system: mork_borg
+  system: morkborg
 johnny_carhat:
   name: Johnny Carhat
-  tag_category: mork_borg_creators
+  tag_category: morkborg_creators
   slug: johnny-carhat
-  system: mork_borg
+  system: morkborg
 <% systems.each do |system| %>
 <% 20.times do |index| %>
 <% name = Faker::Name.name %>

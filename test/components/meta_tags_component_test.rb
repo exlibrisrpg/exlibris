@@ -50,7 +50,7 @@ class MetaTagsComponentTest < ViewComponent::TestCase
       entry = Entry.create(
         name: "Eat, Prey, Kill",
         description: "A <strong>vile</strong> and <em>evil</em> thought.",
-        system: systems(:mork_borg)
+        system: systems(:morkborg)
       )
 
       expected_html = <<~HTML
@@ -79,7 +79,7 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         entry = Entry.create(
           name: "Eat, Prey, Kill",
           description: "A <strong>vile</strong> and <em>evil</em> thought.",
-          system: systems(:mork_borg)
+          system: systems(:morkborg)
         )
         entry.cover.attach(io: File.open("test/fixtures/files/eatpreykill.png"), filename: "eatpreykill.png", content_type: "image/png")
 
@@ -106,7 +106,7 @@ class MetaTagsComponentTest < ViewComponent::TestCase
 
   context "with a tag" do
     should "render correct meta tags" do
-      tag_category = tag_categories(:mork_borg_categories)
+      tag_category = tag_categories(:morkborg_categories)
       tag = Tag.create(
         name: "Alternative Rules",
         short_description: "Play by them, you fool",

@@ -6,13 +6,13 @@ honey_in_the_rafters:
 # Mörk Borg
 eat_prey_kill:
   name: Eat, Prey, Kill
-  tags: mork_borg_rules, mork_borg_cult, johan_nohr
-  system: mork_borg
+  tags: morkborg_rules, morkborg_cult, johan_nohr
+  system: morkborg
 
 unheroic_feats:
   name: Unheroic Feats
-  tags: mork_borg_rules, mork_borg_cult, johan_nohr, johnny_carhat
-  system: mork_borg
+  tags: morkborg_rules, mork_borg_cult, johan_nohr, johnny_carhat
+  system: morkborg
 
 <% each_system_entry do |key, system, index| %>
 <%= key %>:

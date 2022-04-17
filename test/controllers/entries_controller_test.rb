@@ -11,7 +11,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
     should "assign page with all Mörk Borg entries" do
       get entries_path
 
-      assert_equal systems(:mork_borg).entries.by_name.with_includes, assigns[:page].recordset.records
+      assert_equal systems(:morkborg).entries.by_name.with_includes, assigns[:page].recordset.records
     end
 
     context "with a recognised subdomain" do
