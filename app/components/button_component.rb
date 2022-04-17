@@ -1,7 +1,7 @@
 class ButtonComponent < ViewComponent::Base
   attr_reader :label, :path
 
-  def initialize(label:, path:, type: :primary)
+  def initialize(label:, path: nil, type: :primary)
     @label = label
     @path = path
     @type = type

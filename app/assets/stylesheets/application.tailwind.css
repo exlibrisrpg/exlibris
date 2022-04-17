@@ -23,8 +23,7 @@
 }
 
 @layer components {
-  .tw-button,
-  .tw-button-primary {
+  .tw-button {
     @apply
       tw-font-light
       tw-px-2
@@ -34,6 +33,9 @@
       tw-transition
       focus:tw-ring
       tw-outline-none;
+  }
+
+  .tw-button-primary {
     @apply
       tw-bg-primary-3 hover:tw-bg-primary-4 active:tw-bg-primary-5 tw-border-primary-6 hover:tw-border-primary-7 active:tw-border-primary-7 tw-ring-primary-5 tw-text-primary-11;
   }

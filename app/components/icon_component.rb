@@ -6,7 +6,7 @@ class IconComponent < ViewComponent::Base
   end
 
   def call
-    helpers.inline_svg_tag path, class: "tw-flex-shrink-0 tw-w-5 tw-h-5"
+    helpers.inline_svg_tag path, class: "tw-flex-shrink-0"
   end
 
   def path

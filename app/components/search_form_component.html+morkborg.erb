@@ -1,9 +1,9 @@
-<%= form_with model: search, url: search_path, method: :get, class: "search", data: { controller: "form", "form-target": "form", "form-submit-frame-value": "searchTagResults" } do |form| %>
+<%= form_with model: search, url: search_path, method: :get, class: "search", data: { controller: "combobox form", "form-target": "form", "form-submit-frame-value": "searchTagResults", action: "combobox-commit->combobox#add", "combobox-hidden-class": "hidden" } do |form| %>
   <div class="tw-flex tw-gap-4 tw-flex-wrap tw-font-body">
     <div class="highlight-white | tw-flex-grow tw-flex tw-gap-4">
       <div class="tw-flex tw-flex-grow tw-items-center tw-flex-wrap" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
         <%= form.label :query, class: "tw-w-1/2 tw-flex tw-flex-grow tw-flex-shrink-0 tw-gap-2 tw-items-center" do %>
-          <%= icon_tag :search %>
+          <%= render IconComponent.new(type: :search) %>
 
           <div class="relative tw-flex-grow">
             <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, class: "tw-text-primary-12", autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
