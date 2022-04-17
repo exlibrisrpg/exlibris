@@ -17,7 +17,7 @@ class TagPolicyTest < ActiveSupport::TestCase
     assert_permit users(:curator), Tag, :index
     assert_permit users(:curator), Tag, :new
 
-    curated_tag = tags(:mork_borg_rules)
+    curated_tag = tags(:morkborg_rules)
     assert_permit users(:curator), curated_tag, :show
     assert_permit users(:curator), curated_tag, :create
     assert_permit users(:curator), curated_tag, :update

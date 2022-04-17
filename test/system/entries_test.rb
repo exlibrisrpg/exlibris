@@ -4,7 +4,7 @@ class EntriesTest < ApplicationSystemTestCase
   test "show all entries" do
     visit entries_path
 
-    assert_text current_system.entries.last.name
+    assert_text current_system.entries.by_name.first.name
   end
 
   test "infinite scroll all entries" do
@@ -13,7 +13,7 @@ class EntriesTest < ApplicationSystemTestCase
         {
           name: "Example Entry #{i}",
           description: "Placeholder description",
-          system: systems(:mork_borg)
+          system: current_system
         }
       end
     )
