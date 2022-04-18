@@ -24,7 +24,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "prettier": "^2.6.1",
-    "stylelint": "^14.6.1",
+    "stylelint": "^14.7.1",
     "stylelint-config-standard-scss": "^3.0.0"
   }
 }
