@@ -8,7 +8,7 @@
   </div>
 
   <div class="tw-flex tw-flex-col tw-gap-3">
-    <h2 class="tw-text-2xl tw-font-semibold tw-text-primary-12"><%= link_to entry.name, entry %></h2>
+    <h2 class="tw-text-2xl tw-font-semibold tw-text-primary-12"><%= link_to name, entry %></h2>
 
     <% if creator_tags.any? %>
       <% if creator_tags.count > 5 %>
@@ -27,7 +27,7 @@
       <% end %>
     <% end %>
 
-    <%= render RichTextComponent.new(rich_text: entry.description) %>
+    <%= render RichTextComponent.new(rich_text: entry.description, search_term: search_term) %>
 
     <% if non_creator_tags.any? %>
       <div class="tw-flex tw-gap-4 tw-flex-wrap">

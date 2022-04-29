@@ -3,6 +3,11 @@ class EntryComponentPreview < ViewComponent::Preview
     render(EntryComponent.new(entry: entry))
   end
 
+  # @param search_term text
+  def with_search_term(search_term: "example")
+    render(EntryComponent.new(entry: entry, search_term: search_term))
+  end
+
   def many_creators
     render(EntryComponent.new(entry: entry({tags: [
       tag("Creator #1", "Creators"),

@@ -26,9 +26,9 @@
     </div>
 
     <div class="tw-flex tw-flex-grow tw-gap-4">
-      <%= form.button t(".search"), name: "search", data: { "form-target": "submit" }, class: "tw-button tw-button-accent tw-flex-1" %>
+      <%= form.button t(".search"), name: "search", type: "submit", data: { "form-target": "submit" }, class: "tw-button tw-button-accent tw-flex-1" %>
 
-      <%= form.button t(".random"), name: "random", data: { turbo: false }, class: "tw-button tw-button-accent tw-flex-1" %>
+      <%= form.button t(".random"), name: "random", type: "button", data: { turbo: false }, class: "tw-button tw-button-accent tw-flex-1" %>
     </div>
   </div>
 <% end %>

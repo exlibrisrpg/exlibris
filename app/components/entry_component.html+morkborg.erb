@@ -1,4 +1,4 @@
-<div id="<%= dom_id entry %>" class="with-sidebar | tw-font-body">
+<div id="<%= dom_id entry %>" class="with-sidebar | tw-font-body" <% if search_term.present? %>data-controller="search-highlights"<% end %>>
   <div>
     <div style="width: max(25%, 16rem)">
       <% if entry.cover.attached? %>
@@ -28,7 +28,7 @@
         <% end %>
       <% end %>
 
-      <%= render RichTextComponent.new(rich_text: entry.description) %>
+      <%= render RichTextComponent.new(rich_text: entry.description, search_term: search_term) %>
 
       <% if non_creator_tags.any? %>
         <div class="tw-flex tw-gap-4 tw-flex-wrap">

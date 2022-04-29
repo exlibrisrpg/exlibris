@@ -6,7 +6,7 @@ class SearchTest < ApplicationSystemTestCase
 
     within "form" do
       fill_in Search.model_name.human, with: "hunting"
-      click_on I18n.t("helpers.submit.search.create")
+      click_on I18n.t("search_form_component.search")
     end
 
     assert_text entries(:eat_prey_kill).name
@@ -35,7 +35,7 @@ class SearchTest < ApplicationSystemTestCase
 
     within "form" do
       fill_in Search.model_name.human, with: "hunting"
-      click_on I18n.t("helpers.submit.search.random")
+      click_on I18n.t("search_form_component.random")
     end
 
     refute_selector "h1", text: I18n.t("searches.show.title")
@@ -48,7 +48,7 @@ class SearchTest < ApplicationSystemTestCase
     within "form" do
       fill_in Search.model_name.human, with: "joh"
       find("li", text: tags(:johan_nohr).name).click
-      click_on I18n.t("helpers.submit.search.create")
+      click_on I18n.t("search_form_component.search")
     end
 
     assert_selector "input[type=\"hidden\"][name=\"tags[]\"][value=\"#{tags(:johan_nohr).slug}\"]", visible: false
@@ -61,7 +61,7 @@ class SearchTest < ApplicationSystemTestCase
       fill_in Search.model_name.human, with: "joh"
       find(:fillable_field, Search.model_name.human).send_keys(:down)
       find(:fillable_field, Search.model_name.human).send_keys(:enter)
-      click_on I18n.t("helpers.submit.search.create")
+      click_on I18n.t("search_form_component.search")
     end
 
     assert_selector "input[type=\"hidden\"][name=\"tags[]\"][value=\"#{tags(:johan_nohr).slug}\"]", visible: false
