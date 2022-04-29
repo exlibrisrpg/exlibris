@@ -5,7 +5,8 @@ module SearchHelper
     if text.blank? || phrases.blank?
       text || ""
     else
-      match = Array(phrases).map do |p|
+      match_phrases = Array(phrases).flat_map { |phrase| phrase.split(" ") }
+      match = match_phrases.map do |p|
         ActiveSupport::Inflector.transliterate(p).downcase
       end.map do |p|
         Regexp === p ? p.to_s : Regexp.escape(p)

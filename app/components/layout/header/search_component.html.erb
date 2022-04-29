@@ -1,8 +1,8 @@
-<nav id="nav-search" class="highlight-white" data-turbo-permanent>
-  <%= form_with model: @search, url: search_path, method: :get, class: "tw-w-full", data: { controller: "highlight" } do |form| %>
-    <%= form.label :query, class: "tw-w-full tw-flex tw-gap-2 tw-items-center" do %>
+<nav id="nav-search" data-turbo-permanent>
+  <%= form_with model: @search, url: search_path, method: :get, class: "tw-w-full"  do |form| %>
+    <%= form.label :query, class: "tw-w-full tw-flex tw-gap-2 tw-items-center tw-bg-accent-3 tw-py-1 tw-px-2 tw-rounded-full focus-within:tw-ring tw-ring-accent-7 tw-transition" do %>
       <%= search_icon %>
-      <%= form.text_field :query, name: :query, placeholder: placeholder, class: "tw-bg-transparent" %>
+      <%= form.text_field :query, name: :query, placeholder: placeholder, class: "tw-bg-transparent tw-outline-none placeholder:tw-text-accent-11/50 tw-text-accent-12 tw-font-light" %>
     <% end %>
   <% end %>
 </nav>

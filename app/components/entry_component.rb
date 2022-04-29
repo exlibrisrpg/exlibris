@@ -3,11 +3,16 @@ class EntryComponent < ViewComponent::Base
   include HighlightHelper
   include LinksHelper
 
-  def initialize(entry:)
+  attr_reader :entry, :search_term
+
+  def initialize(entry:, search_term: nil)
     @entry = entry
+    @search_term = search_term
   end
 
-  attr_reader :entry
+  def name
+    render HighlighterComponent.new(text: entry.name, phrases: search_term)
+  end
 
   def creator_tags
     @creator_tags ||= entry.tags.select(&:creator?)

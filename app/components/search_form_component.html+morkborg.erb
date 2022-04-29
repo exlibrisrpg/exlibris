@@ -2,7 +2,7 @@
   <div class="tw-flex tw-gap-4 tw-flex-wrap tw-font-body">
     <div class="highlight-white | tw-flex-grow tw-flex tw-gap-4">
       <div class="tw-flex tw-flex-grow tw-items-center tw-flex-wrap" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
-        <%= form.label :query, class: "tw-w-1/2 tw-flex tw-flex-grow tw-flex-shrink-0 tw-gap-2 tw-items-center" do %>
+        <%= form.label :query, class: "tw-w-1/2 tw-flex tw-flex-grow tw-flex-shrink-0 tw-gap-2 tw-items-center tw-text-secondary-1" do %>
           <%= render IconComponent.new(type: :search) %>
 
           <div class="relative tw-flex-grow">
@@ -31,11 +31,11 @@
 
     <div class="tw-flex tw-gap-4 tw-w-60 tw-flex-grow">
       <div class="highlight-yellow hover-highlight-white | tw-flex-grow">
-        <%= form.submit name: "search", class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
+        <%= form.button t(".search"), name: "search", type: "submit", class: "search--submit tw-text-primary-12 tw-w-full", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
       </div>
 
       <div class="highlight-yellow hover-highlight-white | tw-flex-grow">
-        <%= form.submit name: "random", value: I18n.t("helpers.submit.search.random"), class: "search--submit tw-text-primary-12", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
+        <%= form.button t(".random"), name: "random", type: "submit", class: "search--submit tw-text-primary-12 tw-w-full", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
       </div>
     </div>
   </div>
