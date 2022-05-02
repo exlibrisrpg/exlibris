@@ -13,7 +13,12 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Post release message
+      run: |
+        jq -f .github/workflows/release_template.jq '${{ github.event_path }}' | curl -H "Content-Type: application/json" -X POST --data-binary @- $DISCORD_WEBHOOK
+
     - name: Deploy to Heroku
+      if: false
       run: |
         git remote add production https://:$HEROKU_API_KEY@git.heroku.com/exlibris-production.git
         git push production $GITHUB_REF:refs/heads/main
