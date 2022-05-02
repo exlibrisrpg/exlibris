@@ -16,6 +16,8 @@ jobs:
     - name: Post release message
       run: |
         jq -f .github/workflows/release_template.jq '${{ github.event_path }}' | curl -H "Content-Type: application/json" -X POST --data-binary @- $DISCORD_WEBHOOK
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
     - name: Deploy to Heroku
       if: false
