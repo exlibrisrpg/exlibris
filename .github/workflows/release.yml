@@ -20,7 +20,6 @@ jobs:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
     - name: Deploy to Heroku
-      if: false
       run: |
         git remote add production https://:$HEROKU_API_KEY@git.heroku.com/exlibris-production.git
         git push production $GITHUB_REF:refs/heads/main
