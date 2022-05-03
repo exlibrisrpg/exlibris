@@ -40,6 +40,12 @@ module.exports = {
       brand: "var(--font-family--brand)",
       body: "var(--font-family--body)",
       display: "var(--font-family--display)"
+    },
+    container: {
+      screens: {
+        DEFAULT: "100%",
+        lg: "1024px"
+      }
     }
   },
   // Prefix all classes with tw-* for now to ensure no collisions with the

@@ -2,8 +2,8 @@
 
 <% content_for :banner do %>
   <div class="tw-bg-secondary-3 tw-text-secondary-12">
-    <div class="container | centre tw-flex tw-flex-col tw-gap-8 | align-center tw-p-8">
-      <h1 class="tw-font-display tw-text-6xl"><%= t(".title") %></h1>
+    <div class="tw-container tw-mx-auto tw-flex tw-flex-col tw-gap-8 tw-px-4 tw-py-8">
+      <h1 class="tw-font-display tw-text-6xl tw-text-center"><%= t(".title") %></h1>
 
       <%= render SearchFormComponent.new(search: @search) %>
     </div>
