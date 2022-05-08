@@ -13,6 +13,10 @@ class SystemTest < ActiveSupport::TestCase
     should validate_presence_of(:name)
   end
 
+  context "attributes" do
+    should have_rich_text(:footer)
+  end
+
   context "after_create" do
     should "populate a slug" do
       system = System.create(name: "John's cynical OSR cash-in")
