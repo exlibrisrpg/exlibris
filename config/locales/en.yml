@@ -1,8 +1,4 @@
 en:
-  application:
-    name: Ex Libris Mörk Borg
-    tagline: A directory of content, tools, and resources
-
   activerecord:
     errors:
       models:

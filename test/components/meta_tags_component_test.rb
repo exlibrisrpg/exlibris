@@ -16,10 +16,12 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <meta name="twitter:card" content="summary_large_image">
       HTML
 
-      assert_equal(
-        expected_html,
-        render_inline(MetaTagsComponent.new(target: nil)).to_html
-      )
+      Current.set(system: systems(:mork_borg)) do
+        assert_equal(
+          expected_html,
+          render_inline(MetaTagsComponent.new(target: nil)).to_html
+        )
+      end
     end
   end
 
@@ -38,10 +40,12 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <meta name="twitter:card" content="summary_large_image">
       HTML
 
-      assert_equal(
-        expected_html,
-        render_inline(MetaTagsComponent.new(target: nil, title: "About", url: "http://test.host/about")).to_html
-      )
+      Current.set(system: systems(:mork_borg)) do
+        assert_equal(
+          expected_html,
+          render_inline(MetaTagsComponent.new(target: nil, title: "About", url: "http://test.host/about")).to_html
+        )
+      end
     end
   end
 
@@ -66,10 +70,12 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <meta name="twitter:card" content="summary_large_image">
       HTML
 
-      assert_equal(
-        expected_html,
-        render_inline(MetaTagsComponent.new(target: entry)).to_html
-      )
+      Current.set(system: systems(:mork_borg)) do
+        assert_equal(
+          expected_html,
+          render_inline(MetaTagsComponent.new(target: entry)).to_html
+        )
+      end
     end
   end
 
@@ -96,10 +102,12 @@ class MetaTagsComponentTest < ViewComponent::TestCase
           <meta name="twitter:card" content="summary_large_image">
         HTML
 
-        assert_equal(
-          expected_html,
-          render_inline(MetaTagsComponent.new(target: entry)).to_html
-        )
+        Current.set(system: systems(:mork_borg)) do
+          assert_equal(
+            expected_html,
+            render_inline(MetaTagsComponent.new(target: entry)).to_html
+          )
+        end
       end
     end
   end
@@ -128,10 +136,12 @@ class MetaTagsComponentTest < ViewComponent::TestCase
         <meta name="twitter:card" content="summary_large_image">
       HTML
 
-      assert_equal(
-        expected_html,
-        render_inline(MetaTagsComponent.new(target: tag)).to_html
-      )
+      Current.set(system: systems(:mork_borg)) do
+        assert_equal(
+          expected_html,
+          render_inline(MetaTagsComponent.new(target: tag)).to_html
+        )
+      end
     end
   end
 end

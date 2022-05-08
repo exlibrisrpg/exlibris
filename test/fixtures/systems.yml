@@ -1,14 +1,17 @@
 cy_borg:
   name: CY_BORG
-  slug: cy-borg
+  slug: cyborg
+  tagline: A directory of content, tools, and resources
   live: false
 
 mausritter:
   name: Mausritter
   slug: mausritter
+  tagline: A directory of content, tools, and resources
   live: true
 
 mork_borg:
   name: Mörk Borg
   slug: morkborg
+  tagline: A directory of content, tools, and resources
   live: true

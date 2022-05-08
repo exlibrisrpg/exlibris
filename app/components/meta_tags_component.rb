@@ -17,9 +17,9 @@ class MetaTagsComponent < ViewComponent::Base
 
   def default_meta_tags
     {
-      site: t("application.name"),
+      site: Current.system&.full_name,
       title: title,
-      description: t("application.tagline"),
+      description: Current.system&.tagline,
       reverse: true,
       image_src: asset_url("exlibris_yellow_social.jpg"),
       canonical: canonical,
@@ -41,7 +41,7 @@ class MetaTagsComponent < ViewComponent::Base
   end
 
   def title
-    @title || t("application.name")
+    @title || Current.system&.full_name || "Ex Libris"
   end
 
   def canonical
