@@ -7,6 +7,8 @@ class System < ApplicationRecord
   has_many :tags
   has_many :tag_categories
 
+  has_rich_text :footer
+
   validates :name, presence: true
 
   scope :live, -> { where(live: true) }

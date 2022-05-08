@@ -25,3 +25,14 @@ rules_description:
   record: rules (Tag)
   name: description
   body: <div>Optional and alternative rules.</div>
+
+# Systems
+morkborg_footer:
+  record: mork_borg (System)
+  name: footer
+  body: |
+    <div>
+      <p>Ex Libris Mörk Borg, ELMB annotations, and Ex Libris RPG are &copy; 2020&mdash;2021 Walton Wood (except where noted otherwise). Additional writing by John Bannister.</p>
+      <p>Unless otherwise noted, the products presented here are independent productions by their respective authors/publishers and are not affiliated with Ockult Örtmästare Games or Stockholm Kartell. They are published under the MÖRK BORG Third Party License.</p>
+      <p>MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.</p>
+    </div>
