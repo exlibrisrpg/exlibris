@@ -255,7 +255,8 @@ CREATE TABLE public.systems (
     slug character varying,
     created_at timestamp(6) without time zone NOT NULL,
     updated_at timestamp(6) without time zone NOT NULL,
-    live boolean DEFAULT false
+    live boolean DEFAULT false,
+    tagline text
 );
 
 
@@ -728,6 +729,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220212101814'),
 ('20220212165647'),
 ('20220212165729'),
-('20220314170838');
+('20220314170838'),
+('20220508055731');
 
 

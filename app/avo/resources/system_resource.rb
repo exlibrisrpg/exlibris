@@ -5,6 +5,7 @@ class SystemResource < Avo::BaseResource
   end
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
+  field :tagline, as: :text
   field :slug, as: :text
   field :live, as: :boolean
 

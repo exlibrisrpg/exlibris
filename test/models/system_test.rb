@@ -25,4 +25,11 @@ class SystemTest < ActiveSupport::TestCase
       assert_equal System.all.where(live: true), System.live
     end
   end
+
+  context "#full_name" do
+    should "prefix with Ex Libris" do
+      system = System.new(name: "John's cynical OSR cash-in")
+      assert_equal system.full_name, "Ex Libris John's cynical OSR cash-in"
+    end
+  end
 end

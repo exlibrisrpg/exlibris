@@ -12,4 +12,8 @@ class System < ApplicationRecord
   scope :live, -> { where(live: true) }
 
   friendly_id :name, use: :slugged
+
+  def full_name
+    "Ex Libris #{name}"
+  end
 end

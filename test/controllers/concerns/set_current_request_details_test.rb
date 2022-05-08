@@ -48,7 +48,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
         should "find system" do
           sign_in
 
-          get system_url(subdomain: "cy-borg")
+          get system_url(subdomain: "cyborg")
 
           assert_equal "CY_BORG", response.body
         end
@@ -57,7 +57,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
       context "as an anonymous visitor" do
         should "raise ActiveRecord::RecordNotFound" do
           assert_raises(ActiveRecord::RecordNotFound) do
-            get system_url(subdomain: "cy-borg")
+            get system_url(subdomain: "cyborg")
           end
         end
       end
