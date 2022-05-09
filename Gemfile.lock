@@ -225,8 +225,7 @@ GEM
     msgpack (1.4.5)
     multi_json (1.15.0)
     multi_xml (0.6.0)
-    net-http (0.2.0)
-      net-protocol
+    net-http (0.2.2)
       uri
     net-imap (0.2.3)
       digest
@@ -371,7 +370,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
     uri (0.11.0)
-    view_component (2.52.0)
+    view_component (2.53.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
     web-console (4.2.0)
