@@ -27,11 +27,11 @@ jobs:
         GANDI_API_KEY: ${{ secrets.GANDI_API_KEY }}
 
     - name: Generate certificates
-      run: certbot certonly --non-interactive --email $LETSENCRYPT_EMAIL --agree-tos --authenticator dns-gandi --dns-gandi-credentials gandi.ini -d exlibrisrpg.com -d \*.exlibrisrpg.com --server https://acme-v02.api.letsencrypt.org/directory
+      run: certbot certonly --non-interactive --email $LETSENCRYPT_EMAIL --agree-tos --authenticator dns-gandi --dns-gandi-credentials gandi.ini -d exlibrisrpg.com -d \*.exlibrisrpg.com --server https://acme-v02.api.letsencrypt.org/directory  --config-dir config --work-dir work --logs-dir logs
       env:
         LETSENCRYPT_EMAIL: ${{ secrets.LETSENCRYPT_EMAIL }}
 
     - name: Install certificates
-      run: heroku certs:update /etc/letsencrypt/live/exlibrisrpg.com/fullchain.pem /etc/letsencrypt/live/exlibrisrpg.com/privkey.pem -a exlibris-production
+      run: heroku certs:update config/live/exlibrisrpg.com/fullchain.pem config/live/exlibrisrpg.com/privkey.pem -a exlibris-production
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
