@@ -225,8 +225,7 @@ GEM
     msgpack (1.4.5)
     multi_json (1.15.0)
     multi_xml (0.6.0)
-    net-http (0.2.0)
-      net-protocol
+    net-http (0.2.2)
       uri
     net-imap (0.2.3)
       digest
