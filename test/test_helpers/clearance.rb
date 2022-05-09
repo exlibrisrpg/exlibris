@@ -32,7 +32,7 @@ module ClearanceHelpers
     end
 
     def sign_out
-      click_link users(:john).email
+      find("[data-control='profile-dots']").click
       click_button "Sign out"
     end
 
@@ -45,7 +45,7 @@ module ClearanceHelpers
 
     def assert_user_signed_in(user)
       visit "/admin"
-      assert_link user.email
+      assert_text user.email
     end
 
     def assert_user_signed_out
