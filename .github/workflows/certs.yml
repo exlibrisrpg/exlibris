@@ -1,0 +1,31 @@
+name: Renew SSL Certificates
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+jobs:
+  certs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/setup-python@v3
+      with:
+        python-version: '3.7'
+
+    - name: Install certbot and plugin
+      run: |
+        pip install certbot
+        pip install certbot-plugin-gandi
+
+    - name: Make config file
+      run: |
+        echo "dns_gandi_api_key=${GANDI_API_KEY}" > gandi.ini
+        chmod 600 gandi.ini
+
+    - name: Generate certificates
+      run: certbot certonly --non-interactive --email ${LETSENCRYPT_EMAIL} --agree-tos --authenticator dns-gandi --dns-gandi-credentials gandi.ini -d exlibrisrpg.com -d \*.exlibrisrpg.com --server https://acme-v02.api.letsencrypt.org/directory
+
+    - name: Install certificates
+      run: heroku certs:update /etc/letsencrypt/live/exlibrisrpg.com/fullchain.pem /etc/letsencrypt/live/exlibrisrpg.com/privkey.pem -a exlibris-production
