@@ -8,6 +8,7 @@ class SystemResource < Avo::BaseResource
   field :tagline, as: :text
   field :slug, as: :text
   field :live, as: :boolean
+  field :footer, as: :trix, attachments_disabled: true
 
   field :curators, as: :has_many, through: :curation_roles
 end
