@@ -75,7 +75,7 @@ GEM
       ffi (~> 1.14)
       ffi-compiler (~> 1.0)
     ast (2.4.2)
-    avo (2.5.1)
+    avo (2.6.0)
       active_link_to
       addressable
       breadcrumbs_on_rails
@@ -358,7 +358,7 @@ GEM
     statsd-ruby (1.5.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
-    strscan (3.0.2)
+    strscan (3.0.3)
     tailwindcss-rails (2.0.8)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.8-arm64-darwin)
