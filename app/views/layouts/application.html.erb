@@ -13,10 +13,7 @@
 
     <%= render partial: "layouts/favicon" %>
     <%= render MetaTagsComponent.new(target: @social_focus, title: content_for(:title), url: request.original_url) %>
-
-    <% if ENV["COLLECT_ANALYTICS"].present? %>
-      <script defer data-domain="exlibrisrpg.com" src="https://plausible.io/js/plausible.js"></script>
-    <% end %>
+    <%= render AnalyticsComponent.new %>
   </head>
 
   <body class="fill | tw-bg-primary-1 tw-text-primary-11 tw-font-body">
