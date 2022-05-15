@@ -3,7 +3,7 @@ require "test_helper"
 class TagsControllerTest < ActionDispatch::IntegrationTest
   context "GET index" do
     should "respond ok" do
-      get tags_path
+      get tags_url(subdomain: "morkborg")
 
       assert_response :ok
     end
@@ -17,7 +17,7 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
 
   context "GET show" do
     should "respond ok" do
-      get tag_path(tags(:mork_borg_cult))
+      get tag_url(tags(:mork_borg_cult), subdomain: "morkborg")
 
       assert_response :ok
     end
@@ -27,7 +27,7 @@ class TagsControllerTest < ActionDispatch::IntegrationTest
       original_slug = tag.slug
       tag.update(name: "new name for new slug")
 
-      get tag_path(id: original_slug)
+      get tag_url(id: original_slug, subdomain: "morkborg")
 
       assert_redirected_to tag_path(id: tag.slug)
     end
