@@ -1,0 +1,10 @@
+<div class="flex-1 p-4">
+  <%= form_with url: "/admin/dashboards/system", method: "get" do |form| %>
+    <div class="flex items-center">
+        <div class="w-48 uppercase font-semibold text-gray-500 text-sm">
+          <label for="entry_system">System</label>
+        </div>
+        <%= form.select :system, options_for_select(@card.available_systems, @card.system_slug), {}, disabled: @card.available_systems.one?, class: "appearance-none inline-flex bg-gray-25 disabled:cursor-not-allowed text-gray-600 disabled:opacity-50 rounded py-2 px-3 leading-tight border focus:border-gray-600 focus-visible:ring-0 focus:text-gray-700 border-gray-200 w-full", onchange: "submit()" %>
+    </div>
+  <% end %>
+</div>
