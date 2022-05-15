@@ -18,6 +18,7 @@ module Exlibris
     #
     # config.time_zone = "Central Time (US & Canada)"
     config.eager_load_paths << Rails.root.join("lib")
+    config.eager_load_paths << Rails.root.join("app/avo/cards/concerns")
 
     # Dump schema as sql so we get language configurations
     config.active_record.schema_format = :sql

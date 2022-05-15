@@ -1,15 +1,16 @@
 class PagesTable < Avo::Dashboards::PartialCard
+  include AnalyticsQueryable
+  include SystemSwitchable
+
   self.id = "pages_table"
   self.label = "Pages"
   self.partial = "avo/cards/pages_table"
 
   def pages
+    return [] unless authorized? && site_id
+
     response = Plausible::Client.new.breakdown(site_id, breakdown_params)
     response.body["results"]
-  end
-
-  def site_id
-    "exlibrisrpg.com"
   end
 
   def breakdown_params

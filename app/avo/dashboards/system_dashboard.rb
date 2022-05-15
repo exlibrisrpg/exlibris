@@ -3,6 +3,8 @@ class SystemDashboard < Avo::Dashboards::BaseDashboard
   self.name = "System"
   self.description = "Stats and analytics for a given system"
 
+  card SystemSelector
+
   card VisitorsChart, cols: 3, rows: 1
 
   divider
