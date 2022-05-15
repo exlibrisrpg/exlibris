@@ -3,13 +3,13 @@ require "test_helper"
 class EntriesControllerTest < ActionDispatch::IntegrationTest
   context "GET index" do
     should "respond ok" do
-      get entries_path
+      get entries_url(subdomain: "morkborg")
 
       assert_response :ok
     end
 
     should "assign page with all Mörk Borg entries" do
-      get entries_path
+      get entries_url(subdomain: "morkborg")
 
       assert_equal systems(:mork_borg).entries.by_name.with_includes, assigns[:page].recordset.records
     end
@@ -39,7 +39,7 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
 
   context "GET show" do
     should "respond ok" do
-      get entry_path(entries(:eat_prey_kill))
+      get entry_url(entries(:eat_prey_kill), subdomain: "morkborg")
 
       assert_response :ok
     end
@@ -49,9 +49,15 @@ class EntriesControllerTest < ActionDispatch::IntegrationTest
       original_slug = entry.slug
       entry.update(name: "new name for new slug")
 
-      get entry_path(id: original_slug)
+      get entry_url(id: original_slug, subdomain: "morkborg")
 
-      assert_redirected_to entry_path(id: entry.slug)
+      assert_redirected_to entry_url(id: entry.slug, subdomain: "morkborg")
+    end
+
+    should "redirect if the subdomain doesn't match" do
+      get entry_url(entries(:eat_prey_kill), subdomain: "www")
+
+      assert_redirected_to entry_url(entries(:eat_prey_kill), subdomain: "morkborg")
     end
 
     context "with the correct subdomain" do
