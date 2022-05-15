@@ -8,6 +8,7 @@ gem "aws-sdk-s3", require: false
 gem "bootsnap", ">= 1.4.4", require: false
 gem "cssbundling-rails"
 gem "clearance"
+gem "faraday"
 gem "friendly_id"
 gem "geared_pagination"
 gem "inline_svg"
