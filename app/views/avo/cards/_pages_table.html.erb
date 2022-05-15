@@ -1,0 +1,12 @@
+<div class="flex-initial mt-4 overflow-auto">
+  <table class="w-full">
+    <tbody class="divide-y">
+      <% @card.pages.each do |page| %>
+        <tr class="hover:bg-blue-50">
+          <td class="px-4 py-2"><pre><%= page["page"] %></pre></td>
+          <td class="px-4 py-2 text-right" style="font-variant-numeric: tabular-nums;"><%= number_with_delimiter page["visitors"] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -75,7 +75,7 @@ GEM
       ffi (~> 1.14)
       ffi-compiler (~> 1.0)
     ast (2.4.2)
-    avo (2.5.1)
+    avo (2.6.0)
       active_link_to
       addressable
       breadcrumbs_on_rails
@@ -157,6 +157,10 @@ GEM
     erubi (1.10.0)
     faker (2.20.0)
       i18n (>= 1.8.11, < 2)
+    faraday (2.3.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.0.2)
     ferrum (0.11)
       addressable (~> 2.5)
       cliver (~> 0.3)
@@ -200,7 +204,7 @@ GEM
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.17.0)
+    loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     lookbook (0.8.1)
@@ -328,6 +332,7 @@ GEM
     ruby-progressbar (1.11.0)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
+    ruby2_keywords (0.0.5)
     sentry-rails (5.3.0)
       railties (>= 5.0)
       sentry-ruby-core (~> 5.3.0)
@@ -358,7 +363,7 @@ GEM
     statsd-ruby (1.5.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
-    strscan (3.0.2)
+    strscan (3.0.3)
     tailwindcss-rails (2.0.8)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.8-arm64-darwin)
@@ -374,7 +379,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
     uri (0.11.0)
-    view_component (2.53.0)
+    view_component (2.55.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
     web-console (4.2.0)
@@ -409,6 +414,7 @@ DEPENDENCIES
   cuprite
   dalli
   faker (~> 2.20)
+  faraday
   friendly_id
   geared_pagination
   inline_svg
