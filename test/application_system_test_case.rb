@@ -8,6 +8,7 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   include ClearanceHelpers::SystemTestHelpers
 
   setup do
-    Capybara.app_host = "http://testlibrisrpg.test"
+    Capybara.app_host = "http://exlibrisrpg.test"
+    Capybara.always_include_port = true
   end
 end
