@@ -155,7 +155,7 @@ GEM
     email_validator (2.2.3)
       activemodel
     erubi (1.10.0)
-    faker (2.20.0)
+    faker (2.21.0)
       i18n (>= 1.8.11, < 2)
     faraday (2.3.0)
       faraday-net_http (~> 2.0)
@@ -413,7 +413,7 @@ DEPENDENCIES
   cssbundling-rails
   cuprite
   dalli
-  faker (~> 2.20)
+  faker (~> 2.21)
   faraday
   friendly_id
   geared_pagination
