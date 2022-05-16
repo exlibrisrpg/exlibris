@@ -30,7 +30,7 @@ Avo.configure do |config|
             session[:return_to] = request.original_fullpath
           end
 
-          redirect_to "/sign_in"
+          redirect_to main_app.sign_in_path
         end
       end
     end

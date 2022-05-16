@@ -51,6 +51,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
 
+    - name: Add test domains to /etc/hosts
+      run: |
+        echo "127.0.0.1 exlibrisrpg.test" | sudo tee -a /etc/hosts
+        echo "127.0.0.1 morkborg.exlibrisrpg.test" | sudo tee -a /etc/hosts
+
     - name: Setup App
       env:
         PGHOST: localhost
