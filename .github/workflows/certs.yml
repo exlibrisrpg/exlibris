@@ -32,6 +32,6 @@ jobs:
         LETSENCRYPT_EMAIL: ${{ secrets.LETSENCRYPT_EMAIL }}
 
     - name: Install certificates
-      run: heroku certs:update config/live/exlibrisrpg.com/fullchain.pem config/live/exlibrisrpg.com/privkey.pem -a exlibris-production --confirm
+      run: heroku certs:update config/live/exlibrisrpg.com/fullchain.pem config/live/exlibrisrpg.com/privkey.pem -a exlibris-production --confirm=exlibris-production
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
