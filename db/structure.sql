@@ -17,10 +17,24 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
 
 
 --
+-- Name: EXTENSION pgcrypto; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON EXTENSION pgcrypto IS 'cryptographic functions';
+
+
+--
 -- Name: unaccent; Type: EXTENSION; Schema: -; Owner: -
 --
 
 CREATE EXTENSION IF NOT EXISTS unaccent WITH SCHEMA public;
+
+
+--
+-- Name: EXTENSION unaccent; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON EXTENSION unaccent IS 'text search dictionary that removes accents';
 
 
 --
@@ -232,7 +246,8 @@ CREATE TABLE public.links (
     entry_id uuid NOT NULL,
     address character varying,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    "position" integer
 );
 
 
@@ -730,6 +745,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220212165647'),
 ('20220212165729'),
 ('20220314170838'),
-('20220508055731');
+('20220508055731'),
+('20220518232209');
 
 

@@ -31,6 +31,10 @@ class EntryPolicy < ApplicationPolicy
     user.admin? || entry_curated_by_user?
   end
 
+  def order?
+    user.admin? || entry_curated_by_user?
+  end
+
   private
 
   def entry_curated_by_user?

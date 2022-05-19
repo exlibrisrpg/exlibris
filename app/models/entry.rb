@@ -13,7 +13,7 @@ class Entry < ApplicationRecord
 
   belongs_to :system, optional: false
   has_and_belongs_to_many :tags, ->(entry) { where(system: entry.system) }
-  has_many :links, dependent: :destroy
+  has_many :links, -> { order(position: :asc) }, dependent: :destroy
 
   validates :name, presence: true
   validates :description, presence: true
