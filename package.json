@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@github/combobox-nav": "^2.0.2",
-    "@hotwired/turbo-rails": "^7.1.1",
+    "@hotwired/turbo-rails": "^7.1.2",
     "@rails/actiontext": "^7.0.3",
     "@rails/activestorage": "^7.0.3",
     "esbuild": "^0.14.39",
