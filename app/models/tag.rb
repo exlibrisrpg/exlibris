@@ -18,6 +18,23 @@ class Tag < ApplicationRecord
   scope :with_includes, -> { includes(:rich_text_description, :tag_category, entries: [:links, :rich_text_description, tags: :rich_text_description, cover_attachment: :blob]) }
 
   scope :categories, ->(system) { where(tag_categories: system.tag_categories.where(name: "Categories")).reorder(:order) }
+  scope :for_system, ->(system) { where(system: system) }
+
+  class << self
+    def suggestions_for(system)
+      system.tags
+        .joins("INNER JOIN tag_categories ON tags.tag_category_id = tag_categories.id")
+        .select("tags.id AS value, tag_categories.name || ' > ' || tags.name AS label")
+        .reorder(:label)
+    end
+
+    def labels_for(ids)
+      joins("INNER JOIN tag_categories ON tags.tag_category_id = tag_categories.id")
+        .select("tag_categories.name || ' > ' || tags.name AS label")
+        .find(ids)
+        .pluck(:label)
+    end
+  end
 
   def creator?
     tag_category.name == "Creators"

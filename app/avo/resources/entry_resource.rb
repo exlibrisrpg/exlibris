@@ -19,7 +19,15 @@ class EntryResource < Avo::BaseResource
   field :updated_at, as: :date_time, readonly: true, sortable: true, hide_on: [:new, :edit]
 
   field :links, as: :has_many
-  field :tags, as: :has_and_belongs_to_many
+  field :tags, as: :has_and_belongs_to_many, searchable: true, attach_scope: -> { query.for_system(parent.system) }
+  field :tag_ids,
+    name: "Tags",
+    as: :tags,
+    hide_on: [:show, :index, :new],
+    close_on_select: false,
+    enforce_suggestions: true,
+    format_using: ->(value) { Tag.labels_for(value) },
+    suggestions: -> { Tag.suggestions_for(record.system).as_json(only: [:value, :label]) }
 
   field :category, as: :text, hide_on: :show do |model|
     model.tags.where(tag_category: TagCategory.find_by(name: "Categories"))&.first&.name

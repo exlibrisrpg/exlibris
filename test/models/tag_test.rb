@@ -34,4 +34,24 @@ class TagTest < ActiveSupport::TestCase
       assert_includes results, tags(:mork_borg_cult)
     end
   end
+
+  context ".suggestions_for" do
+    should "join tag category name with name for label" do
+      suggestions = Tag.suggestions_for(systems(:mork_borg))
+      suggestion = suggestions.find { |suggestion| suggestion["value"] == tags(:johan_nohr).id }
+      assert_equal "Creators > Johan Nohr", suggestion["label"]
+    end
+
+    should "sort results by label" do
+      suggestions = Tag.suggestions_for(systems(:mork_borg))
+      sorted_suggestions = suggestions.sort_by { |suggestion| suggestion["label"] }
+      assert_equal sorted_suggestions, suggestions
+    end
+
+    should "not include tags for other systems" do
+      suggestions = Tag.suggestions_for(systems(:mausritter))
+      mork_borg_creator = tags(:johan_nohr)
+      assert_nil suggestions.find { |suggestion| suggestion["value"] == mork_borg_creator.id }
+    end
+  end
 end

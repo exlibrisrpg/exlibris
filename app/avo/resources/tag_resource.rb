@@ -23,5 +23,9 @@ class TagResource < Avo::BaseResource
   field :tag_category, as: :belongs_to
   field :entries, as: :has_many
 
+  field :search_name, as: :text, as_description: true, hide_on: :all do |model|
+    "#{model.tag_category.name} > #{model.name}"
+  end
+
   filter TagCategoryFilter
 end
