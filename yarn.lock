@@ -1139,10 +1139,10 @@ sass@^1.54.4:
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
 
-scrollama@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-3.1.1.tgz#0427c4d28c600bc62f467b252c00b5284ff815ab"
-  integrity sha512-LYm58kGb4nkBjMFdt4dAX3utfWKa48nQmBK0fds2tFyvR28l2MC3FPnuXUnU6qqy2Ovs3YkUfCZ6ZetnIkPkLw==
+scrollama@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-3.2.0.tgz#90ac1765a1d2b7999ab7f971b4f71b9e2508b60c"
+  integrity sha512-PIPwB1kYBnbw/ezvPBJa5dCN5qEwokfpAkI3BmpZWAwcVID4nDf1qH6WV16A2fQaJmsKx0un5S/zhxN+PQeKDQ==
 
 "semver@2 || 3 || 4 || 5":
   version "5.7.1"
