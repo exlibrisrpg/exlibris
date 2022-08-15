@@ -264,7 +264,7 @@ GEM
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
-    pg (1.3.5)
+    pg (1.4.3)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -428,7 +428,7 @@ DEPENDENCIES
   lookbook
   meta-tags
   net-http
-  pg (~> 1.3)
+  pg (~> 1.4)
   puma (~> 5.6)
   rack-mini-profiler (~> 3.0)
   rails (~> 7.0.3)
