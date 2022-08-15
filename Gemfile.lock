@@ -174,7 +174,7 @@ GEM
       rake
     friendly_id (5.4.2)
       activerecord (>= 4.0.0)
-    geared_pagination (1.1.1)
+    geared_pagination (1.1.2)
       activesupport (>= 5.0)
       addressable (>= 2.5.0)
     globalid (1.0.0)
