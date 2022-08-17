@@ -1,9 +1,9 @@
 require "test_helper"
 
-class DashboardsControllerTest < ActionDispatch::IntegrationTest
+class SitesControllerTest < ActionDispatch::IntegrationTest
   context "GET show" do
     should "respond ok" do
-      get dashboard_url(subdomain: "morkborg")
+      get site_url
 
       assert_response :ok
     end

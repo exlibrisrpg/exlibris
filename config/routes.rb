@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   # Project domain
   constraints subdomain: ["", "www"] do
+    resource :site, path: "/", only: :show
+
     # Redirects for original morkborg pages
     get "/entries(*any)" => redirect(subdomain: "morkborg")
     get "/tags(*any)" => redirect(subdomain: "morkborg")
@@ -9,7 +11,7 @@ Rails.application.routes.draw do
     # Avo routes
     scope path: Avo.configuration.root_path do
       scope module: "avo" do
-        get "dashboard", to: "tools#dashboard"
+        get "dashboard", to: "tools#dashboard", as: "admin_dashboard"
         mount Avo::Engine => "/"
       end
 
@@ -34,6 +36,7 @@ Rails.application.routes.draw do
 
   # System subdomains
   constraints subdomain: /.*/ do
+    resource :dashboard, path: "/", only: :show
     resource :search, only: :show
     resources :entries, only: [:index, :show]
     resources :tags, only: [:index, :show]
@@ -45,8 +48,6 @@ Rails.application.routes.draw do
 
   # Redirects for recently moved routes
   get "/sign_in" => redirect(subdomain: "", path: "/admin/sign_in")
-
-  root to: "dashboards#show"
 
   if Rails.env.development?
     mount Lookbook::Engine, at: "/lookbook"

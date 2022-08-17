@@ -38,6 +38,38 @@
   src: url("UnifrakturCook-Bold.ttf");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 400;
+  src: url("Alegreya-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Alegreya;
+  font-style: italic;
+  font-weight: 400;
+  src: url("Alegreya-Italic.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 800;
+  src: url("Alegreya-ExtraBold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Alegreya;
+  font-style: italic;
+  font-weight: 800;
+  src: url("Alegreya-ExtraBoldItalic.ttf");
+}
+
 html {
   font-size: var(--font-size);
 }

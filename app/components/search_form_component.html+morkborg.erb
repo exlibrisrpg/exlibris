@@ -6,11 +6,11 @@
           <%= render IconComponent.new(type: :search) %>
 
           <div class="relative tw-flex-grow">
-            <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, class: "tw-text-primary-12", autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
+            <%= form.text_field :query, name: :query, placeholder: Search.model_name.human, class: "tw-text-main-12", autocomplete: "off", data: { "combobox-target": "input", action: "focus->combobox#start input->form#submit" } %>
 
             <turbo-frame id="searchTagResults">
               <fieldset disabled style="z-index: 1;">
-                <ul role="listbox" data-combobox-target="list" class="hidden highlight-none selected-highlight-yellow tw-text-primary-11 tw-p-0 search--tag-list tw-flex tw-flex-col tw-gap-2 tw-mt-4" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
+                <ul role="listbox" data-combobox-target="list" class="hidden highlight-none selected-highlight-yellow tw-text-main-11 tw-p-0 search--tag-list tw-flex tw-flex-col tw-gap-2 tw-mt-4" data-controller="highlight" data-action="combobox:stopped@document->highlight#redraw">
                   <% @search.tags.each do |tag| %>
                     <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
                   <% end %>
@@ -20,7 +20,7 @@
           </div>
         <% end %>
 
-        <ul role="list" data-combobox-target="collection" class="search--filter-tags | tw-flex tw-gap-4 tw-p-0 tw-text-primary-11 highlight-yellow">
+        <ul role="list" data-combobox-target="collection" class="search--filter-tags | tw-flex tw-gap-4 tw-p-0 tw-text-main-11 highlight-yellow">
           <li class="hidden-if-only-child">Tags:</li>
           <% search.filter_tags.each do |tag| %>
             <%= render partial: "searches/filter_tag", locals: { tag: tag } %>
@@ -31,11 +31,11 @@
 
     <div class="tw-flex tw-gap-4 tw-w-60 tw-flex-grow">
       <div class="highlight-yellow hover-highlight-white | tw-flex-grow">
-        <%= form.button t(".search"), name: "search", type: "submit", class: "search--submit tw-text-primary-12 tw-w-full", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
+        <%= form.button t(".search"), name: "search", type: "submit", class: "search--submit tw-text-main-12 tw-w-full", data: { controller: "highlight", "highlight-animate-value": true, "form-target": "submit" } %>
       </div>
 
       <div class="highlight-yellow hover-highlight-white | tw-flex-grow">
-        <%= form.button t(".random"), name: "random", type: "submit", class: "search--submit tw-text-primary-12 tw-w-full", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
+        <%= form.button t(".random"), name: "random", type: "submit", class: "search--submit tw-text-main-12 tw-w-full", data: { controller: "highlight", "highlight-animate-value": true, turbo: false } %>
       </div>
     </div>
   </div>

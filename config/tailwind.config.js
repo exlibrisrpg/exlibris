@@ -23,7 +23,8 @@ module.exports = {
     "./app/components/**/*.{erb,rb}",
     "./app/helpers/**/*.rb",
     "./app/javascript/**/*.js",
-    "./app/views/**/{*,_*}.erb"
+    "./app/views/**/{*,_*}.erb",
+    "./test/components/previews/*.{erb,rb}"
   ],
   theme: {
     colors: {
@@ -33,6 +34,7 @@ module.exports = {
       black: "black",
       white: "white",
       accent: colorDefinition("accent"),
+      main: colorDefinition("main"),
       primary: colorDefinition("primary"),
       secondary: colorDefinition("secondary")
     },

@@ -17,7 +17,7 @@ en:
         update: Update Tag
 
   layouts:
-    public:
+    system:
       footer:
         about_link: About
         credits_link: Credits

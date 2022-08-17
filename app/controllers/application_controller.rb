@@ -2,5 +2,5 @@ class ApplicationController < ActionController::Base
   include Clearance::Controller
   include SetCurrentRequestDetails
 
-  layout "public"
+  layout "system"
 end

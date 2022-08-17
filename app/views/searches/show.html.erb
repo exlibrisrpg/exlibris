@@ -12,7 +12,7 @@
 
 <% if @search.valid? %>
   <div class="tw-flex tw-flex-col tw-gap-8">
-  <h2 class="tw-text-4xl tw-font-semibold tw-text-primary-12"><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
+  <h2 class="tw-text-4xl tw-font-semibold tw-text-main-12"><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
 
   <div class="tw-flex tw-gap-4 tw-justify-center tw-font-body" data-controller="search-highlights">
     <% @search.tags.each do |tag| %>
@@ -20,7 +20,7 @@
     <% end %>
   </div>
 
-  <h2 class="tw-text-4xl tw-font-semibold tw-text-primary-12"><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
+  <h2 class="tw-text-4xl tw-font-semibold tw-text-main-12"><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
 
   <%= render PaginationComponent.new(page: @page, path: ->(next_page) { search_path(query: @search.query, page: @page.next_param) }) do |c| %>
     <% c.body do %>
