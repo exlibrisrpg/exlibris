@@ -16,41 +16,7 @@
     <%= render AnalyticsComponent.new %>
   </head>
 
-  <body class="fill | tw-bg-primary-1 tw-text-primary-11 tw-font-body">
-    <%= render partial: "announcement" %>
-
-    <% if content_for?(:pre_header) %>
-      <%= yield(:pre_header) %>
-    <% end %>
-
-    <div class="fill | fill-with | tw-bg-primary-1">
-      <header id="content">
-        <%= yield :header %>
-      </header>
-
-      <main class="fill-with">
-        <% if content_for?(:banner) %>
-          <%= content_for :banner %>
-        <% end %>
-
-        <div class="tw-container tw-mx-auto tw-p-4">
-          <div class="tw-flex tw-flex-col tw-gap-6">
-            <% if flash.any? %>
-              <div id="flash">
-                <% flash.each do |key, value| %>
-                  <div class="flash <%= key %>"><%= value %></div>
-                <% end %>
-              </div>
-            <% end %>
-
-            <%= yield %>
-          </div>
-        </div>
-      </main>
-
-      <footer>
-        <%= yield :footer %>
-      </footer>
-    </div>
+  <body class="<%= yield(:body_class) %>">
+    <%= content_for?(:body) ? yield(:body) : yield %>
   </body>
 </html>

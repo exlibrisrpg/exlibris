@@ -35,5 +35,11 @@ module Exlibris
       development: [".exlibrisrpg.test", "localhost"],
       test: [".exlibrisrpg.test", "localhost"]
     }.fetch(Rails.env.to_sym, :all), tld_length: 2
+
+    config.to_prepare do
+      Clearance::PasswordsController.layout "session"
+      Clearance::SessionsController.layout "session"
+      Clearance::UsersController.layout "session"
+    end
   end
 end

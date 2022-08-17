@@ -1,0 +1,9 @@
+<div class="tw-flex tw-flex-wrap tw-gap-4 md:tw-gap-8 tw-justify-center tw-flex-row">
+  <%= render SystemTokenComponent.new(name: "CY_BORG", count: "12", live: false, url: dashboard_url(subdomain: "cy_borg")) %>
+  <%= render SystemTokenComponent.new(name: "Death in Space", count: "73", live: true, url: dashboard_url(subdomain: "deathinspace")) %>
+  <%= render SystemTokenComponent.new(name: "Down We Go", count: "17", live: false, url: dashboard_url(subdomain: "downwego")) %>
+  <%= render SystemTokenComponent.new(name: "Mausritter", count: "365", live: false, url: dashboard_url(subdomain: "mausritter")) %>
+  <%= render SystemTokenComponent.new(name: "Mörk Borg", count: "976", live: true, url: dashboard_url(subdomain: "morkborg")) %>
+  <%= render SystemTokenComponent.new(name: "Troika!", count: "413", live: false, url: dashboard_url(subdomain: "troika")) %>
+  <%= render SystemTokenComponent.new(name: "Vast Grimm", count: "27", live: false, url: dashboard_url(subdomain: "vastgrimm")) %>
+</div>

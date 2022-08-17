@@ -13,7 +13,7 @@
   </head>
 
   <body class="<%= params[:lookbook][:display][:body_class] %>">
-    <div class="<% if params[:lookbook][:display][:container] %>tw-container tw-mx-auto tw-p-4<% end %>">
+    <div class="<% if params[:lookbook][:display][:container] %>tw-container tw-mx-auto tw-p-4<% end %> <% if params[:lookbook][:display][:center] %>tw-flex tw-h-screen tw-items-center tw-justify-center tw-flex-col<% end %>">
       <%= yield %>
     </div>
   </body>

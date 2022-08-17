@@ -1,0 +1,11 @@
+<% content_for(:body_class) do %>tw-bg-gradient-to-tr tw-from-primary-9 tw-to-secondary-9<% end %>
+
+<% content_for(:body) do %>
+  <div class="tw-w-screen tw-min-h-screen tw-text-white tw-px-4 tw-py-16 tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-8 md:tw-gap-10 lg:tw-gap-12">
+    <%= render ExLibrisLogoComponent.new %>
+
+    <%= content_for?(:site_body) ? yield(:site_body) : yield %>
+  </div>
+<% end %>
+
+<%= render template: "layouts/application" %>

@@ -1,0 +1,15 @@
+<% content_for(:site_body) do %>
+  <% if flash.any? %>
+    <div id="flash">
+      <% flash.each do |key, value| %>
+        <div class="flash <%= key %> tw-w-96 tw-box-content tw-bg-white/20 tw-p-8 tw-rounded-lg"><%= value %></div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="tw-w-96 tw-box-content tw-bg-white/20 tw-p-8 tw-rounded-lg">
+    <%= yield %>
+  </div>
+<% end %>
+
+<%= render template: "layouts/site" %>

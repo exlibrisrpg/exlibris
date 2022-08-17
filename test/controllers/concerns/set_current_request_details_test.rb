@@ -20,18 +20,18 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
 
   context "Current.system" do
     context "with no subdomain" do
-      should "default to Mörk Borg" do
+      should "be nil" do
         get system_url(subdomain: "")
 
-        assert_equal "Mörk Borg", response.body
+        assert_equal "", response.body
       end
     end
 
     context "with www as subdomain" do
-      should "default to Mörk Borg" do
+      should "be nil" do
         get system_url(subdomain: "www")
 
-        assert_equal "Mörk Borg", response.body
+        assert_equal "", response.body
       end
     end
 

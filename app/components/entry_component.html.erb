@@ -1,4 +1,4 @@
-<div id="<%= dom_id entry %>" class="tw-font-body tw-flex tw-flex-col tw-gap-6 sm:tw-flex-row tw-items-start tw-text-primary-11">
+<div id="<%= dom_id entry %>" class="tw-font-body tw-flex tw-flex-col tw-gap-6 sm:tw-flex-row tw-items-start tw-text-main-11">
   <div class="sm:tw-w-64 tw-flex-shrink-0">
     <% if entry.cover.attached? %>
       <div class="tw-bg-accent-5 tw-p-4 sm:tw-aspect-1">
@@ -8,7 +8,7 @@
   </div>
 
   <div class="tw-flex tw-flex-col tw-gap-3">
-    <h2 class="tw-text-2xl tw-font-semibold tw-text-primary-12"><%= link_to name, entry %></h2>
+    <h2 class="tw-text-2xl tw-font-semibold tw-text-main-12"><%= link_to name, entry %></h2>
 
     <% if creator_tags.any? %>
       <% if creator_tags.count > 5 %>

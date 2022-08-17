@@ -46,9 +46,9 @@ class MetaTagsComponent < ViewComponent::Base
 
   def canonical
     if @target.present?
-      full_url_for @target
+      polymorphic_url(@target, subdomain: @target.system.slug)
     else
-      @url || root_url
+      @url || dashboard_url(subdomain: Current.system&.slug)
     end
   end
 end
