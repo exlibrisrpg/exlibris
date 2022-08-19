@@ -24,6 +24,7 @@ module.exports = {
     "./app/helpers/**/*.rb",
     "./app/javascript/**/*.js",
     "./app/views/**/{*,_*}.erb",
+    "./test/components/docs/*.md.erb",
     "./test/components/previews/*.{erb,rb}"
   ],
   theme: {

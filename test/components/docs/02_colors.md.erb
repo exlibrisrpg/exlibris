@@ -1,0 +1,125 @@
+---
+title: Colors
+---
+
+<%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+<%= stylesheet_link_tag "themes/default", "data-turbo-track": "reload" %>
+
+Color scales are drawn from [Radix Colors](https://www.radix-ui.com/colors).
+This defines a scale of colors with generalised use cases, such as 'app
+background' or 'hovered UI element border'.
+
+This should make it easier to manage colors across multiple themes. If a particular theme shouldn't have borders on UI elements then the color can be set to `transparent` or the same as the UI element background color.
+
+## Color scales
+
+<table class="tw-table-fixed tw-table tw-border-separate">
+  <thead>
+    <tr>
+      <th class="tw-w-[5%]">Step</th>
+      <th class="tw-w-[40%]">Use case</th>
+      <th>main</th>
+      <th>accent</th>
+      <th>primary</th>
+      <th>secondary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>App background</td>
+      <td class="tw-bg-main-1">&nbsp;</td>
+      <td class="tw-bg-accent-1">&nbsp;</td>
+      <td class="tw-bg-primary-1">&nbsp;</td>
+      <td class="tw-bg-secondary-1">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Subtle background</td>
+      <td class="tw-bg-main-2">&nbsp;</td>
+      <td class="tw-bg-accent-2">&nbsp;</td>
+      <td class="tw-bg-primary-2">&nbsp;</td>
+      <td class="tw-bg-secondary-2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>UI element background</td>
+      <td class="tw-bg-main-3">&nbsp;</td>
+      <td class="tw-bg-accent-3">&nbsp;</td>
+      <td class="tw-bg-primary-3">&nbsp;</td>
+      <td class="tw-bg-secondary-3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Hovered UI element background</td>
+      <td class="tw-bg-main-4">&nbsp;</td>
+      <td class="tw-bg-accent-4">&nbsp;</td>
+      <td class="tw-bg-primary-4">&nbsp;</td>
+      <td class="tw-bg-secondary-4">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Active / selected UI element background</td>
+      <td class="tw-bg-main-5">&nbsp;</td>
+      <td class="tw-bg-accent-5">&nbsp;</td>
+      <td class="tw-bg-primary-5">&nbsp;</td>
+      <td class="tw-bg-secondary-5">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Subtble borders and separators</td>
+      <td class="tw-bg-main-6">&nbsp;</td>
+      <td class="tw-bg-accent-6">&nbsp;</td>
+      <td class="tw-bg-primary-6">&nbsp;</td>
+      <td class="tw-bg-secondary-6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>UI element borders and focus rings</td>
+      <td class="tw-bg-main-7">&nbsp;</td>
+      <td class="tw-bg-accent-7">&nbsp;</td>
+      <td class="tw-bg-primary-7">&nbsp;</td>
+      <td class="tw-bg-secondary-7">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Hovered UI element borders</td>
+      <td class="tw-bg-main-8">&nbsp;</td>
+      <td class="tw-bg-accent-8">&nbsp;</td>
+      <td class="tw-bg-primary-8">&nbsp;</td>
+      <td class="tw-bg-secondary-8">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Solid backgrounds</td>
+      <td class="tw-bg-main-9">&nbsp;</td>
+      <td class="tw-bg-accent-9">&nbsp;</td>
+      <td class="tw-bg-primary-9">&nbsp;</td>
+      <td class="tw-bg-secondary-9">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Hovered solid backgrounds</td>
+      <td class="tw-bg-main-10">&nbsp;</td>
+      <td class="tw-bg-accent-10">&nbsp;</td>
+      <td class="tw-bg-primary-10">&nbsp;</td>
+      <td class="tw-bg-secondary-10">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Low-contrast text</td>
+      <td class="tw-bg-main-11">&nbsp;</td>
+      <td class="tw-bg-accent-11">&nbsp;</td>
+      <td class="tw-bg-primary-11">&nbsp;</td>
+      <td class="tw-bg-secondary-11">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>High-contrast text</td>
+      <td class="tw-bg-main-12">&nbsp;</td>
+      <td class="tw-bg-accent-12">&nbsp;</td>
+      <td class="tw-bg-primary-12">&nbsp;</td>
+      <td class="tw-bg-secondary-12">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>

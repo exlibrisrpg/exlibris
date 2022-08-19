@@ -84,6 +84,8 @@ Rails.application.configure do
   config.view_component.default_preview_layout = "component_preview"
 
   # Setup Lookbook:
+  # - Enable experimental features
+  config.lookbook.experimental_features = [:pages]
   # - Use local preview controller
   config.lookbook.preview_controller = "ComponentPreviewsController"
   # - Specify default params for the preview layout
