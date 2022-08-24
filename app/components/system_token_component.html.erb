@@ -1,6 +1,8 @@
-<%= wrapper_tag do %>
-  <%= name_tag do %><%= name %><% end %>
+<%= link_to url, class: token_class do %>
+  <span class="tw-font-brand tw-text-white tw-tracking-tight tw-drop-shadow-sm tw-flex-shrink-0 tw-font-extrabold tw-text-2xl tw-leading-none"><%= name %></span>
   <% if count? %>
-    <%= count_tag %>
+    <span class="tw-font-brand tw-text-white tw-bg-white/30 tw-rounded-full tw-lining-nums tw-leading-none tw-drop-shadow-sm tw-flex-shrink-0 tw-font-extrabold tw-text-xl tw-px-2 tw-py-0.5">
+      <span class="tw-sr-only">Contains</span> <%= @count %> <span class="tw-sr-only">entries.</span>
+    </span>
   <% end %>
 <% end %>
