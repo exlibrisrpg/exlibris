@@ -1,24 +1,28 @@
-<div class="tw-text-center tw-flex-col tw-flex tw-gap-3 tw-drop-shadow-sm tw-leading-7 md:tw-text-2xl lg:tw-text-4xl tw-max-w-md md:tw-max-w-xl lg:tw-max-w-4xl">
-  <p class="tw-font-display">
-    Catalogues of all the incredible content created by you, the community, for some of our favorite indie RPGs.
-  </p>
+<div class="tw-w-screen tw-min-h-screen tw-text-white tw-px-4 tw-py-16 tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-8 md:tw-gap-10 lg:tw-gap-12">
+  <%= render ExLibrisLogoComponent.new %>
 
-  <p class="tw-font-display tw-font-extrabold">
-    We’ve got no chance of keeping up!
-  </p>
-</div>
+  <div class="tw-text-center tw-flex-col tw-flex tw-gap-3 tw-drop-shadow-sm tw-leading-7 md:tw-text-2xl lg:tw-text-4xl tw-max-w-md md:tw-max-w-xl lg:tw-max-w-4xl">
+    <p class="tw-font-display">
+      Catalogues of all the incredible content created by you, the community, for some of our favorite indie RPGs.
+    </p>
 
-<ul class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-flex-wrap tw-gap-4 md:tw-gap-8">
-  <% @systems.each do |system| %>
-    <li>
-      <%= render SystemTokenComponent.new(name: system.name, count: system.entries.count, url: site_url(subdomain: system.slug), live: system.live) %>
-    </li>
-  <% end %>
-</ul>
+    <p class="tw-font-display tw-font-extrabold">
+      We’ve got no chance of keeping up!
+    </p>
+  </div>
+
+  <ul class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-flex-wrap tw-gap-4 md:tw-gap-8">
+    <% @systems.each do |system| %>
+      <li>
+        <%= render SystemTokenComponent.new(name: system.name, count: system.entries.count, url: site_url(subdomain: system.slug), live: system.live) %>
+      </li>
+    <% end %>
+  </ul>
 
 
-<div class="tw-text-center tw-flex-col tw-flex tw-gap-3 tw-drop-shadow-sm tw-leading-7 md:tw-text-2xl lg:tw-text-4xl tw-max-w-md md:tw-max-w-xl lg:tw-max-w-4xl">
-  <p class="tw-font-display">
-    Plus we&apos;re on <a href="#" class="tw-font-extrabold tw-underline tw-underline-offset-4">Discord</a> for everything else.
-  </p>
+  <div class="tw-text-center tw-flex-col tw-flex tw-gap-3 tw-drop-shadow-sm tw-leading-7 md:tw-text-2xl lg:tw-text-4xl tw-max-w-md md:tw-max-w-xl lg:tw-max-w-4xl">
+    <p class="tw-font-display">
+      Plus we&apos;re on <a href="#" class="tw-font-extrabold tw-underline tw-underline-offset-4">Discord</a> for everything else.
+    </p>
+  </div>
 </div>
