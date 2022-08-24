@@ -1,31 +1,27 @@
-<div class="tw-w-screen tw-min-h-screen tw-text-white tw-px-4 tw-py-16 tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-8 lg:tw-grid tw-grid-rows-[1fr_repeat(3,_auto)_1fr] tw-auto-cols-[512px] tw-place-items-center tw-place-content-center lg:tw-py-0 lg:tw-gap-3">
-  <%# Empty div for empty cell - saves on row-start classes %>
-  <div class="tw-hidden lg:tw-block"></div>
+<% content_for(:body_class) do %>tw-bg-gradient-to-tr tw-from-primary-9 tw-to-secondary-9 tw-bg-[length:100%_120%] tw-bg-center<% end %>
 
-  <%= render ExLibrisLogoComponent.new %>
+<div class="tw-text-white tw-px-4 tw-py-16 tw-flex tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3 lg:tw-py-0 lg:tw-grid tw-grid-cols-[512px_minmax(512px,_768px)] tw-grid-rows-[100vh_auto] lg:tw-gap-y-0 tw-min-h-screen">
+  <div class="tw-contents lg:tw-flex tw-flex-col tw-place-items-center tw-place-content-center lg:tw-sticky tw-top-0 tw-place-self-stretch tw-text-center tw-font-display tw-gap-3">
+    <%= render ExLibrisLogoComponent.new %>
 
-  <div class="tw-text-center tw-flex-col tw-flex tw-gap-3 tw-drop-shadow-sm tw-leading-7 tw-max-w-md">
-    <p class="tw-font-display">
+    <p class="tw-max-w-md tw-order-2 tw-drop-shadow-sm">
       Catalogues of all the incredible content created by you, the community, for some of our favorite indie RPGs.
     </p>
 
-    <p class="tw-font-display tw-font-extrabold">
+    <p class="tw-font-extrabold tw-max-w-md tw-order-3 tw-drop-shadow-sm">
       We’ve got no chance of keeping up!
+    </p>
+
+    <p class="tw-max-w-md tw-order-5 tw-drop-shadow-sm">
+      Plus we&apos;re on <a href="#" class="tw-font-extrabold tw-underline tw-underline-offset-4">Discord</a> for everything else.
     </p>
   </div>
 
-  <ul class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-flex-wrap tw-gap-4 tw-col-start-2 tw-row-span-full lg:tw-max-h-screen lg:tw-overflow-y-scroll lg:tw-py-16">
+  <ul class="tw-flex tw-flex-row tw-place-content-center tw-flex-wrap tw-gap-4 tw-col-start-2 tw-order-4 tw-max-w-3xl tw-py-5 lg:tw-py-12 tw-row-span-2">
     <% @systems.each do |system| %>
       <li>
         <%= render SystemTokenComponent.new(name: system.name, count: system.entries.count, url: site_url(subdomain: system.slug), live: system.live) %>
       </li>
     <% end %>
   </ul>
-
-
-  <div class="tw-text-center tw-flex-col tw-flex tw-gap-3 tw-drop-shadow-sm tw-leading-7 tw-max-w-md">
-    <p class="tw-font-display">
-      Plus we&apos;re on <a href="#" class="tw-font-extrabold tw-underline tw-underline-offset-4">Discord</a> for everything else.
-    </p>
-  </div>
 </div>
