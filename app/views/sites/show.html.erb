@@ -1,4 +1,7 @@
-<div class="tw-w-screen tw-min-h-screen tw-text-white tw-px-4 tw-py-16 tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-8">
+<div class="tw-w-screen tw-min-h-screen tw-text-white tw-px-4 tw-py-16 tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-8 lg:tw-grid tw-grid-rows-[1fr_repeat(3,_auto)_1fr] tw-auto-cols-[512px] tw-place-items-center tw-place-content-center lg:tw-py-0 lg:tw-gap-3">
+  <%# Empty div for empty cell - saves on row-start classes %>
+  <div></div>
+
   <%= render ExLibrisLogoComponent.new %>
 
   <div class="tw-text-center tw-flex-col tw-flex tw-gap-3 tw-drop-shadow-sm tw-leading-7 tw-max-w-md">
@@ -11,7 +14,7 @@
     </p>
   </div>
 
-  <ul class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-flex-wrap tw-gap-4">
+  <ul class="tw-flex tw-flex-row tw-items-center tw-justify-center tw-flex-wrap tw-gap-4 tw-col-start-2 tw-row-span-full lg:tw-max-h-screen lg:tw-overflow-y-scroll lg:tw-py-16">
     <% @systems.each do |system| %>
       <li>
         <%= render SystemTokenComponent.new(name: system.name, count: system.entries.count, url: site_url(subdomain: system.slug), live: system.live) %>
