@@ -67,9 +67,15 @@ module.exports = {
       addVariant("busy", "&[busy]")
       addVariant("group-busy", ":merge(.group)[busy] &")
       addVariant("peer-busy", "[busy] ~ &")
-      addVariant("disabled", "&[disabled]")
-      addVariant("group-disabled", ":merge(.group)[disabled] &")
-      addVariant("peer-disabled", "[disabled] ~ &")
+      addVariant("disabled", ["&[disabled]", "&[aria-disabled='true']"])
+      addVariant("group-disabled", [
+        ":merge(.group)[disabled] &",
+        ":merge(.group)[aria-disabled='true'] &"
+      ])
+      addVariant("peer-disabled", [
+        "[disabled] ~ &",
+        "[aria-disabled='true'] ~ &"
+      ])
       addVariant("aria-selected", "&[aria-selected=true]")
     })
   ]

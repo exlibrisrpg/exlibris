@@ -1,12 +1,12 @@
-<%= link_to url, class: token_class do %>
-  <span class="tw-font-brand tw-text-white tw-tracking-tight tw-drop-shadow-sm tw-flex-shrink-0 tw-font-extrabold tw-text-2xl tw-leading-none"><%= name %></span>
+<%= link_to url, class: token_class, "aria-disabled": !live do %>
+  <span class="tw-font-brand tw-text-white tw-tracking-tight tw-drop-shadow-sm tw-flex-shrink-0 tw-font-extrabold tw-text-2xl tw-leading-none tw-blur-none group-disabled:group-hover:tw-blur group-disabled:group-focus:tw-blur tw-transition"><%= name %></span>
   <% if count? %>
-    <span class="tw-font-brand tw-text-white tw-bg-white/30 tw-rounded-full tw-lining-nums tw-leading-none tw-drop-shadow-sm tw-flex-shrink-0 tw-font-extrabold tw-text-xl tw-px-2 tw-py-0.5">
+    <span class="tw-font-brand tw-text-white tw-bg-white/30 tw-rounded-full tw-lining-nums tw-leading-none tw-drop-shadow-sm tw-flex-shrink-0 tw-font-extrabold tw-text-xl tw-px-2 tw-py-0.5 tw-blur-none group-disabled:group-hover:tw-blur group-disabled:group-focus:tw-blur tw-transition">
       <span class="tw-sr-only">Contains</span> <%= @count %> <span class="tw-sr-only">entries.</span>
     </span>
   <% end %>
   <% if !live %>
-    <div class="tw-inset-0 tw-absolute tw-backdrop-blur tw-rounded-full tw-align-middle tw-opacity-0 tw-flex tw-place-items-center tw-place-content-center group-hover:tw-opacity-100 focus:tw-opacity-100 tw-transition-opacity tw-duration-200">
+    <div class="tw-inset-0 tw-absolute tw-rounded-full tw-align-middle tw-opacity-0 tw-flex tw-place-items-center tw-place-content-center group-hover:tw-opacity-100 group-focus:tw-opacity-100 tw-transition-opacity tw-pointer-events-none">
       <span class="tw-font-display tw-text-lg tw-font-extrabold tw-text-white">
       In progress
       </span>
