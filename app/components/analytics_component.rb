@@ -4,7 +4,9 @@ class AnalyticsComponent < ViewComponent::Base
   end
 
   def domains
-    ["#{Current.system.slug}.exlibrisrpg.com", "exlibrisrpg.com"].join(",")
+    domains = ["exlibrisrpg.com"]
+    domains << "#{Current.system.slug}.exlibrisrpg.com" if Current.system.present?
+    domains.join(",")
   end
 
   def render?
