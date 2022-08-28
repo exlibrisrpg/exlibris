@@ -5,4 +5,11 @@
       <span class="tw-sr-only">Contains</span> <%= @count %> <span class="tw-sr-only">entries.</span>
     </span>
   <% end %>
+  <% if !live %>
+    <div class="tw-inset-0 tw-absolute tw-backdrop-blur tw-rounded-full tw-align-middle tw-opacity-0 tw-flex tw-place-items-center tw-place-content-center group-hover:tw-opacity-100 focus:tw-opacity-100 tw-transition-opacity tw-duration-200">
+      <span class="tw-font-display tw-text-lg tw-font-extrabold tw-text-white">
+      In progress
+      </span>
+    </div>
+  <% end %>
 <% end %>
