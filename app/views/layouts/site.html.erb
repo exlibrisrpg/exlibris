@@ -1,3 +1,5 @@
+<% content_for(:body_class) do %>tw-bg-gradient-to-tr tw-from-primary-9 tw-to-secondary-9 tw-bg-[length:100%_120%] tw-bg-center tw-text-white tw-font-body<% end %>
+
 <% content_for(:body) do %>
   <%= content_for?(:site_body) ? yield(:site_body) : yield %>
 <% end %>

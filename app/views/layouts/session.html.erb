@@ -1,14 +1,22 @@
 <% content_for(:site_body) do %>
-  <% if flash.any? %>
-    <div id="flash">
-      <% flash.each do |key, value| %>
-        <div class="flash <%= key %> tw-w-96 tw-box-content tw-bg-white/20 tw-p-8 tw-rounded-lg"><%= value %></div>
-      <% end %>
+  <div class="tw-w-full tw-h-screen tw-flex tw-flex-col lg:tw-items-stretch lg:tw-flex-row">
+    <div class="tw-p-4 tw-bg-gradient-to-tr tw-from-primary-9 tw-to-secondary-9 lg:tw-flex-1 tw-flex tw-flex-col tw-place-content-center tw-place-items-center">
+      <%= render ExLibrisLogoComponent.new %>
     </div>
-  <% end %>
 
-  <div class="tw-w-96 tw-box-content tw-bg-white/20 tw-p-8 tw-rounded-lg">
-    <%= yield %>
+    <div class="tw-bg-white tw-flex-1 tw-flex tw-place-content-center lg:tw-place-items-center tw-text-secondary-12 tw-p-8">
+    <% if flash.any? %>
+      <div id="flash">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %> tw-w-96 tw-box-content tw-bg-white/20 tw-p-8 tw-rounded-lg"><%= value %></div>
+        <% end %>
+      </div>
+    <% end %>
+
+    <div class="tw-w-96 tw-box-content">
+      <%= yield %>
+    </div>
+  </div>
   </div>
 <% end %>
 
