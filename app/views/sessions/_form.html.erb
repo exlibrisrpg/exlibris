@@ -1,22 +1,20 @@
-<%= form_for :session, url: session_path, data: { turbo: false } do |form| %>
-  <div class="text-field">
-    <%= form.label :email %>
-    <%= form.text_field :email, type: 'email' %>
+<%= form_for :session, url: session_path, class: "tw-flex tw-flex-col tw-gap-4", data: { turbo: false } do |form| %>
+  <div>
+    <%= form.label :email, class: "tw-text-main-11 tw-text-sm" %>
+    <%= form.text_field :email, type: 'email', class: "tw-border tw-border-main-7 tw-rounded-lg tw-px-2 tw-py-1 tw-shadow-sm hover:tw-border-main-8 focus:tw-border-main-8 tw-text-main-12 tw-outline-none tw-ring-main-7 focus:tw-ring" %>
   </div>
 
-  <div class="password-field">
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+  <div>
+    <%= form.label :password, class: "tw-text-main-11 tw-text-sm" %>
+    <%= form.password_field :password, class: "tw-border tw-border-main-7 tw-rounded-lg tw-px-2 tw-py-1 tw-shadow-sm hover:tw-border-main-8 focus:tw-border-main-8 tw-text-main-12 tw-outline-none tw-ring-main-7 focus:tw-ring" %>
   </div>
 
-  <div class="submit-field">
-    <%= form.submit %>
-  </div>
+  <%= form.submit class: "tw-bg-accent-3 tw-text-accent-11 tw-px-2 tw-py-1 tw-rounded-lg tw-border-accent-7 tw-border hover:tw-cursor-pointer tw-shadow-sm hover:tw-border-accent-8 hover:tw-bg-accent-4 focus:tw-border-accent-8 focus:tw-bg-accent-4 tw-outline-none tw-ring-accent-7 focus:tw-ring" %>
 
-  <div class="other-links">
+  <div class="tw-text-right tw-text-sm tw-text-accent-11">
     <% if Clearance.configuration.allow_sign_up? %>
       <%= link_to t(".sign_up"), sign_up_path %>
     <% end %>
-    <%= link_to t(".forgot_password"), new_password_path %>
+    <%= link_to t(".forgot_password"), new_password_path, class: "hover:tw-underline focus:tw-underline tw-outline-none tw-ring-accent-7 focus:tw-ring-2 tw-ring-offset-2 tw-rounded-sm" %>
   </div>
 <% end %>

@@ -1,5 +1,5 @@
 class SystemTokenComponent < ViewComponent::Base
-  attr_reader :name, :count, :url, :live
+  attr_reader :name, :count, :live
 
   def initialize(name:, count:, url: nil, live: true)
     @name = name
