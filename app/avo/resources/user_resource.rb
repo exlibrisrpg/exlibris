@@ -11,4 +11,7 @@ class UserResource < Avo::BaseResource
   field :curated_systems, as: :has_many, through: :curation_roles
 
   action ResetPassword
+
+  filter UserRoleFilter
+  filter UserCuratesSystemFilter
 end
