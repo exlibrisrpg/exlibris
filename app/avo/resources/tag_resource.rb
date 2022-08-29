@@ -15,7 +15,7 @@ class TagResource < Avo::BaseResource
       scope.first.id
     end
   end
-  field :short_description, as: :text, visible: ->(resource:) { resource.model.tag_category&.short_description_required }, required: ->(resource:) { resource.model.tag_category&.short_description_required }, hide_on: :index
+  field :short_description, as: :text, visible: ->(resource:) { resource.model.tag_category&.short_description_required }, required: -> { record.tag_category&.short_description_required }, hide_on: :index
   field :order, as: :number, sortable: true
 
   field :description, as: :trix, always_show: true, attachments_disabled: true
