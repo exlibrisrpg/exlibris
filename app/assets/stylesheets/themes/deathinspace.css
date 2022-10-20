@@ -1,0 +1,35 @@
+:root {
+  --dis-black: 0deg 0% 0%;
+  --dis-red: 0deg 100% 30%;
+  --dis-white: 0deg 0% 100%;
+  
+  /* colors.accent */
+  --color--accent-1: var(--dis-green);
+  /* header bg */
+  --color--accent-2: var(--dis-black);
+  /* search bar bg, latest additions bg */
+  --color--accent-3: var(--dis-red);
+  /* each latest item bg */
+  --color--accent-4: var(--dis-black);
+  /* search bar text color */
+  --color--accent-11: var(--dis-white);
+  /* header text color, search bar magnifying glass icon */
+  --color--accent-12: var(--dis-white);
+
+  /* categories and latest additions title text */
+  --color--main-11: var(--dis-white);
+
+  /* colors.primary; main content bg */
+  --color--primary-1: var(--dis-black);
+
+  /* footer bg */
+  --color--secondary-2: var(--dis-black);
+  /* top separator bar */
+  --color--secondary-3: var(--dis-black);
+  /* footer text */
+  --color--secondary-11: var(--dis-white);
+
+  --font-family--body: "IBM Plex Mono";
+  --font-family--brand: "IBM Plex Mono";
+  --font-family--display: "IBM Plex Mono";
+}
