@@ -17,6 +17,11 @@ mork_borg_cult:
   system: mork_borg
 
 # Creators
+neural_noise:
+  name: Neural_noise
+  tag_category: death_in_space_creators
+  slug: neural-noise
+  system: death_in_space
 johan_nohr:
   name: Johan Nohr
   tag_category: mork_borg_creators

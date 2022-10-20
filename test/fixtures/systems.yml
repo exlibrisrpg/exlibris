@@ -4,6 +4,12 @@ cy_borg:
   tagline: A directory of content, tools, and resources
   live: false
 
+death_in_space:
+  name: Death in Space
+  slug: deathinspace
+  tagline: A directory of content, tools, and resources
+  live: true
+
 mausritter:
   name: Mausritter
   slug: mausritter
