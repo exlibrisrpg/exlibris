@@ -36,7 +36,7 @@ class EntryResource < Avo::BaseResource
     suggestions: -> { Tag.suggestions_for(record.system).as_json(only: [:value, :label]) }
 
   field :category, as: :text, hide_on: :show do |model|
-    model.tags.where(tag_category: TagCategory.find_by(name: "Categories"))&.first&.name
+    model.category_tags&.first&.name
   end
 
   filter CategoryFilter
