@@ -1,7 +1,7 @@
 class TagResource < Avo::BaseResource
   self.title = :name
   self.includes = []
-  self.search_query = ->(params:) do
+  self.search_query = -> do
     scope.containing(params[:q])
   end
   self.resolve_query_scope = ->(model_class:) do

@@ -1,6 +1,6 @@
 class UserResource < Avo::BaseResource
   self.title = :email
-  self.search_query = ->(params:) do
+  self.search_query = -> do
     scope.where("users.email ILIKE :query", query: "%#{params[:q]}%")
   end
 
