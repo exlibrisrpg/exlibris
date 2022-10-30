@@ -1,6 +1,6 @@
 class SystemResource < Avo::BaseResource
   self.title = :name
-  self.search_query = ->(params:) do
+  self.search_query = -> do
     scope.where("systems.name ILIKE :query", query: "%#{params[:q]}%")
   end
 
