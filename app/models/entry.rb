@@ -34,7 +34,7 @@ class Entry < ApplicationRecord
   scope :with_tags, ->(filter_tag_ids) { where(id: Entry.joins(:entries_tags).where(entries_tags: {tag_id: filter_tag_ids}).group(:id).having("COUNT(entries.*) = ?", filter_tag_ids.size)) }
 
   def category_tags
-    tags.with_includes.where(tag_category: TagCategory.find_by(name: "Categories"))
+    tags.with_includes.where(tag_category: TagCategory.find_by(name: "Categories", system: system))
   end
 
   def to_meta_tags
