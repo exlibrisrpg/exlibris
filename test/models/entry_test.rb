@@ -25,6 +25,13 @@ class EntryTest < ActiveSupport::TestCase
 
   should accept_nested_attributes_for(:links).allow_destroy(true)
 
+  context ".category_tags" do
+    should "return tags under the 'Categories' Tag Category for the same system" do
+      assert_includes tags(:mausritter_rules).entries.first.category_tags, tags(:mausritter_rules)
+      assert_includes tags(:mork_borg_rules).entries.first.category_tags, tags(:mork_borg_rules)
+    end
+  end
+
   context ".containing" do
     should "match on name and description" do
       results = Entry.containing("eat or feat")
