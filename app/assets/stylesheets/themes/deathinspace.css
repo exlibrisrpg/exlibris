@@ -2,18 +2,24 @@
   --dis-black: 0deg 0% 0%;
   --dis-red: 0deg 100% 30%;
   --dis-white: 0deg 0% 100%;
-  
-  /* colors.accent */
-  --color--accent-1: var(--dis-green);
+
+  /* search bar bg, search term match fg */
+  --color--accent-1: var(--dis-red);
   /* header bg */
   --color--accent-2: var(--dis-black);
   /* search bar bg, latest additions bg */
   --color--accent-3: var(--dis-red);
   /* each latest item bg */
   --color--accent-4: var(--dis-black);
-  /* search bar text color */
+  /* button border */
+  --color--accent-6: var(--dis-white);
+  /* button hover border */
+  --color--accent-7: var(--dis-white);
+  /* search term match bg */
+  --color--accent-9: var(--dis-black);
+  /* search bar text */
   --color--accent-11: var(--dis-white);
-  /* header text color, search bar magnifying glass icon */
+  /* header text, search bar magnifying glass icon */
   --color--accent-12: var(--dis-white);
 
   /* categories and latest additions title text */
