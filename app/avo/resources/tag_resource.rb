@@ -7,6 +7,12 @@ class TagResource < Avo::BaseResource
   self.resolve_query_scope = ->(model_class:) do
     model_class.by_name
   end
+  self.show_controls = -> do
+    back_button
+    delete_button
+    edit_button
+    link_to "View Tag", view_context.main_app.tag_url(record, subdomain: record.system.slug), style: :primary, color: "emerald", icon: "heroicons/solid/link"
+  end
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
   field :system, as: :belongs_to, required: true, default: -> do

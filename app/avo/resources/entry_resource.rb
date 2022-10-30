@@ -4,6 +4,12 @@ class EntryResource < Avo::BaseResource
   self.search_query = -> do
     scope.containing(params[:q])
   end
+  self.show_controls = -> do
+    back_button
+    delete_button
+    edit_button
+    link_to "View Entry", view_context.main_app.entry_url(record, subdomain: record.system.slug), style: :primary, color: "emerald", icon: "heroicons/solid/link"
+  end
 
   field :name, as: :text, required: true, sortable: true, link_to_resource: true
   field :system, as: :belongs_to, required: true, default: -> do
