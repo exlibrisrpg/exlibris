@@ -1,0 +1,16 @@
+<div class="tw-flex tw-flex-col tw-gap-6 tw-text-center">
+  <h2 class="tw-font-display tw-text-2xl tw-text-accent-10"><%= t ".heading" %></h2>
+
+  <dl class="switcher | tw-font-body">
+    <% categories.in_groups(2, false) do |category_group| %>
+      <div class="tw-flex tw-flex-col tw-gap-3">
+        <% category_group.each do |category| %>
+          <div>
+            <dt><%= link_to category.name, category, data: { } %></dt>
+            <dd><%= category.short_description %></dd>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </dl>
+</div>
