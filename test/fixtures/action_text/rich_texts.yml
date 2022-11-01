@@ -36,3 +36,12 @@ morkborg_footer:
       <p>Unless otherwise noted, the products presented here are independent productions by their respective authors/publishers and are not affiliated with Ockult Örtmästare Games or Stockholm Kartell. They are published under the MÖRK BORG Third Party License.</p>
       <p>MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.</p>
     </div>
+
+deathinspace_footer:
+  record: death_in_space (System)
+  name: footer
+  body: |
+    <div>
+      <p>DEATH IN SPACE is © Stockholm Kartell and/or other authors</p>
+      <p>Ex Libris Death in Space is an independent production by Ex Libris curators and is not affiliated with Stockholm Kartell. It is published under the DEATH IN SPACE Third Party License.</p>
+    </div>
