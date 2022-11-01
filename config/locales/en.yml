@@ -76,6 +76,13 @@ en:
         <hr>
         <p>Unless otherwise noted, the third-party products presented here are independent productions by their respective authors/publishers and are not affiliated with Ockult Örtmästare Games or Stockholm Kartell. They are published under the MÖRK BORG Third Party License.</p>
         <p>MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.</p>
+      death_in_space_html: |
+        <h1>About ELDIS</h1>
+        <p>EX LIBRIS DEATH IN SPACE is a directory of official, semi-official, and third-party content for the DEATH IN SPACE RPG. This resource is meant to raise creators’ visibility in the community and help players & GMs discover new content to use in their games.</p>
+        <p>If you know of missing content or have published something of your own, drop by the <a href="https://discord.gg/Psqc7p4x4p" class="tw-underline">DEATH IN SPACE discord</a> and post it in the <code>#stuff-for-death</code> channel.</p>
+        <hr>
+        <p>Unless otherwise noted, the third-party products presented here are independent productions by their respective authors/publishers and are not affiliated with Stockholm Kartell.</p>
+        <p>DEATH IN SPACE is © Stockholm Kartell and/or other authors.</p>
     credits:
       title: Credits
 

@@ -2,6 +2,7 @@
   --dis-black: 0deg 0% 0%;
   --dis-red: 0deg 100% 30%;
   --dis-white: 0deg 0% 100%;
+  --dis-gray: 0deg 0% 60%;
 
   /* search bar bg, search term match fg */
   --color--accent-1: var(--dis-red);
@@ -12,9 +13,9 @@
   /* each latest item bg */
   --color--accent-4: var(--dis-black);
   /* button border */
-  --color--accent-6: var(--dis-white);
+  --color--accent-6: var(--dis-red);
   /* button hover border */
-  --color--accent-7: var(--dis-white);
+  --color--accent-7: var(--dis-red);
   /* search term match bg */
   --color--accent-9: var(--dis-black);
   /* search bar text */
@@ -22,7 +23,7 @@
   /* header text, search bar magnifying glass icon */
   --color--accent-12: var(--dis-white);
 
-  /* categories and latest additions title text */
+  /* main text, including entry content and categories /latest additions title text */
   --color--main-11: var(--dis-white);
 
   /* colors.primary; main content bg */
@@ -38,4 +39,20 @@
   --font-family--body: "IBM Plex Mono";
   --font-family--brand: "IBM Plex Mono";
   --font-family--display: "IBM Plex Mono";
+}
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tw-button {
+  border-radius: 0%;
+  border-color: hsl(var(--dis-red));
+  text-transform: uppercase;
 }
