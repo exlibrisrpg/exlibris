@@ -2,8 +2,7 @@
   --dis-black: 0deg 0% 0%;
   --dis-red: 0deg 100% 30%;
   --dis-white: 0deg 0% 100%;
-  --dis-gray: 0deg 0% 60%;
-
+  
   /* search bar bg, search term match fg */
   --color--accent-1: var(--dis-red);
   /* header bg */
