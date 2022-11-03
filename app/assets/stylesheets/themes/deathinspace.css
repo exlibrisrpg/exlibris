@@ -40,12 +40,7 @@
   --font-family--display: "IBM Plex Mono";
 }
 
-h1 {
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-h2 {
+h1, h2 {
   font-weight: 400;
   text-transform: uppercase;
 }
