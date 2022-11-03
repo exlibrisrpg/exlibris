@@ -52,7 +52,7 @@
         <div class="tw-container tw-mx-auto tw-p-4 tw-font-body">
           <div class="switcher tw-text-xs tw-leading-relaxed">
             <ul role="menu" class="tw-flex tw-flex-col tw-gap-2">
-              <li class="tw-font-brand tw-text-xl tw-font-extrabold" style="text-transform: uppercase;"><%= link_to Current.system.full_name, dashboard_path(anchor: "content") %></li>
+              <li class="tw-font-brand tw-text-xl tw-font-extrabold tw-uppercase"><%= link_to Current.system.full_name, dashboard_path(anchor: "content") %></li>
               <li><%= link_to t(".footer.tags_link"), tags_path %></li>
               <li><%= link_to t(".footer.search_link"), search_path %></li>
               <li><%= link_to t(".footer.credits_link"), credits_path %></li>
