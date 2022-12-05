@@ -27,6 +27,15 @@ rules_description:
   body: <div>Optional and alternative rules.</div>
 
 # Systems
+cyborg_footer:
+  record: cy_borg (System)
+  name: footer
+  body: |
+    <div>
+      <p>Unless otherwise noted, the products presented here are independent productions by their respective authors/publishers and are not affiliated with Stockholm Kartell. They are published under the CY_BORG Third Party License.</p>
+      <p>CY_BORG is &copy; 2022 Stockholm Kartell.</p>
+    </div>
+
 morkborg_footer:
   record: mork_borg (System)
   name: footer

@@ -134,6 +134,70 @@
   src: url("AlegreyaSans-ExtraBoldItalic.ttf");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Azeret Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("AzeretMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Azeret Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("AzeretMono-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Azeret Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("AzeretMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Azeret Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("AzeretMono-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik Glitch";
+  font-style: normal;
+  font-weight: 400;
+  src: url("RubikGlitch-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Silkscreen";
+  font-style: italic;
+  font-weight: 400;
+  src: url("Silkscreen-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Silkscreen";
+  font-style: italic;
+  font-weight: 700;
+  src: url("Silkscreen-Bold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  src: url("VT323-Regular.ttf");
+}
+
 html {
   font-size: var(--font-size);
 }

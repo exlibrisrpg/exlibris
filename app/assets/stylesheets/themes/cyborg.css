@@ -1,0 +1,71 @@
+/* TODO: debug why _head.html+cyborg.erb isn't loading fonts right */
+/* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Rubik+Glitch&family=Silkscreen&family=VT323&display=swap'); */
+
+:root {
+  /* #000000 */
+  --cy-black: 0deg 0% 0%;
+  /* #00FFFF */
+  --cy-cyan: 180deg 100% 50%;
+  /* #6800A4 */
+  --cy-purple: 278deg 100% 32%;
+  /* #FFC800 */
+  --cy-yellow: 47deg 100% 50%;
+  /* #FFFFFF */
+  --cy-white: 0deg 100% 100%;
+  
+  /* search bar bg, search term match fg */
+  --color--accent-1: var(--cy-yellow);
+  /* header bg */
+  --color--accent-2: var(--cy-purple);
+  /* search bar bg, latest additions bg */
+  --color--accent-3: var(--cy-black);
+  /* each latest item bg */
+  --color--accent-4: var(--cy-purple);
+  /* button border */
+  --color--accent-6: var(--cy-yellow);
+  /* button hover border */
+  --color--accent-7: var(--cy-yellow);
+  /* search term match bg */
+  --color--accent-9: var(--cy-purple);
+  /* search bar text */
+  --color--accent-11: var(--cy-yellow);
+  /* header text, search bar magnifying glass icon */
+  --color--accent-12: var(--cy-yellow);
+
+  /* reversed anchors */
+  --color--main-10: var(--cy-black);
+  /* main text, including entry content and categories /latest additions title text */
+  --color--main-11: var(--cy-yellow);
+  /* system name */
+  --color--main-12: var(--cy-cyan);
+
+  /* colors.primary; main content bg */
+  --color--primary-1: var(--cy-black);
+
+  /* footer bg */
+  --color--secondary-2: var(--cy-purple);
+  /* top separator bar */
+  --color--secondary-3: var(--cy-black);
+  /* category button text, footer text */
+  --color--secondary-11: var(--cy-yellow);
+  /* footer legal */
+  --color--secondary-12: var(--cy-white);
+
+  --font-family--body: "Azeret Mono", monospace;
+  --font-family--brand: "Rubik Glitch", monospace;
+  --font-family--display: "Silkscreen", monospace;
+  --font-family--legal: "VT323", monospace;
+}
+
+.tw-button {
+  border-color: hsl(var(--cy-yellow));
+  border-radius: 0%;
+  border-style: dashed;
+  font-family: var(--font-family--display);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.glitch-shadow {
+  text-shadow: -5px -5px hsl(var(--cy-black));
+}

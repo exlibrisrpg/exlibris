@@ -1,0 +1,30 @@
+<% content_for(:title) do %><%= t(".title") %><% end %>
+
+<% content_for :banner do %>
+  <div class="tw-bg-secondary-3 tw-text-secondary-12">
+    <div class="tw-container tw-mx-auto tw-flex tw-flex-col tw-gap-8 tw-px-4 tw-py-8">
+      <h1 class="tw-font-display tw-text-4xl tw-text-center"><%= t(".title") %></h1>
+
+      <%= render SearchFormComponent.new(search: @search) %>
+    </div>
+  </div>
+<% end %>
+
+<% if @search.valid? %>
+  <div class="tw-flex tw-flex-col tw-gap-8">
+  <h2 class="tw-text-4xl tw-font-semibold tw-text-main-12"><%= pluralize(@search.tags.count, Tag.model_name.human) %></h2>
+
+  <div class="tw-flex tw-gap-4 tw-justify-center tw-font-body" data-controller="search-highlights">
+    <% @search.tags.each do |tag| %>
+      <%= link_to search_highlight(tag.name, @search.query&.split(" ")), tag %>
+    <% end %>
+  </div>
+
+  <h2 class="tw-text-4xl tw-font-semibold tw-text-main-12"><%= pluralize(@search.entries.count, Entry.model_name.human) %></h2>
+
+  <%= render PaginationComponent.new(page: @page, path: ->(next_page) { search_path(query: @search.query, page: @page.next_param) }) do |c| %>
+    <% c.body do %>
+      <%= render EntryComponent.with_collection(@page.records, search_term: @search.query) %>
+    <% end %>
+  <% end %>
+<% end %>

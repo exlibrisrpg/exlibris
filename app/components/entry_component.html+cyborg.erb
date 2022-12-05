@@ -1,0 +1,47 @@
+<div id="<%= dom_id entry %>" class="tw-font-body tw-flex tw-flex-col tw-gap-6 sm:tw-flex-row tw-items-start tw-text-main-11">
+  <div class="sm:tw-w-64 tw-flex-shrink-0">
+    <% if entry.cover.attached? %>
+      <div class="tw-bg-accent-5 tw-p-4 sm:tw-aspect-1">
+        <%= image_tag entry.cover, class: "tw-w-full sm:tw-object-contain sm:tw-aspect-1" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="tw-flex tw-flex-col tw-gap-3">
+    <h2 class="tw-text-2xl tw-font-semibold tw-text-main-12"><%= link_to name, entry %></h2>
+
+    <% if creator_tags.any? %>
+      <% if creator_tags.count > 5 %>
+        <details class="tw-group">
+          <summary class="group-open:tw-mb-3">
+              <em><%= t ".many_contributors", count: creator_tags.count %></em>
+          </summary>
+          <div class="tw-flex tw-gap-4 tw-flex-wrap">
+            <%= render partial: "tags/tag", collection: creator_tags %>
+          </div>
+        </details>
+      <% else %>
+        <div class="tw-flex tw-gap-4 tw-flex-wrap">
+          <%= render partial: "tags/tag", collection: creator_tags %>
+        </div>
+      <% end %>
+    <% end %>
+
+    <%= render RichTextComponent.new(rich_text: entry.description, search_term: search_term) %>
+
+    <% if non_creator_tags.any? %>
+      <div class="tw-flex tw-gap-4 tw-flex-wrap">
+        <% non_creator_tags.group_by(&:tag_category).each_with_index do |(category, tags), index| %>
+          <% if index > 0 %><span>&mdash;</span><% end %>
+          <%= render TagComponent.with_collection(tags) %>
+        <% end %>
+      </div>
+    <% end %>
+
+    <% if entry.links.any? %>
+      <div class="tw-flex tw-gap-4 tw-flex-wrap">
+        <%= render Entry::LinkComponent.with_collection(entry.links.map(&:address)) %>
+      </div>
+    <% end %>
+  </div>
+</div>
