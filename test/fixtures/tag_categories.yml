@@ -1,3 +1,12 @@
+cy_borg_categories:
+  name: Categories
+  short_description_required: true
+  system: cy_borg
+cy_borg_creators:
+  name: Creators
+  short_description_required: false
+  system: cy_borg
+
 death_in_space_categories:
   name: Categories
   short_description_required: true

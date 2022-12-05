@@ -2,7 +2,7 @@ cy_borg:
   name: CY_BORG
   slug: cyborg
   tagline: A directory of content, tools, and resources
-  live: false
+  live: true
 
 death_in_space:
   name: Death in Space

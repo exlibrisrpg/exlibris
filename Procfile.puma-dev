@@ -1,0 +1,4 @@
+web: puma-dev 
+css-sass: yarn build:css --watch
+js: yarn build --watch
+css-tailwind: bin/rails tailwindcss:watch
