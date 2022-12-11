@@ -21,3 +21,9 @@ mork_borg:
   slug: morkborg
   tagline: A directory of content, tools, and resources
   live: true
+
+not_live:
+  name: Not Live for Unit Testing
+  slug: notlive
+  tagline: A directory of content, tools, and resources
+  live: false
