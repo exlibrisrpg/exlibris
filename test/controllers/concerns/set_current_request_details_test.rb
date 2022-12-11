@@ -57,7 +57,7 @@ class SetCurrentRequestDetailsTest < ActionDispatch::IntegrationTest
       context "as an anonymous visitor" do
         should "raise ActiveRecord::RecordNotFound" do
           assert_raises(ActiveRecord::RecordNotFound) do
-            get system_url(subdomain: "cyborg")
+            get system_url(subdomain: "notlive")
           end
         end
       end
