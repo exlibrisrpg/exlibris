@@ -1,6 +1,3 @@
-/* TODO: debug why _head.html+cyborg.erb isn't loading fonts right */
-/* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Rubik+Glitch&family=Silkscreen&family=VT323&display=swap'); */
-
 :root {
   /* #000000 */
   --cy-black: 0deg 0% 0%;
