@@ -21,7 +21,8 @@ jobs:
 
     - name: Deploy to Heroku
       run: |
-        git remote add production https://:$HEROKU_API_KEY@git.heroku.com/exlibris-production.git
+        heroku login
+        heroku git:remote --app=exlibris-production --remote=production
         git push production $GITHUB_REF:refs/heads/main
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
