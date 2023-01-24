@@ -1,0 +1,17 @@
+<%= link_to entry, class: "tw-font-body tw-h-64 tw-w-64 tw-bg-accent-4 tw-relative tw-block" do %>
+  <% if entry.cover.attached? %>
+    <%= image_tag entry.cover, class: "tw-object-contain tw-object-top" %>
+  <% end %>
+
+  <div class="tw-bottom-0 tw-left-0 tw-absolute tw-p-2 tw-right-0">
+    <div class="tw-text-xl tw-text-accent-10">
+      <span class="tw-bg-primary-1 tw-p-1 rounded"><%= entry.name %></span>
+    </div>
+
+    <div class="tw-text-accent-10 tw-font-light">
+      <% category_tags.each do |category| %>
+        <span class="tw-bg-primary-1 tw-p-1 rounded"><%= category.name %></span>
+      <% end %>
+    </div>
+  </div>
+<% end %>
