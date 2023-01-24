@@ -2,7 +2,7 @@
   /* colors */
   --mosh-black: 0deg 0% 0%;
   --mosh-white: 0deg 100% 100%;
-  --mosh-undefined: 37deg 86.6% 50.2%;
+  --mosh-highlight: 37deg 86.6% 50.2%;
   
   /* search bar bg, search term match fg */
   --color--accent-1: var(--mosh-black);
@@ -17,7 +17,7 @@
   /* button hover border */
   --color--accent-7: var(--mosh-white);
   /* search term match bg */
-  --color--accent-9: var(--mosh-undefined);
+  --color--accent-9: var(--mosh-highlight);
   /* latest additions fg */
   --color--accent-10: var(--mosh-black);
   /* search bar text */
