@@ -89,6 +89,13 @@ en:
         <hr>
         <p>Unless otherwise noted, the third-party products presented here are independent productions by their respective authors/publishers and are not affiliated with Stockholm Kartell.</p>
         <p>DEATH IN SPACE is © Stockholm Kartell and/or other authors.</p>
+      mothership_page_html: |
+        <h1>About ELMS</h1>
+        <p>EX LIBRIS MOTHERSHIP is a directory of official and third-party content for the MOTHERSHIP RPG. This resource is meant to raise creators’ visibility in the community and help players & GMs discover new content to use in their games.</p>
+        <p>If you know of missing content or have published something of your own, drop by the <a href="https://discord.gg/mothership-461670627468771329" class="tw-underline">Mothership discord</a> and post in the <code>#3pp-module-discussion</code> channel.</p>
+        <hr>
+        <p>Unless otherwise noted, the third-party products presented here are independent productions by their respective authors/publishers and are not affiliated with Tuesday Knight Games.</p>
+        <p>MOTHERSHIP® is a registered trademark of Tuesday Knight Games. All rights reserved. For additional information, visit www.tuesdayknightgames.com or contact contact@tuesdayknightgames.com.</p>
     credits:
       title: Credits
 
