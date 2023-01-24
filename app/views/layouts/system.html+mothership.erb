@@ -1,0 +1,72 @@
+<% content_for(:body_class) do %>fill | tw-bg-primary-1 tw-text-main-11 tw-font-body<% end %>
+
+<% content_for :body do %>
+  <%= render partial: "announcement" %>
+
+  <% if content_for?(:pre_header) %>
+    <%= yield(:pre_header) %>
+  <% end %>
+
+  <div class="fill | fill-with | tw-bg-primary-1">
+    <header id="content">
+      <div class="tw-bg-accent-2 tw-text-accent-12">
+        <div class="tw-container tw-mx-auto tw-p-4 tw-flex tw-gap-4 tw-items-center tw-justify-between tw-flex-wrap">
+          <div class="tw-flex tw-gap-4 tw-flex-grow tw-items-baseline tw-font-brand tw-flex-wrap highlight-none tw-text-white">
+            <%= link_to Current.system.full_name, dashboard_path(anchor: "content"), class: "tw-text-3xl tw-font-extrabold" %>
+            <small class="tw-text-base"><%= Current.system.tagline %></small>
+          </div>
+
+          <div class="tw-w-4/12 tw-flex-grow">
+            <% if @search.blank? %>
+              <%= render Layout::Header::SearchComponent.new(search: @search) %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <%= render Layout::Header::SecondaryNavComponent.new(links: Tag.categories(Current.system).map { |category| { label: category.name, path: url_for(category) } }) %>
+    </header>
+
+    <main class="fill-with">
+      <% if content_for?(:banner) %>
+        <%= content_for :banner %>
+      <% end %>
+
+      <div class="tw-container tw-mx-auto tw-p-4">
+        <div class="tw-flex tw-flex-col tw-gap-6">
+          <% if flash.any? %>
+            <div id="flash">
+              <% flash.each do |key, value| %>
+                <div class="flash <%= key %>"><%= value %></div>
+              <% end %>
+            </div>
+          <% end %>
+
+          <%= yield %>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="tw-bg-secondary-2 tw-text-secondary-11">
+        <div class="tw-container tw-mx-auto tw-p-4 tw-font-body">
+          <div class="switcher tw-text-xs tw-leading-relaxed">
+            <ul role="menu" class="tw-flex tw-flex-col tw-gap-2">
+              <li class="tw-font-brand tw-text-xl tw-font-extrabold"><%= link_to Current.system.full_name, dashboard_path(anchor: "content") %></li>
+              <li><%= link_to t(".footer.tags_link"), tags_path %></li>
+              <li><%= link_to t(".footer.search_link"), search_path %></li>
+              <li><%= link_to t(".footer.credits_link"), credits_path %></li>
+              <li><%= link_to t(".footer.about_link"), about_path %></li>
+            </ul>
+
+            <div class="tw-flex tw-flex-col tw-gap-2 tw-max-w-prose">
+              <%= Current.system.footer %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<% end %>
+
+<%= render template: "layouts/application" %>

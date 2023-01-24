@@ -1,0 +1,67 @@
+:root {
+  /* colors */
+  --mosh-black: 0deg 0% 0%;
+  --mosh-white: 0deg 100% 100%;
+  --mosh-undefined: 37deg 86.6% 50.2%;
+  
+  /* search bar bg, search term match fg */
+  --color--accent-1: var(--mosh-black);
+  /* header bg */
+  --color--accent-2: var(--mosh-black);
+  /* search bar bg, latest additions bg */
+  --color--accent-3: var(--mosh-white);
+  /* each latest item bg */
+  --color--accent-4: var(--mosh-black);
+  /* button border */
+  --color--accent-6: var(--mosh-white);
+  /* button hover border */
+  --color--accent-7: var(--mosh-white);
+  /* search term match bg */
+  --color--accent-9: var(--mosh-undefined);
+  /* latest additions fg */
+  --color--accent-10: var(--mosh-black);
+  /* search bar text */
+  --color--accent-11: var(--mosh-black);
+  /* search bar text and magnifying glass icon */
+  --color--accent-12: var(--mosh-black);
+
+  /* reversed anchors */
+  --color--main-10: var(--mosh-black);
+  /* main text, including entry content and categories /latest additions title text */
+  --color--main-11: var(--mosh-black);
+  /* system name */
+  --color--main-12: var(--mosh-black);
+
+  /* colors.primary; main content bg */
+  --color--primary-1: var(--mosh-white);
+
+  /* footer bg */
+  --color--secondary-2: var(--mosh-black);
+  /* top separator bar */
+  --color--secondary-3: var(--mosh-black);
+  /* category button text, footer text */
+  --color--secondary-11: var(--mosh-white);
+  /* footer legal */
+  --color--secondary-12: var(--mosh-white);
+
+  /* fontFamily */
+  --font-family--brand: "Futura LT Pro", "Futura PT", "Futura", ui-sans-serif, 
+    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+    "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family--body: "Helvetica PT", "Helvetica", "Helvetica Neue",
+    ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
+    roboto, arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family--display: var(--font-family--brand);
+}
+
+h1, h2 {
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  border-bottom: 0.2ch solid;
+}
+
+mark {
+  background-color: hsl(var(--color--accent-9));
+}
