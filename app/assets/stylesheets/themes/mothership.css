@@ -62,6 +62,11 @@ h1, h2 {
   border-bottom: 0.2ch solid;
 }
 
+.richtext ul, .richtext ol {
+  list-style: revert;
+  padding-left: 1rem;
+}
+
 mark {
   background-color: hsl(var(--color--accent-9));
 }

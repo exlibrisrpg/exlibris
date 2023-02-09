@@ -11,7 +11,7 @@ class RichTextComponent < ViewComponent::Base
   end
 
   def call
-    content_tag :div, body, class: "tw-max-w-prose tw-space-y-2 tw-text-base"
+    content_tag :div, body, class: "tw-max-w-prose tw-space-y-2 tw-text-base richtext"
   end
 
   def rich_text_html
