@@ -14,7 +14,7 @@ if !Rails.env.production?
 
     # The collection of systems we want to generate seeds for
     def systems
-      %w[cy_borg death_in_space mausritter mork_borg]
+      %w[cy_borg death_in_space lichoma mausritter mork_borg]
     end
 
     # The standard set of categories we should define on each system

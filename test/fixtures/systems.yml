@@ -10,6 +10,12 @@ death_in_space:
   tagline: A directory of content, tools, and resources
   live: true
 
+lichoma:
+  name: Lichoma
+  slug: lichoma
+  tagline: A directory of content, tools, and resources
+  live: true
+
 mausritter:
   name: Mausritter
   slug: mausritter

@@ -1,0 +1,52 @@
+:root {
+  --lichoma-black: 0deg 0% 0%;
+  --lichoma-red: 347deg 80% 50%;
+  --lichoma-white: 0deg 0% 100%;
+  
+  /* search bar bg, search term match fg */
+  --color--accent-1: var(--lichoma-red);
+  /* header bg */
+  --color--accent-2: var(--lichoma-black);
+  /* search bar bg, latest additions bg */
+  --color--accent-3: var(--lichoma-red);
+  /* each latest item bg */
+  --color--accent-4: var(--lichoma-black);
+  /* button border */
+  --color--accent-6: var(--lichoma-red);
+  /* button hover border */
+  --color--accent-7: var(--lichoma-red);
+  /* search term match bg */
+  --color--accent-9: var(--lichoma-black);
+  /* search bar text */
+  --color--accent-11: var(--lichoma-white);
+  /* header text, search bar magnifying glass icon */
+  --color--accent-12: var(--lichoma-white);
+
+  /* main text, including entry content and categories /latest additions title text */
+  --color--main-11: var(--lichoma-white);
+
+  /* colors.primary; main content bg */
+  --color--primary-1: var(--lichoma-black);
+
+  /* footer bg */
+  --color--secondary-2: var(--lichoma-black);
+  /* top separator bar */
+  --color--secondary-3: var(--lichoma-black);
+  /* footer text */
+  --color--secondary-11: var(--lichoma-white);
+
+  --font-family--body: "Alegreya Sans", sans-serif;
+  --font-family--brand: "Bebas Neue", sans-serif;
+  --font-family--display: "Bebas Neue", sans-serif;
+}
+
+h1, h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tw-button {
+  border-radius: 0%;
+  border-color: hsl(var(--lichoma-red));
+  text-transform: uppercase;
+}

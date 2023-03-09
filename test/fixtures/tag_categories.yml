@@ -16,6 +16,15 @@ death_in_space_creators:
   short_description_required: false
   system: death_in_space
 
+lichoma_categories:
+  name: Categories
+  short_description_required: true
+  system: lichoma
+lichoma_creators:
+  name: Creators
+  short_description_required: false
+  system: lichoma
+
 mausritter_categories:
   name: Categories
   short_description_required: true
