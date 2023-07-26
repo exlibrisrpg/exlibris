@@ -67,15 +67,7 @@ Rails.application.configure do
   # Set default mailer options
   config.action_mailer.default_url_options = {host: ENV.fetch("MAILER_HOST")}
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address: Rails.application.credentials.dig(:exlibrisrpg_smtp, :address),
-    port: Rails.application.credentials.dig(:exlibrisrpg_smtp, :port),
-    user_name: Rails.application.credentials.dig(:exlibrisrpg_smtp, :user_name),
-    password: Rails.application.credentials.dig(:exlibrisrpg_smtp, :password),
-    authentication: :plain,
-    enable_starttls_auto: true
-  }
+  config.action_mailer.delivery_method = :resend
 
   config.action_mailer.perform_caching = false
 
