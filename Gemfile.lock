@@ -320,8 +320,6 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.5.1)
     regexp_parser (2.5.0)
-    resend (0.2.1)
-      httparty (~> 0.20.0)
     rexml (3.2.5)
     rouge (4.0.0)
     rubocop (1.35.0)
@@ -438,7 +436,6 @@ DEPENDENCIES
   rails (~> 7.0.3)
   rails-controller-testing
   rails_anonymous_controller_testing
-  resend
   sentry-rails
   sentry-ruby
   shoulda-context

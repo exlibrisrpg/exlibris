@@ -32,7 +32,6 @@ gem "net-http"
 group :production do
   gem "barnes"
   gem "dalli"
-  gem "resend"
   gem "sentry-ruby"
   gem "sentry-rails"
 end
