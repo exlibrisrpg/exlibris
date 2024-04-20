@@ -37,3 +37,12 @@ mork_borg_officialness:
   name: Officialness
   short_description_required: false
   system: mork_borg
+
+pirate_borg_categories:
+  name: Categories
+  short_description_required: true
+  system: pirate_borg
+pirate_borg_creators:
+  name: Creators
+  short_description_required: false
+  system: pirate_borg

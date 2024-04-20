@@ -27,3 +27,9 @@ not_live:
   slug: notlive
   tagline: A directory of content, tools, and resources
   live: false
+
+pirate_borg:
+  name: Pirate Borg
+  slug: pirateborg
+  tagline: A directory of content, tools, and resources
+  live: true
