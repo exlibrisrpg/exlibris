@@ -1,0 +1,74 @@
+:root {
+  --pirateborg-red: 0deg 100% 50%;
+  --pirateborg-dim-red: 0deg 99% 43%;
+  --pirateborg-muted-red: 0deg 77% 45%;
+  --pirateborg-dim-green: 140deg 93% 21%;
+  --pirateborg-black: 0deg 0% 0%;
+  --pirateborg-white: 0deg 0% 100%;
+  --pirateborg-off-white: 0deg 0% 95%;
+
+  /* colors.main */
+  --color--main-1: var(--pirateborg-black);
+  --color--main-2: var(--pirateborg-black);
+  --color--main-3: var(--pirateborg-black);
+  --color--main-4: var(--pirateborg-black);
+  --color--main-5: var(--pirateborg-black);
+  --color--main-6: var(--pirateborg-black);
+  --color--main-7: var(--pirateborg-black);
+  --color--main-8: var(--pirateborg-black);
+  --color--main-9: var(--pirateborg-black);
+  --color--main-10: var(--pirateborg-black);
+  --color--main-11: 120deg 20% 99%;
+  --color--main-12: 128deg 95% 41%;
+
+  /* colors.accent */
+  --color--accent-1: var(--pirateborg-muted-red);
+  --color--accent-2: var(--pirateborg-black);
+  --color--accent-3: var(--pirateborg-black);
+  --color--accent-4: var(--pirateborg-black);
+  --color--accent-5: var(--pirateborg-red);
+  --color--accent-6: var(--pirateborg-black);
+  --color--accent-7: var(--pirateborg-black);
+  --color--accent-8: var(--pirateborg-black);
+  --color--accent-9: var(--pirateborg-black);
+  --color--accent-10: var(--pirateborg-white);
+  --color--accent-11: var(--pirateborg-white);
+  --color--accent-12: var(--pirateborg-red);
+
+  /* colors.primary */
+  --color--primary-1: var(--pirateborg-black);
+  --color--primary-2: var(--pirateborg-black);
+  --color--primary-3: var(--pirateborg-black);
+  --color--primary-4: var(--pirateborg-black);
+  --color--primary-5: var(--pirateborg-black);
+  --color--primary-6: var(--pirateborg-black);
+  --color--primary-7: var(--pirateborg-black);
+  --color--primary-8: var(--pirateborg-black);
+  --color--primary-9: var(--pirateborg-black);
+  --color--primary-10: var(--pirateborg-black);
+  --color--primary-11: var(--pirateborg-black);
+  --color--primary-12: var(--pirateborg-black);
+
+  /* colors.secondary */
+  --color--secondary-1: var(--pirateborg-black);
+  --color--secondary-2: var(--pirateborg-black);
+  --color--secondary-3: var(--pirateborg-black);
+  --color--secondary-4: var(--pirateborg-dim-green);
+  --color--secondary-5: var(--pirateborg-white);
+  --color--secondary-6: var(--pirateborg-dim-red);
+  --color--secondary-7: var(--pirateborg-black);
+  --color--secondary-8: var(--pirateborg-black);
+  --color--secondary-9: var(--pirateborg-black);
+  --color--secondary-10: var(--pirateborg-black);
+  --color--secondary-11: var(--pirateborg-off-white);
+  --color--secondary-12: var(--pirateborg-white);
+
+  /* fontFamily */
+  --font-family--brand: Alegreya, palatino, "Palatino Linotype",
+    "Palatino LT STD", "Book Antiqua", times, "Times New Roman", serif;
+  --font-family--body: "Alegreya Sans", ui-sans-serif, system-ui, -apple-system,
+    blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-family--display: var(--font-family--brand);
+}
