@@ -21,13 +21,13 @@ jobs:
 
     - name: Make config file
       run: |
-        echo "dns_gandi_api_key=${GANDI_API_KEY}" > gandi.ini
+        echo "dns_gandi_token=${GANDI_TOKEN}" > gandi.ini
         chmod 600 gandi.ini
       env:
-        GANDI_API_KEY: ${{ secrets.GANDI_API_KEY }}
+        GANDI_TOKEN: ${{ secrets.GANDI_TOKEN }}
 
     - name: Generate certificates
-      run: certbot certonly --non-interactive --email $LETSENCRYPT_EMAIL --agree-tos --authenticator dns-gandi --dns-gandi-credentials gandi.ini -d exlibrisrpg.com -d \*.exlibrisrpg.com --server https://acme-v02.api.letsencrypt.org/directory  --config-dir config --work-dir work --logs-dir logs
+      run: certbot certonly --non-interactive --email $LETSENCRYPT_EMAIL --agree-tos --authenticator dns-gandi --dns-gandi-credentials gandi.ini -d exlibrisrpg.com -d \*.exlibrisrpg.com --server https://acme-v02.api.letsencrypt.org/directory --config-dir config --work-dir work --logs-dir logs
       env:
         LETSENCRYPT_EMAIL: ${{ secrets.LETSENCRYPT_EMAIL }}
 
